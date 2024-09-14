@@ -84,9 +84,7 @@
                 PressedColor: =Self.Color
                 PressedFill: =App.Theme.Colors.Darker40
                 Size: =15
-                Text: |-
-                    ="Add New Report
-                    "
+                Text: ="Add New Report"
                 Width: =300
                 ZIndex: =1
 
