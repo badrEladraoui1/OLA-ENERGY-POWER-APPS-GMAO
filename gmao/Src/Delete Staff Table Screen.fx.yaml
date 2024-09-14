@@ -35,7 +35,7 @@
             RadiusTopRight: =8
             ZIndex: =1
 
-            "'Delete staff Header' As Header":
+            "'Delete staff Header' As 'En-tête'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
@@ -73,7 +73,7 @@
             RadiusTopRight: =8
             ZIndex: =2
 
-            delete_staff_row_btn As Button:
+            delete_staff_row_btn As Bouton:
                 BasePaletteColor: =
                 BorderColor: =
                 DisplayMode: =If(!IsBlank('Staff table_del'.Selected),DisplayMode.Edit,DisplayMode.Disabled)
@@ -91,7 +91,7 @@
                 Y: =0
                 ZIndex: =1
 
-            go_back_3_btn_1 As Button:
+            go_back_3_btn_1 As Bouton:
                 Appearance: ='ButtonCanvas.Appearance'.Primary
                 BasePaletteColor: =
                 BorderColor: =
@@ -229,7 +229,7 @@
                 Width: =40
                 ZIndex: =1
 
-            "'user added sucs message_4' As Text":
+            "'user added sucs message_4' As Texte":
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 AutoHeight: =false
@@ -250,7 +250,7 @@
                 Y: =0
                 ZIndex: =2
 
-            ButtonCanvas6_1 As Button:
+            ButtonCanvas6_1 As Bouton:
                 Align: =Align.Center
                 AlignInContainer: =AlignInContainer.Center
                 Appearance: ='ButtonCanvas.Appearance'.Primary
@@ -327,7 +327,7 @@
                 Width: =40
                 ZIndex: =1
 
-            "'user added sucs message_5' As Text":
+            "'user added sucs message_5' As Texte":
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =

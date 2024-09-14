@@ -693,7 +693,7 @@
                 Width: =40
                 ZIndex: =1
 
-            "'user added sucs message' As Text":
+            "'user added sucs message' As Texte":
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =

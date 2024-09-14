@@ -132,7 +132,7 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "en-US"
+    "UserLocale": "fr-FR"
   },
   "ScreenOrder": [
     "Welcome Screen",

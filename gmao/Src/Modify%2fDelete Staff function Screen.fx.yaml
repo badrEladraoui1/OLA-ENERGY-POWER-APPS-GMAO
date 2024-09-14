@@ -35,7 +35,7 @@
             RadiusTopRight: =8
             ZIndex: =1
 
-            Header1 As Header:
+            "Header1 As 'En-tête'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
@@ -73,7 +73,7 @@
             RadiusTopRight: =8
             ZIndex: =2
 
-            TextCanvas2 As Text:
+            TextCanvas2 As Texte:
                 BorderColor: =
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
@@ -90,7 +90,7 @@
                 Y: =0
                 ZIndex: =1
 
-            ButtonCanvas8 As Button:
+            ButtonCanvas8 As Bouton:
                 BasePaletteColor: =
                 BorderColor: =
                 DisplayMode: =If(!IsBlank('Table staff funct'.Selected),DisplayMode.Edit,DisplayMode.Disabled)
@@ -107,7 +107,7 @@
                 Y: =0
                 ZIndex: =2
 
-            ButtonCanvas10 As Button:
+            ButtonCanvas10 As Bouton:
                 BasePaletteColor: =
                 BorderColor: =
                 DisplayMode: =DisplayMode.Edit
@@ -185,7 +185,7 @@
                 Visible: =!IsBlank('Table staff funct'.Selected)
                 ZIndex: =2
 
-                TextCanvas1 As Text:
+                TextCanvas1 As Texte:
                     Align: ='TextCanvas.Align'.Center
                     AlignInContainer: =AlignInContainer.Stretch
                     AutoHeight: =true
@@ -234,7 +234,7 @@
                         Y: =0
                         ZIndex: =1
 
-                        DataCardKey15 As Text:
+                        DataCardKey15 As Texte:
                             BorderColor: =
                             DisplayMode: =DisplayMode.Edit
                             Fill: =
@@ -250,7 +250,7 @@
                             Y: =10
                             ZIndex: =1
 
-                        "DataCardValue11 As 'Text input'":
+                        "DataCardValue11 As 'Saisie de texte'":
                             AccessibleLabel: =Parent.DisplayName
                             BasePaletteColor: =
                             BorderColor: =
@@ -267,7 +267,7 @@
                             Y: =DataCardKey15.Y + DataCardKey15.Height + 4
                             ZIndex: =2
 
-                        ErrorMessage15 As Text:
+                        ErrorMessage15 As Texte:
                             BorderColor: =
                             DisplayMode: =DisplayMode.Edit
                             Fill: =
@@ -281,7 +281,7 @@
                             Y: =DataCardValue11.Y + DataCardValue11.Height
                             ZIndex: =3
 
-                        StarVisible15 As Text:
+                        StarVisible15 As Texte:
                             Align: ='TextCanvas.Align'.Center
                             BorderColor: =
                             DisplayMode: =DisplayMode.Edit
@@ -295,7 +295,7 @@
                             Y: =DataCardKey15.Y
                             ZIndex: =4
 
-                ButtonCanvas11 As Button:
+                ButtonCanvas11 As Bouton:
                     BasePaletteColor: =
                     BorderColor: =
                     DisplayMode: |
