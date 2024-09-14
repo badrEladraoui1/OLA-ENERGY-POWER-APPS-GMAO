@@ -99,6 +99,7 @@
             Container2_6 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.Bold
                 Fill: =RGBA(58, 110, 165, 1)
+                FillPortions: =2
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =20
