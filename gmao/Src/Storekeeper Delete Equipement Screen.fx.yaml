@@ -1,0 +1,400 @@
+"'Storekeeper Delete Equipement Screen' As screen.'autoLayout_HeaderFooter_ver1.0'":
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    ScreenContainer5_2 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(0, 78, 152, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =16
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =16
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer5_2 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =1
+
+            Header4_2 As Header:
+                DisplayMode: =DisplayMode.Edit
+                Height: =75
+                IsProfilePictureVisible: =false
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                Logo: =OLA_LOGO
+                OnSelectLogo: =false
+                Title: =App.ActiveScreen.Name
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+        MainContainer5_2 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(240, 98, 15, 1)
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =3
+
+            Container4_1 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.ExtraBold
+                Fill: =RGBA(58, 110, 165, 1)
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
+                Image2_1 As image:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Image: ='icons8-engine-480'
+                    ZIndex: =1
+
+                Label5_1 As label:
+                    AutoHeight: =true
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Size: =20
+                    Text: ="DELETE EQUIPEMENT SCREEN"
+                    Width: =390
+                    ZIndex: =2
+
+            Container2_6 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.Bold
+                Fill: =RGBA(58, 110, 165, 1)
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =20
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =2
+
+                Label4_6 As label:
+                    Align: =Align.Center
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Semibold
+                    Size: =15
+                    Text: ="Choose the Equipment that You want to ""DELETE"""
+                    Width: =600
+                    ZIndex: =5
+
+                "'Dropdown equpment to delete' As dropdown":
+                    BorderColor: =App.Theme.Colors.Darker40
+                    ChevronBackground: =App.Theme.Colors.Primary
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =App.Theme.Colors.Darker10
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Font: =App.Theme.Font
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =App.Theme.Colors.Lighter70
+                    Items: |-
+                        =/*Filter(
+                            Liste_Equipements,
+                            'Niveau d''arborescence' = "Equipement" && true
+                        )
+                        */
+                        
+                        Sort(
+                            Filter(
+                                Liste_Equipements,
+                                'Niveau d''arborescence' = "Equipement" && true
+                            ),
+                            Codification, // or 'Désignation', depending on the column you want to sort by
+                            SortOrder.Ascending
+                        )
+                    OnChange: |-
+                        =UpdateContext({SelectedItem: 'Dropdown equpment to delete'.Selected})
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =App.Theme.Colors.Darker30
+                    SelectionFill: =App.Theme.Colors.Primary
+                    Size: =13
+                    ZIndex: =6
+
+        FooterContainer5_2 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(58, 110, 165, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutGap: =20
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =22
+
+            ButtonCanvas18_2 As Button:
+                DisplayMode: |
+                    =
+                Height: =42
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Set(isdeleteEquipClickedDialog,true);
+                Text: ="Delete Equipement"
+                Width: =100
+                X: =0
+                Y: =0
+                ZIndex: =23
+
+            ButtonCanvas17_2 As Button:
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =
+                Text: ="Go back"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =24
+
+    "'Dialog Container_2 Delete_3' As groupContainer.verticalAutoLayoutContainer":
+        DropShadow: =DropShadow.Light
+        Fill: |
+            =RGBA(0, 0, 0, 0.3)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: |-
+            =//true
+            isdeleteEquipClickedDialog
+        Width: =Parent.Width
+        ZIndex: =3
+
+        "'Dialog Content_18' As groupContainer.verticalAutoLayoutContainer":
+            AlignInContainer: =AlignInContainer.Center
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(214, 221, 224, 1)
+            FillPortions: =0
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =10
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =10
+            PaddingLeft: =5
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            ZIndex: =1
+
+            "'cancel icon_18' As icon.CancelBadge":
+                AlignInContainer: =AlignInContainer.End
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =App.Theme.Colors.Darker30
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Icon: =Icon.CancelBadge
+                OnSelect: =Set(isdeleteEquipClickedDialog,false)
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingRight: =10
+                PaddingTop: =5
+                Width: =40
+                ZIndex: =1
+
+            "'user added sucs message_11' As Text":
+                Align: ='TextCanvas.Align'.Center
+                AlignInContainer: =AlignInContainer.Stretch
+                AutoHeight: =false
+                BorderColor: =
+                DisplayMode: =DisplayMode.Edit
+                Fill: =
+                FillPortions: =1
+                FontColor: =
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =90
+                Size: =20
+                Text: ="Are you sure you want to delete this Equipement ?"
+                VerticalAlign: ='TextCanvas.VerticalAlign'.Middle
+                Weight: ='TextCanvas.Weight'.Bold
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+            ButtonCanvas6_3 As Button:
+                Align: =Align.Center
+                AlignInContainer: =AlignInContainer.Center
+                Appearance: ='ButtonCanvas.Appearance'.Primary
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =BorderStyle.Dashed
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                Icon: ="Delete"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: |-
+                    =// Capture selected values from dropdowns
+                    Set(selectedCodification, 'Dropdown equpment to delete'.Selected.Codification);
+                    Set(selectedDesignation, 'Dropdown equpment to delete'.Selected.Désignation);
+                    
+                    // Filter the record based on StartsWith and EndsWith (since = is not supported)
+                    // Assuming 'Liste_Equipements' is your Excel table name
+                    
+                    RemoveIf(
+                        Liste_Equipements,
+                        StartsWith(Codification, Left(selectedCodification, 5)) && 
+                        EndsWith(Codification, Right(selectedCodification, 5)) &&
+                        StartsWith(Désignation, Left(selectedDesignation, 5)) &&
+                        EndsWith(Désignation, Right(selectedDesignation, 5))
+                    );
+                    
+                    Set(isdeleteEquipClickedDialog,false);
+                    
+                    // Notify the user after deletion
+                    Notify("L'équipement a été supprimé avec succès.", NotificationType.Success);
+                    
+                    Set(infoEquipeDeletedDialog,true)
+                Text: ="Delete"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+    "'Dialog Container_3 Info_3' As groupContainer.verticalAutoLayoutContainer":
+        DropShadow: =DropShadow.Light
+        Fill: |
+            =RGBA(0, 0, 0, 0.3)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: |-
+            =//true
+            infoEquipeDeletedDialog
+        Width: =Parent.Width
+        ZIndex: =4
+
+        "'Dialog Content_19' As groupContainer.verticalAutoLayoutContainer":
+            AlignInContainer: =AlignInContainer.Center
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(214, 221, 224, 1)
+            FillPortions: =0
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =10
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =5
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            ZIndex: =1
+
+            "'cancel icon_19' As icon.CancelBadge":
+                AlignInContainer: =AlignInContainer.End
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =App.Theme.Colors.Darker30
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Icon: =Icon.CancelBadge
+                OnSelect: |-
+                    =Set(isDialogOpenSpareDelete,false);
+                    Set(infoEquipeDeletedDialog,false);
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingRight: =10
+                PaddingTop: =5
+                Width: =40
+                ZIndex: =1
+
+            "'user added sucs message_12' As Text":
+                Align: ='TextCanvas.Align'.Center
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =
+                DisplayMode: =DisplayMode.Edit
+                Fill: =
+                FontColor: =
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                Size: =20
+                Text: ="Spare Part deleted successfully"
+                Weight: ='TextCanvas.Weight'.Bold
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+            "'sucs icon_15' As image":
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =50
+                Image: ='icons8-success-240'
+                LayoutMinWidth: =50
+                ZIndex: =3
+

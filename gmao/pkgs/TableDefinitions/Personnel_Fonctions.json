@@ -1,0 +1,7 @@
+{
+  "DataEntityMetadataJson": {
+    "{FA4283C0-0778-4A70-BC95-2EB3CE049E28}": "{\"name\":\"{FA4283C0-0778-4A70-BC95-2EB3CE049E28}\",\"title\":\"Personnel_Fonctions\",\"x-ms-permission\":\"read-write\",\"x-ms-capabilities\":{\"sortRestrictions\":{\"sortable\":true},\"filterRestrictions\":{\"filterable\":true},\"filterFunctionSupport\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"schema\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Personnel Fonctions\":{\"type\":\"string\",\"title\":\"Personnel Fonctions\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"},\"__PowerAppsId__\":{\"type\":\"string\",\"title\":\"__PowerAppsId__\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-keyOrder\":1,\"x-ms-keyType\":\"primary\",\"x-ms-permission\":\"read-only\"}}}}}"
+  },
+  "EntityName": "Personnel_Fonctions",
+  "TableName": "{FA4283C0-0778-4A70-BC95-2EB3CE049E28}"
+}

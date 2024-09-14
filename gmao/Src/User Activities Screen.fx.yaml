@@ -1,0 +1,224 @@
+"'User Activities Screen' As screen":
+    Fill: =RGBA(255, 103, 0, 1)
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    "'Admin Activities Header Container_1' As groupContainer.verticalAutoLayoutContainer":
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(0, 78, 152, 1)
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        X: =(Parent.Width - Parent.Width) / 2
+        Y: =(Parent.Height - Parent.Height) / 2
+        ZIndex: =1
+
+        waiving_hand_img_1 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Image: =waiving_hand
+            ZIndex: =1
+
+        welcome_admin_label_1 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Size: =20
+            Text: |-
+                ="Welcome Back User
+                "
+            Width: =300
+            ZIndex: =2
+
+    "'Admin Activities Body Container_1' As groupContainer.verticalAutoLayoutContainer":
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(255, 103, 0, 1)
+        Height: =Parent.Height * 0.75
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =40
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        PaddingTop: =6
+        Width: =Parent.Width
+        X: =(Parent.Width - Parent.Width) / 2
+        Y: =(Parent.Height - Self.Height) / 1
+        ZIndex: =2
+
+        "'Admin Activities Body Container_2' As groupContainer.verticalAutoLayoutContainer":
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 103, 0, 1)
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            X: =424
+            Y: =132
+            ZIndex: =5
+
+            "'Profile Container_1' As groupContainer.horizontalAutoLayoutContainer":
+                DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =Parent.Height * 0.2
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =1
+
+                Image4_1 As image:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Image: ='icons8-document-500'
+                    ZIndex: =1
+
+                new_correctif_btn_1 As button:
+                    AutoDisableOnSelect: =false
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.5
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: =Navigate('Rapport Intervention Management Screen')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: ="Corrective Work Report"
+                    Width: =Parent.Width * 0.5
+                    ZIndex: =2
+
+            "'Staff Container_1' As groupContainer.horizontalAutoLayoutContainer":
+                DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =Parent.Height * 0.2
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =2
+
+                Image5_1 As image:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Image: ='icons8-tear-off-calendar-500'
+                    ZIndex: =1
+
+                new_preventif_btn_2 As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.5
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: =
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: |-
+                        ="Preventive work report
+                        "
+                    Width: =Parent.Width * 0.5
+                    ZIndex: =2
+
+            "'Staff Container_2' As groupContainer.horizontalAutoLayoutContainer":
+                DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =Parent.Height * 0.2
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =3
+
+                Image5_4 As image:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Image: ='icons8-engine-480'
+                    ZIndex: =1
+
+                new_preventif_btn_3 As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.5
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: =
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: |-
+                        ="Equipment list management
+                        "
+                    Width: =Parent.Width * 0.5
+                    ZIndex: =2
+
+            Image3_1 As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: ='icons8-logout-240 (1)'
+                OnSelect: |-
+                    =// Clear the current user information
+                    Set(CurrentUser, Blank());
+                    Set(UserName, Blank());
+                    Set(UserEmail, Blank());
+                    Set(UserFunction, Blank());
+                    
+                    // Optionally, navigate to the login screen after logout
+                    Navigate('Welcome Screen', ScreenTransition.Fade);
+                    
+                    // Notify the user that they've logged out
+                    Notify("You have successfully logged out", NotificationType.Success);
+                ZIndex: =4
+

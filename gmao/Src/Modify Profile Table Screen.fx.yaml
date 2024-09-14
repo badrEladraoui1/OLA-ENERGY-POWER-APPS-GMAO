@@ -1,0 +1,781 @@
+"'Modify Profile Table Screen' As screen.'autoLayout_HeaderFooter_ver1.0'":
+    BackgroundImage: =OLA_LOGO
+    Fill: =RGBA(0, 78, 152, 1)
+    ImagePosition: =ImagePosition.Fill
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    "'Profile Table  ScreenContainer' As groupContainer.verticalAutoLayoutContainer":
+        DropShadow: =DropShadow.Regular
+        Fill: =RGBA(0, 78, 152, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =16
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =16
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =Parent.Width
+        ZIndex: =1
+
+        "'Profile Table  HeaderContainer' As groupContainer.horizontalAutoLayoutContainer":
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =1
+
+            "'Profile Table Header' As Header":
+                AlignInContainer: =AlignInContainer.Start
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =75
+                IsProfilePictureVisible: =false
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                Logo: =OLA_LOGO
+                OnSelectLogo: =false
+                Style: ='Header.Style'.Primary
+                Title: ="Modify Profile Table Page"
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Visible: =true
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+        "'Profile Table  Middle Container' As groupContainer.horizontalAutoLayoutContainer":
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutGap: =10
+            LayoutJustifyContent: =LayoutJustifyContent.End
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =2
+
+            tip_for_mofication As Text:
+                Align: ='TextCanvas.Align'.Center
+                AlignInContainer: =AlignInContainer.Stretch
+                AutoHeight: =false
+                BorderColor: =
+                DisplayMode: =DisplayMode.Edit
+                Fill: =
+                FillPortions: =1
+                FontColor: =RGBA(0, 78, 152, 1)
+                FontItalic: =true
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                Size: =20
+                Text: ="Select a Row for a modification"
+                Weight: ='TextCanvas.Weight'.Bold
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+            go_bacl_btn2 As Button:
+                Align: =Align.Center
+                Appearance: ='ButtonCanvas.Appearance'.Primary
+                BasePaletteColor: =
+                BorderColor: =
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =32
+                Icon: ="ArrowLeft"
+                IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Navigate('Profile Management Screen')
+                Text: ="Go Back"
+                Width: =120
+                X: =0
+                Y: =0
+                ZIndex: =4
+
+        "'Profile Table  MainContainer' As groupContainer.verticalAutoLayoutContainer":
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(255, 255, 255, 1)
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutGap: =5
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =500
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            LayoutWrap: =true
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            ZIndex: =3
+
+            "'Profile Table' As Table.pcfdataset":
+                DisplayMode: =DisplayMode.Edit
+                EnableSorting: ='PowerAppsOneGrid.EnableSorting'.Disable
+                FontWeight: =FontWeight.Normal
+                HeaderFont: =Font.'Open Sans'
+                HeaderFontWeight: =FontWeight.Bold
+                Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                Items: =Users_DB
+                LayoutMinHeight: =500
+                LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+                onCellValueChange: =false
+                onFilter: =false
+                onNavigate: =false
+                onRowSelect: =false
+                onSave: =false
+                OnSelect: =false
+                ReflowBehavior: ='PowerAppsOneGrid.ReflowBehavior'.Reflow
+                Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                "'Adresse email3' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Adresse email"
+                    FieldName: ="Adresse email"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    HeaderText: ="Email Address"
+                    Order: =3
+                    Width: =0
+                    ZIndex: =5
+
+                Fonction3 As PowerAppsOneGridTemplate_dataField.textualColumn:
+                    FieldDisplayName: ="Fonction"
+                    FieldName: ="Fonction"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    HeaderText: ="Function"
+                    Order: =4
+                    Width: =0
+                    ZIndex: =6
+
+                "'Mot de Passe3' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Mot de Passe"
+                    FieldName: ="Mot de Passe"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    HeaderText: ="Password"
+                    Order: =5
+                    Width: =0
+                    ZIndex: =7
+
+                "'Nom complet1' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Nom complet"
+                    FieldName: ="Nom complet"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    HeaderText: ="Full Name"
+                    Order: =2
+                    Width: =0
+                    ZIndex: =9
+
+            Profile_form_handling_container As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DropShadow: =DropShadow.Semibold
+                Fill: =RGBA(253, 207, 180, 1)
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMinHeight: =500
+                LayoutMinWidth: =200
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                LayoutOverflowY: =LayoutOverflow.Scroll
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Visible: =!IsBlank('Profile Table'.Selected)
+                ZIndex: =2
+
+                modify_profile_form As form:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DataSource: =Users_DB
+                    FillPortions: =0
+                    Height: =400
+                    Item: ='Profile Table'.Selected
+                    LayoutMinHeight: =250
+                    LayoutMinWidth: =300
+                    NumberOfColumns: =1
+                    Width: =500
+                    ZIndex: =1
+
+                    "'Nom complet_DataCard7' As typedDataCard.textualEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="Nom complet"
+                        Default: =ThisItem.'Nom complet'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@Users_DB],DataSourceInfo.DisplayName,'Nom complet')
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@Users_DB], DataSourceInfo.MaxLength, 'Nom complet')
+                        Required: =true
+                        Update: =DataCardValue20.Text
+                        Width: =400
+                        WidthFit: =true
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
+                        DataCardKey20 As label:
+                            AutoHeight: =true
+                            Color: =App.Theme.Colors.Darker30
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            Height: =34
+                            Size: =13
+                            Text: ="Full Name"
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue20 As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            BorderThickness: =2
+                            Color: =RGBA(0, 0, 0, 1)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: =Parent.DisplayMode
+                            FocusedBorderThickness: =4
+                            Font: =App.Theme.Font
+                            HoverBorderColor: =App.Theme.Colors.Darker40
+                            HoverColor: =RGBA(0, 0, 0, 1)
+                            HoverFill: =App.Theme.Colors.Lighter70
+                            MaxLength: =Parent.MaxLength
+                            OnChange: |-
+                                =UpdateContext(
+                                    {isValidName: IsMatch(DataCardValue20.Text, "^[A-Za-z]+ [A-Za-z]+$")}
+                                )
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =13
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardKey20.Y + DataCardKey20.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage19 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(168, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue20.Y + DataCardValue20.Height
+                            ZIndex: =3
+
+                        StarVisible19 As label:
+                            Align: =Align.Center
+                            Color: =App.Theme.Colors.Darker30
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            Height: =DataCardKey20.Height
+                            Size: =13
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey20.Y
+                            ZIndex: =4
+
+                    "'Adresse email_DataCard4' As typedDataCard.textualEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="Adresse email"
+                        Default: =ThisItem.'Adresse email'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@Users_DB],DataSourceInfo.DisplayName,'Adresse email')
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@Users_DB], DataSourceInfo.MaxLength, 'Adresse email')
+                        Required: =true
+                        Update: =DataCardValue21.Text
+                        Width: =800
+                        WidthFit: =true
+                        X: =0
+                        Y: =1
+                        ZIndex: =1
+
+                        DataCardKey21 As label:
+                            AutoHeight: =true
+                            Color: =App.Theme.Colors.Darker30
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            Height: =34
+                            Size: =13
+                            Text: ="Email Address"
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue21 As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            BorderThickness: =2
+                            Color: =RGBA(0, 0, 0, 1)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: =Parent.DisplayMode
+                            FocusedBorderThickness: =4
+                            Font: =App.Theme.Font
+                            HoverBorderColor: =App.Theme.Colors.Darker40
+                            HoverColor: =RGBA(0, 0, 0, 1)
+                            HoverFill: =App.Theme.Colors.Lighter70
+                            MaxLength: =Parent.MaxLength
+                            OnChange: |-
+                                =UpdateContext(
+                                    {isValidEmail: IsMatch(DataCardValue21.Text, "^[a-zA-Z0-9._%+-]+@olaenergy\.com$")}
+                                )
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =13
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardKey21.Y + DataCardKey21.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage20 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(168, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue21.Y + DataCardValue21.Height
+                            ZIndex: =3
+
+                        StarVisible20 As label:
+                            Align: =Align.Center
+                            Color: =App.Theme.Colors.Darker30
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            Height: =DataCardKey21.Height
+                            Size: =13
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey21.Y
+                            ZIndex: =4
+
+                    Fonction_DataCard9 As typedDataCard.allowedValuesStringEditCard:
+                        AllowedValues: =DataSourceInfo([@Users_Fonctions], DataSourceInfo.AllowedValues, 'Users Fonctions')
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="Fonction"
+                        Default: =ThisItem.Fonction
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@Users_DB],DataSourceInfo.DisplayName,Fonction)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        Required: =true
+                        Update: =DataCardValue24.Selected.'Users Fonctions'
+                        Width: =800
+                        WidthFit: =true
+                        X: =0
+                        Y: =2
+                        ZIndex: =1
+
+                        DataCardKey24 As label:
+                            AutoHeight: =true
+                            Color: =App.Theme.Colors.Darker30
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            Height: =34
+                            Size: =13
+                            Text: ="Function"
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue24 As dropdown:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            ChevronBackground: =App.Theme.Colors.Primary
+                            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                            ChevronHoverBackground: =App.Theme.Colors.Darker10
+                            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                            Default: =Parent.Default
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: =Parent.DisplayMode
+                            Font: =App.Theme.Font
+                            HoverColor: =RGBA(0, 0, 0, 1)
+                            HoverFill: =App.Theme.Colors.Lighter70
+                            Items: |-
+                                =//["Responsable centre emplisseur", "Adjoint au responsable du centre emplisseur", "Responsable Maintenance", "Magasinier", "Technicien", "Ouvrier Polyvalent", "Cariste", "Responsable Production"]
+                                Users_Fonctions
+                            PressedColor: =RGBA(255, 255, 255, 1)
+                            PressedFill: =App.Theme.Colors.Darker30
+                            SelectionFill: =App.Theme.Colors.Primary
+                            Size: =13
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardKey24.Y + DataCardKey24.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage23 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(168, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue24.Y + DataCardValue24.Height
+                            ZIndex: =3
+
+                        StarVisible23 As label:
+                            Align: =Align.Center
+                            Color: =App.Theme.Colors.Darker30
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            Height: =DataCardKey24.Height
+                            Size: =13
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey24.Y
+                            ZIndex: =4
+
+                    "'Mot de Passe_DataCard4' As typedDataCard.textualEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="Mot de Passe"
+                        Default: =ThisItem.'Mot de Passe'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@Users_DB],DataSourceInfo.DisplayName,'Mot de Passe')
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@Users_DB], DataSourceInfo.MaxLength, 'Mot de Passe')
+                        Required: =true
+                        Update: =DataCardValue23.Text
+                        Width: =800
+                        WidthFit: =true
+                        X: =0
+                        Y: =3
+                        ZIndex: =1
+
+                        DataCardKey23 As label:
+                            AutoHeight: =true
+                            Color: =App.Theme.Colors.Darker30
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            Height: =34
+                            Size: =13
+                            Text: ="Password"
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue23 As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            BorderThickness: =2
+                            Color: =RGBA(0, 0, 0, 1)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: =Parent.DisplayMode
+                            FocusedBorderThickness: =4
+                            Font: =App.Theme.Font
+                            HoverBorderColor: =App.Theme.Colors.Darker40
+                            HoverColor: =RGBA(0, 0, 0, 1)
+                            HoverFill: =App.Theme.Colors.Lighter70
+                            MaxLength: =Parent.MaxLength
+                            OnChange: |
+                                =UpdateContext(
+                                    {isValidPassword: IsMatch(DataCardValue23.Text, "^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$")}
+                                )
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =13
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardKey23.Y + DataCardKey23.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage22 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(168, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue23.Y + DataCardValue23.Height
+                            ZIndex: =3
+
+                        StarVisible22 As label:
+                            Align: =Align.Center
+                            Color: =App.Theme.Colors.Darker30
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            Height: =DataCardKey23.Height
+                            Size: =13
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey23.Y
+                            ZIndex: =4
+
+                "'Btn Container' As groupContainer.horizontalAutoLayoutContainer":
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.Light
+                    Height: =100
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =50
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =2
+
+                    Modify_btn As Button:
+                        BasePaletteColor: =
+                        BorderColor: =
+                        DisplayMode: |-
+                            =//DisplayMode.Edit
+                            If(!IsBlank(DataCardValue20.Text) && !IsBlank(DataCardValue21.Text) && !IsBlank(DataCardValue23.Text), DisplayMode.Edit, DisplayMode.Disabled)
+                        FontColor: =
+                        Height: =32
+                        Icon: ="ArrowSync"
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: |+
+                            =//SubmitForm(modify_profile_form);
+                            //Notify("Success",NotificationType.Success);
+                            
+                            /*If(
+                                isValidEmail && isValidPassword && isValidName, 
+                                SubmitForm(modify_profile_form);
+                                Notify("Success", NotificationType.Success),
+                                If(
+                                    !isValidEmail, 
+                                    Notify("Invalid Email. Must end with @olaenergy.com.", NotificationType.Error)
+                                );
+                                If(
+                                    !isValidPassword, 
+                                    Notify("Invalid Password. Password must have at least 8 characters, one uppercase letter, and one numeral.", NotificationType.Error)
+                                );
+                                If(
+                                    !isValidName, 
+                                    Notify("Invalid Name. The Name must exactly match two strings separated by a single space.", NotificationType.Error)
+                                )
+                            )*/
+                            
+                            If(
+                                IsMatch(DataCardValue20.Text, "^[A-Za-z]+ [A-Za-z]+$") && 
+                                IsMatch(DataCardValue21.Text, "^[a-zA-Z0-9._%+-]+@olaenergy\.com$") && 
+                                IsMatch(DataCardValue23.Text, "^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"),
+                            
+                                // If all validations pass
+                                SubmitForm(modify_profile_form);
+                                Notify("Success", NotificationType.Success);
+                                Set(isDialogOpen7,true)
+                                ,
+                            
+                                // If validations fail, show appropriate error notifications
+                                If(
+                                    !IsMatch(DataCardValue21.Text, "^[a-zA-Z0-9._%+-]+@olaenergy\.com$"), 
+                                    Notify("Invalid Email. Must end with @olaenergy.com.", NotificationType.Error)
+                                );
+                                If(
+                                    !IsMatch(DataCardValue23.Text, "^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"), 
+                                    Notify("Invalid Password. Password must have at least 8 characters, one uppercase letter, and one numeral.", NotificationType.Error)
+                                );
+                                If(
+                                    !IsMatch(DataCardValue20.Text, "^[A-Za-z]+ [A-Za-z]+$"), 
+                                    Notify("Invalid Name. The Name must exactly match two strings separated by a single space.", NotificationType.Error)
+                                )
+                            )
+                            
+                        Text: ="Modify"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
+    "'Dialog Container_2' As groupContainer.verticalAutoLayoutContainer":
+        DropShadow: =DropShadow.Light
+        Fill: |
+            =RGBA(0, 0, 0, 0.3)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: |-
+            =//true
+            isDialogOpen7
+        Width: =Parent.Width
+        ZIndex: =2
+
+        "'Dialog Content_6' As groupContainer.verticalAutoLayoutContainer":
+            AlignInContainer: =AlignInContainer.Center
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(214, 221, 224, 1)
+            FillPortions: =0
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =10
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =5
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            ZIndex: =1
+
+            "'cancel icon_6' As icon.CancelBadge":
+                AlignInContainer: =AlignInContainer.End
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =App.Theme.Colors.Darker30
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Icon: =Icon.CancelBadge
+                OnSelect: =Set(isDialogOpen7,false)
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingRight: =10
+                PaddingTop: =5
+                Width: =40
+                ZIndex: =1
+
+            "'user added sucs message_6' As Text":
+                Align: ='TextCanvas.Align'.Center
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =
+                DisplayMode: =DisplayMode.Edit
+                Fill: =
+                FontColor: =
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                Size: =20
+                Text: |
+                    ="Row modified successfully"
+                Weight: ='TextCanvas.Weight'.Bold
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+            "'sucs icon_4' As image":
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =50
+                Image: ='icons8-success-240'
+                LayoutMinWidth: =50
+                ZIndex: =3
+

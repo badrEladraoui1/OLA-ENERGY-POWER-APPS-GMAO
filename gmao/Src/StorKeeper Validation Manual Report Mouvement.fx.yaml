@@ -1,0 +1,1130 @@
+"'StorKeeper Validation Manual Report Mouvement' As screen.'autoLayout_HeaderFooter_ver1.0'":
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    ScreenContainer3 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(0, 78, 152, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =16
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =16
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer3 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =1
+
+            Header3 As Header:
+                DisplayMode: =DisplayMode.Edit
+                Height: =75
+                IsProfilePictureVisible: =false
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                Logo: =OLA_LOGO
+                OnSelectLogo: =false
+                Title: =App.ActiveScreen.Name
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+        FooterContainer2 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =2
+
+            ButtonCanvas14 As Button:
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Navigate('Magasiner Activities Screen')
+                Text: ="Go back"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+        MainContainer3 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutWrap: =true
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =3
+
+            "'Table RIC for manual mvmnt table' As Table.pcfdataset":
+                AlignInContainer: =AlignInContainer.Stretch
+                DisplayMode: =DisplayMode.Edit
+                FillPortions: =1
+                Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                Items: |-
+                    =    /*Filter(
+                            Rapport_Intervention_correctif,
+                            !IsBlank('Ressources Materielles Engagees')
+                        )*/
+                        RIC_for_manual_mvmnt
+                LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+                onCellValueChange: =false
+                onFilter: =false
+                onNavigate: =false
+                onRowSelect: =false
+                onSave: =false
+                OnSelect: |-
+                    =// whole row
+                    
+                    /*
+                    // Filter the rows in the Rapport_Intervention_correctif table
+                    // where the 'Reference du rapport Intervention' matches the selected value
+                    // and the 'Ressources Materielles Engagees' column is not blank
+                    ClearCollect(
+                        PieceCollection2,
+                        Filter(
+                            Rapport_Intervention_correctif,
+                            'Reference du rapport Intervention' = 'Table PDR correctif'.Selected.'Reference du rapport Intervention' &&
+                            !IsBlank('Ressources Materielles Engagees')
+                        )
+                    );
+                    */
+                    
+                    //whole row 
+                    
+                    // jsut the wanted data : materials and theire quantity
+                    
+                    ClearCollect(
+                        MaterielCollection,
+                        ShowColumns(
+                            Filter(
+                                Rapport_Intervention_correctif,
+                                'Reference du rapport Intervention' = 'Table RIC for manual mvmnt table'.Selected.'Reference du rapport Intervention'
+                                 &&
+                                !IsBlank('Ressources Materielles Engagees')
+                            ),
+                            'Ressources Materielles Engagees',
+                            'Quantite Materielles Engagees',
+                            Status
+                        )
+                    );
+                    
+                    // jsut the wanted data : materials and theire quantity
+                    
+                    
+                    /*
+                    //false
+                    Set(
+                        equipName,
+                        'Table PDR correctif'.Selected.'Equipement Concerne'
+                    );
+                    Set(
+                        codeEquip,
+                        LookUp(
+                            Liste_Equipements,
+                            'Niveau d''arborescence' = "Equipement" && Désignation = equipName
+                        ).Codification
+                    );
+                    Clear(PieceCollection2);
+                    */
+                Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                "'Date intervention1' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Date intervention"
+                    FieldName: ="Date intervention"
+                    FieldType: ="d"
+                    FieldVariantName: ="textualColumn"
+                    Order: =4
+                    Width: =0
+                    ZIndex: =5
+
+                "'Equipement Concerne1' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Equipement Concerne"
+                    FieldName: ="Equipement Concerne"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    Order: =5
+                    Width: =0
+                    ZIndex: =7
+
+                "'Heure de debut2' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Heure de debut"
+                    FieldName: ="Heure de debut"
+                    FieldType: ="d"
+                    FieldVariantName: ="textualColumn"
+                    Order: =6
+                    Width: =0
+                    ZIndex: =8
+
+                "'Heure de fin2' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Heure de fin"
+                    FieldName: ="Heure de fin"
+                    FieldType: ="d"
+                    FieldVariantName: ="textualColumn"
+                    Order: =8
+                    Width: =0
+                    ZIndex: =9
+
+                "'Reference du rapport Intervention2' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Reference du rapport Intervention"
+                    FieldName: ="Reference du rapport Intervention"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    Order: =2
+                    Width: =0
+                    ZIndex: =11
+
+            "'Form Container' As groupContainer.verticalAutoLayoutContainer":
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(235, 235, 235, 1)
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =20
+                PaddingLeft: =20
+                PaddingRight: =20
+                PaddingTop: =20
+                Visible: =!IsBlank('Table RIC for manual mvmnt table'.Selected)
+                ZIndex: =2
+
+                "'Label is approved' As label":
+                    Align: =Align.Center
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: |-
+                        =If(
+                            CountIf(MaterielCollection, StartsWith(Status, "NOT")) > 0,
+                            RGBA(180, 13, 27,1),
+                            RGBA(0, 126, 89 , 1)
+                        )
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Size: =13
+                    Text: |
+                        =If(
+                            CountIf(MaterielCollection, StartsWith(Status, "NOT")) > 0,
+                            "NOT YET APPROVED",
+                            "ALREADY APPROVED"
+                        )
+                    ZIndex: =1
+
+                Container3 As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    FillPortions: =0
+                    Height: =40
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =2
+
+                    Label1 As label:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        Size: =13
+                        Text: ="Ref"
+                        ZIndex: =1
+
+                    "'TextInput ref' As text":
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderThickness: =2
+                        Color: =RGBA(0, 0, 0, 1)
+                        Default: ='Table RIC for manual mvmnt table'.Selected.'Reference du rapport Intervention'
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =DisplayMode.Disabled
+                        FillPortions: =1
+                        FocusedBorderThickness: =4
+                        Font: =App.Theme.Font
+                        Format: =TextFormat.Number
+                        HoverBorderColor: =App.Theme.Colors.Darker40
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =App.Theme.Colors.Lighter70
+                        Size: =13
+                        ZIndex: =2
+
+                Container3_1 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.Light
+                    FillPortions: =0
+                    Height: =50
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =10
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =3
+
+                    Label1_1 As label:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        Size: =13
+                        Text: ="Date"
+                        ZIndex: =1
+
+                    "'DatePicker date' As datepicker":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        CalendarHeaderFill: =App.Theme.Colors.Primary
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =DisplayMode.Disabled
+                        FillPortions: =1
+                        Font: =App.Theme.Font
+                        HoverDateFill: =App.Theme.Colors.Lighter70
+                        IconBackground: =App.Theme.Colors.Primary
+                        SelectedDateFill: =App.Theme.Colors.Primary
+                        ZIndex: =2
+
+                Container3_3 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =300
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutGap: =10
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =536
+                    X: =-1
+                    ZIndex: =4
+
+                    TextInput6 As text:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderThickness: =2
+                        Color: =RGBA(0, 0, 0, 1)
+                        Default: ='Table RIC for manual mvmnt table'.Selected.'Equipement Concerne'
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =DisplayMode.Disabled
+                        FocusedBorderThickness: =4
+                        Font: =App.Theme.Font
+                        HoverBorderColor: =App.Theme.Colors.Darker40
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =App.Theme.Colors.Lighter70
+                        Size: =13
+                        ZIndex: =1
+
+                    Label1_3 As label:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        Size: =13
+                        Text: ="Spare Parts Used (Modify them if necessary)"
+                        ZIndex: =2
+
+                    Container5 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =10
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =50
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingRight: =5
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =3
+
+                        TextInput7 As text:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            BorderThickness: =2
+                            Color: =RGBA(0, 0, 0, 1)
+                            Default: |+
+                                =Concat(
+                                    MaterielCollection,
+                                    'Ressources Materielles Engagees' & " (" & 'Quantite Materielles Engagees' & ")",
+                                    " / "
+                                )
+                                
+                                
+                                /*Concat(
+                                    PieceCollection2,
+                                    Piece & " (" & Quantity & ")",
+                                    " / "
+                                )
+                                */
+                                
+                                
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            FocusedBorderThickness: =4
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            HoverBorderColor: =App.Theme.Colors.Darker40
+                            HoverColor: =RGBA(0, 0, 0, 1)
+                            HoverFill: =App.Theme.Colors.Lighter70
+                            Mode: =TextMode.MultiLine
+                            PaddingBottom: =0
+                            PaddingLeft: =10
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =13
+                            Width: =Parent.Width * 0.9
+                            ZIndex: =1
+
+                        Image7 As image:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Height: =40
+                            Image: ='icons8-restart-480'
+                            OnSelect: =//Clear(PieceCollection2);
+                            Transparency: =
+                            Visible: =false
+                            Width: =40
+                            ZIndex: =2
+
+                    "'Dropdown known piece' As dropdown":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        ChevronBackground: =App.Theme.Colors.Primary
+                        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                        ChevronHoverBackground: =App.Theme.Colors.Darker10
+                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Font: =App.Theme.Font
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =App.Theme.Colors.Lighter70
+                        Items: |-
+                            =MaterielCollection.'Ressources Materielles Engagees'
+                            /*
+                            //DropDownSample
+                            Filter(
+                                Liste_Equipements,
+                                'Niveau d''arborescence' = "Pièce" &&
+                                StartsWith(Codification, codeEquip)
+                            )
+                            */
+                        OnChange: |
+                            =Set(
+                                selectedQuantity,
+                                LookUp(
+                                    MaterielCollection,
+                                    'Ressources Materielles Engagees' = 'Dropdown known piece'.Selected.'Ressources Materielles Engagees'
+                                ).'Quantite Materielles Engagees'
+                            );
+                            
+                            // Update the TextInput field with the selected quantity
+                            'TextInput qte kPiece'.Text = selectedQuantity
+                        PaddingBottom: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =App.Theme.Colors.Darker30
+                        SelectionFill: =App.Theme.Colors.Primary
+                        Size: =13
+                        ZIndex: =4
+
+                    "'TextInput qte kPiece' As text":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderThickness: =2
+                        Color: =RGBA(0, 0, 0, 1)
+                        Default: =selectedQuantity
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =If('Label is approved'.Text = "ALREADY APPROVED",DisplayMode.Disabled,DisplayMode.Edit)
+                        FocusedBorderThickness: =4
+                        Font: =App.Theme.Font
+                        Format: =TextFormat.Number
+                        HintText: ="Qte"
+                        HoverBorderColor: =App.Theme.Colors.Darker40
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =App.Theme.Colors.Lighter70
+                        PaddingBottom: =0
+                        PaddingLeft: =10
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        ZIndex: =5
+
+                    ButtonCanvas13 As Button:
+                        DisplayMode: |
+                            =If(
+                                !IsBlank('TextInput qte kPiece'.Text) && 
+                                Value('TextInput qte kPiece'.Text) > 0 && 
+                                !IsBlank('Dropdown known piece'.Selected),
+                                DisplayMode.Edit, 
+                                DisplayMode.Disabled
+                            )
+                        Height: =32
+                        Icon: ="Checkmark"
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: |-
+                            =UpdateIf(
+                                MaterielCollection,
+                                'Ressources Materielles Engagees' = 'Dropdown known piece'.Selected.'Ressources Materielles Engagees',
+                                { 'Quantite Materielles Engagees': Value('TextInput qte kPiece'.Text) }
+                            );
+                            // Notify the user that the quantity has been successfully updated for the specific material
+                            Notify(
+                                'Dropdown known piece'.Selected.'Ressources Materielles Engagees' & " quantity updated to " & 'TextInput qte kPiece'.Text & "!",
+                                NotificationType.Success
+                            );
+                            
+                            /*Collect(
+                                PieceCollection2,
+                                {
+                                    Piece: 'Dropdown known piece'.Selected.Désignation,
+                                    Quantity: Value('TextInput qte kPiece'.Text) // Convert to number
+                                }
+                            );
+                            Reset('TextInput qte kPiece');
+                            */
+                        Text: ="Confirm PDR Quantity For Each One You Change"
+                        Width: =120
+                        X: =0
+                        Y: =0
+                        ZIndex: =6
+
+                "'Container btns' As groupContainer.verticalAutoLayoutContainer":
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.Light
+                    FillPortions: =0
+                    Height: =50
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =10
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =5
+
+                    ButtonCanvas9 As Button:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        Icon: ="ArrowClockwise"
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        Text: ="Reset"
+                        Visible: =false
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
+                    ButtonCanvas12 As Button:
+                        DisplayMode: =If('Label is approved'.Text = "ALREADY APPROVED",DisplayMode.Disabled,DisplayMode.Edit)
+                        FillPortions: =1
+                        Height: =32
+                        Icon: ="Save"
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: |-
+                            =
+                            //Set(currentRef , 'Table RIC for manual mvmnt table'.Selected.'Reference du rapport Intervention');
+                            /*
+                            RemoveIf(
+                                Rapport_Intervention_correctif,
+                                'Reference du rapport Intervention' = currentRef && !IsBlank('Ressources Materielles Engagees')
+                            );
+                            */
+                            
+                            // Remove the old rows
+                            RemoveIf(
+                                Rapport_Intervention_correctif,
+                                'Reference du rapport Intervention' = 'Table RIC for manual mvmnt table'.Selected.'Reference du rapport Intervention' && !IsBlank('Ressources Materielles Engagees')
+                            );
+                            
+                            
+                            // Add the updated rows with modified quantities
+                            ForAll(
+                                MaterielCollection,
+                                Patch(
+                                    Rapport_Intervention_correctif,
+                                    Defaults(Rapport_Intervention_correctif),
+                                    {
+                                        'Reference du rapport Intervention': 'Table RIC for manual mvmnt table'.Selected.'Reference du rapport Intervention',
+                                        'Date intervention': 'Table RIC for manual mvmnt table'.Selected.'Date intervention',
+                                        'Heure de debut': 'Table RIC for manual mvmnt table'.Selected.'Heure de debut',
+                                        'Heure de fin': 'Table RIC for manual mvmnt table'.Selected.'Heure de fin',
+                                        'Duree Intervention': 'Table RIC for manual mvmnt table'.Selected.'Duree Intervention',
+                                        'Equipement Concerne': 'Table RIC for manual mvmnt table'.Selected.'Equipement Concerne',
+                                        'Ressources Materielles Engagees': ThisRecord.'Ressources Materielles Engagees',
+                                        'Quantite Materielles Engagees': ThisRecord.'Quantite Materielles Engagees',
+                                        Status: "APPROVED BY STORKEEPER"
+                                    }
+                                )
+                            );
+                            
+                            
+                            
+                            
+                            
+                            // i think i wont send them to the movemnts table 
+                            /*
+                            Set(
+                                LastReference,
+                                If(
+                                    IsBlank(Last(test_pdr_manual_form).'Réf Mouvment'),
+                                    1,// If no rows are found, start with 1
+                            
+                                    // TESTING 
+                            
+                                    //Last(Rapport_Intervention_correctif).'Reference du rapport Intervention'
+                                    Last(test_pdr_manual_form).'Réf Mouvment'
+                            
+                                    // TESTING 
+                                )
+                            );
+                            
+                            Set (
+                                NewReferenceNumber,
+                                LastReference + 1
+                            );
+                            
+                            // Add rows to the test_pdr_manual_form table
+                            ForAll(
+                                MaterielCollection,
+                                Patch(
+                                    test_pdr_manual_form,
+                                    Defaults(test_pdr_manual_form),
+                                    {
+                                        //'Réf Mouvment': 'Table RIC for manual mvmnt table'.Selected.'Reference du rapport Intervention',
+                                        'Réf Mouvment': NewReferenceNumber,
+                                        'Date de mouvement': 'Table RIC for manual mvmnt table'.Selected.'Date intervention',
+                                        // Assuming today's date as the movement date
+                                        'Type de mouvement': "Sortie",
+                                        // Movement type as "Sortie"
+                                        PDR: ThisRecord.'Ressources Materielles Engagees',
+                                        'Quantité à mouvementer': ThisRecord.'Quantite Materielles Engagees'
+                                    }
+                                )
+                            );
+                            */
+                            // i think i wont send them to the movemnts table 
+                            
+                            
+                            
+                            
+                            
+                            
+                            SortingInterventionsFlow.Run();
+                            // for sorting data changing the name after
+                            // Notify user of successful submission
+                            Notify(
+                                "Submission completed successfully!",
+                                NotificationType.Success
+                            );
+                            Set(
+                                openValidationModal,
+                                true
+                            );
+                            SortingMovementsFlow.Run();
+                            // sorting test_pdr_manual_form after validation
+                            // New Inventory Update Logic
+                            // Set up variables for current date, month, and year
+                            Set(
+                                CurrentDate,
+                                Today()
+                            );
+                            Set(
+                                CurrentMonth,
+                                Month(CurrentDate)
+                            );
+                            Set(
+                                CurrentYear,
+                                Year(CurrentDate)
+                            );
+                            Set(
+                                PreviousMonth,
+                                If(
+                                    CurrentMonth = 1,
+                                    12,
+                                    CurrentMonth - 1
+                                )
+                            );
+                            Set(
+                                PreviousYear,
+                                If(
+                                    CurrentMonth = 1,
+                                    CurrentYear - 1,
+                                    CurrentYear
+                                )
+                            );
+                            // Set up database and column names
+                            Set(
+                                PhysicalDatabase,
+                                Concatenate(
+                                    """",
+                                    "Physical_Inventory_",
+                                    Text(
+                                        If(
+                                            CurrentMonth = 1,
+                                            PreviousYear,
+                                            CurrentYear
+                                        )
+                                    ),
+                                    """"
+                                )
+                            );
+                            Set(
+                                TheoreticalDatabase,
+                                Concatenate(
+                                    """",
+                                    "Theoretical_Inventory_",
+                                    Text(CurrentYear),
+                                    """"
+                                )
+                            );
+                            Set(
+                                PhysicalColumnName,
+                                Concatenate(
+                                    """",
+                                    FormatColumnDate(
+                                        PreviousMonth,
+                                        If(
+                                            PreviousMonth = 12,
+                                            PreviousYear,
+                                            CurrentYear
+                                        )
+                                    ),
+                                    """"
+                                )
+                            );
+                            Set(
+                                TheoreticalColumnName,
+                                Concatenate(
+                                    """",
+                                    FormatColumnDate(
+                                        CurrentMonth,
+                                        CurrentYear
+                                    ),
+                                    """"
+                                )
+                            );
+                            // Prepare the list of pieces
+                            Set(
+                                PiecesList,
+                                Concat(
+                                    MaterielCollection,
+                                    ThisRecord.'Ressources Materielles Engagees' & ","
+                                )
+                            );
+                            Set(
+                                CleanedPiecesString,
+                                If(
+                                    Len(PiecesList) > 0,
+                                    Left(
+                                        PiecesList,
+                                        Len(PiecesList) - 1
+                                    ),
+                                    PiecesList
+                                )
+                            );
+                            Set(
+                                FinalString,
+                                Concatenate(
+                                    """",
+                                    CleanedPiecesString,
+                                    """"
+                                )
+                            );
+                            // Fetch theoretical and physical data
+                            ClearCollect(
+                                TheoreticalDataCollection,
+                                Getting_Physical_or_Theoretical_Data.Run(
+                                    TheoreticalDatabase,
+                                    FinalString,
+                                    TheoreticalColumnName
+                                )
+                            );
+                            ClearCollect(
+                                PhysicalDataCollection,
+                                Getting_Physical_or_Theoretical_Data.Run(
+                                    PhysicalDatabase,
+                                    FinalString,
+                                    PhysicalColumnName
+                                )
+                            );
+                            // Parse JSON responses
+                            Set(
+                                TheoreticalJsonString,
+                                First(TheoreticalDataCollection).response
+                            );
+                            Set(
+                                PhysicalJsonString,
+                                First(PhysicalDataCollection).response
+                            );
+                            // Set MovementTypeWithQuotes (always "Sortie" in this case)
+                            Set(
+                                MovementTypeWithQuotes,
+                                """Exit"""
+                            );
+                            // Process each piece and update inventory
+                            ClearCollect(
+                                ProcessedPieces,
+                                ForAll(
+                                    MaterielCollection,
+                                    With(
+                                        {
+                                            currentPiece: ThisRecord.'Ressources Materielles Engagees',
+                                            currentQuantity: Value(ThisRecord.'Quantite Materielles Engagees'),
+                                            theoreticalQuantity: Get_Physical_Theoretical_Quantity(
+                                                TheoreticalJsonString,
+                                                ThisRecord.'Ressources Materielles Engagees'
+                                            ),
+                                            physicalQuantity: Get_Physical_Theoretical_Quantity(
+                                                PhysicalJsonString,
+                                                ThisRecord.'Ressources Materielles Engagees'
+                                            )
+                                        },
+                                        If(
+                                            !IsBlank(theoreticalQuantity),
+                                            // If theoretical quantity exists, use it for calculation
+                                            {
+                                                Piece: currentPiece,
+                                                OldQuantity: theoreticalQuantity,
+                                                //NewQuantity: theoreticalQuantity - currentQuantity,
+                                                NewQuantity: currentQuantity,
+                                                Status: "Updated (From Theoretical)",
+                                                UpdateResult: UpdateTheoreticalInventory.Run(
+                                                    currentPiece,
+                                                    //theoreticalQuantity - currentQuantity,
+                                                    currentQuantity,
+                                                    TheoreticalColumnName,
+                                                    TheoreticalDatabase,
+                                                    MovementTypeWithQuotes
+                                                )
+                                            },
+                                            // If theoretical quantity is blank, use physical quantity
+                                            If(
+                                                !IsBlank(physicalQuantity),
+                                                {
+                                                    Piece: currentPiece,
+                                                    OldQuantity: physicalQuantity,
+                                                    NewQuantity: physicalQuantity - currentQuantity,
+                                                    Status: "Updated (From Physical)",
+                                                    UpdateResult: UpdateTheoreticalInventory.Run(
+                                                        currentPiece,
+                                                        physicalQuantity - currentQuantity,
+                                                        TheoreticalColumnName,
+                                                        TheoreticalDatabase,
+                                                        MovementTypeWithQuotes
+                                                    )
+                                                },
+                                                // If neither theoretical nor physical quantity is found, add to processed pieces with error
+                                                {
+                                                    Piece: currentPiece,
+                                                    OldQuantity: Blank(),
+                                                    NewQuantity: Blank(),
+                                                    Status: "Error: Quantity not found in either database",
+                                                    UpdateResult: Blank()
+                                                }
+                                            )
+                                        )
+                                    )
+                                )
+                            );
+                            // Log the processed pieces for debugging
+                            ClearCollect(
+                                DebugLog,
+                                ForAll(
+                                    ProcessedPieces,
+                                    {
+                                        Piece: Piece,
+                                        Status: Status,
+                                        OldQuantity: OldQuantity,
+                                        NewQuantity: NewQuantity,
+                                        UpdateResult: UpdateResult
+                                    }
+                                )
+                            );
+                            // Notify user of inventory update completion and any issues
+                            Set(
+                                UpdatedCount,
+                                CountIf(
+                                    ProcessedPieces,
+                                    Status = "Updated (From Theoretical)" Or Status = "Updated (From Physical)"
+                                )
+                            );
+                            Set(
+                                ErrorCount,
+                                CountIf(
+                                    ProcessedPieces,
+                                    Status = "Error: Quantity not found in either database"
+                                )
+                            );
+                            Notify(
+                                "Inventory update complete. " & UpdatedCount & " items updated. " & If(
+                                    ErrorCount > 0,
+                                    ErrorCount & " items encountered errors.",
+                                    ""
+                                ) & " Check DebugLog for details.",
+                                If(
+                                    ErrorCount > 0,
+                                    NotificationType.Warning,
+                                    NotificationType.Success
+                                )
+                            );
+                            // Clear temporary collections to free up resources
+                            //Clear(TheoreticalDataCollection);
+                            //Clear(PhysicalDataCollection);
+                            /*
+                            // Set main information
+                            Set(
+                                MainInfo,
+                                {
+                                    Réf: 'TextInput ref'.Text,
+                                    Date: 'DatePicker date'.SelectedDate,
+                                    Type: "Sortie"
+                                }
+                            );
+                            // Collect all necessary data for processing
+                            ClearCollect(
+                                ProcessedPieces,
+                                ForAll(
+                                    PieceCollection2,
+                                    With(
+                                        {
+                                            // Find the record in the pre-collected StockRecords
+                                            StockRecord: LookUp(
+                                                StockRecords,
+                                                PDR = ThisRecord.PDR
+                                            ),
+                                            CurrentPiece: ThisRecord.Piece,
+                                            CurrentQuantity: Value(ThisRecord.Quantity)
+                                        },
+                                        {
+                                            Piece: CurrentPiece,
+                                            Quantity: CurrentQuantity,
+                                            // Retrieve stock before movement or set to 0 if record is not found
+                                            StockAvantMouvement: If(
+                                                !IsBlank(StockRecord),
+                                                Value(StockRecord.Stock),
+                                                0
+                                            ),
+                                            // Calculate stock after movement if there is enough stock
+                                            StockApresMouvement: If(
+                                                !IsBlank(StockRecord) && Value(StockRecord.Stock) >= CurrentQuantity,
+                                                Value(StockRecord.Stock) - CurrentQuantity,
+                                                Blank()
+                                            ),
+                                            // Check if the movement is valid
+                                            IsValid: !IsBlank(StockRecord) && Value(StockRecord.Stock) >= CurrentQuantity
+                                        }
+                                    )
+                                )
+                            );
+                            // Process collected data
+                            ForAll(
+                                ProcessedPieces,
+                                If(
+                                    IsValid,
+                                    // Insert a new record into test_pdr_manual_form with main info + piece data
+                                    Patch(
+                                        test_pdr_manual_form,
+                                        Defaults(test_pdr_manual_form),
+                                        {
+                                            'Réf Rapport intervention': MainInfo.Réf,
+                                            'Date de mouvement': MainInfo.Date,
+                                            'Type de mouvement': MainInfo.Type,
+                                            PDR: Piece,
+                                            'Quantité à mouvementer': Quantity,
+                                            'Stock après mouvement': StockApresMouvement
+                                        }
+                                    );
+                                    // Update the original stock in the PDR_stock table
+                            Patch(
+                                PDR_stock,
+                                First(
+                                    Filter(
+                                        PDR_stock,
+                                        PDR = Piece
+                                    )
+                                ),
+                                {Stock: StockApresMouvement}
+                            );
+                                    // Notify on success
+                            Notify(
+                                        "Le mouvement pour " & Piece & " a été effectué avec succès.",
+                                        NotificationType.Success
+                                    ),
+                                    // Notify if the movement couldn't be performed
+                                    Notify(
+                                        "Le mouvement ne peut pas être effectué pour " & Piece & " car la quantité dépasse le stock disponible.",
+                                        NotificationType.Error
+                                    )
+                                )
+                            );
+                            // Notify if there are no valid pieces to process
+                            If(
+                                CountRows(ProcessedPieces) = 0,
+                                Notify(
+                                    "Aucune pièce valide à traiter.",
+                                    NotificationType.Information
+                                )
+                            );
+                            */
+                        Text: ="APPROVE"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =2
+
+    "'Dialog Container_7' As groupContainer.verticalAutoLayoutContainer":
+        DropShadow: =DropShadow.Light
+        Fill: |
+            =RGBA(0, 0, 0, 0.3)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: |-
+            =//true
+            openValidationModal
+        Width: =Parent.Width
+        ZIndex: =2
+
+        "'Dialog Content_11' As groupContainer.verticalAutoLayoutContainer":
+            AlignInContainer: =AlignInContainer.Center
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(214, 221, 224, 1)
+            FillPortions: =0
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =10
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =5
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            ZIndex: =1
+
+            "'cancel icon_11' As icon.CancelBadge":
+                AlignInContainer: =AlignInContainer.End
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =App.Theme.Colors.Darker30
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Icon: =Icon.CancelBadge
+                OnSelect: =Set(openValidationModal,false)
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingRight: =10
+                PaddingTop: =5
+                Width: =40
+                ZIndex: =1
+
+            message_new_validation_1 As Text:
+                Align: ='TextCanvas.Align'.Center
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =
+                DisplayMode: =DisplayMode.Edit
+                Fill: =
+                FontColor: =
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                Size: =20
+                Text: ="Successfully Aprroved"
+                Weight: ='TextCanvas.Weight'.Bold
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+            "'sucs icon_9' As image":
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =50
+                Image: ='icons8-success-240'
+                LayoutMinWidth: =50
+                ZIndex: =3
+

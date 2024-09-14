@@ -1,0 +1,268 @@
+"'Admin Activities Screen' As screen":
+    Fill: =RGBA(0, 78, 152, 1)
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    "'Admin Activities Parent Container' As groupContainer.verticalAutoLayoutContainer":
+        DropShadow: =DropShadow.Light
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =40
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        X: =(Parent.Width - Parent.Width) / 2
+        Y: =(Parent.Height - Self.Height) / 2
+        ZIndex: =3
+
+        "'Admin Activities Header Container' As groupContainer.verticalAutoLayoutContainer":
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            FillPortions: =0
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            X: =424
+            Y: =420
+            ZIndex: =1
+
+            waiving_hand_img As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: =waiving_hand
+                ZIndex: =1
+
+            welcome_admin_label As label:
+                Align: =Align.Center
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =20
+                Text: ="Welcome Back Admin"
+                Width: =300
+                ZIndex: =2
+
+        "'Admin Activities Body Container' As groupContainer.verticalAutoLayoutContainer":
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 103, 0, 1)
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            X: =424
+            Y: =132
+            ZIndex: =2
+
+            "'Profile Container' As groupContainer.horizontalAutoLayoutContainer":
+                DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =Parent.Height * 0.2
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =1
+
+                Image4 As image:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Image: ='profile-management-400'
+                    ZIndex: =1
+
+                new_profile_btn As button:
+                    AutoDisableOnSelect: =false
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.7
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: =Navigate('Profile Management Screen')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: |-
+                        ="Profile Management
+                        "
+                    Width: =Parent.Width * 0.5
+                    ZIndex: =2
+
+            "'Staff Container' As groupContainer.horizontalAutoLayoutContainer":
+                DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =Parent.Height * 0.2
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =2
+
+                Image5 As image:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Image: ='icons8-workers-male-skin-type-1-500'
+                    ZIndex: =1
+
+                employee_management_btn As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.7
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: =Navigate('Staff Management Screen')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: ="Staff Management"
+                    Width: =Parent.Width * 0.5
+                    ZIndex: =2
+
+            "'Functions Container' As groupContainer.horizontalAutoLayoutContainer":
+                DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =Parent.Height * 0.2
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =3
+
+                Image6 As image:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Image: ='icons8-roles-500'
+                    ZIndex: =1
+
+                "'Function Button' As button":
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.7
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: =Navigate('Admin Function Types Screen')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: ="Function Management"
+                    Width: =Parent.Width * 0.5
+                    ZIndex: =2
+
+            "'Functions Container_1' As groupContainer.horizontalAutoLayoutContainer":
+                DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =Parent.Height * 0.2
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =4
+
+                Image6_1 As image:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Image: =admin_icon
+                    ZIndex: =1
+
+                "'Function Button_1' As button":
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.7
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: =Navigate('Add New Admin Screen')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: ="Add New Admin"
+                    Width: =Parent.Width * 0.5
+                    ZIndex: =2
+
+            Image3 As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: ='icons8-logout-240 (1)'
+                OnSelect: |-
+                    =// Clear the current user information
+                    Set(CurrentUser, Blank());
+                    Set(UserName, Blank());
+                    Set(UserEmail, Blank());
+                    Set(UserFunction, Blank());
+                    
+                    // Optionally, navigate to the login screen after logout
+                    Navigate('Welcome Screen', ScreenTransition.Fade);
+                    
+                    // Notify the user that they've logged out
+                    Notify("You have successfully logged out", NotificationType.Success);
+                ZIndex: =5
+

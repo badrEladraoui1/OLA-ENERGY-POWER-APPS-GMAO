@@ -1,0 +1,129 @@
+"'Welcome Screen' As screen":
+    BackgroundImage: =
+    Fill: =RGBA(0, 78, 152, 1)
+    ImagePosition: =ImagePosition.Fill
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    Circle_bg_orange As circle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =RGBA(255, 103, 0, 1)
+        Height: =Parent.Height / 2
+        TabIndex: =-10
+        Width: =Parent.Width
+        X: =(Parent.Width - Self.Width)
+        Y: =(Parent.Height - Self.Height) * 1.5
+        ZIndex: =7
+
+    "'Welcome Parent Container' As groupContainer.manualLayoutContainer":
+        ContentLanguage: =
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(58, 110, 165, 1)
+        Height: =Parent.Height * 0.98
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =Parent.Width * 0.9
+        X: =(Parent.Width - Self.Width) / 2
+        Y: =(Parent.Height - Self.Height)
+        ZIndex: =8
+
+        "'Welcome Header Container' As groupContainer.manualLayoutContainer":
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(253, 207, 180, 1)
+            Height: =Parent.Height * 0.3
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: =Parent.Width * 0.8
+            X: =(Parent.Width - Self.Width) / 2
+            Y: =(Parent.Height - Self.Height) / 10
+            ZIndex: =1
+
+            "'OLA ENERGY logo_1' As image":
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =Parent.Height * 0.5
+                Image: =OLA_LOGO
+                Width: =Parent.Width
+                X: =(Parent.Width - Self.Width) / 2
+                Y: =(Parent.Height - Self.Height) / 6
+                ZIndex: =1
+
+            "'Welcome Text_1' As label":
+                Align: =Align.Center
+                AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =RGBA(0, 78, 152, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height * 0.2
+                Size: =22
+                Text: =" Welcome Back"
+                Width: =Parent.Width
+                X: =(Parent.Width - Self.Width) / 2
+                Y: =(Parent.Height - Self.Height) / 1.2
+                ZIndex: =2
+
+        "'Welcome Body Container' As groupContainer.manualLayoutContainer":
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(253, 207, 180, 1)
+            Height: =Parent.Height * 0.45
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Width: =Parent.Width * 0.8
+            X: =(Parent.Width - Self.Width) / 2
+            Y: =(Parent.Height - Self.Height) / 1.2
+            ZIndex: =2
+
+            "'User Access btn_1' As button":
+                BorderColor: =RGBA(9, 33, 98, 1)
+                DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 78, 152, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
+                Height: =Parent.Height * 0.2
+                HoverBorderColor: =App.Theme.Colors.Darker10
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =App.Theme.Colors.Darker10
+                OnSelect: =Navigate('Users Login Screen')
+                PressedBorderColor: =App.Theme.Colors.Darker40
+                PressedColor: =Self.Color
+                PressedFill: =App.Theme.Colors.Darker40
+                Size: =15
+                Text: ="User Access"
+                Width: =Parent.Width * 0.8
+                X: =(Parent.Width - Self.Width) / 2
+                Y: =(Parent.Height - Self.Height) / 4
+                ZIndex: =1
+
+            "'Administartor Access btn_1' As button":
+                BorderColor: =RGBA(9, 33, 98, 1)
+                DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 78, 152, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
+                Height: =Parent.Height * 0.2
+                HoverBorderColor: =App.Theme.Colors.Darker10
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =App.Theme.Colors.Darker10
+                OnSelect: =Navigate('Admin Login Screen')
+                PressedBorderColor: =App.Theme.Colors.Darker40
+                PressedColor: =Self.Color
+                PressedFill: =App.Theme.Colors.Darker40
+                Size: =15
+                Text: ="Administrator Access"
+                Width: =Parent.Width * 0.8
+                X: =(Parent.Width - Self.Width) / 2
+                Y: =(Parent.Height - Self.Height) / 1.6
+                ZIndex: =2
+

@@ -1,0 +1,2028 @@
+"'StorKeeper General Manual Movement' As screen.'autoLayout_HeaderFooter_ver1.0'":
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    ScreenContainer2 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(0, 78, 152, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =16
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =16
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer2 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =2
+
+            Header2 As Header:
+                DisplayMode: =DisplayMode.Edit
+                Height: =75
+                IsProfilePictureVisible: =false
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                Logo: =OLA_LOGO
+                OnSelectLogo: =false
+                Title: =App.ActiveScreen.Name
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+        MainContainer2 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(58, 110, 165, 1)
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =10
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =3
+
+            "'date and type mvmt container' As groupContainer.horizontalAutoLayoutContainer":
+                DropShadow: =DropShadow.Light
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =1
+
+                "'Date intrev Container_2' As groupContainer.verticalAutoLayoutContainer":
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.Light
+                    FillPortions: =0
+                    Height: =Parent.Height * 0.4
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =1
+
+                    "'Label date_2' As label":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        Size: =15
+                        Text: ="📆 Date Of Intervention "
+                        Width: =250
+                        ZIndex: =1
+
+                    "'DatePicker date mvmnt' As datepicker":
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        CalendarHeaderFill: =App.Theme.Colors.Primary
+                        Color: =RGBA(0, 0, 0, 1)
+                        DateTimeZone: |
+                            =DateTimeZone.Local
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        FillPortions: =
+                        Font: =App.Theme.Font
+                        HoverDateFill: =App.Theme.Colors.Lighter70
+                        IconBackground: =App.Theme.Colors.Primary
+                        SelectedDateFill: =App.Theme.Colors.Primary
+                        Width: |-
+                            =//Parent.Width * 0.4
+                            Parent.Width * 0.7
+                        ZIndex: =3
+
+                "'Movement Type Container' As groupContainer.verticalAutoLayoutContainer":
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.Light
+                    FillPortions: =0
+                    Height: =Parent.Height * 0.4
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =2
+
+                    "'Label date_3' As label":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        Size: =15
+                        Text: ="📃Movement Type"
+                        Width: =250
+                        ZIndex: =1
+
+                    "'Dropdown mvnmt type' As dropdown":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        ChevronBackground: =App.Theme.Colors.Primary
+                        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                        ChevronHoverBackground: =App.Theme.Colors.Darker10
+                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Font: =App.Theme.Font
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =App.Theme.Colors.Lighter70
+                        Items: =["Entry","Exit"]
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =App.Theme.Colors.Darker30
+                        SelectionFill: =App.Theme.Colors.Primary
+                        Size: =13
+                        ZIndex: =2
+
+            "'Pieces Container_2' As groupContainer.verticalAutoLayoutContainer":
+                DropShadow: =DropShadow.Light
+                Height: =300
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =10
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =400
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                LayoutOverflowY: =LayoutOverflow.Scroll
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =2
+
+                "'Label equipement piece qte_2' As label":
+                    Align: =Align.Center
+                    AutoHeight: =true
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Size: =15
+                    Text: ="⚙️ Choose an equipment to filter your spare parts"
+                    Width: =250
+                    ZIndex: =1
+
+                "'Dropdown Equipement_1' As dropdown":
+                    BorderColor: =App.Theme.Colors.Darker40
+                    ChevronBackground: =App.Theme.Colors.Primary
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =App.Theme.Colors.Darker10
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    Default: =
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Font: =App.Theme.Font
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =App.Theme.Colors.Lighter70
+                    Items: |-
+                        =/*Filter(
+                            Liste_Equipements,
+                            'Niveau d''arborescence' = "Equipement" && true
+                        )*/
+                        
+                        Sort(
+                            Filter(
+                                Liste_Equipements,
+                                'Niveau d''arborescence' = "Equipement" && true
+                            ),
+                            Codification, // or 'Désignation', depending on the column you want to sort by
+                            SortOrder.Ascending
+                        )
+                    OnChange: |
+                        =Set(
+                            selectedDésignation,
+                            'Dropdown Equipement_1'.Selected.Désignation
+                        )
+                        ;
+                        Set(
+                            selectedCodification,
+                             'Dropdown Equipement_1'.Selected.Codification
+                        
+                        )
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =App.Theme.Colors.Darker30
+                    SelectionFill: =App.Theme.Colors.Primary
+                    Size: =13
+                    Width: =Parent.Width * 0.7
+                    ZIndex: =2
+
+                "'Label equipement piece qte_3' As label":
+                    Align: =Align.Center
+                    AutoHeight: =true
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Size: =15
+                    Text: ="🔩 Spare Parts to Move"
+                    Width: =200
+                    ZIndex: =3
+
+                "'Dropdown Piece_1' As dropdown":
+                    BorderColor: =App.Theme.Colors.Darker40
+                    ChevronBackground: =App.Theme.Colors.Primary
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =App.Theme.Colors.Darker10
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Font: =App.Theme.Font
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =App.Theme.Colors.Lighter70
+                    Items: |-
+                        =/*Filter(
+                            Liste_Equipements,
+                            'Niveau d''arborescence' = "Pièce" &&
+                            StartsWith(Codification, selectedCodification)
+                        ).Désignation
+                        */
+                        
+                        
+                        
+                        // Filter, distinct, and sort Désignation
+                        Sort(
+                            Distinct(
+                                Filter(
+                                    Liste_Equipements,
+                                    'Niveau d''arborescence' = "Pièce" &&
+                                    StartsWith(Codification, selectedCodification)
+                                ),
+                                Désignation
+                            ),ThisRecord.Value,
+                            SortOrder.Ascending
+                        )
+                    PaddingTop: =15
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =App.Theme.Colors.Darker30
+                    SelectionFill: =App.Theme.Colors.Primary
+                    Size: =13
+                    Width: =Parent.Width * 0.7
+                    ZIndex: =4
+
+                "'Container infos Rhs_2' As groupContainer.horizontalAutoLayoutContainer":
+                    DropShadow: =DropShadow.Light
+                    FillPortions: =0
+                    Height: =50
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =10
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =5
+
+                    TextInput2_2 As text:
+                        BorderColor: =RGBA(255, 103, 0, 1)
+                        BorderStyle: =BorderStyle.Dashed
+                        BorderThickness: =4
+                        Color: =RGBA(0, 0, 0, 1)
+                        Default: |
+                            =Concat(
+                                PieceCollection3,
+                                Piece & " (" & Quantity & ")",
+                                " / "
+                            )
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =DisplayMode.View
+                        Fill: =RGBA(180, 214, 250, 1)
+                        FocusedBorderThickness: =4
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        HoverBorderColor: =App.Theme.Colors.Darker40
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =App.Theme.Colors.Lighter70
+                        RadiusBottomLeft: =20
+                        RadiusBottomRight: =20
+                        RadiusTopLeft: =20
+                        RadiusTopRight: =20
+                        Size: =13
+                        Width: =Parent.Width * 0.6
+                        ZIndex: =1
+
+                    resetting_2 As image:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Height: =40
+                        Image: ='icons8-restart-480'
+                        OnSelect: =Clear(PieceCollection3);
+                        Width: =40
+                        ZIndex: =2
+
+                "'TextInput qte piece_1' As text":
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    FocusedBorderThickness: =4
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Format: =TextFormat.Number
+                    HintText: ="Enter the quantity of the spare part to Move"
+                    HoverBorderColor: =App.Theme.Colors.Darker40
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =App.Theme.Colors.Lighter70
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Size: =13
+                    Width: =Parent.Width * 0.5
+                    ZIndex: =6
+
+                "'add btn_2' As Button":
+                    BasePaletteColor: =
+                    BorderColor: =
+                    DisplayMode: |
+                        =If(
+                            !IsBlank('TextInput qte piece_1'.Text) && 
+                            Value('TextInput qte piece_1'.Text) > 0 && 
+                            !IsBlank('Dropdown Piece_1'.Selected),
+                            DisplayMode.Edit, 
+                            DisplayMode.Disabled
+                        )
+                    FontColor: =
+                    Height: =Parent.Height * 0.1
+                    Icon: ="DocumentAdd"
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =96
+                    OnSelect: |-
+                        =Collect(
+                            PieceCollection3,
+                            {
+                                Piece:'Dropdown Piece_1'.Selected.Value, // Assuming DropdownPieces is your pieces dropdown
+                                Quantity: 'TextInput qte piece_1'.Text // Assuming TextInputQuantity is your quantity input box
+                            }
+                        );
+                        // Clear the quantity input after adding
+                        Reset('TextInput qte piece_1');
+                    Text: ="Add More"
+                    Width: |+
+                        =Parent.Width * 0.2
+                        
+                    X: =0
+                    Y: =0
+                    ZIndex: =8
+
+            "'Container for comment' As groupContainer.horizontalAutoLayoutContainer":
+                DropShadow: =DropShadow.Light
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingRight: =5
+                PaddingTop: =5
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =3
+
+                Label3 As label:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Size: =13
+                    Text: ="💬Comment"
+                    ZIndex: =1
+
+                "'TextInput comment' As text":
+                    AlignInContainer: =AlignInContainer.Stretch
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: |-
+                        =//JSON(PhysicalDataCollection)
+                        PhysicalJsonString
+                        /*
+                        Text(Index(Table(ParseJSON(jsonString)),1).Value.Piece)
+                        Int(Index(Table(ParseJSON(jsonString)),1).Value.Value)
+                        */
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    FillPortions: =1
+                    FocusedBorderThickness: =4
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Semibold
+                    HintText: =" Add a Comment if Needed"
+                    HoverBorderColor: =App.Theme.Colors.Darker40
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =App.Theme.Colors.Lighter70
+                    LineHeight: =2
+                    Mode: =TextMode.MultiLine
+                    Size: =13
+                    ZIndex: =2
+
+        FooterContainer3 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(58, 110, 165, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutGap: =50
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =4
+
+            ButtonCanvas16 As Button:
+                AlignInContainer: =AlignInContainer.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                Text: ="Go back"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+            ButtonCanvas15 As Button:
+                AlignInContainer: =AlignInContainer.Stretch
+                DisplayMode: |
+                    =If(
+                        CountRows(PieceCollection3) > 0,
+                        DisplayMode.Edit,
+                        DisplayMode.Disabled
+                    )
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: |-
+                    =/*
+                    // testing
+                        UpdateTheoreticalInventory.Run(
+                            "STATOR",
+                            80,
+                            "Sep-01-2024",
+                            "Theoretical_Inventory_2024"
+                        );
+                    // testing
+                    
+                    
+                    // testing
+                    
+                    ClearCollect(
+                        MyCollection,
+                        GettingPhysicalData.Run("Physical_Inventory_2024","ROTOR,PISTON,SOUPAPE DE SURETE","Jan-01-2024")
+                    );
+                    
+                    // testing
+                    */
+                    // base solution
+                    // Step 1: Get the last Réf Rapport intervention and increment it by 1, or set it to 1 if no data exists
+                    
+                    
+                    // one way
+                    Set(
+                        LastReference,
+                        If(
+                            IsBlank(Last(test_pdr_manual_form).'Réf Mouvment'),
+                            1,// If no rows are found, start with 1
+                            Last(test_pdr_manual_form).'Réf Mouvment' + 1// Otherwise, increment the last reference by 1
+                        )
+                    );
+                    // one way
+                    
+                    /*
+                    Set(
+                        LastReference,
+                        If(
+                            IsBlank(Last(Rapport_Intervention_correctif).'Reference du rapport Intervention'),
+                            0,// If no rows are found, start with 1
+                            Last(Rapport_Intervention_correctif).'Reference du rapport Intervention' + 1// Otherwise, increment the last Rapport_Intervention_correctif reference by 1
+                        )
+                    );
+                    */
+                    
+                    
+                    
+                    
+                    // Step 2: Create the mainInfos object to hold common data for all records
+                    Set(
+                        mainInfos,
+                        {
+                            'Réf Rapport intervention': LastReference,
+                            // Use the calculated LastReference
+                            'Date de mouvement': 'DatePicker date mvmnt'.SelectedDate,
+                            // Selected date from DatePicker
+                            'Type de mouvement': If(
+                                'Dropdown mvnmt type'.Selected.Value = "Entry",
+                                "Entree",
+                                If(
+                                    'Dropdown mvnmt type'.Selected.Value = "Exit",
+                                    "Sortie",
+                                    'Dropdown mvnmt type'.Selected.Value// Fallback to actual dropdown value if no match
+                                )
+                            ),
+                            Commentaire: 'TextInput comment'.Text// Assuming you have a text input for commentaire
+                        }
+                    );
+                    
+                    // Step 3: Set the MovementTypeWithQuotes variable by wrapping the value in quotes
+                    Set(
+                        MovementTypeWithQuotes,
+                        Concatenate(
+                            """",
+                            'Dropdown mvnmt type'.Selected.Value,
+                            """"
+                        )
+                    );
+                    
+                    // Step 3: Loop through the collection and patch the data to test_pdr_manual_form
+                    ForAll(
+                        PieceCollection3,
+                        Patch(
+                            test_pdr_manual_form,
+                            Defaults(test_pdr_manual_form),
+                            {
+                                'Réf Mouvment': mainInfos.'Réf Rapport intervention',
+                                'Date de mouvement': mainInfos.'Date de mouvement',
+                                'Type de mouvement': mainInfos.'Type de mouvement',
+                                PDR: ThisRecord.Piece,
+                                'Quantité à mouvementer': ThisRecord.Quantity,
+                                Commentaire: mainInfos.Commentaire
+                            }
+                        )
+                    );
+                    // Step 4: Notify the user of successful submission
+                    Notify(
+                        "Submission completed successfully!",
+                        NotificationType.Success
+                    );
+                    Set(
+                        openGenrlMvmntModal,
+                        true
+                    );
+                    
+                    SortingMovementsFlow.Run();
+                    
+                    // THIS WAS CLOSE TOO LAST MGHRB TIME
+                    // Main calculation
+                    // Set Current Date, Month, and Year
+                    Set(
+                        CurrentDate,
+                        Today()
+                    );
+                    Set(
+                        CurrentMonth,
+                        Month(CurrentDate)
+                    );
+                    Set(
+                        CurrentYear,
+                        Year(CurrentDate)
+                    );
+                    Set(
+                        PreviousMonth,
+                        If(
+                            CurrentMonth = 1,
+                            12,
+                            CurrentMonth - 1
+                        )
+                    );
+                    Set(
+                        PreviousYear,
+                        If(
+                            CurrentMonth = 1,
+                            CurrentYear - 1,
+                            CurrentYear
+                        )
+                    );
+                    // Database names with quotes around the concatenated result
+                    Set(
+                        PhysicalDatabase,
+                        Concatenate(
+                            """",
+                            "Physical_Inventory_",
+                            Text(
+                                If(
+                                    CurrentMonth = 1,
+                                    PreviousYear,
+                                    CurrentYear
+                                )
+                            ),
+                            """"
+                        )
+                    );
+                    Set(
+                        TheoreticalDatabase,
+                        Concatenate(
+                            """",
+                            "Theoretical_Inventory_",
+                            Text(CurrentYear),
+                            """"
+                        )
+                    );
+                    // Column names using our user-defined functions with quotes
+                    Set(
+                        PhysicalColumnName,
+                        Concatenate(
+                            """",
+                            FormatColumnDate(
+                                PreviousMonth,
+                                If(
+                                    PreviousMonth = 12,
+                                    PreviousYear,
+                                    CurrentYear
+                                )
+                            ),
+                            """"
+                        )
+                    );
+                    Set(
+                        TheoreticalColumnName,
+                        Concatenate(
+                            """",
+                            FormatColumnDate(
+                                CurrentMonth,
+                                CurrentYear
+                            ),
+                            """"
+                        )
+                    );
+                    // Concatenate pieces with commas
+                    Set(
+                        PiecesList,
+                        Concat(
+                            PieceCollection3,
+                            ThisRecord.Piece & ","
+                        )
+                    );
+                    // Remove trailing comma if it exists
+                    Set(
+                        CleanedPiecesString,
+                        If(
+                            Len(PiecesList) > 0,
+                            // Remove the trailing comma if there's any
+                            Left(
+                                PiecesList,
+                                Len(PiecesList) - 1
+                            ),
+                            PiecesList
+                        )
+                    );
+                    // Wrap the final result in quotes if needed
+                    Set(
+                        FinalString,
+                        Concatenate(
+                            """",
+                            CleanedPiecesString,
+                            """"
+                        )
+                    );
+                    // Example of how to use FinalString in a function or API call
+                    /*
+                    ClearCollect(
+                        PhysicalDataCollection,
+                        GettingPhysicalData.Run("tablename","piecestrings","columnname")
+                    );
+                    */
+                    /*
+                    // API WORKING FOR NOW
+                    ClearCollect(
+                        PhysicalDataCollection,
+                        Getting_Physical_or_Theoretical_Data.Run(
+                            PhysicalDatabase,
+                            FinalString,
+                            PhysicalColumnName
+                        )
+                    );
+                    // Step 1: Extract the JSON string from the response // M NOT USING IT RIGHT NOW
+                    Set(
+                        jsonString,
+                        First(PhysicalDataCollection).response// This extracts the response string from the first record
+                    );
+                    */
+                    
+                    // Fetch theoretical data
+                    ClearCollect(
+                        TheoreticalDataCollection,
+                        Getting_Physical_or_Theoretical_Data.Run(TheoreticalDatabase, FinalString, TheoreticalColumnName)
+                    );
+                    
+                    // Fetch physical data
+                    ClearCollect(
+                        PhysicalDataCollection,
+                        Getting_Physical_or_Theoretical_Data.Run(PhysicalDatabase, FinalString, PhysicalColumnName)
+                    );
+                    
+                    // Parse JSON responses
+                    Set(TheoreticalJsonString, First(TheoreticalDataCollection).response);
+                    Set(PhysicalJsonString, First(PhysicalDataCollection).response);
+                    
+                    /*
+                    
+                    
+                    
+                    // Parse the JSON response and create a collection
+                    ClearCollect(
+                        ParsedPhysicalData,
+                        JSON(First(PhysicalDataCollection).response)
+                    );
+                    */
+                    
+                    
+                    
+                    /*
+                    
+                    // Process each piece and update theoretical inventory
+                    ClearCollect(
+                        ProcessedPieces,
+                        ForAll(
+                            PieceCollection3,
+                            With(
+                                {
+                                    currentPiece: ThisRecord.Piece,
+                                    movementQuantity: Value(ThisRecord.Quantity),
+                                    physicalQuantity: GetPhysicalQuantity(
+                                        jsonString,
+                                        ThisRecord.Piece
+                                    )
+                                },
+                                If(
+                                    !IsBlank(physicalQuantity),
+                                    With(
+                                        {
+                                            newTheoreticalQuantity: Switch(
+                                                mainInfos.'Type de mouvement',
+                                                "Entree",
+                                                physicalQuantity + movementQuantity,
+                                                "Sortie",
+                                                physicalQuantity - movementQuantity,
+                                                physicalQuantity// Default case: no change
+                                            )
+                                        },
+                                        {
+                                            Piece: currentPiece,
+                                            OldQuantity: physicalQuantity,
+                                            NewQuantity: newTheoreticalQuantity,
+                                            Status: "Updated",
+                                            UpdateResult: UpdateTheoreticalInventory.Run(
+                                                currentPiece,
+                                                newTheoreticalQuantity,
+                                                TheoreticalColumnName,
+                                                TheoreticalDatabase,
+                                                MovementTypeWithQuotes
+                                            )
+                                        }
+                                    ),
+                                    // If physical quantity is not found, add to processed pieces with error
+                                    {
+                                        Piece: currentPiece,
+                                        OldQuantity: Blank(),
+                                        NewQuantity: Blank(),
+                                        Status: "Error: Physical quantity not found",
+                                        UpdateResult: Blank()
+                                    }
+                                )
+                            )
+                        )
+                    );
+                    // Log the processed pieces for debugging
+                    ClearCollect(
+                        DebugLog,
+                        ForAll(
+                            ProcessedPieces,
+                            {
+                                Piece: Piece,
+                                Status: Status,
+                                OldQuantity: OldQuantity,
+                                NewQuantity: NewQuantity,
+                                UpdateResult: UpdateResult
+                            }
+                        )
+                    );
+                    // Notify user of completion and any issues
+                    Set(
+                        UpdatedCount,
+                        CountIf(
+                            ProcessedPieces,
+                            Status = "Updated"
+                        )
+                    );
+                    Set(
+                        ErrorCount,
+                        CountIf(
+                            ProcessedPieces,
+                            Status <> "Updated"
+                        )
+                    );
+                    Notify(
+                        "Inventory update complete. " & UpdatedCount & " items updated. " & If(
+                            ErrorCount > 0,
+                            ErrorCount & " items encountered errors.",
+                            ""
+                        ) & " Check DebugLog for details.",
+                        If(
+                            ErrorCount > 0,
+                            NotificationType.Warning,
+                            NotificationType.Success
+                        )
+                    );
+                    // Clear temporary collections to free up resources
+                    Clear(PhysicalDataCollection);
+                    Clear(ProcessedPieces);
+                    */
+                    
+                    // Process each piece and update inventory
+                    ClearCollect(
+                        ProcessedPieces,
+                        ForAll(
+                            PieceCollection3,
+                            With(
+                                {
+                                    currentPiece: ThisRecord.Piece,
+                                    currentQauntity : ThisRecord.Quantity,
+                                    movementQuantity: Value(ThisRecord.Quantity),
+                                    theoreticalQuantity: Get_Physical_Theoretical_Quantity(TheoreticalJsonString, ThisRecord.Piece),
+                                    physicalQuantity: Get_Physical_Theoretical_Quantity(PhysicalJsonString, ThisRecord.Piece)
+                                },
+                                If(
+                                    !IsBlank(theoreticalQuantity),
+                                    // If theoretical quantity exists, use it directly without calculation
+                                    {
+                                        Piece: currentPiece,
+                                        OldQuantity: theoreticalQuantity, // to be deleted
+                                        NewQuantity: theoreticalQuantity, // to be deleted
+                                        Status: "Updated (From Theoretical)",
+                                        UpdateResult: UpdateTheoreticalInventory.Run(
+                                            currentPiece,
+                                            //theoreticalQuantity,
+                                            currentQauntity,
+                                            TheoreticalColumnName,
+                                            TheoreticalDatabase,
+                                            MovementTypeWithQuotes
+                                        )
+                                    },
+                                    // If theoretical quantity is blank, use physical quantity and perform calculation
+                                    If(
+                                        !IsBlank(physicalQuantity),
+                                        With(
+                                            {
+                                                newQuantity: Switch(
+                                                    mainInfos.'Type de mouvement',
+                                                    "Entree", physicalQuantity + movementQuantity,
+                                                    "Sortie", physicalQuantity - movementQuantity,
+                                                    physicalQuantity // Default case: no change
+                                                )
+                                            },
+                                            {
+                                                Piece: currentPiece,
+                                                OldQuantity: physicalQuantity,
+                                                NewQuantity: newQuantity,
+                                                Status: "Updated (From Physical)",
+                                                UpdateResult: UpdateTheoreticalInventory.Run(
+                                                    currentPiece,
+                                                    newQuantity,
+                                                    TheoreticalColumnName,
+                                                    TheoreticalDatabase,
+                                                    MovementTypeWithQuotes
+                                                )
+                                            }
+                                        ),
+                                        // If neither theoretical nor physical quantity is found, add to processed pieces with error
+                                        {
+                                            Piece: currentPiece,
+                                            OldQuantity: Blank(),
+                                            NewQuantity: Blank(),
+                                            Status: "Error: Quantity not found in either database",
+                                            UpdateResult: Blank()
+                                        }
+                                        
+                                    )
+                                )
+                            )
+                        )
+                    );
+                    
+                    // Log the processed pieces for debugging (keep existing code)
+                    ClearCollect(
+                        DebugLog,
+                        ForAll(
+                            ProcessedPieces,
+                            {
+                                Piece: Piece,
+                                Status: Status,
+                                OldQuantity: OldQuantity,
+                                NewQuantity: NewQuantity,
+                                UpdateResult: UpdateResult
+                            }
+                        )
+                    );
+                    
+                    /*
+                    // Notify user of completion and any issues (keep existing code)
+                    Set(UpdatedCount, CountIf(ProcessedPieces, Status = "Updated"));
+                    Set(ErrorCount, CountIf(ProcessedPieces, Status <> "Updated"));
+                    Notify(
+                        "Inventory update complete. " & UpdatedCount & " items updated. " & 
+                        If(ErrorCount > 0, ErrorCount & " items encountered errors.", "") & 
+                        " Check DebugLog for details.",
+                        If(ErrorCount > 0, NotificationType.Warning, NotificationType.Success)
+                    );
+                    */
+                    // Clear temporary collections to free up resources
+                    
+                    //Clear(TheoreticalDataCollection);
+                    //Clear(PhysicalDataCollection);
+                    //Clear(ProcessedPieces);
+                    
+                    
+                    /*
+                    
+                    
+                    
+                    
+                    
+                    
+                    ClearCollect(
+                        ParsedPhysicalData,
+                        Table(ParseJSON(jsonString))
+                    );
+                    
+                    ClearCollect(
+                        ProcessedPieces,
+                        ForAll(
+                            PieceCollection3,
+                            With(
+                                {
+                                    movementQuantity: Value(ThisRecord.Quantity),
+                                    currentPiece: ThisRecord.Piece,
+                                    physicalQuantity: LookUp(
+                                        ParsedPhysicalData,
+                                        Value.Piece = currentPiece // Matching by piece name
+                                    ).Value // Extract the quantity
+                                },
+                                If(
+                                    !IsBlank(physicalQuantity),
+                                    With(
+                                        {
+                                            newTheoreticalQuantity: Switch(
+                                                mainInfos.'Type de mouvement',
+                                                "Entree", physicalQuantity + movementQuantity,
+                                                "Sortie", physicalQuantity - movementQuantity,
+                                                physicalQuantity // Default case: no change
+                                            )
+                                        },
+                                        {
+                                            Piece: currentPiece,
+                                            OldQuantity: physicalQuantity,
+                                            NewQuantity: newTheoreticalQuantity,
+                                            Status: "Updated",
+                                            UpdateResult: UpdateTheoreticalInventory.Run(
+                                                currentPiece,
+                                                newTheoreticalQuantity,
+                                                TheoreticalColumnName,
+                                                TheoreticalDatabase
+                                            )
+                                        }
+                                    ),
+                                    // If physical quantity is not found, add to processed pieces with error
+                                    {
+                                        Piece: currentPiece,
+                                        OldQuantity: Blank(),
+                                        NewQuantity: Blank(),
+                                        Status: "Error: Physical quantity not found",
+                                        UpdateResult: Blank()
+                                    }
+                                )
+                            )
+                        )
+                    );
+                    */
+                    /*
+                    // Process each piece and update theoretical inventory
+                    ClearCollect(
+                        ProcessedPieces,
+                        ForAll(
+                            PieceCollection3,
+                            With(
+                                {
+                                    movementQuantity: Value(ThisRecord.Quantity),
+                                    physicalQuantity: LookUp(ParsedPhysicalData, Piece = ThisRecord.Piece).Value
+                                },
+                                If(
+                                    !IsBlank(physicalQuantity),
+                                    With(
+                                        {
+                                            newTheoreticalQuantity: Switch(
+                                                mainInfos.'Type de mouvement',
+                                                "Entree", physicalQuantity + movementQuantity,
+                                                "Sortie", physicalQuantity - movementQuantity,
+                                                physicalQuantity // Default case: no change
+                                            )
+                                        },
+                                        {
+                                            Piece: currentPiece,
+                                            OldQuantity: physicalQuantity,
+                                            NewQuantity: newTheoreticalQuantity,
+                                            Status: "Updated",
+                                            UpdateResult: UpdateTheoreticalInventory.Run(
+                                                currentPiece,
+                                                newTheoreticalQuantity,
+                                                TheoreticalColumnName,
+                                                TheoreticalDatabase
+                                            )
+                                        }
+                                    ),
+                                    // If physical quantity is not found, add to processed pieces with error
+                                    {
+                                        Piece: currentPiece,
+                                        OldQuantity: Blank(),
+                                        NewQuantity: Blank(),
+                                        Status: "Error: Physical quantity not found",
+                                        UpdateResult: Blank()
+                                    }
+                                )
+                            )
+                        )
+                    );
+                    
+                    // Notify user of completion and any issues
+                    Set(
+                        UpdatedCount,
+                        CountIf(ProcessedPieces, Status = "Updated")
+                    );
+                    Set(
+                        ErrorCount,
+                        CountIf(ProcessedPieces, Status <> "Updated")
+                    );
+                    
+                    Notify(
+                        "Inventory update complete. " & 
+                        UpdatedCount & " items updated. " & 
+                        If(
+                            ErrorCount > 0,
+                            ErrorCount & " items encountered errors.",
+                            ""
+                        ),
+                        If(ErrorCount > 0, NotificationType.Warning, NotificationType.Success)
+                    );
+                    
+                    // Clear temporary collections to free up resources
+                    Clear(PhysicalDataCollection);
+                    Clear(ParsedPhysicalData);
+                    Clear(ProcessedPieces);
+                    */
+                    /* 
+                    
+                    //******* TEMP COMMENT ******
+                    
+                    // Step 5: Optional - Clear the inputs and reset the form for new entries
+                    Clear(PieceCollection3);
+                    Reset('TextInput comment');
+                    Reset('Dropdown mvnmt type');
+                    Reset('DatePicker date mvmnt');
+                    
+                    // Step 4: Notify the user of successful submission
+                    Notify(
+                        "Submission completed successfully!",
+                        NotificationType.Success
+                    );
+                    
+                    Set(openGenrlMvmntModal,true);
+                    
+                    //******* TEMP COMMENT ******
+                    
+                    */
+                    // base solution
+                    /*
+                    
+                    /*
+                    
+                    // TRYING OUT THEORITICAL CALCULATIONS :
+                    
+                    // Step 1: Get the current date, month, and year
+                    Set(
+                        CurrentDate,
+                        Today()
+                    );
+                    
+                    Set(
+                        CurrentMonth,
+                        Month(CurrentDate)
+                    );
+                    
+                    Set(
+                        CurrentYear,
+                        Year(CurrentDate)
+                    );
+                    
+                    // Step 2: Determine the previous year and month
+                    Set(
+                        PreviousYear,
+                        If(CurrentMonth = 1, CurrentYear - 1, CurrentYear)
+                    );
+                    
+                    Set(
+                        PreviousMonth,
+                        If(CurrentMonth = 1, 12, CurrentMonth - 1) // PreviousMonth is the last month of the previous year if current month is January
+                    );
+                    
+                    // Step 3: Decide on Physical and Theoretical Databases
+                    // Physical Database Selection
+                    Set(
+                        PhysicalDatabase,
+                        If(
+                            CurrentMonth = 1,
+                            Concatenate("Physical_Inventory_", Text(PreviousYear)), // Use previous year’s database if current month is January
+                            Concatenate("Physical_Inventory_", Text(CurrentYear))   // Use current year’s database otherwise
+                        )
+                    );
+                    
+                    // Theoretical Database Selection
+                    Set(
+                        TheoreticalDatabase,
+                        Concatenate("Theoretical_Inventory_", Text(CurrentYear)) // Always use the current year’s theoretical database
+                    );
+                    
+                    // Step 4: Determine Column Names
+                    // Construct the column name for physical database
+                    Set(
+                        PhysicalColumnName,
+                        Concatenate(
+                            Text(PreviousMonth, "[$-en-US]mmm"), // Gets the abbreviated month name (e.g., Jan, Feb)
+                            "-01-",
+                            Text(PreviousYear)
+                        )
+                    );
+                    
+                    // Construct the column name for theoretical database
+                    Set(
+                        TheoreticalColumnName,
+                        Concatenate(
+                            Text(CurrentMonth, "[$-en-US]mmm"), // Gets the abbreviated month name (e.g., Jan, Feb)
+                            "-01-",
+                            Text(CurrentYear)
+                        )
+                    );
+                    
+                    // Output for testing
+                    Notify(
+                        Concatenate(
+                            "Physical Database: ", PhysicalDatabase, 
+                            ", Physical Column: ", PhysicalColumnName, 
+                            ", Theoretical Database: ", TheoreticalDatabase,
+                            ", Theoretical Column: ", TheoreticalColumnName
+                        ),
+                        NotificationType.Information
+                    );
+                    
+                    
+                    */
+                    /*
+                    
+                    // WHAT I AM TRYING TO GET WORKING
+                    
+                    // Step 1: Get the last Réf Rapport intervention and increment it by 1, or set it to 1 if no data exists
+                    Set(
+                        LastReference,
+                        If(
+                            IsBlank(Last(test_pdr_manual_form).'Réf Rapport intervention'),
+                            1,
+                            Last(test_pdr_manual_form).'Réf Rapport intervention' + 1
+                        )
+                    );
+                    
+                    // Step 2: Create the mainInfos object to hold common data for all records
+                    Set(
+                        mainInfos,
+                        {
+                            'Réf Rapport intervention': LastReference,
+                            'Date de mouvement': 'DatePicker date mvmnt'.SelectedDate,
+                            'Type de mouvement': If(
+                                'Dropdown mvnmt type'.Selected.Value = "Entry", 
+                                "Entree", 
+                                If(
+                                    'Dropdown mvnmt type'.Selected.Value = "Exit", 
+                                    "Sortie", 
+                                    'Dropdown mvnmt type'.Selected.Value
+                                )
+                            ),
+                            Commentaire: 'TextInput comment'.Text
+                        }
+                    );
+                    
+                    // Step 1: Get the last Réf Rapport intervention and increment it by 1, or set it to 1 if no data exists
+                    Set(
+                        LastReference,
+                        If(
+                            IsBlank(Last(test_pdr_manual_form).'Réf Rapport intervention'),
+                            1,
+                            Last(test_pdr_manual_form).'Réf Rapport intervention' + 1
+                        )
+                    );
+                    
+                    // Step 2: Create the mainInfos object to hold common data for all records
+                    Set(
+                        mainInfos,
+                        {
+                            'Réf Rapport intervention': LastReference,
+                            'Date de mouvement': 'DatePicker date mvmnt'.SelectedDate,
+                            'Type de mouvement': If(
+                                'Dropdown mvnmt type'.Selected.Value = "Entry", 
+                                "Entree", 
+                                If(
+                                    'Dropdown mvnmt type'.Selected.Value = "Exit", 
+                                    "Sortie", 
+                                    'Dropdown mvnmt type'.Selected.Value
+                                )
+                            ),
+                            Commentaire: 'TextInput comment'.Text
+                        }
+                    );
+                    
+                    // Main calculation for theoretical inventory
+                    Set(CurrentDate, Today());
+                    Set(CurrentMonth, Month(CurrentDate));
+                    Set(CurrentYear, Year(CurrentDate));
+                    
+                    Set(PreviousMonth, If(CurrentMonth = 1, 12, CurrentMonth - 1));
+                    Set(PreviousYear, If(CurrentMonth = 1, CurrentYear - 1, CurrentYear));
+                    
+                    // Database names
+                    Set(PhysicalDatabase, Concatenate("Physical_Inventory_", Text(If(CurrentMonth = 1, PreviousYear, CurrentYear))));
+                    Set(TheoreticalDatabase, Concatenate("Theoretical_Inventory_", Text(CurrentYear)));
+                    
+                    // Column names
+                    Set(PhysicalColumnName, 
+                        Concatenate(
+                            GetMonthAbbr(PreviousMonth),
+                            "-01-",
+                            Text(PreviousYear)
+                        )
+                    );
+                    Set(TheoreticalColumnName, 
+                        Concatenate(
+                            GetMonthAbbr(CurrentMonth),
+                            "-01-",
+                            Text(CurrentYear)
+                        )
+                    );
+                    
+                    // Clear any existing temporary collection
+                    Clear(tempUpdates);
+                    
+                    // Step 3: Loop through the collection, patch the data to test_pdr_manual_form, and collect data for theoretical inventory update
+                    ForAll(
+                        PieceCollection3,
+                        Patch(
+                            test_pdr_manual_form,
+                            Defaults(test_pdr_manual_form),
+                            {
+                                'Réf Rapport intervention': mainInfos.'Réf Rapport intervention',
+                                'Date de mouvement': mainInfos.'Date de mouvement',
+                                'Type de mouvement': mainInfos.'Type de mouvement',
+                                PDR: ThisRecord.Piece,
+                                'Quantité à mouvementer': ThisRecord.Quantity,
+                                Commentaire: mainInfos.Commentaire
+                            }
+                        );
+                        Collect(
+                            tempUpdates,
+                            {
+                                Piece: ThisRecord.Piece,
+                                Quantity: ThisRecord.Quantity
+                            }
+                        )
+                    );
+                    
+                    // Process theoretical inventory updates
+                    ForAll(
+                        tempUpdates,
+                        UpdateIf(
+                            TheoreticalDatabase,
+                            'Piece de Rechange' = Piece,
+                            {
+                                // Make sure CalculateNewTheoreticalQuantity is a valid function
+                                // and correctly implemented to handle movement type and quantity
+                                TheoreticalColumnName: CalculateNewTheoreticalQuantity(
+                                    LookUp(TheoreticalDatabase, 'Piece de Rechange' = Piece, TheoreticalColumnName),
+                                    Quantity,
+                                    mainInfos.'Type de mouvement'
+                                )
+                            }
+                        );
+                        Notify(
+                            GenerateUpdateMessage(
+                                Piece,
+                                LookUp(TheoreticalDatabase, 'Piece de Rechange' = Piece, TheoreticalColumnName)
+                            ),
+                            NotificationType.Success
+                        )
+                    );
+                    
+                    // Clear the temporary collection
+                    Clear(tempUpdates);
+                    
+                    // Step 4: Clear the inputs and reset the form for new entries
+                    Clear(PieceCollection3);
+                    Reset('TextInput comment');
+                    Reset('Dropdown mvnmt type');
+                    Reset('DatePicker date mvmnt');
+                    
+                    // Step 5: Notify the user of successful submission
+                    Notify(
+                        "Submission completed successfully!",
+                        NotificationType.Success
+                    );
+                    
+                    Set(openGenrlMvmntModal, true);
+                    
+                    // WHAT I AM TRYING TO GET WORKING
+                    
+                    */
+                    /*
+                    
+                    // this give the correct databases and column names thats good
+                    
+                    // Main calculation
+                    Set(CurrentDate, Today());
+                    Set(CurrentMonth, Month(CurrentDate));
+                    Set(CurrentYear, Year(CurrentDate));
+                    
+                    Set(PreviousMonth, If(CurrentMonth = 1, 12, CurrentMonth - 1));
+                    Set(PreviousYear, If(CurrentMonth = 1, CurrentYear - 1, CurrentYear));
+                    
+                    // Database names
+                    Set(PhysicalDatabase, 
+                        Concatenate("Physical_Inventory_", 
+                            Text(If(CurrentMonth = 1, PreviousYear, CurrentYear))
+                        )
+                    );
+                    Set(TheoreticalDatabase, 
+                        Concatenate("Theoretical_Inventory_", Text(CurrentYear))
+                    );
+                    
+                    // Column names using our user-defined functions
+                    Set(PhysicalColumnName, 
+                        FormatColumnDate(PreviousMonth, If(PreviousMonth = 12, PreviousYear, CurrentYear))
+                    );
+                    Set(TheoreticalColumnName, 
+                        FormatColumnDate(CurrentMonth, CurrentYear)
+                    );
+                    
+                    // Debug output
+                    Notify(
+                        Concatenate(
+                            "Debug - Current Date: ", Text(CurrentDate),
+                            ", Current Month: ", Text(CurrentMonth),
+                            ", Current Year: ", Text(CurrentYear),
+                            ", Previous Month: ", Text(PreviousMonth),
+                            ", Previous Year: ", Text(PreviousYear)
+                        ),
+                        NotificationType.Information
+                    );
+                    
+                    // Final output
+                    Notify(
+                        Concatenate(
+                            "Physical Database: ", PhysicalDatabase,
+                            ", Physical Column: ", PhysicalColumnName,
+                            ", Theoretical Database: ", TheoreticalDatabase,
+                            ", Theoretical Column: ", TheoreticalColumnName
+                        ),
+                        NotificationType.Information
+                    );
+                    
+                    // this give the correct databases and column names thats good
+                    
+                    */
+                    /*
+                    /*
+                    /*
+                    
+                    
+                    // THIS WAS CLOSE TOO LAST MGHRB TIME
+                    // Main calculation
+                    Set(
+                        CurrentDate,
+                        Today()
+                    );
+                    Set(
+                        CurrentMonth,
+                        Month(CurrentDate)
+                    );
+                    Set(
+                        CurrentYear,
+                        Year(CurrentDate)
+                    );
+                    Set(
+                        PreviousMonth,
+                        If(
+                            CurrentMonth = 1,
+                            12,
+                            CurrentMonth - 1
+                        )
+                    );
+                    Set(
+                        PreviousYear,
+                        If(
+                            CurrentMonth = 1,
+                            CurrentYear - 1,
+                            CurrentYear
+                        )
+                    );
+                    // Database names
+                    Set(
+                        PhysicalDatabase,
+                        Concatenate(
+                            "Physical_Inventory_",
+                            Text(
+                                If(
+                                    CurrentMonth = 1,
+                                    PreviousYear,
+                                    CurrentYear
+                                )
+                            )
+                        )
+                    );
+                    Set(
+                        TheoreticalDatabase,
+                        Concatenate(
+                            "Theoretical_Inventory_",
+                            Text(CurrentYear)
+                        )
+                    );
+                    // Column names using our user-defined functions
+                    Set(
+                        PhysicalColumnName,
+                        FormatColumnDate(
+                            PreviousMonth,
+                            If(
+                                PreviousMonth = 12,
+                                PreviousYear,
+                                CurrentYear
+                            )
+                        )
+                    );
+                    Set(
+                        TheoreticalColumnName,
+                        FormatColumnDate(
+                            CurrentMonth,
+                            CurrentYear
+                        )
+                    );
+                    // Function to get the correct physical inventory table
+                    Set(
+                        GetPhysicalTable,
+                        Switch(
+                            PhysicalDatabase,
+                            "Physical_Inventory_2024",
+                            Physical_Inventory_2024,
+                            "Physical_Inventory_2025",
+                            Physical_Inventory_2025,
+                            "Physical_Inventory_2026",
+                            Physical_Inventory_2026,
+                            "Physical_Inventory_2027",
+                            Physical_Inventory_2027,
+                            "Physical_Inventory_2028",
+                            Physical_Inventory_2028,
+                            "Physical_Inventory_2029",
+                            Physical_Inventory_2029,
+                            "Physical_Inventory_2030",
+                            Physical_Inventory_2030,
+                            "Physical_Inventory_2031",
+                            Physical_Inventory_2031,
+                            "Physical_Inventory_2032",
+                            Physical_Inventory_2032,
+                            "Physical_Inventory_2033",
+                            Physical_Inventory_2033,
+                            "Physical_Inventory_2034",
+                            Physical_Inventory_2034,
+                            Blank()// Default case if no match
+                        )
+                    );
+                    // Function to get the correct theoretical inventory table
+                    Set(
+                        GetTheoreticalTable,
+                        Switch(
+                            TheoreticalDatabase,
+                            "Theoretical_Inventory_2024",
+                            Theoretical_Inventory_2024,
+                            "Theoretical_Inventory_2025",
+                            Theoretical_Inventory_2025,
+                            "Theoretical_Inventory_2026",
+                            Theoretical_Inventory_2026,
+                            "Theoretical_Inventory_2027",
+                            Theoretical_Inventory_2027,
+                            "Theoretical_Inventory_2028",
+                            Theoretical_Inventory_2028,
+                            "Theoretical_Inventory_2029",
+                            Theoretical_Inventory_2029,
+                            "Theoretical_Inventory_2030",
+                            Theoretical_Inventory_2030,
+                            "Theoretical_Inventory_2031",
+                            Theoretical_Inventory_2031,
+                            "Theoretical_Inventory_2032",
+                            Theoretical_Inventory_2032,
+                            "Theoretical_Inventory_2033",
+                            Theoretical_Inventory_2033,
+                            "Theoretical_Inventory_2034",
+                            Theoretical_Inventory_2034,
+                            Blank()// Default case if no match
+                        )
+                    );
+                    // Clear any existing temporary collection
+                    Clear(tempUpdates);
+                    // Collect data for theoretical inventory update
+                    ForAll(
+                        PieceCollection3,
+                        Collect(
+                            tempUpdates,
+                            {
+                                Piece: ThisRecord.Piece,
+                                Quantity: ThisRecord.Quantity
+                            }
+                        )
+                    );
+                    Clear(tempCalculations);
+                    ForAll(
+                        tempUpdates,
+                        With(
+                            {
+                                physicalQuantity: LookUp(
+                                    GetPhysicalTable,
+                                    'Piece de Rechange' = Piece,
+                                    Text(PhysicalColumnName)// Value(PhysicalColumnName)
+                                ),
+                                currentTheoretical: LookUp(
+                                    GetTheoreticalTable,
+                                    'Piece de Rechange' = Piece,
+                                    Text(TheoreticalColumnName)// Value(TheoreticalColumnName)
+                                )
+                            },
+                            Collect(
+                                tempCalculations,
+                                {
+                                    Piece: Piece,
+                                    NewQuantity: If(
+                                        IsBlank(currentTheoretical),
+                                        CalculateNewTheoreticalQuantity(
+                                            physicalQuantity,
+                                            Quantity,
+                                            mainInfos.'Type de mouvement'
+                                        ),
+                                        CalculateNewTheoreticalQuantity(
+                                            currentTheoretical,
+                                            Quantity,
+                                            mainInfos.'Type de mouvement'
+                                        )
+                                    )
+                                }
+                            )
+                        )
+                    );
+                    /*
+                    ForAll(
+                        tempCalculations,
+                        UpdateIf(
+                            GetTheoreticalTable,
+                            'Piece de Rechange' = Piece,
+                            {
+                                ThisItem[TheoreticalColumnName]: NewQuantity
+                            }
+                        );
+                        Notify(
+                            GenerateUpdateMessage(
+                                Piece,
+                                NewQuantity
+                            ),
+                            NotificationType.Success
+                        )
+                    );
+                    */
+                    /*
+                    // Clear the collection before starting the updates
+                    Clear(flowResponses);
+                    // Perform the updates and collect responses
+                    ForAll(
+                        tempCalculations,
+                        Collect(
+                            flowResponses,
+                            /*UpdateTheoreticalInventory.Run(
+                                ThisRecord.Piece,
+                                ThisRecord.NewQuantity,
+                                TheoreticalColumnName,
+                                TheoreticalDatabase
+                            )
+                            UpdateTheoreticalInventory.Run(
+                                "ELECTROVANNE",
+                                20,
+                                "Sep-01-2024",
+                                "Theoretical_Inventory_2024"
+                            )
+                        )
+                    );
+                    */
+                    // Display notifications for all updates
+                    /*ForAll(
+                        flowResponses,
+                        Notify(
+                            If(
+                                !IsBlank(ThisRecord.message),
+                                ThisRecord.message,
+                                "Error updating inventory: " & Text(ThisRecord)
+                            ),
+                            If(!IsBlank(ThisRecord.message), NotificationType.Success, NotificationType.Error)
+                        )
+                    );
+                    */
+                    /*
+                    Clear(tempCalculations);
+                    // Clear the temporary collection
+                    Clear(tempUpdates);
+                    /*
+                    // Debug output
+                    Notify(
+                        Concatenate(
+                            "Debug - Current Date: ", Text(CurrentDate),
+                            ", Current Month: ", Text(CurrentMonth),
+                            ", Current Year: ", Text(CurrentYear),
+                            ", Previous Month: ", Text(PreviousMonth),
+                            ", Previous Year: ", Text(PreviousYear),
+                            ", Physical Table: ", Text(GetPhysicalTable),
+                            ", Theoretical Table: ", Text(GetTheoreticalTable)
+                        ),
+                        NotificationType.Information
+                    );
+                    */
+                    /*
+                    // Final output
+                    Notify(
+                        Concatenate(
+                            "Physical Database: ",
+                            PhysicalDatabase,
+                            ", Physical Column: ",
+                            PhysicalColumnName,
+                            ", Theoretical Database: ",
+                            TheoreticalDatabase,
+                            ", Theoretical Column: ",
+                            TheoreticalColumnName
+                        ),
+                        NotificationType.Information
+                    );
+                    // Clear inputs and reset form
+                    Clear(PieceCollection3);
+                    Reset('TextInput comment');
+                    Reset('Dropdown mvnmt type');
+                    Reset('DatePicker date mvmnt');
+                    Set(
+                        openGenrlMvmntModal,
+                        true
+                    );
+                    // THIS WAS CLOSE TOO LAST MGHRB TIME
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    //
+                    //
+                    */
+                    /*
+                    // LONG SOLUTION WITH ERRORS
+                    
+                    
+                    // Main calculation
+                    Set(CurrentDate, Today());
+                    Set(CurrentMonth, Month(CurrentDate));
+                    Set(CurrentYear, Year(CurrentDate));
+                    
+                    Set(PreviousMonth, If(CurrentMonth = 1, 12, CurrentMonth - 1));
+                    Set(PreviousYear, If(CurrentMonth = 1, CurrentYear - 1, CurrentYear));
+                    
+                    // Database names
+                    Set(PhysicalDatabase, "Physical_Inventory_" & Text(If(CurrentMonth = 1, PreviousYear, CurrentYear)));
+                    Set(TheoreticalDatabase, "Theoretical_Inventory_" & Text(CurrentYear));
+                    
+                    // Column names
+                    Set(PhysicalColumnName, Text(Date(If(PreviousMonth = 12, PreviousYear, CurrentYear), PreviousMonth, 1), "[$-en-US]mmm") & "-01-" & Text(If(PreviousMonth = 12, PreviousYear, CurrentYear)));
+                    Set(TheoreticalColumnName, Text(Date(CurrentYear, CurrentMonth, 1), "[$-en-US]mmm") & "-01-" & Text(CurrentYear));
+                    
+                    // Function to get the correct physical inventory table
+                    Set(
+                        GetPhysicalTable,
+                        Switch(
+                            PhysicalDatabase,
+                            "Physical_Inventory_2024", Physical_Inventory_2024,
+                            "Physical_Inventory_2025", Physical_Inventory_2025,
+                            "Physical_Inventory_2026", Physical_Inventory_2026,
+                            "Physical_Inventory_2027", Physical_Inventory_2027,
+                            "Physical_Inventory_2028", Physical_Inventory_2028,
+                            "Physical_Inventory_2029", Physical_Inventory_2029,
+                            "Physical_Inventory_2030", Physical_Inventory_2030,
+                            "Physical_Inventory_2031", Physical_Inventory_2031,
+                            "Physical_Inventory_2032", Physical_Inventory_2032,
+                            "Physical_Inventory_2033", Physical_Inventory_2033,
+                            "Physical_Inventory_2034", Physical_Inventory_2034,
+                            Blank() // Default case if no match
+                        )
+                    );
+                    
+                    // Function to get the correct theoretical inventory table
+                    Set(
+                        GetTheoreticalTable,
+                        Switch(
+                            TheoreticalDatabase,
+                            "Theoretical_Inventory_2024", Theoretical_Inventory_2024,
+                            "Theoretical_Inventory_2025", Theoretical_Inventory_2025,
+                            "Theoretical_Inventory_2026", Theoretical_Inventory_2026,
+                            "Theoretical_Inventory_2027", Theoretical_Inventory_2027,
+                            "Theoretical_Inventory_2028", Theoretical_Inventory_2028,
+                            "Theoretical_Inventory_2029", Theoretical_Inventory_2029,
+                            "Theoretical_Inventory_2030", Theoretical_Inventory_2030,
+                            "Theoretical_Inventory_2031", Theoretical_Inventory_2031,
+                            "Theoretical_Inventory_2032", Theoretical_Inventory_2032,
+                            "Theoretical_Inventory_2033", Theoretical_Inventory_2033,
+                            "Theoretical_Inventory_2034", Theoretical_Inventory_2034,
+                            Blank() // Default case if no match
+                        )
+                    );
+                    
+                    // Clear any existing temporary collections
+                    Clear(tempUpdates);
+                    Clear(tempCalculations);
+                    
+                    // Collect data for theoretical inventory update
+                    ForAll(
+                        PieceCollection3,
+                        Collect(
+                            tempUpdates,
+                            {
+                                Piece: ThisRecord.Piece,
+                                Quantity: ThisRecord.Quantity,
+                                PhysicalQuantity: LookUp(GetPhysicalTable, 'Piece de Rechange' = ThisRecord.Piece, Value(PhysicalColumnName)),
+                                CurrentTheoretical: LookUp(GetTheoreticalTable, 'Piece de Rechange' = ThisRecord.Piece, Value(TheoreticalColumnName))
+                            }
+                        )
+                    );
+                    
+                    // Calculate new quantities
+                    ForAll(
+                        tempUpdates,
+                        Collect(
+                            tempCalculations,
+                            {
+                                Piece: Piece,
+                                NewQuantity: CalculateNewTheoreticalQuantity(
+                                    If(IsBlank(CurrentTheoretical), PhysicalQuantity, CurrentTheoretical),
+                                    Quantity,
+                                    mainInfos.'Type de mouvement'
+                                )
+                            }
+                        )
+                    );
+                    
+                    // Update theoretical inventory
+                    If(TheoreticalColumnName = "Jan-01-" & Text(CurrentYear),
+                        ForAll(tempCalculations, 
+                            Patch(GetTheoreticalTable, LookUp(GetTheoreticalTable, 'Piece de Rechange' = Piece), 
+                                {'Jan-01-' & Text(CurrentYear): NewQuantity})),
+                    If(TheoreticalColumnName = "Feb-01-" & Text(CurrentYear),
+                        ForAll(tempCalculations, 
+                            Patch(GetTheoreticalTable, LookUp(GetTheoreticalTable, 'Piece de Rechange' = Piece), 
+                                {'Feb-01-' & Text(CurrentYear): NewQuantity})),
+                    If(TheoreticalColumnName = "Mar-01-" & Text(CurrentYear),
+                        ForAll(tempCalculations, 
+                            Patch(GetTheoreticalTable, LookUp(GetTheoreticalTable, 'Piece de Rechange' = Piece), 
+                                {'Mar-01-' & Text(CurrentYear): NewQuantity})),
+                    If(TheoreticalColumnName = "Apr-01-" & Text(CurrentYear),
+                        ForAll(tempCalculations, 
+                            Patch(GetTheoreticalTable, LookUp(GetTheoreticalTable, 'Piece de Rechange' = Piece), 
+                                {'Apr-01-' & Text(CurrentYear): NewQuantity})),
+                    If(TheoreticalColumnName = "May-01-" & Text(CurrentYear),
+                        ForAll(tempCalculations, 
+                            Patch(GetTheoreticalTable, LookUp(GetTheoreticalTable, 'Piece de Rechange' = Piece), 
+                                {'May-01-' & Text(CurrentYear): NewQuantity})),
+                    If(TheoreticalColumnName = "Jun-01-" & Text(CurrentYear),
+                        ForAll(tempCalculations, 
+                            Patch(GetTheoreticalTable, LookUp(GetTheoreticalTable, 'Piece de Rechange' = Piece), 
+                                {'Jun-01-' & Text(CurrentYear): NewQuantity})),
+                    If(TheoreticalColumnName = "Jul-01-" & Text(CurrentYear),
+                        ForAll(tempCalculations, 
+                            Patch(GetTheoreticalTable, LookUp(GetTheoreticalTable, 'Piece de Rechange' = Piece), 
+                                {'Jul-01-' & Text(CurrentYear): NewQuantity})),
+                    If(TheoreticalColumnName = "Aug-01-" & Text(CurrentYear),
+                        ForAll(tempCalculations, 
+                            Patch(GetTheoreticalTable, LookUp(GetTheoreticalTable, 'Piece de Rechange' = Piece), 
+                                {'Aug-01-' & Text(CurrentYear): NewQuantity})),
+                    If(TheoreticalColumnName = "Sep-01-" & Text(CurrentYear),
+                        ForAll(tempCalculations, 
+                            Patch(GetTheoreticalTable, LookUp(GetTheoreticalTable, 'Piece de Rechange' = Piece), 
+                                {'Sep-01-' & Text(CurrentYear): NewQuantity})),
+                    If(TheoreticalColumnName = "Oct-01-" & Text(CurrentYear),
+                        ForAll(tempCalculations, 
+                            Patch(GetTheoreticalTable, LookUp(GetTheoreticalTable, 'Piece de Rechange' = Piece), 
+                                {'Oct-01-' & Text(CurrentYear): NewQuantity})),
+                    If(TheoreticalColumnName = "Nov-01-" & Text(CurrentYear),
+                        ForAll(tempCalculations, 
+                            Patch(GetTheoreticalTable, LookUp(GetTheoreticalTable, 'Piece de Rechange' = Piece), 
+                                {'Nov-01-' & Text(CurrentYear): NewQuantity})),
+                    If(TheoreticalColumnName = "Dec-01-" & Text(CurrentYear),
+                        ForAll(tempCalculations, 
+                            Patch(GetTheoreticalTable, LookUp(GetTheoreticalTable, 'Piece de Rechange' = Piece), 
+                                {'Dec-01-' & Text(CurrentYear): NewQuantity})),
+                    Notify("Error: Invalid theoretical column name", NotificationType.Error)
+                    ))))))))))))
+                    );
+                    
+                    // Notify updates
+                    ForAll(
+                        tempCalculations,
+                        Notify(
+                            GenerateUpdateMessage(Piece, NewQuantity),
+                            NotificationType.Success
+                        )
+                    );
+                    
+                    // Clear temporary collections
+                    Clear(tempUpdates);
+                    Clear(tempCalculations);
+                    
+                    // Debug output
+                    Notify(
+                        Concatenate(
+                            "Debug - Current Date: ", Text(CurrentDate),
+                            ", Current Month: ", Text(CurrentMonth),
+                            ", Current Year: ", Text(CurrentYear),
+                            ", Previous Month: ", Text(PreviousMonth),
+                            ", Previous Year: ", Text(PreviousYear),
+                            ", Physical Table: ", Text(GetPhysicalTable),
+                            ", Theoretical Table: ", Text(GetTheoreticalTable),
+                            ", Physical Column: ", PhysicalColumnName,
+                            ", Theoretical Column: ", TheoreticalColumnName
+                        ),
+                        NotificationType.Information
+                    );
+                    
+                    // Clear inputs and reset form
+                    Clear(PieceCollection3);
+                    Reset('TextInput comment');
+                    Reset('Dropdown mvnmt type');
+                    Reset('DatePicker date mvmnt');
+                    
+                    Set(openGenrlMvmntModal, true);
+                    
+                    // LONG SOLUTION WITH ERRORS
+                    
+                    */
+                Text: ="Submit Movement"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+    "'Dialog Container_8' As groupContainer.verticalAutoLayoutContainer":
+        DropShadow: =DropShadow.Light
+        Fill: |
+            =RGBA(0, 0, 0, 0.3)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: |-
+            =//true
+            openGenrlMvmntModal
+        Width: =Parent.Width
+        ZIndex: =2
+
+        "'Dialog Content_12' As groupContainer.verticalAutoLayoutContainer":
+            AlignInContainer: =AlignInContainer.Center
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(214, 221, 224, 1)
+            FillPortions: =0
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =10
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =5
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            ZIndex: =1
+
+            "'cancel icon_12' As icon.CancelBadge":
+                AlignInContainer: =AlignInContainer.End
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =App.Theme.Colors.Darker30
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Icon: =Icon.CancelBadge
+                OnSelect: =Set(openGenrlMvmntModal,false)
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingRight: =10
+                PaddingTop: =5
+                Width: =40
+                ZIndex: =1
+
+            message_new_validation_2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =
+                DisplayMode: =DisplayMode.Edit
+                Fill: =
+                FontColor: =
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                Size: =20
+                Text: ="Submitted successfully"
+                Weight: ='TextCanvas.Weight'.Bold
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+            "'sucs icon_10' As image":
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =50
+                Image: ='icons8-success-240'
+                LayoutMinWidth: =50
+                ZIndex: =3
+

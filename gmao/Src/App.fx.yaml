@@ -1,0 +1,110 @@
+App As appinfo:
+    BackEnabled: =true
+    Formulas: |-
+        =// Function to get month abbreviation
+        GetMonthAbbr(monthNum:Number):Text = 
+        Switch(
+            monthNum,
+            1, "Jan", 2, "Feb", 3, "Mar", 4, "Apr", 5, "May", 6, "Jun",
+            7, "Jul", 8, "Aug", 9, "Sep", 10, "Oct", 11, "Nov", 12, "Dec",
+            "Inv" // Invalid month
+        );
+        
+        // Function to format date for column name
+        FormatColumnDate(month:Number, year:Number):Text = 
+        Concatenate(GetMonthAbbr(month), "-01-", Text(year));
+        
+        
+        // Function to calculate new theoretical quantity
+        CalculateNewTheoreticalQuantity(
+            currentTheoretical: Number,
+            quantity: Number,
+            movementType: Text
+        ): Number = 
+        If(
+            movementType = "Entree",
+            currentTheoretical + quantity,
+            currentTheoretical - quantity
+        );
+        
+        // Function to generate update message
+        GenerateUpdateMessage(
+            sparePart: Text,
+            newQuantity: Number
+        ): Text = 
+        Concatenate(
+            "Updated theoretical inventory for ", sparePart,
+            ". New quantity: ", Text(newQuantity)
+        );
+        
+        // Custom function to get physical_theoretical quantity for a piece
+        Get_Physical_Theoretical_Quantity(jsonString: Text, pieceName: Text): Number = 
+        With(
+            {
+                parsedData: Table(ParseJSON(jsonString))
+            },
+            LookUp(parsedData, Value.Piece = pieceName, Value.Value)
+        );
+        
+        /*
+        // Function to format date for column name
+        FormatColumnDate(month:Number, year:Number):Text = 
+        Concatenate(GetMonthAbbr(month), "-01-", Text(year));
+        
+        
+        UpdateTheoreticalInventory(
+            sparePart: Text,
+            quantity: Number,
+            movementType: Text,
+            physicalDatabase: Text,
+            theoreticalDatabase: Text,
+            physicalColumnName: Text,
+            theoreticalColumnName: Text
+        ): Record = 
+        With(
+            {
+                physicalQuantity: LookUp(
+                    Table(physicalDatabase),
+                    'Piece de Rechange' = sparePart,
+                    Value(physicalColumnName)
+                ),
+                currentTheoretical: LookUp(
+                    Table(theoreticalDatabase),
+                    'Piece de Rechange' = sparePart,
+                    Value(theoreticalColumnName)
+                )
+            },
+            With(
+                {
+                    newTheoreticalQuantity: If(
+                        movementType = "Entree",
+                        currentTheoretical + quantity,
+                        currentTheoretical - quantity
+                    )
+                },
+                {
+                    updatedRecord: Patch(
+                        Table(theoreticalDatabase),
+                        LookUp(Table(theoreticalDatabase), 'Piece de Rechange' = sparePart),
+                        {
+                            theoreticalColumnName: newTheoreticalQuantity
+                        }
+                    ),
+                    message: Concatenate(
+                        "Updated theoretical inventory for ", sparePart,
+                        ". New quantity: ", Text(newTheoreticalQuantity)
+                    )
+                }
+            )
+        );
+        */
+    OnStart: =
+    Theme: =OrangeTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

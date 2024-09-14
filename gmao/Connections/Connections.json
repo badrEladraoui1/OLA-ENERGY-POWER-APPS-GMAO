@@ -1,0 +1,396 @@
+{
+  "1858379a-c951-421e-9852-d646d59781a2": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "e48d2e0c-94db-4a1f-93c6-b89f14ae3216": {
+          "value": "shared_excelonlinebusiness"
+        },
+        "workflowDisplayName": {
+          "value": "Getting_Physical_or_Theoretical_Data"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "028c9ead-befd-444a-a51d-00262edb6b96"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "e48d2e0c-94db-4a1f-93c6-b89f14ae3216"
+        },
+        "workflowDisplayName": {
+          "value": "Getting_Physical_or_Theoretical_Data"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "028c9ead-befd-444a-a51d-00262edb6b96"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Getting_Physical_or_Theoretical_Data"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "e48d2e0c-94db-4a1f-93c6-b89f14ae3216"
+    },
+    "dependents": [],
+    "id": "1858379a-c951-421e-9852-d646d59781a2"
+  },
+  "221f2c4c-c6cc-4b09-ace1-dc99d3fdbeae": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "e48d2e0c-94db-4a1f-93c6-b89f14ae3216": {
+          "value": "shared_excelonlinebusiness"
+        },
+        "workflowDisplayName": {
+          "value": "UpdateTheoreticalInventory"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "40d8def7-6897-4efb-a498-ce4d7ddb78c0"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "e48d2e0c-94db-4a1f-93c6-b89f14ae3216"
+        },
+        "workflowDisplayName": {
+          "value": "UpdateTheoreticalInventory"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "40d8def7-6897-4efb-a498-ce4d7ddb78c0"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "UpdateTheoreticalInventory"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "e48d2e0c-94db-4a1f-93c6-b89f14ae3216"
+    },
+    "dependents": [],
+    "id": "221f2c4c-c6cc-4b09-ace1-dc99d3fdbeae"
+  },
+  "68cfe08f-8b46-4721-b1d2-f1652afef22b": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "e48d2e0c-94db-4a1f-93c6-b89f14ae3216": {
+          "value": "shared_excelonlinebusiness"
+        },
+        "workflowDisplayName": {
+          "value": "SortingMovementsFlow"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "58bb4b6b-265e-438f-bf28-dedcfd369331"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "e48d2e0c-94db-4a1f-93c6-b89f14ae3216"
+        },
+        "workflowDisplayName": {
+          "value": "SortingMovementsFlow"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "58bb4b6b-265e-438f-bf28-dedcfd369331"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "SortingMovementsFlow"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "e48d2e0c-94db-4a1f-93c6-b89f14ae3216"
+    },
+    "dependents": [],
+    "id": "68cfe08f-8b46-4721-b1d2-f1652afef22b"
+  },
+  "6e4fc85b-eabe-4aa5-a0ed-c5dea7210a6d": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1706/1.0.1706.3851/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "6e4fc85b-eabe-4aa5-a0ed-c5dea7210a6d"
+  },
+  "d8023a6c-0b63-4cb4-9826-92610390a69b": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel Online (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1702/1.0.1702.3814/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "me,b%2521RMf1cSXnfEWJxB_aTFJ16WWen6c-XRFEhCZBYSEB5lTgRmKjdapnSIwUv8-omHl5,01FFJ47IRCSGK4FVRT6VBIP3G6KRCL4DCG": {
+        "dataSources": {
+          "Famille_Equipem_Cod": {
+            "tableName": "{90D3566A-7479-4056-817C-F156C2237C7D}"
+          },
+          "Famille_equipements": {
+            "tableName": "{9ED2D709-B60E-44C1-A626-C31CFBE9C527}"
+          },
+          "Liste_Equipements": {
+            "tableName": "{6A45606F-714C-4345-A7D2-B2DF2CDE6161}"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Famille_equipements",
+      "Liste_Equipements",
+      "Famille_Equipem_Cod"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d8023a6c-0b63-4cb4-9826-92610390a69b"
+  },
+  "df1ac4a8-e634-48cf-9a54-c8c4620aa693": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "e48d2e0c-94db-4a1f-93c6-b89f14ae3216": {
+          "value": "shared_excelonlinebusiness"
+        },
+        "workflowDisplayName": {
+          "value": "SortingInterventionsFlow"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "e4d29321-55b7-443a-98c2-e822cabba031"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "e48d2e0c-94db-4a1f-93c6-b89f14ae3216"
+        },
+        "workflowDisplayName": {
+          "value": "SortingInterventionsFlow"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "e4d29321-55b7-443a-98c2-e822cabba031"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "SortingInterventionsFlow"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "e48d2e0c-94db-4a1f-93c6-b89f14ae3216"
+    },
+    "dependents": [],
+    "id": "df1ac4a8-e634-48cf-9a54-c8c4620aa693"
+  },
+  "e48d2e0c-94db-4a1f-93c6-b89f14ae3216": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel Online (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1702/1.0.1702.3814/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "me,b%25215ciSxoeFtEqHnRtl3ceCe5k1VNMV3rBBnTvS3PSR61EAs5M6ComXQaYkGtzGK3yY,0156BXGVUI6KB3KR2HNNDYQG2KFXQFW3RE": {
+        "dataSources": {
+          "Admins_DB": {
+            "tableName": "{2EA4CA0F-02A1-4BA5-B553-0736AA8B7357}"
+          },
+          "PDR_stock": {
+            "tableName": "{60467A29-0E75-4C08-B616-E89F48C360C9}"
+          },
+          "Personnel_DB": {
+            "tableName": "{ACAEEDD5-62B9-4C5B-850A-EADF87908D9E}"
+          },
+          "Personnel_Fonctions": {
+            "tableName": "{FA4283C0-0778-4A70-BC95-2EB3CE049E28}"
+          },
+          "Physical_Inventory_2024": {
+            "tableName": "{1C149D6A-63EA-47E0-B032-FF8408244717}"
+          },
+          "Physical_Inventory_2025": {
+            "tableName": "{7AA6EDE7-BE30-47BF-AE51-85E2DC1F8518}"
+          },
+          "Physical_Inventory_2026": {
+            "tableName": "{9EBA6440-EF68-4680-87E2-0A777FCC6E23}"
+          },
+          "Physical_Inventory_2027": {
+            "tableName": "{4FF30060-2DFF-4D0E-BF56-33FBCDFD0C95}"
+          },
+          "Physical_Inventory_2028": {
+            "tableName": "{2A29015C-D239-4EB4-B7B0-5B19E5499888}"
+          },
+          "Physical_Inventory_2029": {
+            "tableName": "{ECBDDC97-E152-443C-9DA4-410B65AAD2EB}"
+          },
+          "Physical_Inventory_2030": {
+            "tableName": "{48D38605-B453-483F-87EC-22E702A27DC6}"
+          },
+          "Physical_Inventory_2031": {
+            "tableName": "{F321319F-6903-4520-9F81-01F02F30FEC0}"
+          },
+          "Physical_Inventory_2032": {
+            "tableName": "{F7FCEE62-0624-4CAC-96A1-97E7F0320C60}"
+          },
+          "Physical_Inventory_2033": {
+            "tableName": "{3F1D18B4-02D2-491F-AD23-7723437DC8F8}"
+          },
+          "Physical_Inventory_2034": {
+            "tableName": "{E4C68B46-21D3-4B6D-B9F5-454E739949F1}"
+          },
+          "Rapport_Intervention_correctif": {
+            "tableName": "{C7FE3C12-5C95-416D-8FBD-527B67D8723B}"
+          },
+          "RIC_for_manual_mvmnt": {
+            "tableName": "{FDA47A20-2505-4502-9D5F-9C9883C96B37}"
+          },
+          "test_pdr_manual_form": {
+            "tableName": "{1DBB3FF9-C016-4BA5-80C4-9091EB1D644A}"
+          },
+          "test_pdr_mvmnt": {
+            "tableName": "{AC180276-1F81-45E8-8E6C-2E73F968E2FB}"
+          },
+          "Theoretical_Inventory_2024": {
+            "tableName": "{DCBA788C-5397-4227-A71F-EB147EEDE3BB}"
+          },
+          "Theoretical_Inventory_2025": {
+            "tableName": "{66264420-F1D4-4F0F-93A8-3DBC4417EB34}"
+          },
+          "Theoretical_Inventory_2026": {
+            "tableName": "{234011AE-D973-483A-99F1-2BFE216005FA}"
+          },
+          "Theoretical_Inventory_2027": {
+            "tableName": "{1E80BC12-29F1-4A92-B8ED-14330A7CB2BA}"
+          },
+          "Theoretical_Inventory_2028": {
+            "tableName": "{3E01BF8E-9197-482C-97D5-F4E731D95B1D}"
+          },
+          "Theoretical_Inventory_2029": {
+            "tableName": "{55AA7581-7D11-47F4-947C-25E2C615E37F}"
+          },
+          "Theoretical_Inventory_2030": {
+            "tableName": "{C13802FC-4B84-4792-99BC-4AF2A569F6EF}"
+          },
+          "Theoretical_Inventory_2031": {
+            "tableName": "{B834654C-CD5A-4E26-89EB-972CD128E592}"
+          },
+          "Theoretical_Inventory_2032": {
+            "tableName": "{E3C975C9-D857-44E8-A9DF-A420E5D52CEA}"
+          },
+          "Theoretical_Inventory_2033": {
+            "tableName": "{9B8BF982-D114-4092-AFD9-0A041F838BED}"
+          },
+          "Theoretical_Inventory_2034": {
+            "tableName": "{162A59EC-CEEC-4D54-B53A-F9E3A7A4759C}"
+          },
+          "Users_DB": {
+            "tableName": "{F9ECC373-EEAD-4922-80C8-D773897747B4}"
+          },
+          "Users_Fonctions": {
+            "tableName": "{D8DE7F37-781E-431B-9D36-0001096C80BF}"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Admins_DB",
+      "Users_DB",
+      "Personnel_DB",
+      "Famille_Equipem_Cod",
+      "Liste_Equipements",
+      "Famille_equipements",
+      "Rapport_Intervention_correctif",
+      "Users_Fonctions",
+      "Personnel_Fonctions",
+      "test_pdr_mvmnt",
+      "test_pdr_manual_form",
+      "RIC_for_manual_mvmnt",
+      "PDR_stock",
+      "Physical_Inventory_2025",
+      "Physical_Inventory_2024",
+      "Physical_Inventory_2026",
+      "Physical_Inventory_2027",
+      "Physical_Inventory_2028",
+      "Physical_Inventory_2029",
+      "Physical_Inventory_2030",
+      "Physical_Inventory_2031",
+      "Physical_Inventory_2032",
+      "Physical_Inventory_2033",
+      "Physical_Inventory_2034",
+      "Theoretical_Inventory_2024",
+      "Theoretical_Inventory_2025",
+      "Theoretical_Inventory_2026",
+      "Theoretical_Inventory_2027",
+      "Theoretical_Inventory_2028",
+      "Theoretical_Inventory_2029",
+      "Theoretical_Inventory_2030",
+      "Theoretical_Inventory_2031",
+      "Theoretical_Inventory_2032",
+      "Theoretical_Inventory_2033",
+      "Theoretical_Inventory_2034"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "1858379a-c951-421e-9852-d646d59781a2",
+      "df1ac4a8-e634-48cf-9a54-c8c4620aa693",
+      "68cfe08f-8b46-4721-b1d2-f1652afef22b",
+      "221f2c4c-c6cc-4b09-ace1-dc99d3fdbeae"
+    ],
+    "id": "e48d2e0c-94db-4a1f-93c6-b89f14ae3216"
+  }
+}

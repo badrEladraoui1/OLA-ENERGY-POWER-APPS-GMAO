@@ -1,0 +1,150 @@
+"'TEST theoretical logic debug' As screen":
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    ButtonCanvas23 As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: |
+            =// Step 1: Update Theoretical Inventory
+            UpdateTheoreticalInventory.Run(
+                "SOUPAPE DE SURETE",
+                66,
+                "Sep-01-2024",
+                "Theoretical_Inventory_2024",
+                "Exit"
+            );
+            
+            // Step 2: Get Physical Data
+            ClearCollect(
+                MyTestCollection,
+                Getting_Physical_or_Theoretical_Data.Run(
+                    "Physical_Inventory_2024",
+                    "STATOR 12KG N°1,GARNITURE D'ETANCHEITE 12KG N°1,ROULEMENT  12KG N°1",
+                    "Jan-01-2024"
+                )
+            );
+            
+            // Step 3: Parse JSON Response and Create Collection
+            Set(
+                jsonString,
+                First(MyTestCollection).response
+            );
+            
+            ClearCollect(
+                ParsedCollection,
+                JSON(jsonString)
+            );
+            
+            // Step 4: Notify User with Collection Details
+            Notify(
+                "Parsed Collection Contents: " & JSON(ParsedCollection, JSONFormat.Compact),
+                NotificationType.Information,
+                60000  // Display for 60 seconds
+            );
+            
+            // Step 5: (Optional) Display Data in a Gallery or Data Table
+            // Set the Items property of a Gallery to ParsedCollection
+            // Gallery.Items = ParsedCollection
+        Width: =96
+        X: =640
+        Y: =580
+        ZIndex: =2
+
+    Label6 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Size: =13
+        Text: |-
+            ="original response :"
+        Width: =165
+        Y: =80
+        ZIndex: =3
+
+    TextInput3 As text:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =JSON(MyTestCollection)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        Height: =104
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Mode: =TextMode.MultiLine
+        Size: =13
+        Width: =1184
+        X: =182
+        Y: =48
+        ZIndex: =4
+
+    TextInput3_1 As text:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =JSON(ParsedCollection, JSONFormat.Compact)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        Height: =104
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Mode: =TextMode.MultiLine
+        Size: =13
+        Width: =1184
+        X: =172
+        Y: =392
+        ZIndex: =5
+
+    TextInput3_2 As text:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =jsonString
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        Height: =104
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Mode: =TextMode.MultiLine
+        Size: =13
+        Width: =1184
+        X: =172
+        Y: =220
+        ZIndex: =6
+
+    Label6_1 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Size: =13
+        Text: ="jsonString"
+        Width: =165
+        Y: =252
+        ZIndex: =7
+
+    Label6_2 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Size: =13
+        Text: ="parsed collection"
+        Width: =165
+        Y: =424
+        ZIndex: =8
+

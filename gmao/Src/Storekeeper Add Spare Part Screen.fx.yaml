@@ -1,0 +1,877 @@
+"'Storekeeper Add Spare Part Screen' As screen.'autoLayout_HeaderFooter_ver1.0'":
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    ScreenContainer5 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(0, 78, 152, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =16
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =16
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer5 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =2
+
+            Header4 As Header:
+                DisplayMode: =DisplayMode.Edit
+                Height: =75
+                IsProfilePictureVisible: =false
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                Logo: =OLA_LOGO
+                OnSelectLogo: =false
+                Title: =App.ActiveScreen.Name
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+        MainContainer5 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(240, 98, 15, 1)
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =3
+
+            Container4_3 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.ExtraBold
+                Fill: =RGBA(58, 110, 165, 1)
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
+                Image2_3 As image:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Image: ='icons8-tools-500'
+                    ZIndex: =1
+
+                Label5_3 As label:
+                    AutoHeight: =true
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Size: =20
+                    Text: ="ADD A NEW SPARE PART"
+                    Width: =390
+                    ZIndex: =2
+
+            Container2 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.Bold
+                Fill: =RGBA(58, 110, 165, 1)
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =2
+
+                Label4 As label:
+                    Align: =Align.Center
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Semibold
+                    Size: =15
+                    Text: ="Choose the equipment that has the wanted Spare Part"
+                    Width: =600
+                    ZIndex: =1
+
+                "'Dropdown spare equ' As dropdown":
+                    BorderColor: =App.Theme.Colors.Darker40
+                    ChevronBackground: =App.Theme.Colors.Primary
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =App.Theme.Colors.Darker10
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Font: =App.Theme.Font
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =App.Theme.Colors.Lighter70
+                    Items: |
+                        =/*Filter(
+                            Liste_Equipements,
+                            'Niveau d''arborescence' = "Equipement" && true
+                        )
+                        */
+                        
+                        Sort(
+                            Filter(
+                                Liste_Equipements,
+                                'Niveau d''arborescence' = "Equipement" && true
+                            ),
+                            Codification, // or 'Désignation', depending on the column you want to sort by
+                            SortOrder.Ascending
+                        )
+                    OnChange: |-
+                        =// Set the selected item from the dropdown
+                        UpdateContext({SelectedItem: 'Dropdown spare equ'.Selected});
+                        
+                        // Fetch spare parts that belong to the selected equipment
+                        ClearCollect(
+                            SparePartsForSelectedEquipment,
+                            Filter(
+                                Liste_Equipements,
+                                'Niveau d''arborescence' = "Pièce" && StartsWith(Codification, 'Dropdown spare equ'.Selected.Codification)
+                            )
+                        );
+                        
+                        // Get the last codification from the collection
+                        Set(
+                            MaxCodification,
+                            Last(SparePartsForSelectedEquipment).Codification
+                        );
+                        
+                        // Suggest the next codification
+                        Set(
+                            SuggestedCodification,
+                            If(
+                                !IsBlank(MaxCodification),
+                                // Extract base part and numeric suffix
+                                If(
+                                    Len(MaxCodification) > 3, // Ensure there's enough length for the suffix extraction
+                                    // Base part and numeric suffix extraction
+                                    Set(
+                                        BaseCodification,
+                                        Left(MaxCodification, Len(MaxCodification) - 2) // Adjust if suffix length is different
+                                    );
+                                    Set(
+                                        SuffixNumber,
+                                        Value(Right(MaxCodification, 1)) // Extract the numeric part, assuming it's 2 digits
+                                    );
+                                    Set(
+                                        NewSuffixNumber,
+                                        SuffixNumber + 1
+                                    );
+                                    Set(
+                                        NewSuffix,
+                                        Text(NewSuffixNumber,"_")
+                                        //Text(NewSuffixNumber, "00") // Format new suffix with leading zeros if needed
+                                    );
+                                    BaseCodification & NewSuffix
+                                ),
+                                'Dropdown spare equ'.Selected.Codification & "_1_1" // Fallback if no spare parts exist
+                            )
+                        );
+                        
+                        // Notify user of the suggested codification
+                        Notify("Suggested codification is " & SuggestedCodification, NotificationType.Information);
+                        
+                        
+                        
+                        /*UpdateContext({SelectedItem: 'Dropdown spare equ'.Selected});
+                        
+                        // Fetch spare parts that belong to the selected equipment
+                        ClearCollect(
+                            SparePartsForSelectedEquipment,
+                            Filter(
+                                Liste_Equipements,
+                                'Niveau d''arborescence' = "Pièce" && StartsWith(Codification, 'Dropdown spare equ'.Selected.Codification)
+                            )
+                        );
+                        
+                        // Find the highest codification from the filtered spare parts
+                        Set(
+                            MaxCodification,
+                            Last(
+                                Sort(
+                                    SparePartsForSelectedEquipment,
+                                    Codification,
+                                    SortOrder.Descending
+                                )
+                            ).Codification
+                        );
+                        
+                        // Suggest the next codification
+                        Set(
+                            SuggestedCodification, // You can use ClearCollect if you plan to reset it every time
+                            If(
+                                !IsBlank(MaxCodification),
+                                MaxCodification & "01", // Append the next codification based on logic
+                                'Dropdown spare equ'.Selected.Codification & "001" // Fallback if no spare parts exist
+                            )
+                        );
+                        */
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =App.Theme.Colors.Darker30
+                    SelectionFill: =App.Theme.Colors.Primary
+                    Size: =13
+                    ZIndex: =2
+
+            Container2_1 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(58, 110, 165, 1)
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =3
+
+                Label4_1 As label:
+                    Align: =Align.Center
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Semibold
+                    Size: =15
+                    Text: ="Designation"
+                    Width: =250
+                    ZIndex: =1
+
+                "'TextInput spare name' As text":
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    FocusedBorderThickness: =4
+                    Font: =App.Theme.Font
+                    HoverBorderColor: =App.Theme.Colors.Darker40
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =App.Theme.Colors.Lighter70
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Size: =13
+                    ZIndex: =2
+
+            Container2_2 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(58, 110, 165, 1)
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =4
+
+                Label4_2 As label:
+                    Align: =Align.Center
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Semibold
+                    Size: =15
+                    Text: ="Codification"
+                    Width: =250
+                    ZIndex: =1
+
+                "'TextInput cod spare' As text":
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: |+
+                        =SuggestedCodification
+                        /*If(
+                            !IsBlank(SelectedItem),
+                            SelectedItem.Codification,
+                            ""
+                        )*/
+                        
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    FocusedBorderThickness: =4
+                    Font: =App.Theme.Font
+                    HoverBorderColor: =App.Theme.Colors.Darker40
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =App.Theme.Colors.Lighter70
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Size: =13
+                    ZIndex: =2
+
+            Container2_3 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(58, 110, 165, 1)
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =5
+
+                Label4_3 As label:
+                    Align: =Align.Center
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Semibold
+                    Size: =15
+                    Text: ="Family equipment"
+                    Width: =250
+                    ZIndex: =1
+
+                "'Dropdown family equipements_1' As dropdown":
+                    BorderColor: =App.Theme.Colors.Darker40
+                    ChevronBackground: =App.Theme.Colors.Primary
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =App.Theme.Colors.Darker10
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Font: =App.Theme.Font
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =App.Theme.Colors.Lighter70
+                    Items: |
+                        =Sort(Distinct(Famille_equipements, 'Famille d''équipements'),ThisRecord.Value, SortOrder.Ascending)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =App.Theme.Colors.Darker30
+                    SelectionFill: =App.Theme.Colors.Primary
+                    Size: =13
+                    ZIndex: =3
+
+            Container2_4 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(58, 110, 165, 1)
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =false
+                ZIndex: =6
+
+                Label4_4 As label:
+                    Align: =Align.Center
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Semibold
+                    Size: =15
+                    Text: ="Type of equipment"
+                    Width: =250
+                    ZIndex: =1
+
+                "'TextInput type equip' As text":
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    FocusedBorderThickness: =4
+                    Font: =App.Theme.Font
+                    HoverBorderColor: =App.Theme.Colors.Darker40
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =App.Theme.Colors.Lighter70
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Size: =13
+                    ZIndex: =2
+
+            Container2_5 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(58, 110, 165, 1)
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =7
+
+                Label4_5 As label:
+                    Align: =Align.Center
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Semibold
+                    Size: =15
+                    Text: ="Brand"
+                    Width: =250
+                    ZIndex: =1
+
+                "'TextInput brand' As text":
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    FocusedBorderThickness: =4
+                    Font: =App.Theme.Font
+                    HoverBorderColor: =App.Theme.Colors.Darker40
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =App.Theme.Colors.Lighter70
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Size: =13
+                    ZIndex: =2
+
+        FooterContainer5 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(58, 110, 165, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutGap: =20
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =4
+
+            ButtonCanvas17 As Button:
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: |-
+                    =// Patch to Liste_Equipements
+                    Patch(
+                        Liste_Equipements,
+                        Defaults(Liste_Equipements),
+                        {
+                            Codification: 'Dropdown spare equ'.Selected.Codification, 
+                            'Niveau d''arborescence': "Pièce",
+                            Désignation: 'TextInput cod spare'.Text, 
+                            'Famille d''équipement': 'Dropdown family equipements_1'.Selected.Value, 
+                            'Type d''équipement': 'TextInput type equip'.Text, 
+                            Marque: 'TextInput brand'.Text
+                        }
+                    );
+                    
+                    // Patch the spare part name into each year table (Physical_Inventory_2024 to 2034)
+                    ForAll(
+                        [
+                            Physical_Inventory_2024,
+                            Physical_Inventory_2025,
+                            Physical_Inventory_2026,
+                            Physical_Inventory_2027,
+                            Physical_Inventory_2028,
+                            Physical_Inventory_2029,
+                            Physical_Inventory_2030,
+                            Physical_Inventory_2031,
+                            Physical_Inventory_2032,
+                            Physical_Inventory_2033,
+                            Physical_Inventory_2034
+                        ],
+                        Patch(
+                            ThisRecord,
+                            Defaults(ThisRecord.Value),
+                            {
+                                'Piece de Rechange': 'TextInput cod spare'.Text
+                            }
+                        )
+                    );
+                    
+                    // Display success notification
+                    Notify("Spare part added successfully to all tables!", NotificationType.Success);
+                Text: ="Go back"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+            ButtonCanvas18 As Button:
+                DisplayMode: |
+                    =If(
+                        IsBlank('Dropdown spare equ'.Selected.Codification) ||
+                        IsBlank('TextInput cod spare'.Text) ||
+                        //IsBlank('TextInput family equip'.Text) ||
+                        //IsBlank('TextInput type equip'.Text) ||
+                        IsBlank('TextInput brand'.Text),
+                        DisplayMode.Disabled,
+                        DisplayMode.Edit
+                    )
+                Height: =42
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: |
+                    =/*Set(isLoading,true);
+                    // Patch to Liste_Equipements
+                    Patch(
+                        Liste_Equipements,
+                        Defaults(Liste_Equipements),
+                        {
+                            Codification: 'TextInput cod spare'.Text, 
+                            'Niveau d''arborescence': "Pièce",
+                            Désignation: 'TextInput spare name'.Text, 
+                            'Famille d''équipement': 'Dropdown family equipements_1'.Selected.Value, 
+                            'Type d''équipement': 'TextInput type equip'.Text, 
+                            Marque: 'TextInput brand'.Text
+                            //'Degré de criticité':1
+                        }
+                    );
+                    
+                    // Patch the spare part name into each year table (Physical_Inventory_2024 to 2034)
+                    ForAll(
+                        [
+                            Physical_Inventory_2024,
+                            Physical_Inventory_2025,
+                            Physical_Inventory_2026,
+                            Physical_Inventory_2027,
+                            Physical_Inventory_2028,
+                            Physical_Inventory_2029,
+                            Physical_Inventory_2030,
+                            Physical_Inventory_2031,
+                            Physical_Inventory_2032,
+                            Physical_Inventory_2033,
+                            Physical_Inventory_2034
+                        ],
+                        Patch(
+                            ThisRecord.Value,
+                            Defaults(ThisRecord.Value),
+                            {
+                                'Piece de Rechange': 'TextInput spare name'.Text
+                            }
+                        )
+                    );
+                    
+                    // Refresh the collection after the spare part is added to include the newly added part
+                    ClearCollect(
+                        SparePartsForSelectedEquipment,
+                        Filter(
+                            Liste_Equipements,
+                            'Niveau d''arborescence' = "Pièce" && StartsWith(Codification, 'Dropdown spare equ'.Selected.Codification)
+                        )
+                    );
+                    */
+                    
+                    
+                    
+                    /*
+                    NOT WANTED FOR NOW JUST HERE IN CASE
+                    // Recalculate the maximum codification based on the updated collection
+                    Set(
+                        MaxCodification,
+                        Last(
+                            Sort(
+                                SparePartsForSelectedEquipment,
+                                Codification,
+                                SortOrder.Descending
+                            )
+                        ).Codification
+                    );
+                    
+                    // Suggest the next codification after submission
+                    Set(
+                        SuggestedCodification,
+                        If(
+                            !IsBlank(MaxCodification),
+                            MaxCodification & "01", // Append next codification based on logic
+                            'Dropdown spare equ'.Selected.Codification & "001" // Fallback if no spare parts exist
+                        )
+                    );
+                    NOT WANTED FOR NOW JUST HERE IN CASE
+                    */
+                    
+                    
+                    
+                    
+                    
+                    /*
+                    // Display success notification
+                    Notify("Spare part added successfully to all tables!", NotificationType.Success);
+                    Set(ispareaddedModal,true);
+                    If(ispareaddedModal = true, Set(isLoading,false));
+                    
+                    // Clear all inputs except for Codification and Dropdown
+                    Reset('TextInput spare name');
+                    //Reset('TextInput family equip');
+                    Reset('TextInput type equip');
+                    Reset('TextInput brand');
+                    */
+                    
+                    
+                    // Set loading indicator
+                    Set(isLoading, true);
+                    
+                    // Attempt to submit the data
+                    IfError(
+                        // Check if the suggested codification already exists in the filtered collection
+                        Set(
+                            ExistingCodification,
+                            LookUp(
+                                SparePartsForSelectedEquipment,
+                                Codification = 'TextInput cod spare'.Text
+                            )
+                        );
+                    
+                        // If codification exists, notify user and halt submission
+                        If(
+                            !IsBlank(ExistingCodification),
+                            Notify("The codification already exists for the selected equipment. Please choose a different one.", NotificationType.Error),
+                            // Proceed with form submission if codification is unique
+                            Patch(
+                                Liste_Equipements,
+                                Defaults(Liste_Equipements),
+                                {
+                                    Codification: 'TextInput cod spare'.Text, 
+                                    'Niveau d''arborescence': "Pièce",
+                                    Désignation: 'TextInput spare name'.Text, 
+                                    'Famille d''équipement': 'Dropdown family equipements_1'.Selected.Value, 
+                                    'Type d''équipement': 'TextInput type equip'.Text, 
+                                    Marque: 'TextInput brand'.Text
+                                    //'Degré de criticité':1
+                                }
+                            );
+                    
+                            // Patch the spare part name into each year table (Physical_Inventory_2024 to 2034)
+                            ForAll(
+                                [
+                                    Physical_Inventory_2024,
+                                    Physical_Inventory_2025,
+                                    Physical_Inventory_2026,
+                                    Physical_Inventory_2027,
+                                    Physical_Inventory_2028,
+                                    Physical_Inventory_2029,
+                                    Physical_Inventory_2030,
+                                    Physical_Inventory_2031,
+                                    Physical_Inventory_2032,
+                                    Physical_Inventory_2033,
+                                    Physical_Inventory_2034
+                                ],
+                                Patch(
+                                    ThisRecord.Value,
+                                    Defaults(ThisRecord.Value),
+                                    {
+                                        'Piece de Rechange': 'TextInput spare name'.Text
+                                    }
+                                )
+                            );
+                    
+                            // Refresh the collection after the spare part is added to include the newly added part
+                            ClearCollect(
+                                SparePartsForSelectedEquipment,
+                                Filter(
+                                    Liste_Equipements,
+                                    'Niveau d''arborescence' = "Pièce" && StartsWith(Codification, 'Dropdown spare equ'.Selected.Codification)
+                                )
+                            );
+                    
+                            // Display success notification
+                            Notify("Spare part added successfully to all tables!", NotificationType.Success);
+                            Set(ispareaddedModal, true);
+                            Reset('TextInput spare name');
+                            //Reset('TextInput family equip');
+                            Reset('TextInput type equip');
+                            Reset('TextInput brand')
+                        );
+                    
+                        // Set loading indicator to false after operations complete
+                        Set(isLoading, false),
+                    
+                        // Handle errors
+                        Notify("An error occurred while submitting the data. Please try again.", NotificationType.Error);
+                        Set(isLoading, false)
+                    );
+                Text: ="Add Spare Part"
+                Width: =100
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+    "'Dialog Container_9' As groupContainer.verticalAutoLayoutContainer":
+        DropShadow: =DropShadow.Light
+        Fill: |
+            =RGBA(0, 0, 0, 0.3)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: |-
+            =//true
+            ispareaddedModal
+        Width: =Parent.Width
+        ZIndex: =2
+
+        "'Dialog Content_15' As groupContainer.verticalAutoLayoutContainer":
+            AlignInContainer: =AlignInContainer.Center
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(214, 221, 224, 1)
+            FillPortions: =0
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =10
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =5
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            ZIndex: =1
+
+            "'cancel icon_15' As icon.CancelBadge":
+                AlignInContainer: =AlignInContainer.End
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =App.Theme.Colors.Darker30
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Icon: =Icon.CancelBadge
+                OnSelect: =Set(ispareaddedModal,false)
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingRight: =10
+                PaddingTop: =5
+                Width: =40
+                ZIndex: =1
+
+            "'staff fct added sucs message_1' As Text":
+                Align: ='TextCanvas.Align'.Center
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =
+                DisplayMode: =DisplayMode.Edit
+                Fill: =
+                FontColor: =
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                Size: =20
+                Text: ="Spare Part added successfully"
+                Weight: ='TextCanvas.Weight'.Bold
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+            "'sucs icon_12' As image":
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =50
+                Image: ='icons8-success-240'
+                LayoutMinWidth: =50
+                ZIndex: =3
+
+    "'Dialog Container_Loading' As groupContainer.verticalAutoLayoutContainer":
+        DropShadow: =DropShadow.Light
+        Fill: |
+            =RGBA(0, 0, 0, 0.3)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: =isLoading
+        Width: =Parent.Width
+        ZIndex: =3
+
+        "'Dialog Content_17' As groupContainer.verticalAutoLayoutContainer":
+            AlignInContainer: =AlignInContainer.Center
+            DropShadow: =DropShadow.Bold
+            Fill: =RGBA(214, 221, 224, 1)
+            FillPortions: =0
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =10
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =5
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Width: =200
+            ZIndex: =1
+
+            "'Image loading gif' As image":
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: ='pablita-loading'
+                ZIndex: =4
+

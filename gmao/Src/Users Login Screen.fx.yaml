@@ -1,0 +1,304 @@
+"'Users Login Screen' As screen":
+    BackgroundImage: =OLA_LOGO
+    Fill: =RGBA(255, 103, 0, 1)
+    ImagePosition: =ImagePosition.Stretch
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    Circle_bg_orange_2 As circle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =RGBA(0, 78, 152, 1)
+        Height: =Parent.Height / 2
+        TabIndex: =-10
+        Width: =Parent.Width
+        X: =Parent.Width - Self.Width
+        Y: =(Parent.Height - Self.Height) * 1.5
+        ZIndex: =1
+
+    "'Users Login Parent Container' As groupContainer.manualLayoutContainer":
+        BorderColor: =RGBA(253, 222, 207, 1)
+        DropShadow: =DropShadow.Light
+        Height: =Parent.Height * 0.95
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =Parent.Width * 0.9
+        X: =(Parent.Width - Self.Width) / 2
+        Y: =(Parent.Height - Self.Height) / 2
+        ZIndex: =4
+
+        "'Users Login Header Container' As groupContainer.manualLayoutContainer":
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(58, 110, 165, 1)
+            Height: =Parent.Height * 0.3
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: = Parent.Width
+            X: =(Parent.Width - Self.Width) / 2
+            Y: =(Parent.Height - Self.Height) / 10
+            ZIndex: =1
+
+            "'Users icon_1' As image":
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =Parent.Height * 0.4
+                Image: =user_profile_img
+                Width: =Parent.Width
+                X: =(Parent.Width - Self.Width) / 2
+                Y: =(Parent.Height - Self.Height) / 10
+                ZIndex: =1
+
+            "'header text_1' As label":
+                Align: =Align.Center
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height * 0.4
+                Size: =22
+                Text: |-
+                    ="Users Login Page
+                    "
+                Width: =Parent.Width
+                X: =(Parent.Width - Self.Width) / 2
+                Y: =(Parent.Height - Self.Height) / 1.3
+                ZIndex: =2
+
+            ButtonCanvas4_1 As Button:
+                BasePaletteColor: =
+                BorderColor: =
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =Parent.Height * 0.15
+                Icon: ="ArrowLeft"
+                OnSelect: =Navigate('Welcome Screen')
+                Text: ="Go Back"
+                Width: =Parent.Width * 0.4
+                X: =(Parent.Width - Self.Width) / 2
+                Y: =(Parent.Height - Self.Height) / 1.03
+                ZIndex: =3
+
+        "'Users Login Body Container' As groupContainer.manualLayoutContainer":
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(58, 110, 165, 1)
+            Height: =Parent.Height * 0.5
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: = Parent.Width
+            X: =(Parent.Width - Self.Width) / 2
+            Y: =(Parent.Height - Self.Height) / 1.2
+            ZIndex: =2
+
+            "'Users Login  UserName' As groupContainer.manualLayoutContainer":
+                DropShadow: =DropShadow.Light
+                Height: =Parent.Height * 0.4
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =Parent.Width
+                X: =(Parent.Width - Self.Width) / 2
+                ZIndex: =1
+
+                "'Email label_1' As label":
+                    Align: =Align.Center
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.3
+                    Size: =20
+                    Text: |-
+                        ="Email Address
+                        "
+                    Width: =Parent.Width
+                    X: =(Parent.Width - Self.Width) / 2
+                    Y: =(Parent.Height - Self.Height) / 10
+                    ZIndex: =1
+
+                "'Email input_1' As text":
+                    BorderColor: =RGBA(255, 255, 255, 1)
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(253, 222, 207, 1)
+                    FocusedBorderThickness: =4
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Semibold
+                    Height: =Parent.Height * 0.3
+                    HoverBorderColor: =RGBA(253, 222, 207, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Size: =13
+                    Width: =Parent.Width * 0.5
+                    X: =(Parent.Width - Self.Width) / 2
+                    Y: =(Parent.Height - Self.Height) / 1.5
+                    ZIndex: =2
+
+            "'Users Login Password' As groupContainer.manualLayoutContainer":
+                DropShadow: =DropShadow.Light
+                Height: =Parent.Height * 0.4
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =Parent.Width
+                X: =(Parent.Width - Self.Width) / 2
+                Y: =(Parent.Height - Self.Height) / 1.5
+                ZIndex: =2
+
+                "'password label_1' As label":
+                    Align: =Align.Center
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.3
+                    Size: =20
+                    Text: |-
+                        ="Password
+                        "
+                    Width: =Parent.Width
+                    X: =(Parent.Width - Self.Width) / 2
+                    Y: =(Parent.Height - Self.Height) / 10
+                    ZIndex: =1
+
+                "'password input_1' As text":
+                    BorderColor: =RGBA(255, 255, 255, 1)
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(253, 222, 207, 1)
+                    FocusedBorderThickness: =4
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Semibold
+                    Height: =Parent.Height * 0.3
+                    HoverBorderColor: =RGBA(253, 222, 207, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    Mode: =TextMode.Password
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Size: =13
+                    Width: =Parent.Width * 0.5
+                    X: =(Parent.Width - Self.Width) / 2
+                    Y: =(Parent.Height - Self.Height) / 1.5
+                    ZIndex: =2
+
+            Login_btn_1 As button:
+                BorderColor: =App.Theme.Colors.Primary
+                DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: |
+                    =//DisplayMode.Edit
+                    If(!IsBlank('Email input_1'.Text) && !IsBlank('password input_1'.Text), DisplayMode.Edit, DisplayMode.Disabled)
+                Fill: =RGBA(255, 103, 0, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height * 0.12
+                HoverBorderColor: =App.Theme.Colors.Darker10
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =App.Theme.Colors.Darker10
+                OnSelect: |+
+                    =/*If(
+                        !IsBlank(LookUp(Users_DB, 'Adresse email' = 'Email input_1'.Text && 'Mot de Passe' = 'password input_1'.Text)),
+                        Navigate('Rapport Intervention Management Screen', ScreenTransition.Fade);
+                        Notify("Success", NotificationType.Success),
+                        Notify("Wrong Credentials", NotificationType.Error)
+                    );
+                    Reset('Email input_1');
+                    Reset('password input_1');
+                    */
+                    
+                    // Attempt to find the user row in the Users_DB table
+                    
+                    /*Set(
+                        CurrentUser,
+                        LookUp(Users_DB, 'Adresse email' = 'Email input_1'.Text && 'Mot de Passe' = 'password input_1'.Text)
+                    );
+                    
+                    If(
+                        !IsBlank(CurrentUser),
+                        // Store the necessary information in global variables
+                        Set(UserName, CurrentUser.'Nom complet');
+                        Set(UserEmail, CurrentUser.'Adresse email');
+                        Set(UserFunction, CurrentUser.Fonction);
+                    
+                        // Navigate to the next screen
+                        Navigate('Rapport Intervention Management Screen', ScreenTransition.Fade);
+                        Notify("Success", NotificationType.Success),
+                        
+                        // If the credentials are wrong, show an error message
+                        Notify("Wrong Credentials", NotificationType.Error)
+                    );
+                    
+                    // Reset the input fields
+                    Reset('Email input_1');
+                    Reset('password input_1');
+                    */
+                    
+                    // Attempt to find the user row in the Users_DB table
+                    Set(
+                        CurrentUser,
+                        LookUp(Users_DB, 'Adresse email' = 'Email input_1'.Text && 'Mot de Passe' = 'password input_1'.Text)
+                    );
+                    
+                    If(
+                        !IsBlank(CurrentUser),
+                        // Store the necessary information in global variables
+                        Set(UserName, CurrentUser.'Nom complet');
+                        Set(UserEmail, CurrentUser.'Adresse email');
+                        Set(UserFunction, CurrentUser.Fonction);
+                    
+                        // Check if the user is 'Magasiner'
+                        If(
+                            CurrentUser.Fonction = "Magasinier",
+                            Navigate('Magasiner Activities Screen', ScreenTransition.Fade),
+                            Navigate('User Activities Screen', ScreenTransition.Fade)
+                        );
+                        
+                        Notify("Success", NotificationType.Success);
+                        Reset('Email input_1');
+                        Reset('password input_1');    
+                        ,
+                        
+                        // If the credentials are wrong, show an error message
+                        Notify("Wrong Credentials", NotificationType.Error)
+                    );
+                    
+                    
+                PressedBorderColor: =App.Theme.Colors.Darker40
+                PressedColor: =Self.Color
+                PressedFill: =App.Theme.Colors.Darker40
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Size: =15
+                Text: ="Login"
+                Width: =Parent.Width * 0.4
+                X: =(Parent.Width - Self.Width) / 2
+                Y: =(Parent.Height - Self.Height) / 1.05
+                ZIndex: =3
+

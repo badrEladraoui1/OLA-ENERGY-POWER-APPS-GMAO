@@ -1,0 +1,3615 @@
+"'Storekeeper Monthly Physical Inventory' As screen.'autoLayout_HeaderFooter_ver1.0'":
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+    OnVisible: |
+        =Set(selectedContainer, "Jan")
+
+    ScreenContainer2_2 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(0, 78, 152, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =16
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =16
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer2_2 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =1
+
+            Header2_2 As Header:
+                AlignInContainer: =AlignInContainer.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =75
+                IsProfilePictureVisible: =false
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                Logo: =OLA_LOGO
+                OnSelectLogo: =false
+                Title: ="Storekeeper Monthly Physical Inventory " & Text( varSelectedYear)
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+        ContainerMain As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =3
+
+            "'date and type mvmt container_3' As groupContainer.horizontalAutoLayoutContainer":
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Light
+                FillPortions: =0.2
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =10
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: |+
+                    =Parent.Width*0.95
+                    
+                    
+                ZIndex: =1
+
+                "'Date intrev Container_5' As groupContainer.verticalAutoLayoutContainer":
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.Light
+                    Height: =Parent.Height * 0.2
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =6
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    bntJan_1 As Button:
+                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        DisplayMode: |-
+                            =//DisplayMode.Edit
+                            If(StartsWith(selectedContainer,"Jan"),DisplayMode.Disabled,DisplayMode.Edit)
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =32
+                        IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(selectedContainer, "Jan")
+                        Text: ="January"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =2
+
+                    btnFeb_1 As Button:
+                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        DisplayMode: =If(StartsWith(selectedContainer,"Feb"),DisplayMode.Disabled,DisplayMode.Edit)
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =32
+                        IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(selectedContainer, "Feb")
+                        Text: ="February"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =3
+
+                    btnMar_1 As Button:
+                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        DisplayMode: =If(StartsWith(selectedContainer,"Mar"),DisplayMode.Disabled,DisplayMode.Edit)
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =32
+                        IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(selectedContainer, "Mar")
+                        Text: ="March"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =4
+
+                    btnApr_1 As Button:
+                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        DisplayMode: =If(StartsWith(selectedContainer,"Apr"),DisplayMode.Disabled,DisplayMode.Edit)
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =32
+                        IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(selectedContainer, "Apr")
+                        Text: ="April"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =5
+
+                    btnMay_1 As Button:
+                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        DisplayMode: =If(StartsWith(selectedContainer,"May"),DisplayMode.Disabled,DisplayMode.Edit)
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =32
+                        IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(selectedContainer, "May")
+                        Text: ="May"
+                        Visible: =true
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =6
+
+                    btnJun_1 As Button:
+                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        DisplayMode: =If(StartsWith(selectedContainer,"Jun"),DisplayMode.Disabled,DisplayMode.Edit)
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =32
+                        IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(selectedContainer, "Jun")
+                        Text: ="June"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =7
+
+                    btnJul_1 As Button:
+                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        DisplayMode: =If(StartsWith(selectedContainer,"Jul"),DisplayMode.Disabled,DisplayMode.Edit)
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =32
+                        IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(selectedContainer, "Jul")
+                        Text: ="July"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =8
+
+                    btnAug_1 As Button:
+                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        DisplayMode: =If(StartsWith(selectedContainer,"Aug"),DisplayMode.Disabled,DisplayMode.Edit)
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =32
+                        IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(selectedContainer, "Aug")
+                        Text: ="August"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =9
+
+                    btnSep_1 As Button:
+                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        DisplayMode: =If(StartsWith(selectedContainer,"Sep"),DisplayMode.Disabled,DisplayMode.Edit)
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =32
+                        IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(selectedContainer, "Sep")
+                        Text: ="September"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =10
+
+                    btnOct_1 As Button:
+                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        DisplayMode: =If(StartsWith(selectedContainer,"Oct"),DisplayMode.Disabled,DisplayMode.Edit)
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =32
+                        IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(selectedContainer, "Oct")
+                        Text: ="October"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =11
+
+                    btnNov_1 As Button:
+                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        DisplayMode: =If(StartsWith(selectedContainer,"Nov"),DisplayMode.Disabled,DisplayMode.Edit)
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =32
+                        IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(selectedContainer, "Nov")
+                        Text: ="November"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =12
+
+                    btnDec_1 As Button:
+                        BasePaletteColor: =RGBA(5, 102, 178, 1)
+                        DisplayMode: =If(StartsWith(selectedContainer,"Dec"),DisplayMode.Disabled,DisplayMode.Edit)
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =32
+                        IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(selectedContainer, "Dec")
+                        Text: ="December"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =13
+
+            Container_Physical_Inventory_2024 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: |
+                    =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =varSelectedYear="2024"
+                Width: |
+                    =Parent.Width*0.7
+                ZIndex: =4
+
+                Gallery2_1 As gallery.variableTemplateHeightGallery:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =1
+                    DelayItemLoading: =true
+                    Height: =416
+                    Items: =Filter(Physical_Inventory_2024,VarReset)
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =10
+                    TemplateSize: =45
+                    Width: =Parent.Width*0.99
+                    X: =33
+                    Y: =36
+                    ZIndex: =1
+
+                    "TextInputCanvas2_1 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.FilledLighter
+                        DisplayMode: =DisplayMode.View
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden)
+                        Value: =ThisItem.'Piece de Rechange'
+                        Width: =320
+                        X: =72
+                        Y: =8
+                        ZIndex: =1
+
+                    "TextInputQtePhysique As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.Outline
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden)
+                        Value: |
+                            =Switch(
+                                selectedContainer,
+                                "Jan", ThisItem.'Jan-01-2024',
+                                "Feb", ThisItem.'Feb-01-2024',
+                                "Mar", ThisItem.'Mar-01-2024',
+                                "Apr", ThisItem.'Apr-01-2024',
+                                "May", ThisItem.'May-01-2024',
+                                "Jun", ThisItem.'Jun-01-2024',
+                                "Jul", ThisItem.'Jul-01-2024',
+                                "Aug", ThisItem.'Aug-01-2024',
+                                "Sep", ThisItem.'Sep-01-2024',
+                                "Oct", ThisItem.'Oct-01-2024',
+                                "Nov", ThisItem.'Nov-01-2024',
+                                "Dec", ThisItem.'Dec-01-2024'
+                            )
+                        Width: =320
+                        X: =392
+                        Y: =8
+                        ZIndex: =2
+
+                    btn_save_hidden As Button:
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontWeight: =FontWeight.Normal
+                        Height: =32
+                        OnSelect: |+
+                            =If(
+                                IsBlank(
+                                    LookUp(
+                                        colGridUpdates,
+                                        'Row Number' = ThisItem.'Row Number'
+                                    )
+                                ),
+                                Collect(
+                                    colGridUpdates,
+                                    ThisItem
+                                )
+                            );
+                            UpdateIf(
+                                colGridUpdates,
+                                'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jan-01-2024': TextInputQtePhysique.Value
+                                },
+                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Feb-01-2024': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Mar-01-2024': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Apr-01-2024': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'May-01-2024': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jun-01-2024': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jul-01-2024': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Aug-01-2024': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Sep-01-2024': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Oct-01-2024': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Nov-01-2024': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Dec-01-2024': TextInputQtePhysique.Value
+                                }
+                            
+                                
+                            );
+                            Notify(
+                                LookUp(
+                                    Physical_Inventory_2024,
+                                    'Piece de Rechange' = ThisRecord.'Piece de Rechange' && 'Row Number' = ThisRecord.'Row Number' 
+                                ).'Piece de Rechange'
+                            );
+                            
+                            
+                            
+                        Visible: =false
+                        Width: =96
+                        X: =646
+                        Y: =8
+                        ZIndex: =3
+
+                ButtonCanvas25 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Outline
+                    OnSelect: |-
+                        =ForAll(
+                            colGridUpdates,
+                            With(
+                                {
+                                    currentRecord: ThisRecord
+                                },
+                                Patch(
+                                    Physical_Inventory_2024,
+                                    LookUp(
+                                        Physical_Inventory_2024,
+                                        'Row Number' = currentRecord.'Row Number' && 'Piece de Rechange' = currentRecord.'Piece de Rechange'
+                                    ),
+                                    {
+                                        'Jan-01-2024': currentRecord.'Jan-01-2024',
+                                        'Feb-01-2024': currentRecord.'Feb-01-2024',
+                                        'Mar-01-2024': currentRecord.'Mar-01-2024',
+                                        'Apr-01-2024': currentRecord.'Apr-01-2024',
+                                        'May-01-2024': currentRecord.'May-01-2024',
+                                        'Jun-01-2024': currentRecord.'Jun-01-2024',
+                                        'Jul-01-2024': currentRecord.'Jul-01-2024',
+                                        'Aug-01-2024': currentRecord.'Aug-01-2024',
+                                        'Sep-01-2024': currentRecord.'Sep-01-2024',
+                                        'Oct-01-2024': currentRecord.'Oct-01-2024',
+                                        'Nov-01-2024': currentRecord.'Nov-01-2024',
+                                        'Dec-01-2024': currentRecord.'Dec-01-2024'
+                                    }
+                                )
+                            )
+                        );
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Notify(
+                            "Updated Succesfully",
+                            NotificationType.Success,
+                            1000
+                        );
+                        
+                        Clear(colGridUpdates);
+                        
+                        Set(VarReset,false);
+                        Set(VarReset,true)
+                    Text: ="Save 💾"
+                    Width: =96
+                    X: =892
+                    Y: =185
+                    ZIndex: =2
+
+                ButtonCanvas25_1 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                    OnSelect: |-
+                        =// Clear the collection
+                        Clear(colGridUpdates);
+                        // Reset the gallery
+                        Refresh(Physical_Inventory_2024);
+                        
+                        // Set a variable to trigger gallery refresh if necessary
+                        Set(VarReset, false);
+                        Set(VarReset, true);
+                        Notify(
+                            "Data has been reset",
+                            NotificationType.Information,
+                            3000 // Duration in milliseconds
+                        );
+                    Text: ="Reset  🔄"
+                    Width: =96
+                    X: =892
+                    Y: =235
+                    ZIndex: =4
+
+                Badge_physical_inven As Badge:
+                    Content: |
+                        =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Shape: ='BadgeCanvas.Shape'.Circular
+                    ThemeColor: ='BadgeCanvas.ThemeColor'.Informative
+                    Width: =682
+                    X: =91
+                    Y: =5
+                    ZIndex: =5
+
+                badge_spare As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Spare Part  🛠️"
+                    Width: =96
+                    X: =129
+                    Y: =5
+                    ZIndex: =6
+
+                badge_qte As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: |
+                        ="Physical Inventory📦 at " & Switch(
+                            selectedContainer,
+                            "Jan", "January ",
+                            "Feb", "February ",
+                            "Mar", "March ",
+                            "Apr", "April ",
+                            "May", "May ",
+                            "Jun", "June ",
+                            "Jul", "July ",
+                            "Aug", "August ",
+                            "Sep", "September ",
+                            "Oct", "October ",
+                            "Nov", "November ",
+                            "Dec", "December ",
+                            "Unknown Month" // Default text if none of the above match
+                        ) & varSelectedYear
+                    Width: =278
+                    X: =438
+                    Y: =5
+                    ZIndex: =7
+
+            Container_Physical_Inventory_2025 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: |
+                    =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =varSelectedYear="2025"
+                Width: |
+                    =Parent.Width*0.7
+                ZIndex: =5
+
+                Gallery2_2 As gallery.variableTemplateHeightGallery:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =1
+                    DelayItemLoading: =true
+                    Height: =416
+                    Items: =Filter(Physical_Inventory_2025,VarReset)
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =10
+                    TemplateSize: =45
+                    Width: =Parent.Width*0.99
+                    X: =33
+                    Y: =36
+                    ZIndex: =1
+
+                    "TextInputCanvas2_2 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.FilledLighter
+                        DisplayMode: =DisplayMode.View
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_1)
+                        Value: =ThisItem.'Piece de Rechange'
+                        Width: =320
+                        X: =72
+                        Y: =8
+                        ZIndex: =1
+
+                    "TextInputQtePhysique_1 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.Outline
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_1)
+                        Value: |
+                            =Switch(
+                                selectedContainer,
+                                "Jan", ThisItem.'Jan-01-2025',
+                                "Feb", ThisItem.'Feb-01-2025',
+                                "Mar", ThisItem.'Mar-01-2025',
+                                "Apr", ThisItem.'Apr-01-2025',
+                                "May", ThisItem.'May-01-2025',
+                                "Jun", ThisItem.'Jun-01-2025',
+                                "Jul", ThisItem.'Jul-01-2025',
+                                "Aug", ThisItem.'Aug-01-2025',
+                                "Sep", ThisItem.'Sep-01-2025',
+                                "Oct", ThisItem.'Oct-01-2025',
+                                "Nov", ThisItem.'Nov-01-2025',
+                                "Dec", ThisItem.'Dec-01-2025'
+                            )
+                        Width: =320
+                        X: =392
+                        Y: =8
+                        ZIndex: =2
+
+                    btn_save_hidden_1 As Button:
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontWeight: =FontWeight.Normal
+                        Height: =32
+                        OnSelect: |+
+                            =If(
+                                IsBlank(
+                                    LookUp(
+                                        colGridUpdates,
+                                        'Row Number' = ThisItem.'Row Number'
+                                    )
+                                ),
+                                Collect(
+                                    colGridUpdates,
+                                    ThisItem
+                                )
+                            );
+                            UpdateIf(
+                                colGridUpdates,
+                                'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jan-01-2025': TextInputQtePhysique.Value
+                                },
+                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Feb-01-2025': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Mar-01-2025': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Apr-01-2025': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'May-01-2025': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jun-01-2025': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jul-01-2025': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Aug-01-2025': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Sep-01-2025': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Oct-01-2025': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Nov-01-2025': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Dec-01-2025': TextInputQtePhysique.Value
+                                }
+                            
+                                
+                            );
+                            Notify(
+                                LookUp(
+                                    Physical_Inventory_2025,
+                                    'Piece de Rechange' = ThisRecord.'Piece de Rechange' && 'Row Number' = ThisRecord.'Row Number' 
+                                ).'Piece de Rechange'
+                            );
+                            
+                            
+                            
+                        Visible: =false
+                        Width: =96
+                        X: =646
+                        Y: =8
+                        ZIndex: =3
+
+                ButtonCanvas25_2 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Outline
+                    OnSelect: |-
+                        =ForAll(
+                            colGridUpdates,
+                            With(
+                                {
+                                    currentRecord: ThisRecord
+                                },
+                                Patch(
+                                    Physical_Inventory_2025,
+                                    LookUp(
+                                        Physical_Inventory_2025,
+                                        'Row Number' = currentRecord.'Row Number' && 'Piece de Rechange' = currentRecord.'Piece de Rechange'
+                                    ),
+                                    {
+                                        'Jan-01-2025': currentRecord.'Jan-01-2025',
+                                        'Feb-01-2025': currentRecord.'Feb-01-2025',
+                                        'Mar-01-2025': currentRecord.'Mar-01-2025',
+                                        'Apr-01-2025': currentRecord.'Apr-01-2025',
+                                        'May-01-2025': currentRecord.'May-01-2025',
+                                        'Jun-01-2025': currentRecord.'Jun-01-2025',
+                                        'Jul-01-2025': currentRecord.'Jul-01-2025',
+                                        'Aug-01-2025': currentRecord.'Aug-01-2025',
+                                        'Sep-01-2025': currentRecord.'Sep-01-2025',
+                                        'Oct-01-2025': currentRecord.'Oct-01-2025',
+                                        'Nov-01-2025': currentRecord.'Nov-01-2025',
+                                        'Dec-01-2025': currentRecord.'Dec-01-2025'
+                                    }
+                                )
+                            )
+                        );
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Notify(
+                            "Updated Succesfully",
+                            NotificationType.Success,
+                            1000
+                        );
+                        
+                        Clear(colGridUpdates);
+                        
+                        Set(VarReset,false);
+                        Set(VarReset,true)
+                    Text: ="Save 💾"
+                    Width: =96
+                    X: =892
+                    Y: =185
+                    ZIndex: =2
+
+                ButtonCanvas25_3 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                    OnSelect: |-
+                        =// Clear the collection
+                        Clear(colGridUpdates);
+                        // Reset the gallery
+                        Refresh(Physical_Inventory_2025);
+                        
+                        // Set a variable to trigger gallery refresh if necessary
+                        Set(VarReset, false);
+                        Set(VarReset, true);
+                        Notify(
+                            "Data has been reset",
+                            NotificationType.Information,
+                            3000 // Duration in milliseconds
+                        );
+                    Text: ="Reset  🔄"
+                    Width: =96
+                    X: =892
+                    Y: =235
+                    ZIndex: =4
+
+                Badge_physical_inven_1 As Badge:
+                    Content: |
+                        =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Shape: ='BadgeCanvas.Shape'.Circular
+                    ThemeColor: ='BadgeCanvas.ThemeColor'.Informative
+                    Width: =682
+                    X: =91
+                    Y: =5
+                    ZIndex: =5
+
+                badge_spare_1 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Spare Part  🛠️"
+                    Width: =96
+                    X: =129
+                    Y: =5
+                    ZIndex: =6
+
+                badge_qte_1 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: |
+                        ="Physical Inventory📦 at " & Switch(
+                            selectedContainer,
+                            "Jan", "January ",
+                            "Feb", "February ",
+                            "Mar", "March ",
+                            "Apr", "April ",
+                            "May", "May ",
+                            "Jun", "June ",
+                            "Jul", "July ",
+                            "Aug", "August ",
+                            "Sep", "September ",
+                            "Oct", "October ",
+                            "Nov", "November ",
+                            "Dec", "December ",
+                            "Unknown Month" // Default text if none of the above match
+                        ) & varSelectedYear
+                    Width: =278
+                    X: =438
+                    Y: =5
+                    ZIndex: =7
+
+            Container_Physical_Inventory_2026 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: |
+                    =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =varSelectedYear="2026"
+                Width: |
+                    =Parent.Width*0.7
+                ZIndex: =6
+
+                Gallery2_3 As gallery.variableTemplateHeightGallery:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =1
+                    DelayItemLoading: =true
+                    Height: =416
+                    Items: =Filter(Physical_Inventory_2026,VarReset)
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =10
+                    TemplateSize: =45
+                    Width: =Parent.Width*0.99
+                    X: =33
+                    Y: =36
+                    ZIndex: =1
+
+                    "TextInputCanvas2_3 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.FilledLighter
+                        DisplayMode: =DisplayMode.View
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_2)
+                        Value: =ThisItem.'Piece de Rechange'
+                        Width: =320
+                        X: =72
+                        Y: =8
+                        ZIndex: =1
+
+                    "TextInputQtePhysique_2 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.Outline
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_2)
+                        Value: |
+                            =Switch(
+                                selectedContainer,
+                                "Jan", ThisItem.'Jan-01-2026',
+                                "Feb", ThisItem.'Feb-01-2026',
+                                "Mar", ThisItem.'Mar-01-2026',
+                                "Apr", ThisItem.'Apr-01-2026',
+                                "May", ThisItem.'May-01-2026',
+                                "Jun", ThisItem.'Jun-01-2026',
+                                "Jul", ThisItem.'Jul-01-2026',
+                                "Aug", ThisItem.'Aug-01-2026',
+                                "Sep", ThisItem.'Sep-01-2026',
+                                "Oct", ThisItem.'Oct-01-2026',
+                                "Nov", ThisItem.'Nov-01-2026',
+                                "Dec", ThisItem.'Dec-01-2026'
+                            )
+                        Width: =320
+                        X: =392
+                        Y: =8
+                        ZIndex: =2
+
+                    btn_save_hidden_2 As Button:
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontWeight: =FontWeight.Normal
+                        Height: =32
+                        OnSelect: |+
+                            =If(
+                                IsBlank(
+                                    LookUp(
+                                        colGridUpdates,
+                                        'Row Number' = ThisItem.'Row Number'
+                                    )
+                                ),
+                                Collect(
+                                    colGridUpdates,
+                                    ThisItem
+                                )
+                            );
+                            UpdateIf(
+                                colGridUpdates,
+                                'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jan-01-2026': TextInputQtePhysique.Value
+                                },
+                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Feb-01-2026': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Mar-01-2026': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Apr-01-2026': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'May-01-2026': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jun-01-2026': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jul-01-2026': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Aug-01-2026': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Sep-01-2026': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Oct-01-2026': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Nov-01-2026': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Dec-01-2026': TextInputQtePhysique.Value
+                                }
+                            
+                                
+                            );
+                            Notify(
+                                LookUp(
+                                    Physical_Inventory_2026,
+                                    'Piece de Rechange' = ThisRecord.'Piece de Rechange' && 'Row Number' = ThisRecord.'Row Number' 
+                                ).'Piece de Rechange'
+                            );
+                            
+                            
+                            
+                        Visible: =false
+                        Width: =96
+                        X: =646
+                        Y: =8
+                        ZIndex: =3
+
+                ButtonCanvas25_4 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Outline
+                    OnSelect: |-
+                        =ForAll(
+                            colGridUpdates,
+                            With(
+                                {
+                                    currentRecord: ThisRecord
+                                },
+                                Patch(
+                                    Physical_Inventory_2026,
+                                    LookUp(
+                                        Physical_Inventory_2026,
+                                        'Row Number' = currentRecord.'Row Number' && 'Piece de Rechange' = currentRecord.'Piece de Rechange'
+                                    ),
+                                    {
+                                        'Jan-01-2026': currentRecord.'Jan-01-2026',
+                                        'Feb-01-2026': currentRecord.'Feb-01-2026',
+                                        'Mar-01-2026': currentRecord.'Mar-01-2026',
+                                        'Apr-01-2026': currentRecord.'Apr-01-2026',
+                                        'May-01-2026': currentRecord.'May-01-2026',
+                                        'Jun-01-2026': currentRecord.'Jun-01-2026',
+                                        'Jul-01-2026': currentRecord.'Jul-01-2026',
+                                        'Aug-01-2026': currentRecord.'Aug-01-2026',
+                                        'Sep-01-2026': currentRecord.'Sep-01-2026',
+                                        'Oct-01-2026': currentRecord.'Oct-01-2026',
+                                        'Nov-01-2026': currentRecord.'Nov-01-2026',
+                                        'Dec-01-2026': currentRecord.'Dec-01-2026'
+                                    }
+                                )
+                            )
+                        );
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Notify(
+                            "Updated Succesfully",
+                            NotificationType.Success,
+                            1000
+                        );
+                        
+                        Clear(colGridUpdates);
+                        
+                        Set(VarReset,false);
+                        Set(VarReset,true)
+                    Text: ="Save 💾"
+                    Width: =96
+                    X: =892
+                    Y: =185
+                    ZIndex: =2
+
+                ButtonCanvas25_5 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                    OnSelect: |-
+                        =// Clear the collection
+                        Clear(colGridUpdates);
+                        // Reset the gallery
+                        Refresh(Physical_Inventory_2026);
+                        
+                        // Set a variable to trigger gallery refresh if necessary
+                        Set(VarReset, false);
+                        Set(VarReset, true);
+                        Notify(
+                            "Data has been reset",
+                            NotificationType.Information,
+                            3000 // Duration in milliseconds
+                        );
+                    Text: ="Reset  🔄"
+                    Width: =96
+                    X: =892
+                    Y: =235
+                    ZIndex: =4
+
+                Badge_physical_inven_2 As Badge:
+                    Content: |
+                        =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Shape: ='BadgeCanvas.Shape'.Circular
+                    ThemeColor: ='BadgeCanvas.ThemeColor'.Informative
+                    Width: =682
+                    X: =91
+                    Y: =5
+                    ZIndex: =5
+
+                badge_spare_2 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Spare Part  🛠️"
+                    Width: =96
+                    X: =129
+                    Y: =5
+                    ZIndex: =6
+
+                badge_qte_2 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: |
+                        ="Physical Inventory📦 at " & Switch(
+                            selectedContainer,
+                            "Jan", "January ",
+                            "Feb", "February ",
+                            "Mar", "March ",
+                            "Apr", "April ",
+                            "May", "May ",
+                            "Jun", "June ",
+                            "Jul", "July ",
+                            "Aug", "August ",
+                            "Sep", "September ",
+                            "Oct", "October ",
+                            "Nov", "November ",
+                            "Dec", "December ",
+                            "Unknown Month" // Default text if none of the above match
+                        ) & varSelectedYear
+                    Width: =278
+                    X: =438
+                    Y: =5
+                    ZIndex: =7
+
+            Container_Physical_Inventory_2027 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: |
+                    =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =varSelectedYear="2027"
+                Width: |
+                    =Parent.Width*0.7
+                ZIndex: =7
+
+                Gallery2_4 As gallery.variableTemplateHeightGallery:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =1
+                    DelayItemLoading: =true
+                    Height: =416
+                    Items: =Filter(Physical_Inventory_2027,VarReset)
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =10
+                    TemplateSize: =45
+                    Width: =Parent.Width*0.99
+                    X: =33
+                    Y: =36
+                    ZIndex: =1
+
+                    "TextInputCanvas2_4 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.FilledLighter
+                        DisplayMode: =DisplayMode.View
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_3)
+                        Value: =ThisItem.'Piece de Rechange'
+                        Width: =320
+                        X: =72
+                        Y: =8
+                        ZIndex: =1
+
+                    "TextInputQtePhysique_3 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.Outline
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_3)
+                        Value: |
+                            =Switch(
+                                selectedContainer,
+                                "Jan", ThisItem.'Jan-01-2027',
+                                "Feb", ThisItem.'Feb-01-2027',
+                                "Mar", ThisItem.'Mar-01-2027',
+                                "Apr", ThisItem.'Apr-01-2027',
+                                "May", ThisItem.'May-01-2027',
+                                "Jun", ThisItem.'Jun-01-2027',
+                                "Jul", ThisItem.'Jul-01-2027',
+                                "Aug", ThisItem.'Aug-01-2027',
+                                "Sep", ThisItem.'Sep-01-2027',
+                                "Oct", ThisItem.'Oct-01-2027',
+                                "Nov", ThisItem.'Nov-01-2027',
+                                "Dec", ThisItem.'Dec-01-2027'
+                            )
+                        Width: =320
+                        X: =392
+                        Y: =8
+                        ZIndex: =2
+
+                    btn_save_hidden_3 As Button:
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontWeight: =FontWeight.Normal
+                        Height: =32
+                        OnSelect: |+
+                            =If(
+                                IsBlank(
+                                    LookUp(
+                                        colGridUpdates,
+                                        'Row Number' = ThisItem.'Row Number'
+                                    )
+                                ),
+                                Collect(
+                                    colGridUpdates,
+                                    ThisItem
+                                )
+                            );
+                            UpdateIf(
+                                colGridUpdates,
+                                'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jan-01-2027': TextInputQtePhysique.Value
+                                },
+                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Feb-01-2027': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Mar-01-2027': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Apr-01-2027': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'May-01-2027': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jun-01-2027': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jul-01-2027': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Aug-01-2027': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Sep-01-2027': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Oct-01-2027': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Nov-01-2027': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Dec-01-2027': TextInputQtePhysique.Value
+                                }
+                            
+                                
+                            );
+                            Notify(
+                                LookUp(
+                                    Physical_Inventory_2027,
+                                    'Piece de Rechange' = ThisRecord.'Piece de Rechange' && 'Row Number' = ThisRecord.'Row Number' 
+                                ).'Piece de Rechange'
+                            );
+                            
+                            
+                            
+                        Visible: =false
+                        Width: =96
+                        X: =646
+                        Y: =8
+                        ZIndex: =3
+
+                ButtonCanvas25_6 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Outline
+                    OnSelect: |-
+                        =ForAll(
+                            colGridUpdates,
+                            With(
+                                {
+                                    currentRecord: ThisRecord
+                                },
+                                Patch(
+                                    Physical_Inventory_2027,
+                                    LookUp(
+                                        Physical_Inventory_2027,
+                                        'Row Number' = currentRecord.'Row Number' && 'Piece de Rechange' = currentRecord.'Piece de Rechange'
+                                    ),
+                                    {
+                                        'Jan-01-2027': currentRecord.'Jan-01-2027',
+                                        'Feb-01-2027': currentRecord.'Feb-01-2027',
+                                        'Mar-01-2027': currentRecord.'Mar-01-2027',
+                                        'Apr-01-2027': currentRecord.'Apr-01-2027',
+                                        'May-01-2027': currentRecord.'May-01-2027',
+                                        'Jun-01-2027': currentRecord.'Jun-01-2027',
+                                        'Jul-01-2027': currentRecord.'Jul-01-2027',
+                                        'Aug-01-2027': currentRecord.'Aug-01-2027',
+                                        'Sep-01-2027': currentRecord.'Sep-01-2027',
+                                        'Oct-01-2027': currentRecord.'Oct-01-2027',
+                                        'Nov-01-2027': currentRecord.'Nov-01-2027',
+                                        'Dec-01-2027': currentRecord.'Dec-01-2027'
+                                    }
+                                )
+                            )
+                        );
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Notify(
+                            "Updated Succesfully",
+                            NotificationType.Success,
+                            1000
+                        );
+                        
+                        Clear(colGridUpdates);
+                        
+                        Set(VarReset,false);
+                        Set(VarReset,true)
+                    Text: ="Save 💾"
+                    Width: =96
+                    X: =892
+                    Y: =185
+                    ZIndex: =2
+
+                ButtonCanvas25_7 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                    OnSelect: |-
+                        =// Clear the collection
+                        Clear(colGridUpdates);
+                        // Reset the gallery
+                        Refresh(Physical_Inventory_2027);
+                        
+                        // Set a variable to trigger gallery refresh if necessary
+                        Set(VarReset, false);
+                        Set(VarReset, true);
+                        Notify(
+                            "Data has been reset",
+                            NotificationType.Information,
+                            3000 // Duration in milliseconds
+                        );
+                    Text: ="Reset  🔄"
+                    Width: =96
+                    X: =892
+                    Y: =235
+                    ZIndex: =4
+
+                Badge_physical_inven_3 As Badge:
+                    Content: |
+                        =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Shape: ='BadgeCanvas.Shape'.Circular
+                    ThemeColor: ='BadgeCanvas.ThemeColor'.Informative
+                    Width: =682
+                    X: =91
+                    Y: =5
+                    ZIndex: =5
+
+                badge_spare_3 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Spare Part  🛠️"
+                    Width: =96
+                    X: =129
+                    Y: =5
+                    ZIndex: =6
+
+                badge_qte_3 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: |
+                        ="Physical Inventory📦 at " & Switch(
+                            selectedContainer,
+                            "Jan", "January ",
+                            "Feb", "February ",
+                            "Mar", "March ",
+                            "Apr", "April ",
+                            "May", "May ",
+                            "Jun", "June ",
+                            "Jul", "July ",
+                            "Aug", "August ",
+                            "Sep", "September ",
+                            "Oct", "October ",
+                            "Nov", "November ",
+                            "Dec", "December ",
+                            "Unknown Month" // Default text if none of the above match
+                        ) & varSelectedYear
+                    Width: =278
+                    X: =438
+                    Y: =5
+                    ZIndex: =7
+
+            Container_Physical_Inventory_2028 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: |
+                    =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =varSelectedYear="2028"
+                Width: |
+                    =Parent.Width*0.7
+                ZIndex: =8
+
+                Gallery2_5 As gallery.variableTemplateHeightGallery:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =1
+                    DelayItemLoading: =true
+                    Height: =416
+                    Items: =Filter(Physical_Inventory_2028,VarReset)
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =10
+                    TemplateSize: =45
+                    Width: =Parent.Width*0.99
+                    X: =33
+                    Y: =36
+                    ZIndex: =1
+
+                    "TextInputCanvas2_5 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.FilledLighter
+                        DisplayMode: =DisplayMode.View
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_4)
+                        Value: =ThisItem.'Piece de Rechange'
+                        Width: =320
+                        X: =72
+                        Y: =8
+                        ZIndex: =1
+
+                    "TextInputQtePhysique_4 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.Outline
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_4)
+                        Value: |
+                            =Switch(
+                                selectedContainer,
+                                "Jan", ThisItem.'Jan-01-2028',
+                                "Feb", ThisItem.'Feb-01-2028',
+                                "Mar", ThisItem.'Mar-01-2028',
+                                "Apr", ThisItem.'Apr-01-2028',
+                                "May", ThisItem.'May-01-2028',
+                                "Jun", ThisItem.'Jun-01-2028',
+                                "Jul", ThisItem.'Jul-01-2028',
+                                "Aug", ThisItem.'Aug-01-2028',
+                                "Sep", ThisItem.'Sep-01-2028',
+                                "Oct", ThisItem.'Oct-01-2028',
+                                "Nov", ThisItem.'Nov-01-2028',
+                                "Dec", ThisItem.'Dec-01-2028'
+                            )
+                        Width: =320
+                        X: =392
+                        Y: =8
+                        ZIndex: =2
+
+                    btn_save_hidden_4 As Button:
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontWeight: =FontWeight.Normal
+                        Height: =32
+                        OnSelect: |+
+                            =If(
+                                IsBlank(
+                                    LookUp(
+                                        colGridUpdates,
+                                        'Row Number' = ThisItem.'Row Number'
+                                    )
+                                ),
+                                Collect(
+                                    colGridUpdates,
+                                    ThisItem
+                                )
+                            );
+                            UpdateIf(
+                                colGridUpdates,
+                                'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jan-01-2028': TextInputQtePhysique.Value
+                                },
+                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Feb-01-2028': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Mar-01-2028': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Apr-01-2028': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'May-01-2028': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jun-01-2028': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jul-01-2028': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Aug-01-2028': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Sep-01-2028': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Oct-01-2028': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Nov-01-2028': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Dec-01-2028': TextInputQtePhysique.Value
+                                }
+                            
+                                
+                            );
+                            Notify(
+                                LookUp(
+                                    Physical_Inventory_2028,
+                                    'Piece de Rechange' = ThisRecord.'Piece de Rechange' && 'Row Number' = ThisRecord.'Row Number' 
+                                ).'Piece de Rechange'
+                            );
+                            
+                            
+                            
+                        Visible: =false
+                        Width: =96
+                        X: =646
+                        Y: =8
+                        ZIndex: =3
+
+                ButtonCanvas25_8 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Outline
+                    OnSelect: |-
+                        =ForAll(
+                            colGridUpdates,
+                            With(
+                                {
+                                    currentRecord: ThisRecord
+                                },
+                                Patch(
+                                    Physical_Inventory_2028,
+                                    LookUp(
+                                        Physical_Inventory_2028,
+                                        'Row Number' = currentRecord.'Row Number' && 'Piece de Rechange' = currentRecord.'Piece de Rechange'
+                                    ),
+                                    {
+                                        'Jan-01-2028': currentRecord.'Jan-01-2028',
+                                        'Feb-01-2028': currentRecord.'Feb-01-2028',
+                                        'Mar-01-2028': currentRecord.'Mar-01-2028',
+                                        'Apr-01-2028': currentRecord.'Apr-01-2028',
+                                        'May-01-2028': currentRecord.'May-01-2028',
+                                        'Jun-01-2028': currentRecord.'Jun-01-2028',
+                                        'Jul-01-2028': currentRecord.'Jul-01-2028',
+                                        'Aug-01-2028': currentRecord.'Aug-01-2028',
+                                        'Sep-01-2028': currentRecord.'Sep-01-2028',
+                                        'Oct-01-2028': currentRecord.'Oct-01-2028',
+                                        'Nov-01-2028': currentRecord.'Nov-01-2028',
+                                        'Dec-01-2028': currentRecord.'Dec-01-2028'
+                                    }
+                                )
+                            )
+                        );
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Notify(
+                            "Updated Succesfully",
+                            NotificationType.Success,
+                            1000
+                        );
+                        
+                        Clear(colGridUpdates);
+                        
+                        Set(VarReset,false);
+                        Set(VarReset,true)
+                    Text: ="Save 💾"
+                    Width: =96
+                    X: =892
+                    Y: =185
+                    ZIndex: =2
+
+                ButtonCanvas25_9 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                    OnSelect: |-
+                        =// Clear the collection
+                        Clear(colGridUpdates);
+                        // Reset the gallery
+                        Refresh(Physical_Inventory_2028);
+                        
+                        // Set a variable to trigger gallery refresh if necessary
+                        Set(VarReset, false);
+                        Set(VarReset, true);
+                        Notify(
+                            "Data has been reset",
+                            NotificationType.Information,
+                            3000 // Duration in milliseconds
+                        );
+                    Text: ="Reset  🔄"
+                    Width: =96
+                    X: =892
+                    Y: =235
+                    ZIndex: =4
+
+                Badge_physical_inven_4 As Badge:
+                    Content: |
+                        =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Shape: ='BadgeCanvas.Shape'.Circular
+                    ThemeColor: ='BadgeCanvas.ThemeColor'.Informative
+                    Width: =682
+                    X: =91
+                    Y: =5
+                    ZIndex: =5
+
+                badge_spare_4 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Spare Part  🛠️"
+                    Width: =96
+                    X: =129
+                    Y: =5
+                    ZIndex: =6
+
+                badge_qte_4 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: |
+                        ="Physical Inventory📦 at " & Switch(
+                            selectedContainer,
+                            "Jan", "January ",
+                            "Feb", "February ",
+                            "Mar", "March ",
+                            "Apr", "April ",
+                            "May", "May ",
+                            "Jun", "June ",
+                            "Jul", "July ",
+                            "Aug", "August ",
+                            "Sep", "September ",
+                            "Oct", "October ",
+                            "Nov", "November ",
+                            "Dec", "December ",
+                            "Unknown Month" // Default text if none of the above match
+                        ) & varSelectedYear
+                    Width: =278
+                    X: =438
+                    Y: =5
+                    ZIndex: =7
+
+            Container_Physical_Inventory_2029 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: |
+                    =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =varSelectedYear="2029"
+                Width: |
+                    =Parent.Width*0.7
+                ZIndex: =9
+
+                Gallery2_6 As gallery.variableTemplateHeightGallery:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =1
+                    DelayItemLoading: =true
+                    Height: =416
+                    Items: =Filter(Physical_Inventory_2029,VarReset)
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =10
+                    TemplateSize: =45
+                    Width: =Parent.Width*0.99
+                    X: =33
+                    Y: =36
+                    ZIndex: =1
+
+                    "TextInputCanvas2_6 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.FilledLighter
+                        DisplayMode: =DisplayMode.View
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_5)
+                        Value: =ThisItem.'Piece de Rechange'
+                        Width: =320
+                        X: =72
+                        Y: =8
+                        ZIndex: =1
+
+                    "TextInputQtePhysique_5 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.Outline
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_5)
+                        Value: |
+                            =Switch(
+                                selectedContainer,
+                                "Jan", ThisItem.'Jan-01-2029',
+                                "Feb", ThisItem.'Feb-01-2029',
+                                "Mar", ThisItem.'Mar-01-2029',
+                                "Apr", ThisItem.'Apr-01-2029',
+                                "May", ThisItem.'May-01-2029',
+                                "Jun", ThisItem.'Jun-01-2029',
+                                "Jul", ThisItem.'Jul-01-2029',
+                                "Aug", ThisItem.'Aug-01-2029',
+                                "Sep", ThisItem.'Sep-01-2029',
+                                "Oct", ThisItem.'Oct-01-2029',
+                                "Nov", ThisItem.'Nov-01-2029',
+                                "Dec", ThisItem.'Dec-01-2029'
+                            )
+                        Width: =320
+                        X: =392
+                        Y: =8
+                        ZIndex: =2
+
+                    btn_save_hidden_5 As Button:
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontWeight: =FontWeight.Normal
+                        Height: =32
+                        OnSelect: |+
+                            =If(
+                                IsBlank(
+                                    LookUp(
+                                        colGridUpdates,
+                                        'Row Number' = ThisItem.'Row Number'
+                                    )
+                                ),
+                                Collect(
+                                    colGridUpdates,
+                                    ThisItem
+                                )
+                            );
+                            UpdateIf(
+                                colGridUpdates,
+                                'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jan-01-2029': TextInputQtePhysique.Value
+                                },
+                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Feb-01-2029': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Mar-01-2029': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Apr-01-2029': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'May-01-2029': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jun-01-2029': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jul-01-2029': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Aug-01-2029': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Sep-01-2029': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Oct-01-2029': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Nov-01-2029': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Dec-01-2029': TextInputQtePhysique.Value
+                                }
+                            
+                                
+                            );
+                            Notify(
+                                LookUp(
+                                    Physical_Inventory_2029,
+                                    'Piece de Rechange' = ThisRecord.'Piece de Rechange' && 'Row Number' = ThisRecord.'Row Number' 
+                                ).'Piece de Rechange'
+                            );
+                            
+                            
+                            
+                        Visible: =false
+                        Width: =96
+                        X: =646
+                        Y: =8
+                        ZIndex: =3
+
+                ButtonCanvas25_10 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Outline
+                    OnSelect: |-
+                        =ForAll(
+                            colGridUpdates,
+                            With(
+                                {
+                                    currentRecord: ThisRecord
+                                },
+                                Patch(
+                                    Physical_Inventory_2029,
+                                    LookUp(
+                                        Physical_Inventory_2029,
+                                        'Row Number' = currentRecord.'Row Number' && 'Piece de Rechange' = currentRecord.'Piece de Rechange'
+                                    ),
+                                    {
+                                        'Jan-01-2029': currentRecord.'Jan-01-2029',
+                                        'Feb-01-2029': currentRecord.'Feb-01-2029',
+                                        'Mar-01-2029': currentRecord.'Mar-01-2029',
+                                        'Apr-01-2029': currentRecord.'Apr-01-2029',
+                                        'May-01-2029': currentRecord.'May-01-2029',
+                                        'Jun-01-2029': currentRecord.'Jun-01-2029',
+                                        'Jul-01-2029': currentRecord.'Jul-01-2029',
+                                        'Aug-01-2029': currentRecord.'Aug-01-2029',
+                                        'Sep-01-2029': currentRecord.'Sep-01-2029',
+                                        'Oct-01-2029': currentRecord.'Oct-01-2029',
+                                        'Nov-01-2029': currentRecord.'Nov-01-2029',
+                                        'Dec-01-2029': currentRecord.'Dec-01-2029'
+                                    }
+                                )
+                            )
+                        );
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Notify(
+                            "Updated Succesfully",
+                            NotificationType.Success,
+                            1000
+                        );
+                        
+                        Clear(colGridUpdates);
+                        
+                        Set(VarReset,false);
+                        Set(VarReset,true)
+                    Text: ="Save 💾"
+                    Width: =96
+                    X: =892
+                    Y: =185
+                    ZIndex: =2
+
+                ButtonCanvas25_11 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                    OnSelect: |-
+                        =// Clear the collection
+                        Clear(colGridUpdates);
+                        // Reset the gallery
+                        Refresh(Physical_Inventory_2029);
+                        
+                        // Set a variable to trigger gallery refresh if necessary
+                        Set(VarReset, false);
+                        Set(VarReset, true);
+                        Notify(
+                            "Data has been reset",
+                            NotificationType.Information,
+                            3000 // Duration in milliseconds
+                        );
+                    Text: ="Reset  🔄"
+                    Width: =96
+                    X: =892
+                    Y: =235
+                    ZIndex: =4
+
+                Badge_physical_inven_5 As Badge:
+                    Content: |
+                        =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Shape: ='BadgeCanvas.Shape'.Circular
+                    ThemeColor: ='BadgeCanvas.ThemeColor'.Informative
+                    Width: =682
+                    X: =91
+                    Y: =5
+                    ZIndex: =5
+
+                badge_spare_5 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Spare Part  🛠️"
+                    Width: =96
+                    X: =129
+                    Y: =5
+                    ZIndex: =6
+
+                badge_qte_5 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: |
+                        ="Physical Inventory📦 at " & Switch(
+                            selectedContainer,
+                            "Jan", "January ",
+                            "Feb", "February ",
+                            "Mar", "March ",
+                            "Apr", "April ",
+                            "May", "May ",
+                            "Jun", "June ",
+                            "Jul", "July ",
+                            "Aug", "August ",
+                            "Sep", "September ",
+                            "Oct", "October ",
+                            "Nov", "November ",
+                            "Dec", "December ",
+                            "Unknown Month" // Default text if none of the above match
+                        ) & varSelectedYear
+                    Width: =278
+                    X: =438
+                    Y: =5
+                    ZIndex: =7
+
+            Container_Physical_Inventory_2030 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: |
+                    =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =varSelectedYear="2030"
+                Width: |
+                    =Parent.Width*0.7
+                ZIndex: =10
+
+                Gallery2_7 As gallery.variableTemplateHeightGallery:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =1
+                    DelayItemLoading: =true
+                    Height: =416
+                    Items: =Filter(Physical_Inventory_2030,VarReset)
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =10
+                    TemplateSize: =45
+                    Width: =Parent.Width*0.99
+                    X: =33
+                    Y: =36
+                    ZIndex: =1
+
+                    "TextInputCanvas2_7 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.FilledLighter
+                        DisplayMode: =DisplayMode.View
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_6)
+                        Value: =ThisItem.'Piece de Rechange'
+                        Width: =320
+                        X: =72
+                        Y: =8
+                        ZIndex: =1
+
+                    "TextInputQtePhysique_6 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.Outline
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_6)
+                        Value: |
+                            =Switch(
+                                selectedContainer,
+                                "Jan", ThisItem.'Jan-01-2030',
+                                "Feb", ThisItem.'Feb-01-2030',
+                                "Mar", ThisItem.'Mar-01-2030',
+                                "Apr", ThisItem.'Apr-01-2030',
+                                "May", ThisItem.'May-01-2030',
+                                "Jun", ThisItem.'Jun-01-2030',
+                                "Jul", ThisItem.'Jul-01-2030',
+                                "Aug", ThisItem.'Aug-01-2030',
+                                "Sep", ThisItem.'Sep-01-2030',
+                                "Oct", ThisItem.'Oct-01-2030',
+                                "Nov", ThisItem.'Nov-01-2030',
+                                "Dec", ThisItem.'Dec-01-2030'
+                            )
+                        Width: =320
+                        X: =392
+                        Y: =8
+                        ZIndex: =2
+
+                    btn_save_hidden_6 As Button:
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontWeight: =FontWeight.Normal
+                        Height: =32
+                        OnSelect: |+
+                            =If(
+                                IsBlank(
+                                    LookUp(
+                                        colGridUpdates,
+                                        'Row Number' = ThisItem.'Row Number'
+                                    )
+                                ),
+                                Collect(
+                                    colGridUpdates,
+                                    ThisItem
+                                )
+                            );
+                            UpdateIf(
+                                colGridUpdates,
+                                'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jan-01-2030': TextInputQtePhysique.Value
+                                },
+                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Feb-01-2030': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Mar-01-2030': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Apr-01-2030': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'May-01-2030': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jun-01-2030': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jul-01-2030': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Aug-01-2030': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Sep-01-2030': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Oct-01-2030': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Nov-01-2030': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Dec-01-2030': TextInputQtePhysique.Value
+                                }
+                            
+                                
+                            );
+                            Notify(
+                                LookUp(
+                                    Physical_Inventory_2030,
+                                    'Piece de Rechange' = ThisRecord.'Piece de Rechange' && 'Row Number' = ThisRecord.'Row Number' 
+                                ).'Piece de Rechange'
+                            );
+                            
+                            
+                            
+                        Visible: =false
+                        Width: =96
+                        X: =646
+                        Y: =8
+                        ZIndex: =3
+
+                ButtonCanvas25_12 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Outline
+                    OnSelect: |-
+                        =ForAll(
+                            colGridUpdates,
+                            With(
+                                {
+                                    currentRecord: ThisRecord
+                                },
+                                Patch(
+                                    Physical_Inventory_2030,
+                                    LookUp(
+                                        Physical_Inventory_2030,
+                                        'Row Number' = currentRecord.'Row Number' && 'Piece de Rechange' = currentRecord.'Piece de Rechange'
+                                    ),
+                                    {
+                                        'Jan-01-2030': currentRecord.'Jan-01-2030',
+                                        'Feb-01-2030': currentRecord.'Feb-01-2030',
+                                        'Mar-01-2030': currentRecord.'Mar-01-2030',
+                                        'Apr-01-2030': currentRecord.'Apr-01-2030',
+                                        'May-01-2030': currentRecord.'May-01-2030',
+                                        'Jun-01-2030': currentRecord.'Jun-01-2030',
+                                        'Jul-01-2030': currentRecord.'Jul-01-2030',
+                                        'Aug-01-2030': currentRecord.'Aug-01-2030',
+                                        'Sep-01-2030': currentRecord.'Sep-01-2030',
+                                        'Oct-01-2030': currentRecord.'Oct-01-2030',
+                                        'Nov-01-2030': currentRecord.'Nov-01-2030',
+                                        'Dec-01-2030': currentRecord.'Dec-01-2030'
+                                    }
+                                )
+                            )
+                        );
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Notify(
+                            "Updated Succesfully",
+                            NotificationType.Success,
+                            1000
+                        );
+                        
+                        Clear(colGridUpdates);
+                        
+                        Set(VarReset,false);
+                        Set(VarReset,true)
+                    Text: ="Save 💾"
+                    Width: =96
+                    X: =892
+                    Y: =185
+                    ZIndex: =2
+
+                ButtonCanvas25_13 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                    OnSelect: |-
+                        =// Clear the collection
+                        Clear(colGridUpdates);
+                        // Reset the gallery
+                        Refresh(Physical_Inventory_2030);
+                        
+                        // Set a variable to trigger gallery refresh if necessary
+                        Set(VarReset, false);
+                        Set(VarReset, true);
+                        Notify(
+                            "Data has been reset",
+                            NotificationType.Information,
+                            3000 // Duration in milliseconds
+                        );
+                    Text: ="Reset  🔄"
+                    Width: =96
+                    X: =892
+                    Y: =235
+                    ZIndex: =4
+
+                Badge_physical_inven_6 As Badge:
+                    Content: |
+                        =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Shape: ='BadgeCanvas.Shape'.Circular
+                    ThemeColor: ='BadgeCanvas.ThemeColor'.Informative
+                    Width: =682
+                    X: =91
+                    Y: =5
+                    ZIndex: =5
+
+                badge_spare_6 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Spare Part  🛠️"
+                    Width: =96
+                    X: =129
+                    Y: =5
+                    ZIndex: =6
+
+                badge_qte_6 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: |
+                        ="Physical Inventory📦 at " & Switch(
+                            selectedContainer,
+                            "Jan", "January ",
+                            "Feb", "February ",
+                            "Mar", "March ",
+                            "Apr", "April ",
+                            "May", "May ",
+                            "Jun", "June ",
+                            "Jul", "July ",
+                            "Aug", "August ",
+                            "Sep", "September ",
+                            "Oct", "October ",
+                            "Nov", "November ",
+                            "Dec", "December ",
+                            "Unknown Month" // Default text if none of the above match
+                        ) & varSelectedYear
+                    Width: =278
+                    X: =438
+                    Y: =5
+                    ZIndex: =7
+
+            Container_Physical_Inventory_2031 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: |
+                    =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =varSelectedYear="2031"
+                Width: |
+                    =Parent.Width*0.7
+                ZIndex: =11
+
+                Gallery2_8 As gallery.variableTemplateHeightGallery:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =1
+                    DelayItemLoading: =true
+                    Height: =416
+                    Items: =Filter(Physical_Inventory_2031,VarReset)
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =10
+                    TemplateSize: =45
+                    Width: =Parent.Width*0.99
+                    X: =33
+                    Y: =36
+                    ZIndex: =1
+
+                    "TextInputCanvas2_8 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.FilledLighter
+                        DisplayMode: =DisplayMode.View
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_7)
+                        Value: =ThisItem.'Piece de Rechange'
+                        Width: =320
+                        X: =72
+                        Y: =8
+                        ZIndex: =1
+
+                    "TextInputQtePhysique_7 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.Outline
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_7)
+                        Value: |
+                            =Switch(
+                                selectedContainer,
+                                "Jan", ThisItem.'Jan-01-2031',
+                                "Feb", ThisItem.'Feb-01-2031',
+                                "Mar", ThisItem.'Mar-01-2031',
+                                "Apr", ThisItem.'Apr-01-2031',
+                                "May", ThisItem.'May-01-2031',
+                                "Jun", ThisItem.'Jun-01-2031',
+                                "Jul", ThisItem.'Jul-01-2031',
+                                "Aug", ThisItem.'Aug-01-2031',
+                                "Sep", ThisItem.'Sep-01-2031',
+                                "Oct", ThisItem.'Oct-01-2031',
+                                "Nov", ThisItem.'Nov-01-2031',
+                                "Dec", ThisItem.'Dec-01-2031'
+                            )
+                        Width: =320
+                        X: =392
+                        Y: =8
+                        ZIndex: =2
+
+                    btn_save_hidden_7 As Button:
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontWeight: =FontWeight.Normal
+                        Height: =32
+                        OnSelect: |+
+                            =If(
+                                IsBlank(
+                                    LookUp(
+                                        colGridUpdates,
+                                        'Row Number' = ThisItem.'Row Number'
+                                    )
+                                ),
+                                Collect(
+                                    colGridUpdates,
+                                    ThisItem
+                                )
+                            );
+                            UpdateIf(
+                                colGridUpdates,
+                                'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jan-01-2031': TextInputQtePhysique.Value
+                                },
+                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Feb-01-2031': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Mar-01-2031': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Apr-01-2031': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'May-01-2031': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jun-01-2031': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jul-01-2031': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Aug-01-2031': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Sep-01-2031': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Oct-01-2031': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Nov-01-2031': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Dec-01-2031': TextInputQtePhysique.Value
+                                }
+                            
+                                
+                            );
+                            Notify(
+                                LookUp(
+                                    Physical_Inventory_2031,
+                                    'Piece de Rechange' = ThisRecord.'Piece de Rechange' && 'Row Number' = ThisRecord.'Row Number' 
+                                ).'Piece de Rechange'
+                            );
+                            
+                            
+                            
+                        Visible: =false
+                        Width: =96
+                        X: =646
+                        Y: =8
+                        ZIndex: =3
+
+                ButtonCanvas25_14 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Outline
+                    OnSelect: |-
+                        =ForAll(
+                            colGridUpdates,
+                            With(
+                                {
+                                    currentRecord: ThisRecord
+                                },
+                                Patch(
+                                    Physical_Inventory_2031,
+                                    LookUp(
+                                        Physical_Inventory_2031,
+                                        'Row Number' = currentRecord.'Row Number' && 'Piece de Rechange' = currentRecord.'Piece de Rechange'
+                                    ),
+                                    {
+                                        'Jan-01-2031': currentRecord.'Jan-01-2031',
+                                        'Feb-01-2031': currentRecord.'Feb-01-2031',
+                                        'Mar-01-2031': currentRecord.'Mar-01-2031',
+                                        'Apr-01-2031': currentRecord.'Apr-01-2031',
+                                        'May-01-2031': currentRecord.'May-01-2031',
+                                        'Jun-01-2031': currentRecord.'Jun-01-2031',
+                                        'Jul-01-2031': currentRecord.'Jul-01-2031',
+                                        'Aug-01-2031': currentRecord.'Aug-01-2031',
+                                        'Sep-01-2031': currentRecord.'Sep-01-2031',
+                                        'Oct-01-2031': currentRecord.'Oct-01-2031',
+                                        'Nov-01-2031': currentRecord.'Nov-01-2031',
+                                        'Dec-01-2031': currentRecord.'Dec-01-2031'
+                                    }
+                                )
+                            )
+                        );
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Notify(
+                            "Updated Succesfully",
+                            NotificationType.Success,
+                            1000
+                        );
+                        
+                        Clear(colGridUpdates);
+                        
+                        Set(VarReset,false);
+                        Set(VarReset,true)
+                    Text: ="Save 💾"
+                    Width: =96
+                    X: =892
+                    Y: =185
+                    ZIndex: =2
+
+                ButtonCanvas25_15 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                    OnSelect: |-
+                        =// Clear the collection
+                        Clear(colGridUpdates);
+                        // Reset the gallery
+                        Refresh(Physical_Inventory_2031);
+                        
+                        // Set a variable to trigger gallery refresh if necessary
+                        Set(VarReset, false);
+                        Set(VarReset, true);
+                        Notify(
+                            "Data has been reset",
+                            NotificationType.Information,
+                            3000 // Duration in milliseconds
+                        );
+                    Text: ="Reset  🔄"
+                    Width: =96
+                    X: =892
+                    Y: =235
+                    ZIndex: =4
+
+                Badge_physical_inven_7 As Badge:
+                    Content: |
+                        =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Shape: ='BadgeCanvas.Shape'.Circular
+                    ThemeColor: ='BadgeCanvas.ThemeColor'.Informative
+                    Width: =682
+                    X: =91
+                    Y: =5
+                    ZIndex: =5
+
+                badge_spare_7 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Spare Part  🛠️"
+                    Width: =96
+                    X: =129
+                    Y: =5
+                    ZIndex: =6
+
+                badge_qte_7 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: |
+                        ="Physical Inventory📦 at " & Switch(
+                            selectedContainer,
+                            "Jan", "January ",
+                            "Feb", "February ",
+                            "Mar", "March ",
+                            "Apr", "April ",
+                            "May", "May ",
+                            "Jun", "June ",
+                            "Jul", "July ",
+                            "Aug", "August ",
+                            "Sep", "September ",
+                            "Oct", "October ",
+                            "Nov", "November ",
+                            "Dec", "December ",
+                            "Unknown Month" // Default text if none of the above match
+                        ) & varSelectedYear
+                    Width: =278
+                    X: =438
+                    Y: =5
+                    ZIndex: =7
+
+            Container_Physical_Inventory_2032 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: |
+                    =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =varSelectedYear="2032"
+                Width: |
+                    =Parent.Width*0.7
+                ZIndex: =12
+
+                Gallery2_9 As gallery.variableTemplateHeightGallery:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =1
+                    DelayItemLoading: =true
+                    Height: =416
+                    Items: =Filter(Physical_Inventory_2032,VarReset)
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =10
+                    TemplateSize: =45
+                    Width: =Parent.Width*0.99
+                    X: =33
+                    Y: =36
+                    ZIndex: =1
+
+                    "TextInputCanvas2_9 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.FilledLighter
+                        DisplayMode: =DisplayMode.View
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_8)
+                        Value: =ThisItem.'Piece de Rechange'
+                        Width: =320
+                        X: =72
+                        Y: =8
+                        ZIndex: =1
+
+                    "TextInputQtePhysique_8 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.Outline
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_8)
+                        Value: |
+                            =Switch(
+                                selectedContainer,
+                                "Jan", ThisItem.'Jan-01-2032',
+                                "Feb", ThisItem.'Feb-01-2032',
+                                "Mar", ThisItem.'Mar-01-2032',
+                                "Apr", ThisItem.'Apr-01-2032',
+                                "May", ThisItem.'May-01-2032',
+                                "Jun", ThisItem.'Jun-01-2032',
+                                "Jul", ThisItem.'Jul-01-2032',
+                                "Aug", ThisItem.'Aug-01-2032',
+                                "Sep", ThisItem.'Sep-01-2032',
+                                "Oct", ThisItem.'Oct-01-2032',
+                                "Nov", ThisItem.'Nov-01-2032',
+                                "Dec", ThisItem.'Dec-01-2032'
+                            )
+                        Width: =320
+                        X: =392
+                        Y: =8
+                        ZIndex: =2
+
+                    btn_save_hidden_8 As Button:
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontWeight: =FontWeight.Normal
+                        Height: =32
+                        OnSelect: |+
+                            =If(
+                                IsBlank(
+                                    LookUp(
+                                        colGridUpdates,
+                                        'Row Number' = ThisItem.'Row Number'
+                                    )
+                                ),
+                                Collect(
+                                    colGridUpdates,
+                                    ThisItem
+                                )
+                            );
+                            UpdateIf(
+                                colGridUpdates,
+                                'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jan-01-2024': TextInputQtePhysique.Value
+                                },
+                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Feb-01-2024': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Mar-01-2024': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Apr-01-2024': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'May-01-2024': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jun-01-2024': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jul-01-2024': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Aug-01-2024': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Sep-01-2024': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Oct-01-2024': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Nov-01-2024': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Dec-01-2024': TextInputQtePhysique.Value
+                                }
+                            
+                                
+                            );
+                            Notify(
+                                LookUp(
+                                    Physical_Inventory_2024,
+                                    'Piece de Rechange' = ThisRecord.'Piece de Rechange' && 'Row Number' = ThisRecord.'Row Number' 
+                                ).'Piece de Rechange'
+                            );
+                            
+                            
+                            
+                        Visible: =false
+                        Width: =96
+                        X: =646
+                        Y: =8
+                        ZIndex: =3
+
+                ButtonCanvas25_16 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Outline
+                    OnSelect: |-
+                        =ForAll(
+                            colGridUpdates,
+                            With(
+                                {
+                                    currentRecord: ThisRecord
+                                },
+                                Patch(
+                                    Physical_Inventory_2032,
+                                    LookUp(
+                                        Physical_Inventory_2032,
+                                        'Row Number' = currentRecord.'Row Number' && 'Piece de Rechange' = currentRecord.'Piece de Rechange'
+                                    ),
+                                    {
+                                        'Jan-01-2032': currentRecord.'Jan-01-2032',
+                                        'Feb-01-2032': currentRecord.'Feb-01-2032',
+                                        'Mar-01-2032': currentRecord.'Mar-01-2032',
+                                        'Apr-01-2032': currentRecord.'Apr-01-2032',
+                                        'May-01-2032': currentRecord.'May-01-2032',
+                                        'Jun-01-2032': currentRecord.'Jun-01-2032',
+                                        'Jul-01-2032': currentRecord.'Jul-01-2032',
+                                        'Aug-01-2032': currentRecord.'Aug-01-2032',
+                                        'Sep-01-2032': currentRecord.'Sep-01-2032',
+                                        'Oct-01-2032': currentRecord.'Oct-01-2032',
+                                        'Nov-01-2032': currentRecord.'Nov-01-2032',
+                                        'Dec-01-2032': currentRecord.'Dec-01-2032'
+                                    }
+                                )
+                            )
+                        );
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Notify(
+                            "Updated Succesfully",
+                            NotificationType.Success,
+                            1000
+                        );
+                        
+                        Clear(colGridUpdates);
+                        
+                        Set(VarReset,false);
+                        Set(VarReset,true)
+                    Text: ="Save 💾"
+                    Width: =96
+                    X: =892
+                    Y: =185
+                    ZIndex: =2
+
+                ButtonCanvas25_17 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                    OnSelect: |-
+                        =// Clear the collection
+                        Clear(colGridUpdates);
+                        // Reset the gallery
+                        Refresh(Physical_Inventory_2032);
+                        
+                        // Set a variable to trigger gallery refresh if necessary
+                        Set(VarReset, false);
+                        Set(VarReset, true);
+                        Notify(
+                            "Data has been reset",
+                            NotificationType.Information,
+                            3000 // Duration in milliseconds
+                        );
+                    Text: ="Reset  🔄"
+                    Width: =96
+                    X: =892
+                    Y: =235
+                    ZIndex: =4
+
+                Badge_physical_inven_8 As Badge:
+                    Content: |
+                        =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Shape: ='BadgeCanvas.Shape'.Circular
+                    ThemeColor: ='BadgeCanvas.ThemeColor'.Informative
+                    Width: =682
+                    X: =91
+                    Y: =5
+                    ZIndex: =5
+
+                badge_spare_8 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Spare Part  🛠️"
+                    Width: =96
+                    X: =129
+                    Y: =5
+                    ZIndex: =6
+
+                badge_qte_8 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: |
+                        ="Physical Inventory📦 at " & Switch(
+                            selectedContainer,
+                            "Jan", "January ",
+                            "Feb", "February ",
+                            "Mar", "March ",
+                            "Apr", "April ",
+                            "May", "May ",
+                            "Jun", "June ",
+                            "Jul", "July ",
+                            "Aug", "August ",
+                            "Sep", "September ",
+                            "Oct", "October ",
+                            "Nov", "November ",
+                            "Dec", "December ",
+                            "Unknown Month" // Default text if none of the above match
+                        ) & varSelectedYear
+                    Width: =278
+                    X: =438
+                    Y: =5
+                    ZIndex: =7
+
+            Container_Physical_Inventory_2033 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: |
+                    =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =varSelectedYear="2033"
+                Width: |
+                    =Parent.Width*0.7
+                ZIndex: =13
+
+                Gallery2_10 As gallery.variableTemplateHeightGallery:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =1
+                    DelayItemLoading: =true
+                    Height: =416
+                    Items: =Filter(Physical_Inventory_2033,VarReset)
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =10
+                    TemplateSize: =45
+                    Width: =Parent.Width*0.99
+                    X: =33
+                    Y: =36
+                    ZIndex: =1
+
+                    "TextInputCanvas2_10 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.FilledLighter
+                        DisplayMode: =DisplayMode.View
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_9)
+                        Value: =ThisItem.'Piece de Rechange'
+                        Width: =320
+                        X: =72
+                        Y: =8
+                        ZIndex: =1
+
+                    "TextInputQtePhysique_9 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.Outline
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_9)
+                        Value: |
+                            =Switch(
+                                selectedContainer,
+                                "Jan", ThisItem.'Jan-01-2033',
+                                "Feb", ThisItem.'Feb-01-2033',
+                                "Mar", ThisItem.'Mar-01-2033',
+                                "Apr", ThisItem.'Apr-01-2033',
+                                "May", ThisItem.'May-01-2033',
+                                "Jun", ThisItem.'Jun-01-2033',
+                                "Jul", ThisItem.'Jul-01-2033',
+                                "Aug", ThisItem.'Aug-01-2033',
+                                "Sep", ThisItem.'Sep-01-2033',
+                                "Oct", ThisItem.'Oct-01-2033',
+                                "Nov", ThisItem.'Nov-01-2033',
+                                "Dec", ThisItem.'Dec-01-2033'
+                            )
+                        Width: =320
+                        X: =392
+                        Y: =8
+                        ZIndex: =2
+
+                    btn_save_hidden_9 As Button:
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontWeight: =FontWeight.Normal
+                        Height: =32
+                        OnSelect: |+
+                            =If(
+                                IsBlank(
+                                    LookUp(
+                                        colGridUpdates,
+                                        'Row Number' = ThisItem.'Row Number'
+                                    )
+                                ),
+                                Collect(
+                                    colGridUpdates,
+                                    ThisItem
+                                )
+                            );
+                            UpdateIf(
+                                colGridUpdates,
+                                'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jan-01-2033': TextInputQtePhysique.Value
+                                },
+                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Feb-01-2033': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Mar-01-2033': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Apr-01-2033': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'May-01-2033': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jun-01-2033': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jul-01-2033': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Aug-01-2033': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Sep-01-2033': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Oct-01-2033': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Nov-01-2033': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Dec-01-2033': TextInputQtePhysique.Value
+                                }
+                            
+                                
+                            );
+                            Notify(
+                                LookUp(
+                                    Physical_Inventory_2033,
+                                    'Piece de Rechange' = ThisRecord.'Piece de Rechange' && 'Row Number' = ThisRecord.'Row Number' 
+                                ).'Piece de Rechange'
+                            );
+                            
+                            
+                            
+                        Visible: =false
+                        Width: =96
+                        X: =646
+                        Y: =8
+                        ZIndex: =3
+
+                ButtonCanvas25_18 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Outline
+                    OnSelect: |-
+                        =ForAll(
+                            colGridUpdates,
+                            With(
+                                {
+                                    currentRecord: ThisRecord
+                                },
+                                Patch(
+                                    Physical_Inventory_2024,
+                                    LookUp(
+                                        Physical_Inventory_2024,
+                                        'Row Number' = currentRecord.'Row Number' && 'Piece de Rechange' = currentRecord.'Piece de Rechange'
+                                    ),
+                                    {
+                                        'Jan-01-2024': currentRecord.'Jan-01-2024',
+                                        'Feb-01-2024': currentRecord.'Feb-01-2024',
+                                        'Mar-01-2024': currentRecord.'Mar-01-2024',
+                                        'Apr-01-2024': currentRecord.'Apr-01-2024',
+                                        'May-01-2024': currentRecord.'May-01-2024',
+                                        'Jun-01-2024': currentRecord.'Jun-01-2024',
+                                        'Jul-01-2024': currentRecord.'Jul-01-2024',
+                                        'Aug-01-2024': currentRecord.'Aug-01-2024',
+                                        'Sep-01-2024': currentRecord.'Sep-01-2024',
+                                        'Oct-01-2024': currentRecord.'Oct-01-2024',
+                                        'Nov-01-2024': currentRecord.'Nov-01-2024',
+                                        'Dec-01-2024': currentRecord.'Dec-01-2024'
+                                    }
+                                )
+                            )
+                        );
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Notify(
+                            "Updated Succesfully",
+                            NotificationType.Success,
+                            1000
+                        );
+                        
+                        Clear(colGridUpdates);
+                        
+                        Set(VarReset,false);
+                        Set(VarReset,true)
+                    Text: ="Save 💾"
+                    Width: =96
+                    X: =892
+                    Y: =185
+                    ZIndex: =2
+
+                ButtonCanvas25_19 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                    OnSelect: |-
+                        =// Clear the collection
+                        Clear(colGridUpdates);
+                        // Reset the gallery
+                        Refresh(Physical_Inventory_2024);
+                        
+                        // Set a variable to trigger gallery refresh if necessary
+                        Set(VarReset, false);
+                        Set(VarReset, true);
+                        Notify(
+                            "Data has been reset",
+                            NotificationType.Information,
+                            3000 // Duration in milliseconds
+                        );
+                    Text: ="Reset  🔄"
+                    Width: =96
+                    X: =892
+                    Y: =235
+                    ZIndex: =4
+
+                Badge_physical_inven_9 As Badge:
+                    Content: |
+                        =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Shape: ='BadgeCanvas.Shape'.Circular
+                    ThemeColor: ='BadgeCanvas.ThemeColor'.Informative
+                    Width: =682
+                    X: =91
+                    Y: =5
+                    ZIndex: =5
+
+                badge_spare_9 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Spare Part  🛠️"
+                    Width: =96
+                    X: =129
+                    Y: =5
+                    ZIndex: =6
+
+                badge_qte_9 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: |
+                        ="Physical Inventory📦 at " & Switch(
+                            selectedContainer,
+                            "Jan", "January ",
+                            "Feb", "February ",
+                            "Mar", "March ",
+                            "Apr", "April ",
+                            "May", "May ",
+                            "Jun", "June ",
+                            "Jul", "July ",
+                            "Aug", "August ",
+                            "Sep", "September ",
+                            "Oct", "October ",
+                            "Nov", "November ",
+                            "Dec", "December ",
+                            "Unknown Month" // Default text if none of the above match
+                        ) & varSelectedYear
+                    Width: =278
+                    X: =438
+                    Y: =5
+                    ZIndex: =7
+
+            Container_Physical_Inventory_2034 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: |
+                    =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =varSelectedYear="2034"
+                Width: |
+                    =Parent.Width*0.7
+                ZIndex: =14
+
+                Gallery2_11 As gallery.variableTemplateHeightGallery:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =1
+                    DelayItemLoading: =true
+                    Height: =416
+                    Items: =Filter(Physical_Inventory_2034,VarReset)
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =10
+                    TemplateSize: =45
+                    Width: =Parent.Width*0.99
+                    X: =33
+                    Y: =36
+                    ZIndex: =1
+
+                    "TextInputCanvas2_11 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.FilledLighter
+                        DisplayMode: =DisplayMode.View
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_10)
+                        Value: =ThisItem.'Piece de Rechange'
+                        Width: =320
+                        X: =72
+                        Y: =8
+                        ZIndex: =1
+
+                    "TextInputQtePhysique_10 As 'Text input'":
+                        Appearance: ='TextInputCanvas.Appearance'.Outline
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        OnChange: =Select(btn_save_hidden_10)
+                        Value: |
+                            =Switch(
+                                selectedContainer,
+                                "Jan", ThisItem.'Jan-01-2034',
+                                "Feb", ThisItem.'Feb-01-2034',
+                                "Mar", ThisItem.'Mar-01-2034',
+                                "Apr", ThisItem.'Apr-01-2034',
+                                "May", ThisItem.'May-01-2034',
+                                "Jun", ThisItem.'Jun-01-2034',
+                                "Jul", ThisItem.'Jul-01-2034',
+                                "Aug", ThisItem.'Aug-01-2034',
+                                "Sep", ThisItem.'Sep-01-2034',
+                                "Oct", ThisItem.'Oct-01-2034',
+                                "Nov", ThisItem.'Nov-01-2034',
+                                "Dec", ThisItem.'Dec-01-2034'
+                            )
+                        Width: =320
+                        X: =392
+                        Y: =8
+                        ZIndex: =2
+
+                    btn_save_hidden_10 As Button:
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontWeight: =FontWeight.Normal
+                        Height: =32
+                        OnSelect: |+
+                            =If(
+                                IsBlank(
+                                    LookUp(
+                                        colGridUpdates,
+                                        'Row Number' = ThisItem.'Row Number'
+                                    )
+                                ),
+                                Collect(
+                                    colGridUpdates,
+                                    ThisItem
+                                )
+                            );
+                            UpdateIf(
+                                colGridUpdates,
+                                'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jan-01-2034': TextInputQtePhysique.Value
+                                },
+                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Feb-01-2034': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Mar-01-2034': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Apr-01-2034': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'May-01-2034': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jun-01-2034': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Jul-01-2034': TextInputQtePhysique.Value
+                                },
+                                   'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Aug-01-2034': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Sep-01-2034': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Oct-01-2034': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Nov-01-2034': TextInputQtePhysique.Value
+                                },
+                                      'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
+                                {
+                                    'Piece de Rechange': ThisItem.'Piece de Rechange',
+                                    'Dec-01-2034': TextInputQtePhysique.Value
+                                }
+                            
+                                
+                            );
+                            Notify(
+                                LookUp(
+                                    Physical_Inventory_2034,
+                                    'Piece de Rechange' = ThisRecord.'Piece de Rechange' && 'Row Number' = ThisRecord.'Row Number' 
+                                ).'Piece de Rechange'
+                            );
+                            
+                            
+                            
+                        Visible: =false
+                        Width: =96
+                        X: =646
+                        Y: =8
+                        ZIndex: =3
+
+                ButtonCanvas25_20 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Outline
+                    OnSelect: |-
+                        =ForAll(
+                            colGridUpdates,
+                            With(
+                                {
+                                    currentRecord: ThisRecord
+                                },
+                                Patch(
+                                    Physical_Inventory_2034,
+                                    LookUp(
+                                        Physical_Inventory_2034,
+                                        'Row Number' = currentRecord.'Row Number' && 'Piece de Rechange' = currentRecord.'Piece de Rechange'
+                                    ),
+                                    {
+                                        'Jan-01-2034': currentRecord.'Jan-01-2034',
+                                        'Feb-01-2034': currentRecord.'Feb-01-2034',
+                                        'Mar-01-2034': currentRecord.'Mar-01-2034',
+                                        'Apr-01-2034': currentRecord.'Apr-01-2034',
+                                        'May-01-2034': currentRecord.'May-01-2034',
+                                        'Jun-01-2034': currentRecord.'Jun-01-2034',
+                                        'Jul-01-2034': currentRecord.'Jul-01-2034',
+                                        'Aug-01-2034': currentRecord.'Aug-01-2034',
+                                        'Sep-01-2034': currentRecord.'Sep-01-2034',
+                                        'Oct-01-2034': currentRecord.'Oct-01-2034',
+                                        'Nov-01-2034': currentRecord.'Nov-01-2034',
+                                        'Dec-01-2034': currentRecord.'Dec-01-2034'
+                                    }
+                                )
+                            )
+                        );
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Notify(
+                            "Updated Succesfully",
+                            NotificationType.Success,
+                            1000
+                        );
+                        
+                        Clear(colGridUpdates);
+                        
+                        Set(VarReset,false);
+                        Set(VarReset,true)
+                    Text: ="Save 💾"
+                    Width: =96
+                    X: =892
+                    Y: =185
+                    ZIndex: =2
+
+                ButtonCanvas25_21 As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =RGBA(5, 102, 178, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                    OnSelect: |-
+                        =// Clear the collection
+                        Clear(colGridUpdates);
+                        // Reset the gallery
+                        Refresh(Physical_Inventory_2034);
+                        
+                        // Set a variable to trigger gallery refresh if necessary
+                        Set(VarReset, false);
+                        Set(VarReset, true);
+                        Notify(
+                            "Data has been reset",
+                            NotificationType.Information,
+                            3000 // Duration in milliseconds
+                        );
+                    Text: ="Reset  🔄"
+                    Width: =96
+                    X: =892
+                    Y: =235
+                    ZIndex: =4
+
+                Badge_physical_inven_10 As Badge:
+                    Content: |
+                        =
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Shape: ='BadgeCanvas.Shape'.Circular
+                    ThemeColor: ='BadgeCanvas.ThemeColor'.Informative
+                    Width: =682
+                    X: =91
+                    Y: =5
+                    ZIndex: =5
+
+                badge_spare_10 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Spare Part  🛠️"
+                    Width: =96
+                    X: =129
+                    Y: =5
+                    ZIndex: =6
+
+                badge_qte_10 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: |
+                        ="Physical Inventory📦 at " & Switch(
+                            selectedContainer,
+                            "Jan", "January ",
+                            "Feb", "February ",
+                            "Mar", "March ",
+                            "Apr", "April ",
+                            "May", "May ",
+                            "Jun", "June ",
+                            "Jul", "July ",
+                            "Aug", "August ",
+                            "Sep", "September ",
+                            "Oct", "October ",
+                            "Nov", "November ",
+                            "Dec", "December ",
+                            "Unknown Month" // Default text if none of the above match
+                        ) & varSelectedYear
+                    Width: =278
+                    X: =438
+                    Y: =5
+                    ZIndex: =7
+
+        FooterContainer3_2 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(58, 110, 165, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutGap: =50
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =4
+
+            Image3_3 As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: ='icons8-logout-240 (1)'
+                OnSelect: =Navigate('Physical inventory screen')
+                ZIndex: =2
+
