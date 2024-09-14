@@ -90,29 +90,6 @@
                 Width: =300
                 ZIndex: =1
 
-            delete_rapportIntervention_btn As button:
-                BorderColor: =App.Theme.Colors.Primary
-                DisabledBorderColor: =RGBA(244, 244, 244, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =App.Theme.Colors.Primary
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =50
-                HoverBorderColor: =App.Theme.Colors.Darker10
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =App.Theme.Colors.Darker10
-                OnSelect: =
-                PressedBorderColor: =App.Theme.Colors.Darker40
-                PressedColor: =Self.Color
-                PressedFill: =App.Theme.Colors.Darker40
-                Size: =15
-                Text: |-
-                    ="Delete Report
-                    "
-                Width: =300
-                ZIndex: =3
-
             go_back_arrow_img_2 As image:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =App.Theme.Colors.Darker40
