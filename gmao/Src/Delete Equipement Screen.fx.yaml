@@ -384,7 +384,7 @@
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
                 Size: =20
-                Text: ="Spare Part deleted successfully"
+                Text: ="Equipement deleted successfully"
                 Weight: ='TextCanvas.Weight'.Bold
                 Width: =96
                 X: =0
