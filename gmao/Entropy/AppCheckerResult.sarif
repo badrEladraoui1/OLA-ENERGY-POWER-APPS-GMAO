@@ -11985,6 +11985,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Physical inventory screen'.Container1.Container6.Container6_13.'ButtonCanvas 2034_1'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Physical inventory screen'.Container1.Container6.Container6_13.'ButtonCanvas 2034_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Physical inventory screen",
+                "type": "'Physical inventory screen'.Container1.Container6.Container6_13.'ButtonCanvas 2034_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.selectedDésignation"
                 }
               ],
