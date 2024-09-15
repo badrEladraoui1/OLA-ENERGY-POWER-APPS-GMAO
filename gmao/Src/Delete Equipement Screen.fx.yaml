@@ -239,6 +239,7 @@
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
+            Width: =540
             ZIndex: =1
 
             "'cancel icon_18' As icon.CancelBadge":
@@ -269,7 +270,7 @@
                 LayoutMinHeight: =32
                 LayoutMinWidth: =90
                 Size: =20
-                Text: ="Are you sure you want to delete this Equipement ?"
+                Text: ="Are you sure you want to delete ''" &'Dropdown equpment to delete'.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDésignation' &"'' ?"
                 VerticalAlign: ='TextCanvas.VerticalAlign'.Middle
                 Weight: ='TextCanvas.Weight'.Bold
                 Width: =96

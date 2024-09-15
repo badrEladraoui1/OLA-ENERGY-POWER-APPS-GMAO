@@ -464,7 +464,7 @@
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
                 Size: =20
-                Text: ="Spare Part added successfully"
+                Text: ="Equipement added successfully"
                 Weight: ='TextCanvas.Weight'.Bold
                 Width: =96
                 X: =0
