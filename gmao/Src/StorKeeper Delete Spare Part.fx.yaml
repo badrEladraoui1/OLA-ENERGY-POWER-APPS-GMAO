@@ -35,7 +35,7 @@
             RadiusTopRight: =8
             ZIndex: =1
 
-            "Header5 As 'En-tête'":
+            Header5 As Header:
                 DisplayMode: =DisplayMode.Edit
                 Height: =75
                 IsProfilePictureVisible: =false
@@ -68,7 +68,7 @@
             RadiusTopRight: =8
             ZIndex: =2
 
-            ButtonCanvas19 As Bouton:
+            ButtonCanvas19 As Button:
                 DisplayMode: =If(!IsBlank('Table Spare Parts'.Selected),DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =32
                 LayoutMinHeight: =32
@@ -438,7 +438,7 @@
                 Width: =40
                 ZIndex: =1
 
-            "'user added sucs message_8' As Texte":
+            "'user added sucs message_8' As Text":
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =
@@ -518,7 +518,7 @@
                 Width: =40
                 ZIndex: =1
 
-            "'user added sucs message_10' As Texte":
+            "'user added sucs message_10' As Text":
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 AutoHeight: =false
@@ -539,7 +539,7 @@
                 Y: =0
                 ZIndex: =2
 
-            ButtonCanvas6_2 As Bouton:
+            ButtonCanvas6_2 As Button:
                 Align: =Align.Center
                 AlignInContainer: =AlignInContainer.Center
                 Appearance: ='ButtonCanvas.Appearance'.Primary

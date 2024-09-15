@@ -428,9 +428,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Étiquette lue par les lecteurs d’écran.",
+      "Description": "Label read out by screen readers.",
       "DescriptionResourceString": "BadgeCanvas_AccessibleLabel_Desc",
-      "DisplayName": "Étiquette d’accessibilité",
+      "DisplayName": "Accessible label",
       "DisplayNameResourceString": "BadgeCanvas_AccessibleLabel",
       "EnumValues": [],
       "HelperUI": "",
@@ -456,9 +456,9 @@
     {
       "Category": "data",
       "DefaultValue": "Tint",
-      "Description": "Choisissez l’un des styles sélectionnés.",
+      "Description": "Choose one of a selection of apperance styles.",
       "DescriptionResourceString": "BadgeCanvas_Appearance_Desc",
-      "DisplayName": "Apparence",
+      "DisplayName": "Appearance",
       "DisplayNameResourceString": "BadgeCanvas_Appearance",
       "EnumValues": [
         {
@@ -513,14 +513,14 @@
     {
       "Category": "data",
       "DefaultValue": "Brand",
-      "Description": "Choisissez une sélection de couleurs dans le thème.",
+      "Description": "Choose one of a selection of colors from the theme.",
       "DescriptionResourceString": "BadgeCanvas_ThemeColor_Desc",
-      "DisplayName": "Couleur",
+      "DisplayName": "Color",
       "DisplayNameResourceString": "BadgeCanvas_ThemeColor",
       "EnumValues": [
         {
-          "Description": "Marque",
-          "DisplayName": "Marque",
+          "Description": "Brand",
+          "DisplayName": "Brand",
           "IsDefaultValue": true,
           "Name": "Brand",
           "Value": "Brand"
@@ -540,36 +540,36 @@
           "Value": "Important"
         },
         {
-          "Description": "Informatif",
-          "DisplayName": "Informatif",
+          "Description": "Informative",
+          "DisplayName": "Informative",
           "IsDefaultValue": false,
           "Name": "Informative",
           "Value": "Informative"
         },
         {
-          "Description": "Grave",
-          "DisplayName": "Grave",
+          "Description": "Severe",
+          "DisplayName": "Severe",
           "IsDefaultValue": false,
           "Name": "Severe",
           "Value": "Severe"
         },
         {
-          "Description": "Subtil",
-          "DisplayName": "Subtil",
+          "Description": "Subtle",
+          "DisplayName": "Subtle",
           "IsDefaultValue": false,
           "Name": "Subtle",
           "Value": "Subtle"
         },
         {
-          "Description": "Réussite",
-          "DisplayName": "Réussite",
+          "Description": "Success",
+          "DisplayName": "Success",
           "IsDefaultValue": false,
           "Name": "Success",
           "Value": "Success"
         },
         {
-          "Description": "Avertissement",
-          "DisplayName": "Avertissement",
+          "Description": "Warning",
+          "DisplayName": "Warning",
           "IsDefaultValue": false,
           "Name": "Warning",
           "Value": "Warning"
@@ -598,9 +598,9 @@
     {
       "Category": "data",
       "DefaultValue": "AB",
-      "Description": "Contenu textuel à afficher dans la fenêtre contextuelle.",
+      "Description": "Text content to display in the popup.",
       "DescriptionResourceString": "BadgeCanvas_Content_Desc",
-      "DisplayName": "Contenu",
+      "DisplayName": "Content",
       "DisplayNameResourceString": "BadgeCanvas_Content",
       "EnumValues": [],
       "HelperUI": null,
@@ -626,28 +626,28 @@
     {
       "Category": "data",
       "DefaultValue": "Circular",
-      "Description": "Choisissez l’une des formes.",
+      "Description": "Choose one of a selection of shapes.",
       "DescriptionResourceString": "BadgeCanvas_Shape_Desc",
-      "DisplayName": "Forme",
+      "DisplayName": "Shape",
       "DisplayNameResourceString": "BadgeCanvas_Shape",
       "EnumValues": [
         {
-          "Description": "Circulaire",
-          "DisplayName": "Circulaire",
+          "Description": "Circular",
+          "DisplayName": "Circular",
           "IsDefaultValue": true,
           "Name": "Circular",
           "Value": "Circular"
         },
         {
-          "Description": "Carré",
-          "DisplayName": "Carré",
+          "Description": "Square",
+          "DisplayName": "Square",
           "IsDefaultValue": false,
           "Name": "Square",
           "Value": "Square"
         },
         {
-          "Description": "Arrondi",
-          "DisplayName": "Arrondi",
+          "Description": "Rounded",
+          "DisplayName": "Rounded",
           "IsDefaultValue": false,
           "Name": "Rounded",
           "Value": "Rounded"
@@ -676,9 +676,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Choisissez une palette de couleurs différente du thème.",
+      "Description": "Choose a color palette that's different from the theme.",
       "DescriptionResourceString": "Base_Palette_Color_description",
-      "DisplayName": "Palette de couleurs",
+      "DisplayName": "Color palette",
       "DisplayNameResourceString": "Base_Palette_Color",
       "EnumValues": [],
       "HelperUI": null,
@@ -704,9 +704,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Nom de la famille de polices dans laquelle le texte s’affiche",
+      "Description": "The name of the family of fonts in which text appears",
       "DescriptionResourceString": "Font_description",
-      "DisplayName": "Police",
+      "DisplayName": "Font",
       "DisplayNameResourceString": "Font",
       "EnumValues": [],
       "HelperUI": null,
@@ -732,9 +732,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Définissez la taille de la police pour le texte affiché.",
+      "Description": "Set the font size for displayed text.",
       "DescriptionResourceString": "Font_Size_description",
-      "DisplayName": "Taille de police",
+      "DisplayName": "Font size",
       "DisplayNameResourceString": "Font_Size",
       "EnumValues": [],
       "HelperUI": null,
@@ -760,9 +760,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Couleur de la police du texte du contrôle",
+      "Description": "The color of text in the control",
       "DescriptionResourceString": "Font_Color_description",
-      "DisplayName": "Couleur de police",
+      "DisplayName": "Font color",
       "DisplayNameResourceString": "Font_Color",
       "EnumValues": [],
       "HelperUI": "color",
@@ -788,9 +788,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Épaisseur de la police du texte dans un contrôle",
+      "Description": "The weight of the text in a control",
       "DescriptionResourceString": "Font_Weight_description",
-      "DisplayName": "Épaisseur de police",
+      "DisplayName": "Font weight",
       "DisplayNameResourceString": "Font_Weight",
       "EnumValues": [],
       "HelperUI": null,
@@ -816,9 +816,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "Italique",
+      "Description": "Italic",
       "DescriptionResourceString": "Italic",
-      "DisplayName": "Italique",
+      "DisplayName": "Italic",
       "DisplayNameResourceString": "Italic",
       "EnumValues": [],
       "HelperUI": null,
@@ -844,9 +844,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "Souligner",
+      "Description": "Underline",
       "DescriptionResourceString": "Underline",
-      "DisplayName": "Souligner",
+      "DisplayName": "Underline",
       "DisplayNameResourceString": "Underline",
       "EnumValues": [],
       "HelperUI": null,
@@ -872,9 +872,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "Barré",
+      "Description": "Strikethrough",
       "DescriptionResourceString": "Strikethrough",
-      "DisplayName": "Barré",
+      "DisplayName": "Strikethrough",
       "DisplayNameResourceString": "Strikethrough",
       "EnumValues": [],
       "HelperUI": null,
@@ -900,9 +900,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Affichez le texte à l’aide de l’alignement de texte sélectionné.",
+      "Description": "Display text using the selected text alignment.",
       "DescriptionResourceString": "Align_Desc",
-      "DisplayName": "Aligner",
+      "DisplayName": "Align",
       "DisplayNameResourceString": "Align",
       "EnumValues": [],
       "HelperUI": null,
@@ -928,9 +928,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Affichez le texte à l’aide de l’alignement vertical de texte sélectionné.",
+      "Description": "Display text using the selected text vertical alignment.",
       "DescriptionResourceString": "VerticalAlign_Desc",
-      "DisplayName": "Alignement vertical",
+      "DisplayName": "Vertical align",
       "DisplayNameResourceString": "VerticalAlign",
       "EnumValues": [],
       "HelperUI": null,
@@ -1442,7 +1442,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"BadgeCanvas\":\"Badge\",\"BadgeCanvas_AccessibleLabel\":\"Étiquette d’accessibilité\",\"BadgeCanvas_AccessibleLabel_Desc\":\"Étiquette lue par les lecteurs d’écran.\",\"BadgeCanvas_Default_Content\":\"AB\",\"BadgeCanvas_Desc\":\"Décoration visuelle pour les éléments d’interface utilisateur.\",\"BadgeCanvas_Appearance\":\"Apparence\",\"BadgeCanvas_Appearance_Desc\":\"Choisissez l’un des styles sélectionnés.\",\"BadgeCanvas_Appearance_Filled\":\"Filled\",\"BadgeCanvas_Appearance_Ghost\":\"Ghost\",\"BadgeCanvas_Appearance_Outline\":\"Outline\",\"BadgeCanvas_Appearance_Tint\":\"Tint\",\"BadgeCanvas_ThemeColor\":\"Couleur\",\"BadgeCanvas_ThemeColor_Desc\":\"Choisissez une sélection de couleurs dans le thème.\",\"BadgeCanvas_ThemeColor_Brand\":\"Marque\",\"BadgeCanvas_ThemeColor_Danger\":\"Danger\",\"BadgeCanvas_ThemeColor_Important\":\"Important\",\"BadgeCanvas_ThemeColor_Informative\":\"Informatif\",\"BadgeCanvas_ThemeColor_Severe\":\"Grave\",\"BadgeCanvas_ThemeColor_Subtle\":\"Subtil\",\"BadgeCanvas_ThemeColor_Success\":\"Réussite\",\"BadgeCanvas_ThemeColor_Warning\":\"Avertissement\",\"BadgeCanvas_Content\":\"Contenu\",\"BadgeCanvas_Content_Desc\":\"Contenu textuel à afficher dans la fenêtre contextuelle.\",\"BadgeCanvas_Shape\":\"Forme\",\"BadgeCanvas_Shape_Desc\":\"Choisissez l’une des formes.\",\"BadgeCanvas_Shape_Circular\":\"Circulaire\",\"BadgeCanvas_Shape_Square\":\"Carré\",\"BadgeCanvas_Shape_Rounded\":\"Arrondi\",\"Base_Palette_Color\":\"Palette de couleurs\",\"Base_Palette_Color_description\":\"Choisissez une palette de couleurs différente du thème.\",\"Font_Size\":\"Taille de police\",\"Font_Size_description\":\"Définissez la taille de la police pour le texte affiché.\",\"Font\":\"Police\",\"Font_description\":\"Nom de la famille de polices dans laquelle le texte s’affiche\",\"Font_Color\":\"Couleur de police\",\"Font_Color_description\":\"Couleur de la police du texte du contrôle\",\"Font_Weight\":\"Épaisseur de police\",\"Font_Weight_description\":\"Épaisseur de la police du texte dans un contrôle\",\"Italic\":\"Italique\",\"Underline\":\"Souligner\",\"Strikethrough\":\"Barré\",\"VerticalAlign\":\"Alignement vertical\",\"VerticalAlign_Desc\":\"Affichez le texte à l’aide de l’alignement vertical de texte sélectionné.\",\"VerticalAlign_Top\":\"Haut\",\"VerticalAlign_Middle\":\"Centre\",\"VerticalAlign_Bottom\":\"Bas\",\"Align\":\"Aligner\",\"Align_Desc\":\"Affichez le texte à l’aide de l’alignement de texte sélectionné.\",\"Align_Left\":\"Gauche\",\"Align_Right\":\"Droite\",\"Align_Center\":\"Centrer\",\"Align_Justify\":\"Justifier\"}}}",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"BadgeCanvas\":\"Badge\",\"BadgeCanvas_AccessibleLabel\":\"Accessible label\",\"BadgeCanvas_AccessibleLabel_Desc\":\"Label read out by screen readers.\",\"BadgeCanvas_Default_Content\":\"AB\",\"BadgeCanvas_Desc\":\"A visual decoration for UI elements.\",\"BadgeCanvas_Appearance\":\"Appearance\",\"BadgeCanvas_Appearance_Desc\":\"Choose one of a selection of apperance styles.\",\"BadgeCanvas_Appearance_Filled\":\"Filled\",\"BadgeCanvas_Appearance_Ghost\":\"Ghost\",\"BadgeCanvas_Appearance_Outline\":\"Outline\",\"BadgeCanvas_Appearance_Tint\":\"Tint\",\"BadgeCanvas_ThemeColor\":\"Color\",\"BadgeCanvas_ThemeColor_Desc\":\"Choose one of a selection of colors from the theme.\",\"BadgeCanvas_ThemeColor_Brand\":\"Brand\",\"BadgeCanvas_ThemeColor_Danger\":\"Danger\",\"BadgeCanvas_ThemeColor_Important\":\"Important\",\"BadgeCanvas_ThemeColor_Informative\":\"Informative\",\"BadgeCanvas_ThemeColor_Severe\":\"Severe\",\"BadgeCanvas_ThemeColor_Subtle\":\"Subtle\",\"BadgeCanvas_ThemeColor_Success\":\"Success\",\"BadgeCanvas_ThemeColor_Warning\":\"Warning\",\"BadgeCanvas_Content\":\"Content\",\"BadgeCanvas_Content_Desc\":\"Text content to display in the popup.\",\"BadgeCanvas_Shape\":\"Shape\",\"BadgeCanvas_Shape_Desc\":\"Choose one of a selection of shapes.\",\"BadgeCanvas_Shape_Circular\":\"Circular\",\"BadgeCanvas_Shape_Square\":\"Square\",\"BadgeCanvas_Shape_Rounded\":\"Rounded\",\"Base_Palette_Color\":\"Color palette\",\"Base_Palette_Color_description\":\"Choose a color palette that's different from the theme.\",\"Font_Size\":\"Font size\",\"Font_Size_description\":\"Set the font size for displayed text.\",\"Font\":\"Font\",\"Font_description\":\"The name of the family of fonts in which text appears\",\"Font_Color\":\"Font color\",\"Font_Color_description\":\"The color of text in the control\",\"Font_Weight\":\"Font weight\",\"Font_Weight_description\":\"The weight of the text in a control\",\"Italic\":\"Italic\",\"Underline\":\"Underline\",\"Strikethrough\":\"Strikethrough\",\"VerticalAlign\":\"Vertical align\",\"VerticalAlign_Desc\":\"Display text using the selected text vertical alignment.\",\"VerticalAlign_Top\":\"Top\",\"VerticalAlign_Middle\":\"Middle\",\"VerticalAlign_Bottom\":\"Bottom\",\"Align\":\"Align\",\"Align_Desc\":\"Display text using the selected text alignment.\",\"Align_Left\":\"Left\",\"Align_Right\":\"Right\",\"Align_Center\":\"Center\",\"Align_Justify\":\"Justify\"}}}",
       "Type": 3
     },
     {

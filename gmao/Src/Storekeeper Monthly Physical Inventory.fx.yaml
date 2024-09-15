@@ -37,7 +37,7 @@
             RadiusTopRight: =8
             ZIndex: =1
 
-            "Header2_2 As 'En-tête'":
+            Header2_2 As Header:
                 AlignInContainer: =AlignInContainer.Center
                 DisplayMode: =DisplayMode.Edit
                 Height: =75
@@ -105,7 +105,7 @@
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    bntJan_1 As Bouton:
+                    bntJan_1 As Button:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: |-
                             =//DisplayMode.Edit
@@ -122,7 +122,7 @@
                         Y: =0
                         ZIndex: =2
 
-                    btnFeb_1 As Bouton:
+                    btnFeb_1 As Button:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Feb"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -137,7 +137,7 @@
                         Y: =0
                         ZIndex: =3
 
-                    btnMar_1 As Bouton:
+                    btnMar_1 As Button:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Mar"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -152,7 +152,7 @@
                         Y: =0
                         ZIndex: =4
 
-                    btnApr_1 As Bouton:
+                    btnApr_1 As Button:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Apr"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -167,7 +167,7 @@
                         Y: =0
                         ZIndex: =5
 
-                    btnMay_1 As Bouton:
+                    btnMay_1 As Button:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"May"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -183,7 +183,7 @@
                         Y: =0
                         ZIndex: =6
 
-                    btnJun_1 As Bouton:
+                    btnJun_1 As Button:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Jun"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -198,7 +198,7 @@
                         Y: =0
                         ZIndex: =7
 
-                    btnJul_1 As Bouton:
+                    btnJul_1 As Button:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Jul"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -213,7 +213,7 @@
                         Y: =0
                         ZIndex: =8
 
-                    btnAug_1 As Bouton:
+                    btnAug_1 As Button:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Aug"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -228,7 +228,7 @@
                         Y: =0
                         ZIndex: =9
 
-                    btnSep_1 As Bouton:
+                    btnSep_1 As Button:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Sep"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -243,7 +243,7 @@
                         Y: =0
                         ZIndex: =10
 
-                    btnOct_1 As Bouton:
+                    btnOct_1 As Button:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Oct"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -258,7 +258,7 @@
                         Y: =0
                         ZIndex: =11
 
-                    btnNov_1 As Bouton:
+                    btnNov_1 As Button:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Nov"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -273,7 +273,7 @@
                         Y: =0
                         ZIndex: =12
 
-                    btnDec_1 As Bouton:
+                    btnDec_1 As Button:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Dec"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -321,7 +321,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_1 As 'Saisie de texte'":
+                    "TextInputCanvas2_1 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -332,7 +332,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique As 'Saisie de texte'":
+                    "TextInputQtePhysique As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -359,7 +359,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden As Bouton:
+                    btn_save_hidden As Button:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -457,7 +457,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25 As Bouton:
+                ButtonCanvas25 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -516,7 +516,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_1 As Bouton:
+                ButtonCanvas25_1 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -554,7 +554,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare As Texte:
+                badge_spare As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -563,7 +563,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte As Texte:
+                badge_qte As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -621,7 +621,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_2 As 'Saisie de texte'":
+                    "TextInputCanvas2_2 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -632,7 +632,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_1 As 'Saisie de texte'":
+                    "TextInputQtePhysique_1 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -659,7 +659,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_1 As Bouton:
+                    btn_save_hidden_1 As Button:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -757,7 +757,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_2 As Bouton:
+                ButtonCanvas25_2 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -816,7 +816,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_3 As Bouton:
+                ButtonCanvas25_3 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -854,7 +854,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_1 As Texte:
+                badge_spare_1 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -863,7 +863,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_1 As Texte:
+                badge_qte_1 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -921,7 +921,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_3 As 'Saisie de texte'":
+                    "TextInputCanvas2_3 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -932,7 +932,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_2 As 'Saisie de texte'":
+                    "TextInputQtePhysique_2 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -959,7 +959,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_2 As Bouton:
+                    btn_save_hidden_2 As Button:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -1057,7 +1057,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_4 As Bouton:
+                ButtonCanvas25_4 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -1116,7 +1116,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_5 As Bouton:
+                ButtonCanvas25_5 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -1154,7 +1154,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_2 As Texte:
+                badge_spare_2 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -1163,7 +1163,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_2 As Texte:
+                badge_qte_2 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -1221,7 +1221,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_4 As 'Saisie de texte'":
+                    "TextInputCanvas2_4 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -1232,7 +1232,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_3 As 'Saisie de texte'":
+                    "TextInputQtePhysique_3 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -1259,7 +1259,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_3 As Bouton:
+                    btn_save_hidden_3 As Button:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -1357,7 +1357,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_6 As Bouton:
+                ButtonCanvas25_6 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -1416,7 +1416,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_7 As Bouton:
+                ButtonCanvas25_7 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -1454,7 +1454,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_3 As Texte:
+                badge_spare_3 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -1463,7 +1463,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_3 As Texte:
+                badge_qte_3 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -1521,7 +1521,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_5 As 'Saisie de texte'":
+                    "TextInputCanvas2_5 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -1532,7 +1532,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_4 As 'Saisie de texte'":
+                    "TextInputQtePhysique_4 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -1559,7 +1559,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_4 As Bouton:
+                    btn_save_hidden_4 As Button:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -1657,7 +1657,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_8 As Bouton:
+                ButtonCanvas25_8 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -1716,7 +1716,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_9 As Bouton:
+                ButtonCanvas25_9 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -1754,7 +1754,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_4 As Texte:
+                badge_spare_4 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -1763,7 +1763,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_4 As Texte:
+                badge_qte_4 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -1821,7 +1821,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_6 As 'Saisie de texte'":
+                    "TextInputCanvas2_6 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -1832,7 +1832,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_5 As 'Saisie de texte'":
+                    "TextInputQtePhysique_5 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -1859,7 +1859,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_5 As Bouton:
+                    btn_save_hidden_5 As Button:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -1957,7 +1957,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_10 As Bouton:
+                ButtonCanvas25_10 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -2016,7 +2016,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_11 As Bouton:
+                ButtonCanvas25_11 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -2054,7 +2054,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_5 As Texte:
+                badge_spare_5 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -2063,7 +2063,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_5 As Texte:
+                badge_qte_5 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -2121,7 +2121,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_7 As 'Saisie de texte'":
+                    "TextInputCanvas2_7 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -2132,7 +2132,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_6 As 'Saisie de texte'":
+                    "TextInputQtePhysique_6 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -2159,7 +2159,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_6 As Bouton:
+                    btn_save_hidden_6 As Button:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -2257,7 +2257,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_12 As Bouton:
+                ButtonCanvas25_12 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -2316,7 +2316,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_13 As Bouton:
+                ButtonCanvas25_13 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -2354,7 +2354,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_6 As Texte:
+                badge_spare_6 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -2363,7 +2363,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_6 As Texte:
+                badge_qte_6 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -2421,7 +2421,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_8 As 'Saisie de texte'":
+                    "TextInputCanvas2_8 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -2432,7 +2432,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_7 As 'Saisie de texte'":
+                    "TextInputQtePhysique_7 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -2459,7 +2459,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_7 As Bouton:
+                    btn_save_hidden_7 As Button:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -2557,7 +2557,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_14 As Bouton:
+                ButtonCanvas25_14 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -2616,7 +2616,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_15 As Bouton:
+                ButtonCanvas25_15 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -2654,7 +2654,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_7 As Texte:
+                badge_spare_7 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -2663,7 +2663,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_7 As Texte:
+                badge_qte_7 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -2721,7 +2721,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_9 As 'Saisie de texte'":
+                    "TextInputCanvas2_9 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -2732,7 +2732,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_8 As 'Saisie de texte'":
+                    "TextInputQtePhysique_8 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -2759,7 +2759,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_8 As Bouton:
+                    btn_save_hidden_8 As Button:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -2857,7 +2857,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_16 As Bouton:
+                ButtonCanvas25_16 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -2916,7 +2916,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_17 As Bouton:
+                ButtonCanvas25_17 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -2954,7 +2954,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_8 As Texte:
+                badge_spare_8 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -2963,7 +2963,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_8 As Texte:
+                badge_qte_8 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -3021,7 +3021,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_10 As 'Saisie de texte'":
+                    "TextInputCanvas2_10 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -3032,7 +3032,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_9 As 'Saisie de texte'":
+                    "TextInputQtePhysique_9 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -3059,7 +3059,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_9 As Bouton:
+                    btn_save_hidden_9 As Button:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -3157,7 +3157,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_18 As Bouton:
+                ButtonCanvas25_18 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -3216,7 +3216,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_19 As Bouton:
+                ButtonCanvas25_19 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -3254,7 +3254,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_9 As Texte:
+                badge_spare_9 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -3263,7 +3263,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_9 As Texte:
+                badge_qte_9 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -3321,7 +3321,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_11 As 'Saisie de texte'":
+                    "TextInputCanvas2_11 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -3332,7 +3332,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_10 As 'Saisie de texte'":
+                    "TextInputQtePhysique_10 As 'Text input'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -3359,7 +3359,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_10 As Bouton:
+                    btn_save_hidden_10 As Button:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -3457,7 +3457,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_20 As Bouton:
+                ButtonCanvas25_20 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -3516,7 +3516,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_21 As Bouton:
+                ButtonCanvas25_21 As Button:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -3554,7 +3554,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_10 As Texte:
+                badge_spare_10 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -3563,7 +3563,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_10 As Texte:
+                badge_qte_10 As Text:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |

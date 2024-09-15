@@ -35,7 +35,7 @@
             RadiusTopRight: =8
             ZIndex: =1
 
-            "Header4_2 As 'En-tête'":
+            Header4_2 As Header:
                 DisplayMode: =DisplayMode.Edit
                 Height: =75
                 IsProfilePictureVisible: =false
@@ -178,7 +178,7 @@
             RadiusTopRight: =8
             ZIndex: =22
 
-            ButtonCanvas18_2 As Bouton:
+            ButtonCanvas18_2 As Button:
                 DisplayMode: |
                     =
                 Height: =42
@@ -191,7 +191,7 @@
                 Y: =0
                 ZIndex: =23
 
-            ButtonCanvas17_2 As Bouton:
+            ButtonCanvas17_2 As Button:
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
                 LayoutMinHeight: =32
@@ -255,7 +255,7 @@
                 Width: =40
                 ZIndex: =1
 
-            "'user added sucs message_11' As Texte":
+            "'user added sucs message_11' As Text":
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 AutoHeight: =false
@@ -276,7 +276,7 @@
                 Y: =0
                 ZIndex: =2
 
-            ButtonCanvas6_3 As Bouton:
+            ButtonCanvas6_3 As Button:
                 Align: =Align.Center
                 AlignInContainer: =AlignInContainer.Center
                 Appearance: ='ButtonCanvas.Appearance'.Primary
@@ -371,7 +371,7 @@
                 Width: =40
                 ZIndex: =1
 
-            "'user added sucs message_12' As Texte":
+            "'user added sucs message_12' As Text":
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =

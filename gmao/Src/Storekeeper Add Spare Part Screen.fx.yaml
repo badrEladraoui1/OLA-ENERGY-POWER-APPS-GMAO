@@ -35,7 +35,7 @@
             RadiusTopRight: =8
             ZIndex: =2
 
-            "Header4 As 'En-tête'":
+            Header4 As Header:
                 DisplayMode: =DisplayMode.Edit
                 Height: =75
                 IsProfilePictureVisible: =false
@@ -501,7 +501,7 @@
             RadiusTopRight: =8
             ZIndex: =4
 
-            ButtonCanvas17 As Bouton:
+            ButtonCanvas17 As Button:
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
                 LayoutMinHeight: =32
@@ -553,7 +553,7 @@
                 Y: =0
                 ZIndex: =1
 
-            ButtonCanvas18 As Bouton:
+            ButtonCanvas18 As Button:
                 DisplayMode: |
                     =If(
                         IsBlank('Dropdown spare equ'.Selected.Codification) ||
@@ -803,7 +803,7 @@
                 Width: =40
                 ZIndex: =1
 
-            "'staff fct added sucs message_1' As Texte":
+            "'staff fct added sucs message_1' As Text":
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =

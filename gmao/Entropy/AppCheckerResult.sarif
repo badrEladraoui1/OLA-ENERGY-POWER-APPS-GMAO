@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 10,
-                  "charOffset": 1120,
+                  "charOffset": 1116,
                   "snippet": {
                     "text": "jsonString"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 9,
-                  "charOffset": 1110,
+                  "charOffset": 1106,
                   "snippet": {
                     "text": "ParseJSON"
                   }
@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 9,
-                  "charOffset": 1177,
+                  "charOffset": 1173,
                   "snippet": {
                     "text": "pieceName"
                   }
@@ -424,7 +424,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 3340,
+                  "charOffset": 3338,
                   "snippet": {
                     "text": "&&"
                   }
@@ -504,7 +504,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 3340,
+                  "charOffset": 3338,
                   "snippet": {
                     "text": "&&"
                   }
@@ -584,7 +584,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 3340,
+                  "charOffset": 3338,
                   "snippet": {
                     "text": "&&"
                   }
@@ -664,7 +664,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 3340,
+                  "charOffset": 3338,
                   "snippet": {
                     "text": "&&"
                   }
@@ -744,7 +744,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 3340,
+                  "charOffset": 3338,
                   "snippet": {
                     "text": "&&"
                   }
@@ -824,7 +824,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 3340,
+                  "charOffset": 3338,
                   "snippet": {
                     "text": "&&"
                   }
@@ -904,7 +904,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 3340,
+                  "charOffset": 3338,
                   "snippet": {
                     "text": "&&"
                   }
@@ -984,7 +984,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 3340,
+                  "charOffset": 3338,
                   "snippet": {
                     "text": "&&"
                   }
@@ -1064,7 +1064,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 3340,
+                  "charOffset": 3338,
                   "snippet": {
                     "text": "&&"
                   }
@@ -1144,7 +1144,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 3340,
+                  "charOffset": 3338,
                   "snippet": {
                     "text": "&&"
                   }
@@ -1224,7 +1224,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 3340,
+                  "charOffset": 3338,
                   "snippet": {
                     "text": "&&"
                   }
@@ -1344,7 +1344,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 298,
+                  "charOffset": 297,
                   "snippet": {
                     "text": "&&"
                   }
@@ -1384,7 +1384,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 4741,
+                  "charOffset": 4737,
                   "snippet": {
                     "text": "&&"
                   }
@@ -1448,756 +1448,6 @@
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  Middle Container'.go_bacl_btn2_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  Middle Container'.go_bacl_btn2_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Staff Table Screen",
-                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  Middle Container'.go_bacl_btn2_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.'Staff Table'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.'Staff Table'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Staff Table Screen",
-                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.'Staff Table'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Nom complet_DataCard1'.DataCardValue4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Nom complet_DataCard1'.DataCardValue4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Staff Table Screen",
-                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Nom complet_DataCard1'.DataCardValue4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.DateValue1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.DateValue1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Staff Table Screen",
-                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.DateValue1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.HourValue1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.HourValue1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Staff Table Screen",
-                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.HourValue1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.MinuteValue1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.MinuteValue1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Staff Table Screen",
-                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.MinuteValue1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Fonction occupee_DataCard4'.DataCardValue6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Fonction occupee_DataCard4'.DataCardValue6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Staff Table Screen",
-                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Fonction occupee_DataCard4'.DataCardValue6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Tarif horaire_DataCard2'.DataCardValue5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Tarif horaire_DataCard2'.DataCardValue5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Staff Table Screen",
-                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Tarif horaire_DataCard2'.DataCardValue5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.'Btn Container_1'.Modify_btn_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.'Btn Container_1'.Modify_btn_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Staff Table Screen",
-                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.'Btn Container_1'.Modify_btn_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Dialog Container_3'.'Dialog Content_7'.'cancel icon_7'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Dialog Container_3'.'Dialog Content_7'.'cancel icon_7'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Staff Table Screen",
-                "type": "'Modify Staff Table Screen'.'Dialog Container_3'.'Dialog Content_7'.'cancel icon_7'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Dialog Container_3'.'Dialog Content_7'.'cancel icon_7'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Dialog Container_3'.'Dialog Content_7'.'cancel icon_7'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Modify Staff Table Screen",
-                "type": "'Modify Staff Table Screen'.'Dialog Container_3'.'Dialog Content_7'.'cancel icon_7'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff FooterContainer'.delete_staff_row_btn.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff FooterContainer'.delete_staff_row_btn.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Delete Staff Table Screen",
-                "type": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff FooterContainer'.delete_staff_row_btn"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff FooterContainer'.go_back_3_btn_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff FooterContainer'.go_back_3_btn_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Delete Staff Table Screen",
-                "type": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff FooterContainer'.go_back_3_btn_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff MainContainer'.'Staff table_del'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff MainContainer'.'Staff table_del'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Delete Staff Table Screen",
-                "type": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff MainContainer'.'Staff table_del'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.'cancel icon_4'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.'cancel icon_4'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Delete Staff Table Screen",
-                "type": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.'cancel icon_4'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.'cancel icon_4'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.'cancel icon_4'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Delete Staff Table Screen",
-                "type": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.'cancel icon_4'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.ButtonCanvas6_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.ButtonCanvas6_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Delete Staff Table Screen",
-                "type": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.ButtonCanvas6_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_3 Info_1'.'Dialog Content_5'.'cancel icon_5'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_3 Info_1'.'Dialog Content_5'.'cancel icon_5'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Delete Staff Table Screen",
-                "type": "'Delete Staff Table Screen'.'Dialog Container_3 Info_1'.'Dialog Content_5'.'cancel icon_5'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_3 Info_1'.'Dialog Content_5'.'cancel icon_5'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_3 Info_1'.'Dialog Content_5'.'cancel icon_5'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Delete Staff Table Screen",
-                "type": "'Delete Staff Table Screen'.'Dialog Container_3 Info_1'.'Dialog Content_5'.'cancel icon_5'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'User Activities Screen'.'Admin Activities Body Container_1'.'Admin Activities Body Container_2'.Image3_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'User Activities Screen'.'Admin Activities Body Container_1'.'Admin Activities Body Container_2'.Image3_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User Activities Screen",
-                "type": "'User Activities Screen'.'Admin Activities Body Container_1'.'Admin Activities Body Container_2'.Image3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'User Activities Screen'.'Admin Activities Body Container_1'.'Admin Activities Body Container_2'.Image3_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'User Activities Screen'.'Admin Activities Body Container_1'.'Admin Activities Body Container_2'.Image3_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "User Activities Screen",
-                "type": "'User Activities Screen'.'Admin Activities Body Container_1'.'Admin Activities Body Container_2'.Image3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Profile Management Screen",
-                "type": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Profile Management Screen",
-                "type": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Rapport Intervention Management Screen'.'Rapport Intervention Management Parent Container'.'Rapport Intervention Management Body Container'.go_back_arrow_img_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Rapport Intervention Management Screen'.'Rapport Intervention Management Parent Container'.'Rapport Intervention Management Body Container'.go_back_arrow_img_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Rapport Intervention Management Screen",
-                "type": "'Rapport Intervention Management Screen'.'Rapport Intervention Management Parent Container'.'Rapport Intervention Management Body Container'.go_back_arrow_img_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Rapport Intervention Management Screen'.'Rapport Intervention Management Parent Container'.'Rapport Intervention Management Body Container'.go_back_arrow_img_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Rapport Intervention Management Screen'.'Rapport Intervention Management Parent Container'.'Rapport Intervention Management Body Container'.go_back_arrow_img_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Rapport Intervention Management Screen",
-                "type": "'Rapport Intervention Management Screen'.'Rapport Intervention Management Parent Container'.'Rapport Intervention Management Body Container'.go_back_arrow_img_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4347,6 +3597,336 @@
                 "member": "TabIndex",
                 "module": "StorKeeper General Manual Movement",
                 "type": "'StorKeeper General Manual Movement'.'Dialog Container_8'.'Dialog Content_12'.'cancel icon_12'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  Middle Container'.go_bacl_btn2_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  Middle Container'.go_bacl_btn2_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Staff Table Screen",
+                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  Middle Container'.go_bacl_btn2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.'Staff Table'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.'Staff Table'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Staff Table Screen",
+                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.'Staff Table'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Nom complet_DataCard1'.DataCardValue4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Nom complet_DataCard1'.DataCardValue4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Staff Table Screen",
+                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Nom complet_DataCard1'.DataCardValue4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.DateValue1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.DateValue1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Staff Table Screen",
+                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.DateValue1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.HourValue1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.HourValue1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Staff Table Screen",
+                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.HourValue1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.MinuteValue1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.MinuteValue1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Staff Table Screen",
+                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Date d_embauche_DataCard2'.MinuteValue1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Fonction occupee_DataCard4'.DataCardValue6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Fonction occupee_DataCard4'.DataCardValue6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Staff Table Screen",
+                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Fonction occupee_DataCard4'.DataCardValue6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Tarif horaire_DataCard2'.DataCardValue5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Tarif horaire_DataCard2'.DataCardValue5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Staff Table Screen",
+                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.modify_staff_form.'Tarif horaire_DataCard2'.DataCardValue5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.'Btn Container_1'.Modify_btn_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.'Btn Container_1'.Modify_btn_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Staff Table Screen",
+                "type": "'Modify Staff Table Screen'.'Staff Table ScreenContainer'.'Staff Table  MainContainer'.Staff_form_handling_container.'Btn Container_1'.Modify_btn_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Dialog Container_3'.'Dialog Content_7'.'cancel icon_7'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Dialog Container_3'.'Dialog Content_7'.'cancel icon_7'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Staff Table Screen",
+                "type": "'Modify Staff Table Screen'.'Dialog Container_3'.'Dialog Content_7'.'cancel icon_7'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Dialog Container_3'.'Dialog Content_7'.'cancel icon_7'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.'Dialog Container_3'.'Dialog Content_7'.'cancel icon_7'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Modify Staff Table Screen",
+                "type": "'Modify Staff Table Screen'.'Dialog Container_3'.'Dialog Content_7'.'cancel icon_7'"
               }
             }
           ],
@@ -8024,6 +7604,246 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff FooterContainer'.delete_staff_row_btn.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff FooterContainer'.delete_staff_row_btn.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delete Staff Table Screen",
+                "type": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff FooterContainer'.delete_staff_row_btn"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff FooterContainer'.go_back_3_btn_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff FooterContainer'.go_back_3_btn_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delete Staff Table Screen",
+                "type": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff FooterContainer'.go_back_3_btn_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff MainContainer'.'Staff table_del'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff MainContainer'.'Staff table_del'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delete Staff Table Screen",
+                "type": "'Delete Staff Table Screen'.'Delete Staff ScreenContainer'.'Delete Staff MainContainer'.'Staff table_del'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.'cancel icon_4'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.'cancel icon_4'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delete Staff Table Screen",
+                "type": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.'cancel icon_4'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.'cancel icon_4'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.'cancel icon_4'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Delete Staff Table Screen",
+                "type": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.'cancel icon_4'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.ButtonCanvas6_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.ButtonCanvas6_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delete Staff Table Screen",
+                "type": "'Delete Staff Table Screen'.'Dialog Container_2 Delete_1'.'Dialog Content_4'.ButtonCanvas6_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_3 Info_1'.'Dialog Content_5'.'cancel icon_5'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_3 Info_1'.'Dialog Content_5'.'cancel icon_5'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delete Staff Table Screen",
+                "type": "'Delete Staff Table Screen'.'Dialog Container_3 Info_1'.'Dialog Content_5'.'cancel icon_5'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_3 Info_1'.'Dialog Content_5'.'cancel icon_5'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Staff Table Screen'.'Dialog Container_3 Info_1'.'Dialog Content_5'.'cancel icon_5'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Delete Staff Table Screen",
+                "type": "'Delete Staff Table Screen'.'Dialog Container_3 Info_1'.'Dialog Content_5'.'cancel icon_5'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Delete Profile Table Screen'.'Delete Profile ScreenContainer'.'Delete Profile FooterContainer'.delete_profile_row_btn.AccessibleLabel"
                 }
               ],
@@ -9008,6 +8828,66 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'User Activities Screen'.'Admin Activities Body Container_1'.'Admin Activities Body Container_2'.Image3_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'User Activities Screen'.'Admin Activities Body Container_1'.'Admin Activities Body Container_2'.Image3_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User Activities Screen",
+                "type": "'User Activities Screen'.'Admin Activities Body Container_1'.'Admin Activities Body Container_2'.Image3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'User Activities Screen'.'Admin Activities Body Container_1'.'Admin Activities Body Container_2'.Image3_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'User Activities Screen'.'Admin Activities Body Container_1'.'Admin Activities Body Container_2'.Image3_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "User Activities Screen",
+                "type": "'User Activities Screen'.'Admin Activities Body Container_1'.'Admin Activities Body Container_2'.Image3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -10034,6 +9914,156 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Profile Management Screen",
+                "type": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Profile Management Screen",
+                "type": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Rapport Intervention Management Screen'.'Rapport Intervention Management Parent Container'.'Rapport Intervention Management Body Container'.go_back_arrow_img_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Rapport Intervention Management Screen'.'Rapport Intervention Management Parent Container'.'Rapport Intervention Management Body Container'.go_back_arrow_img_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Rapport Intervention Management Screen",
+                "type": "'Rapport Intervention Management Screen'.'Rapport Intervention Management Parent Container'.'Rapport Intervention Management Body Container'.go_back_arrow_img_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Rapport Intervention Management Screen'.'Rapport Intervention Management Parent Container'.'Rapport Intervention Management Body Container'.go_back_arrow_img_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Rapport Intervention Management Screen'.'Rapport Intervention Management Parent Container'.'Rapport Intervention Management Body Container'.go_back_arrow_img_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Rapport Intervention Management Screen",
+                "type": "'Rapport Intervention Management Screen'.'Rapport Intervention Management Parent Container'.'Rapport Intervention Management Body Container'.go_back_arrow_img_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.selectedDésignation"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.selectedDésignation",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "selectedDésignation",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.UserName"
                 }
               ],
@@ -10105,36 +10135,6 @@
               },
               "properties": {
                 "member": "UserFunction",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.selectedDésignation"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.selectedDésignation",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "selectedDésignation",
                 "module": "App",
                 "type": "App"
               }
@@ -10423,36 +10423,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.isValidName"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Staff Table Screen'.isValidName",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "isValidName",
-                "module": "Modify Staff Table Screen",
-                "type": "'Modify Staff Table Screen'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Modify Profile Table Screen'.isValidEmail"
                 }
               ],
@@ -10526,6 +10496,36 @@
                 "member": "isValidPassword",
                 "module": "Modify Profile Table Screen",
                 "type": "'Modify Profile Table Screen'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.isValidName"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Staff Table Screen'.isValidName",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "isValidName",
+                "module": "Modify Staff Table Screen",
+                "type": "'Modify Staff Table Screen'"
               }
             }
           ],
@@ -10721,89 +10721,89 @@
               "id": "app-UnusedVariables",
               "messageStrings": {
                 "issue": {
-                  "text": "Variable non utilisée"
+                  "text": "Unused variable"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Supprimez la variable inutilisée."
+                  "Remove the unused variable."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Cette variable est déclarée, mais n'est référencée par aucun contrôle. Elle est donc inutile."
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
               }
             },
             {
               "id": "app-UnusedMediaResources",
               "messageStrings": {
                 "issue": {
-                  "text": "Fichiers multimédias inutilisés"
+                  "text": "Unused media files"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Supprimez le fichier multimédia inutilisé dans le volet Media."
+                  "Remove the unused media file in the Media pane."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Ce fichier multimédia n’est référencé par aucune formule de contrôle. Il n’est donc pas nécessaire. Si vous le supprimez, les performances seront améliorées."
+                "whyFix": "This media file is not referenced by any control formulas so it is not needed. Removing it will improve performance."
               }
             },
             {
               "id": "app-CollectDelegatableDataSource",
               "messageStrings": {
                 "issue": {
-                  "text": "Les lignes récupérées à partir de la source de données ne sont peut-être pas complètes."
+                  "text": "The rows retrieved from the data source may not be complete."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Limitez les données collectées à partir de la source de données en mettant à jour la formule «\u00A0ClearCollect(existingEmailsAdmins; Admins_DB)\u00A0» pour y ajouter une fonction de filtrage, par exemple, «\u00A0Filter\u00A0» ou «\u00A0Search\u00A0»."
+                  "Limit the data collected from the data source by updating the formula \"ClearCollect(existingEmailsAdmins, Admins_DB)\" to include a filtering function, such as 'Filter' or 'Search'."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "L'utilisation de la fonction «\u00A0Collect\u00A0» pour créer une collection directement à partir d'une source de données connectée peut ne pas charger toutes les lignes si la source de données est trop grande."
+                "whyFix": "Using the 'Collect' function to create a collection directly from a connected data source may not load every row if the data source is too large."
               }
             },
             {
               "id": "app-DataSourceDefaultMaxRowsLimit",
               "messageStrings": {
                 "issue": {
-                  "text": "La limite de lignes de données pour les requêtes non délégables est supérieure à 500"
+                  "text": "Data row limit for non-delegable queries is more than 500"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Mettez à jour la «\u00A0limite de lignes de données pour les requêtes non délégables\u00A0» dans les paramètres avancés de l'application."
+                  "Update 'Data row limit for non-delegable queries' in the advanced app settings."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Une «\u00A0limite de ligne de données\u00A0» supérieure à 500 peut ralentir l'application en cas d'exécution de requêtes non délégables, car l'application doit traiter chaque ligne elle-même au lieu d'exécuter la requête sur le serveur."
+                "whyFix": "A 'data row limit' more than 500 may result in a slower app when running non-delegable queries, because the app will have to process every row itself, rather than running the query on the server."
               }
             },
             {
               "id": "app-ScreenHasManyControls",
               "messageStrings": {
                 "issue": {
-                  "text": "Trop de contrôles sur un écran"
+                  "text": "Too many controls on a screen"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Réduisez le nombre de contrôles à l'écran.",
-                  "Divisez l'application en plusieurs écrans pour réduire la complexité de chaque écran.",
-                  "Utilisez des composants pour unifier les contrôles regroupés qui sont identiques sur les écrans et ainsi réduire la duplication.",
-                  "Utilisez des galeries pour représenter une série de contrôles similaires répétés.",
-                  "Décomposez l'application en plusieurs petites applications performantes."
+                  "Reduce the number of controls on the screen.",
+                  "Break the app into more screens to reduce the per-screen complexity.",
+                  "Use components to unify grouped controls that are identical across screens, reducing duplication.",
+                  "Use galleries to represent a series of repeated similar controls.",
+                  "Break the app into multiple apps so that each app is small and performant."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Chaque contrôle consomme des ressources, et une application peut ralentir ou cesser de répondre si un écran a trop de contrôles. La complexité estimée de «\u00A0Storekeeper Monthly Physical Inventory\u00A0» est 317, ce qui dépasse le seuil maximal recommandé (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Storekeeper Monthly Physical Inventory\" is 317, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],

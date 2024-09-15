@@ -49,7 +49,7 @@
                 Image: =form_profile_image
                 ZIndex: =1
 
-            "'TextCanvas new rapport' As Texte":
+            "'TextCanvas new rapport' As Text":
                 AutoHeight: =true
                 BorderColor: =
                 DisplayMode: =DisplayMode.Edit
@@ -460,7 +460,7 @@
                                     Width: =40
                                     ZIndex: =2
 
-                            "'add btn' As Bouton":
+                            "'add btn' As Button":
                                 BasePaletteColor: =
                                 BorderColor: =
                                 DisplayMode: |
@@ -697,7 +697,7 @@
                                 Width: =Parent.Width * 0.5
                                 ZIndex: =6
 
-                            "'add btn_1' As Bouton":
+                            "'add btn_1' As Button":
                                 BasePaletteColor: =
                                 BorderColor: =
                                 DisplayMode: |
@@ -763,7 +763,7 @@
             RadiusTopRight: =8
             ZIndex: =4
 
-            ButtonCanvas5 As Bouton:
+            ButtonCanvas5 As Button:
                 Appearance: ='ButtonCanvas.Appearance'.Secondary
                 BasePaletteColor: =
                 BorderColor: =
@@ -780,7 +780,7 @@
                 Y: =0
                 ZIndex: =1
 
-            ButtonCanvas7 As Bouton:
+            ButtonCanvas7 As Button:
                 BasePaletteColor: =
                 BorderColor: =
                 DisplayMode: =DisplayMode.Edit
@@ -1669,7 +1669,7 @@
                 Width: =40
                 ZIndex: =1
 
-            message_new_rapport As Texte:
+            message_new_rapport As Text:
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =

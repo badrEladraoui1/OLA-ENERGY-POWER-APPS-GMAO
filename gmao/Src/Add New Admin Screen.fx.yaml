@@ -35,7 +35,7 @@
             RadiusTopRight: =8
             ZIndex: =2
 
-            "Header6 As 'En-tête'":
+            Header6 As Header:
                 DisplayMode: =DisplayMode.Edit
                 Height: =75
                 IsProfilePictureVisible: =false
@@ -413,7 +413,7 @@
             RadiusTopRight: =8
             ZIndex: =4
 
-            ButtonCanvas20 As Bouton:
+            ButtonCanvas20 As Button:
                 DisplayMode: =If(!IsBlank(DataCardValue1.Text) && !IsBlank(DataCardValue14.Text) , DisplayMode.Edit, DisplayMode.Disabled)
                 Height: =50
                 LayoutMinHeight: =32
@@ -463,7 +463,7 @@
                 Y: =0
                 ZIndex: =1
 
-            ButtonCanvas21 As Bouton:
+            ButtonCanvas21 As Button:
                 DisplayMode: =DisplayMode.Edit
                 Height: =50
                 LayoutMinHeight: =32
@@ -525,7 +525,7 @@
                 Width: =40
                 ZIndex: =1
 
-            "'user added sucs message_13' As Texte":
+            "'user added sucs message_13' As Text":
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =
