@@ -144,6 +144,7 @@
     "Physical inventory screen",
     "Profile Management Screen",
     "Admin Function Types Screen",
+    "User Equipement Activities Screen",
     "Admin Function Staff Screen",
     "Add New Function Staff Screen",
     "Modify/Delete Staff function Screen",
@@ -164,8 +165,8 @@
     "Storekeeper Monthly Physical Inventory",
     "Storekeeper Add Spare Part Screen",
     "StorKeeper Delete Spare Part",
-    "Storekeeper Add Equipement Screen",
-    "Storekeeper Delete Equipement Screen",
+    "Add Equipement Screen",
+    "Delete Equipement Screen",
     "Add New Admin Screen"
   ]
 }

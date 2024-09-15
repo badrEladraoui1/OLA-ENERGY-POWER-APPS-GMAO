@@ -1414,12 +1414,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.Items"
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.Items",
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1432,8 +1432,8 @@
               },
               "properties": {
                 "member": "Items",
-                "module": "Storekeeper Delete Equipement Screen",
-                "type": "'Storekeeper Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'"
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'"
               }
             }
           ],
@@ -8954,19 +8954,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_7.'TextInput spare name_1'.AccessibleLabel"
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_7.'TextInput spare name_1'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_7.'TextInput spare name_1'.AccessibleLabel",
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_7.'TextInput spare name_1'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Add Equipement Screen",
-                "type": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_7.'TextInput spare name_1'"
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_7.'TextInput spare name_1'"
               }
             }
           ],
@@ -8984,19 +8984,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_8.'TextInput cod spare_1'.AccessibleLabel"
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_8.'TextInput cod spare_1'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_8.'TextInput cod spare_1'.AccessibleLabel",
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_8.'TextInput cod spare_1'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Add Equipement Screen",
-                "type": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_8.'TextInput cod spare_1'"
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_8.'TextInput cod spare_1'"
               }
             }
           ],
@@ -9014,19 +9014,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_9.'Dropdown family equipements'.AccessibleLabel"
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_9.'Dropdown family equipements'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_9.'Dropdown family equipements'.AccessibleLabel",
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_9.'Dropdown family equipements'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Add Equipement Screen",
-                "type": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_9.'Dropdown family equipements'"
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_9.'Dropdown family equipements'"
               }
             }
           ],
@@ -9044,19 +9044,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_10.'TextInput type equip_1'.AccessibleLabel"
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_10.'TextInput type equip_1'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_10.'TextInput type equip_1'.AccessibleLabel",
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_10.'TextInput type equip_1'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Add Equipement Screen",
-                "type": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_10.'TextInput type equip_1'"
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_10.'TextInput type equip_1'"
               }
             }
           ],
@@ -9074,19 +9074,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_11.'TextInput brand_1'.AccessibleLabel"
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_11.'TextInput brand_1'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_11.'TextInput brand_1'.AccessibleLabel",
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_11.'TextInput brand_1'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Add Equipement Screen",
-                "type": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_11.'TextInput brand_1'"
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_11.'TextInput brand_1'"
               }
             }
           ],
@@ -9104,19 +9104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas18_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas18_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas18_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas18_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Add Equipement Screen",
-                "type": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas18_1"
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas18_1"
               }
             }
           ],
@@ -9134,19 +9134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas17_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas17_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas17_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas17_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Add Equipement Screen",
-                "type": "'Storekeeper Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas17_1"
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas17_1"
               }
             }
           ],
@@ -9164,19 +9164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.AccessibleLabel"
+                  "fullyQualifiedName": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.AccessibleLabel",
+                  "fullyQualifiedName": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Add Equipement Screen",
-                "type": "'Storekeeper Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'"
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'"
               }
             }
           ],
@@ -9194,19 +9194,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.TabIndex"
+                  "fullyQualifiedName": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.TabIndex",
+                  "fullyQualifiedName": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Storekeeper Add Equipement Screen",
-                "type": "'Storekeeper Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'"
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'"
               }
             }
           ],
@@ -9224,19 +9224,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.AccessibleLabel"
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.AccessibleLabel",
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Delete Equipement Screen",
-                "type": "'Storekeeper Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'"
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'"
               }
             }
           ],
@@ -9254,19 +9254,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas18_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas18_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas18_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas18_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Delete Equipement Screen",
-                "type": "'Storekeeper Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas18_2"
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas18_2"
               }
             }
           ],
@@ -9284,19 +9284,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas17_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas17_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas17_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas17_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Delete Equipement Screen",
-                "type": "'Storekeeper Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas17_2"
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas17_2"
               }
             }
           ],
@@ -9314,19 +9314,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.AccessibleLabel"
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.AccessibleLabel",
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Delete Equipement Screen",
-                "type": "'Storekeeper Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'"
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'"
               }
             }
           ],
@@ -9344,19 +9344,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.TabIndex"
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.TabIndex",
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Storekeeper Delete Equipement Screen",
-                "type": "'Storekeeper Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'"
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'"
               }
             }
           ],
@@ -9374,19 +9374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.ButtonCanvas6_3.AccessibleLabel"
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.ButtonCanvas6_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.ButtonCanvas6_3.AccessibleLabel",
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.ButtonCanvas6_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Delete Equipement Screen",
-                "type": "'Storekeeper Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.ButtonCanvas6_3"
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.ButtonCanvas6_3"
               }
             }
           ],
@@ -9404,19 +9404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.AccessibleLabel"
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.AccessibleLabel",
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Storekeeper Delete Equipement Screen",
-                "type": "'Storekeeper Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'"
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'"
               }
             }
           ],
@@ -9434,19 +9434,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.TabIndex"
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.TabIndex",
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Storekeeper Delete Equipement Screen",
-                "type": "'Storekeeper Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'"
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'"
               }
             }
           ],
@@ -10214,6 +10214,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'User Equipement Activities Screen'.'Admin Function Parent Container_2'.'Admin Function Body Container_2'.go_back_arrow_img_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'User Equipement Activities Screen'.'Admin Function Parent Container_2'.'Admin Function Body Container_2'.go_back_arrow_img_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User Equipement Activities Screen",
+                "type": "'User Equipement Activities Screen'.'Admin Function Parent Container_2'.'Admin Function Body Container_2'.go_back_arrow_img_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'User Equipement Activities Screen'.'Admin Function Parent Container_2'.'Admin Function Body Container_2'.go_back_arrow_img_6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'User Equipement Activities Screen'.'Admin Function Parent Container_2'.'Admin Function Body Container_2'.go_back_arrow_img_6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "User Equipement Activities Screen",
+                "type": "'User Equipement Activities Screen'.'Admin Function Parent Container_2'.'Admin Function Body Container_2'.go_back_arrow_img_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.selectedDésignation"
                 }
               ],
@@ -10782,19 +10842,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.SelectedItem"
+                  "fullyQualifiedName": "'Delete Equipement Screen'.SelectedItem"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Storekeeper Delete Equipement Screen'.SelectedItem",
+                  "fullyQualifiedName": "'Delete Equipement Screen'.SelectedItem",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "SelectedItem",
-                "module": "Storekeeper Delete Equipement Screen",
-                "type": "'Storekeeper Delete Equipement Screen'"
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'"
               }
             }
           ],
