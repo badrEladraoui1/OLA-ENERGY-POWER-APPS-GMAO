@@ -299,6 +299,7 @@
             AlignInContainer: =AlignInContainer.Center
             DropShadow: =DropShadow.Bold
             Fill: =RGBA(214, 221, 224, 1)
+            FillPortions: =0
             LayoutDirection: =LayoutDirection.Vertical
             LayoutGap: =10
             LayoutMinHeight: =100
