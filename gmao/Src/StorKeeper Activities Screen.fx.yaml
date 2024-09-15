@@ -301,7 +301,7 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =App.Theme.Colors.Darker10
                     OnSelect: |
-                        =Navigate('Physical inventory Screen');
+                        =Navigate('Physical inventory screen');
                         /*ClearCollect(
                             StockRecords,
                             PDR_stock

@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "Physical inventory Screen": {
+    "Physical inventory screen": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -27,7 +27,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Physical inventory Screen",
+      "Name": "Physical inventory screen",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -54,12 +54,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Orientation",
+          "PropertyName": "Size",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "Size",
+          "PropertyName": "Orientation",
           "RuleProviderType": "Unknown"
         },
         {
@@ -77,5 +77,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Physical inventory Screen"
+  "TopParentName": "Physical inventory screen"
 }

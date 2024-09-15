@@ -101,7 +101,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 35,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "DesktopOrTablet",
@@ -141,7 +141,7 @@
     "Admin Activities Screen",
     "User Activities Screen",
     "StorKeeper Activities Screen",
-    "Physical inventory Screen",
+    "Physical inventory screen",
     "Profile Management Screen",
     "Admin Function Types Screen",
     "User Equipement Activities Screen",
