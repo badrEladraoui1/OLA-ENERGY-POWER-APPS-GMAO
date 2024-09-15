@@ -388,7 +388,8 @@
                             SelectedDateFill: =App.Theme.Colors.Primary
                             StartYear: =1899
                             Tooltip: =Parent.DisplayName
-                            Width: =(Parent.Width - 60)
+                            Width: |
+                                =(Parent.Width - 60)
                             X: =30
                             Y: =DataCardKey6.Y + DataCardKey6.Height + 5
                             ZIndex: =2
