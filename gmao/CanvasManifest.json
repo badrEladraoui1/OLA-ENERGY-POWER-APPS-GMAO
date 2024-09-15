@@ -114,11 +114,11 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "91ad862b-e85c-40b4-928d-ddbea43d77f1",
-    "Id": "790a8b74-29e6-4078-bff5-09dffd340dca",
+    "Id": "28d92104-8033-4153-afe8-67aced6e4af2",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
-    "Name": "OLA_ENERGY_GMAO",
+    "Name": "OLA_ENERGY_GMAO.msapp",
     "OriginatingVersion": "1.343",
     "ParserErrorCount": 2,
     "ShowStatusBar": false
