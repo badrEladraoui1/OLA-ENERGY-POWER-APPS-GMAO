@@ -415,7 +415,7 @@
             ZIndex: =4
 
             ButtonCanvas20 As Button:
-                DisplayMode: =If(!IsBlank(DataCardValue1.Text) && !IsBlank(DataCardValue14.Text) , DisplayMode.Edit, DisplayMode.Disabled)
+                DisplayMode: =If(!IsBlank(DataCardValue1.Text) && !IsBlank(DataCardValue14.Text) && !IsBlank(DataCardValue27.Text) , DisplayMode.Edit, DisplayMode.Disabled)
                 Height: =50
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
