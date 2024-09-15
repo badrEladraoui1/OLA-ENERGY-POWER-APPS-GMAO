@@ -243,6 +243,7 @@
                     PressedFill: =App.Theme.Colors.Darker30
                     SelectionFill: =App.Theme.Colors.Primary
                     Size: =13
+                    Width: =500
                     ZIndex: =2
 
             Container2_1 As groupContainer.horizontalAutoLayoutContainer:
@@ -506,48 +507,7 @@
                 Height: =32
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
-                OnSelect: |-
-                    =// Patch to Liste_Equipements
-                    /*Patch(
-                        Liste_Equipements,
-                        Defaults(Liste_Equipements),
-                        {
-                            Codification: 'Dropdown spare equ'.Selected.Codification, 
-                            'Niveau d''arborescence': "Pièce",
-                            Désignation: 'TextInput cod spare'.Text, 
-                            'Famille d''équipement': 'Dropdown family equipements_1'.Selected.Value, 
-                            'Type d''équipement': 'TextInput type equip'.Text, 
-                            Marque: 'TextInput brand'.Text
-                        }
-                    );
-                    
-                    // Patch the spare part name into each year table (Physical_Inventory_2024 to 2034)
-                    ForAll(
-                        [
-                            Physical_Inventory_2024,
-                            Physical_Inventory_2025,
-                            Physical_Inventory_2026,
-                            Physical_Inventory_2027,
-                            Physical_Inventory_2028,
-                            Physical_Inventory_2029,
-                            Physical_Inventory_2030,
-                            Physical_Inventory_2031,
-                            Physical_Inventory_2032,
-                            Physical_Inventory_2033,
-                            Physical_Inventory_2034
-                        ],
-                        Patch(
-                            ThisRecord,
-                            Defaults(ThisRecord.Value),
-                            {
-                                'Piece de Rechange': 'TextInput cod spare'.Text
-                            }
-                        )
-                    );
-                    
-                    // Display success notification
-                    Notify("Spare part added successfully to all tables!", NotificationType.Success);
-                    */
+                OnSelect: =Navigate('Magasiner Activities Screen')
                 Text: ="Go back"
                 Width: =96
                 X: =0
