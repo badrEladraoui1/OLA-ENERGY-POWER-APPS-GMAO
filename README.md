@@ -1,6 +1,6 @@
 # Ola Energy CMMS Application
 
-This is a custom-built **Computerized Maintenance Management System (CMMS)** developed using **PowerApps** for **Ola Energy**. The application streamlines the management of corrective and preventive maintenance tasks, inventory control, and staff management. It offers a user-friendly interface for both administrators and users, with role-based access control to ensure appropriate permissions for each function.
+This is a custom-built **Computerized Maintenance Management System (CMMS)** developed using **PowerApps** for **Ola Energy**. The application streamlines the management of corrective maintenance tasks, inventory control, and staff management. It offers a user-friendly interface for both administrators and users, with role-based access control to ensure appropriate permissions for each function.
 
 ## Features
 
