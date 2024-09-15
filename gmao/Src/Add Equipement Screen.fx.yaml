@@ -395,26 +395,7 @@
                 Height: =32
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
-                OnSelect: |-
-                    =Navigate('User Equipement Activities Screen')
-                    
-                    // Patch to Liste_Equipements
-                    /*
-                    Patch(
-                        Liste_Equipements,
-                        Defaults(Liste_Equipements),
-                        {
-                            'Niveau d''arborescence': "Equipement",
-                            Désignation: 'TextInput cod spare_1'.Text, 
-                            'Famille d''équipement': 'Dropdown family equipements'.Selected.Value, 
-                            'Type d''équipement': 'TextInput type equip_1'.Text, 
-                            Marque: 'TextInput brand_1'.Text
-                        }
-                    );
-                    
-                    // Display success notification
-                    Notify("Spare part added successfully to all tables!", NotificationType.Success);
-                    */
+                OnSelect: =Navigate('User Equipement Activities Screen');
                 Text: ="Go back"
                 Width: =96
                 X: =0
