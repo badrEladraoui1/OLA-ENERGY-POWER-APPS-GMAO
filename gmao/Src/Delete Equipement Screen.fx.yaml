@@ -159,6 +159,7 @@
                     PressedFill: =App.Theme.Colors.Darker30
                     SelectionFill: =App.Theme.Colors.Primary
                     Size: =13
+                    Width: =Parent.Width * 0.4
                     ZIndex: =6
 
         FooterContainer5_2 As groupContainer.horizontalAutoLayoutContainer:
