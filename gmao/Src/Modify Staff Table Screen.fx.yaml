@@ -169,32 +169,32 @@
                 Y: =0
                 ZIndex: =1
 
-                "'Date Embauche' As PowerAppsOneGridTemplate_dataField.textualColumn":
-                    FieldDisplayName: ="Date d_embauche"
+                "'Date Embauche1' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Date Embauche"
                     FieldName: ="Date Embauche"
                     FieldType: ="d"
                     FieldVariantName: ="textualColumn"
-                    Order: =2
+                    Order: =1
                     Width: =0
-                    ZIndex: =5
+                    ZIndex: =8
 
-                Fonction As PowerAppsOneGridTemplate_dataField.textualColumn:
+                Fonction1 As PowerAppsOneGridTemplate_dataField.textualColumn:
                     FieldDisplayName: ="Fonction"
                     FieldName: ="Fonction"
                     FieldType: ="s"
                     FieldVariantName: ="textualColumn"
-                    Order: =3
+                    Order: =2
                     Width: =0
-                    ZIndex: =6
+                    ZIndex: =9
 
-                "'Nom complet5' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                "'Nom complet3' As PowerAppsOneGridTemplate_dataField.textualColumn":
                     FieldDisplayName: ="Nom complet"
                     FieldName: ="Nom complet"
                     FieldType: ="s"
                     FieldVariantName: ="textualColumn"
-                    Order: =1
+                    Order: =3
                     Width: =0
-                    ZIndex: =7
+                    ZIndex: =10
 
                 "'Tarif horaire1' As PowerAppsOneGridTemplate_dataField.textualColumn":
                     FieldDisplayName: ="Tarif horaire"
@@ -203,7 +203,7 @@
                     FieldVariantName: ="textualColumn"
                     Order: =4
                     Width: =0
-                    ZIndex: =8
+                    ZIndex: =11
 
             Staff_form_handling_container As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
