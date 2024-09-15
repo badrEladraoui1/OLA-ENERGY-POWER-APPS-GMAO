@@ -8894,19 +8894,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.AccessibleLabel"
+                  "fullyQualifiedName": "'Physical inventory Screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.AccessibleLabel",
+                  "fullyQualifiedName": "'Physical inventory Screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Physical inventory screen",
-                "type": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5"
+                "module": "Physical inventory Screen",
+                "type": "'Physical inventory Screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5"
               }
             }
           ],
@@ -8924,19 +8924,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.TabIndex"
+                  "fullyQualifiedName": "'Physical inventory Screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.TabIndex",
+                  "fullyQualifiedName": "'Physical inventory Screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Physical inventory screen",
-                "type": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5"
+                "module": "Physical inventory Screen",
+                "type": "'Physical inventory Screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5"
               }
             }
           ],

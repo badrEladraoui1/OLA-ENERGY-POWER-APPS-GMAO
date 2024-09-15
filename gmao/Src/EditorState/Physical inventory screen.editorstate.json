@@ -714,7 +714,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "X",
+          "PropertyName": "Height",
           "RuleProviderType": "Unknown"
         },
         {
@@ -729,7 +729,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Height",
+          "PropertyName": "X",
           "RuleProviderType": "Unknown"
         },
         {
@@ -942,7 +942,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "X",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -952,7 +952,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Width",
+          "PropertyName": "X",
           "RuleProviderType": "Unknown"
         },
         {
@@ -4224,7 +4224,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "Physical inventory screen": {
+    "Physical inventory Screen": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -4251,7 +4251,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Physical inventory screen",
+      "Name": "Physical inventory Screen",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -4278,12 +4278,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Size",
+          "PropertyName": "Orientation",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "Orientation",
+          "PropertyName": "Size",
           "RuleProviderType": "Unknown"
         },
         {
@@ -6090,5 +6090,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Physical inventory screen"
+  "TopParentName": "Physical inventory Screen"
 }

@@ -1,4 +1,4 @@
-"'Physical inventory screen' As screen":
+"'Physical inventory Screen' As screen":
     Fill: =RGBA(255, 103, 0, 1)
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 

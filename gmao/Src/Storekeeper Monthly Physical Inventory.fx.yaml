@@ -3610,6 +3610,6 @@
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Image: ='icons8-logout-240 (1)'
-                OnSelect: =Navigate('Physical inventory screen')
+                OnSelect: =Navigate('Physical inventory Screen')
                 ZIndex: =2
 
