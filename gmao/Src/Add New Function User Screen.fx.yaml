@@ -123,6 +123,7 @@
                         ZIndex: =1
 
                     DataCardValue8 As text:
+                        Align: =Align.Center
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         BorderThickness: =2
                         Color: =RGBA(0, 0, 0, 1)
@@ -134,6 +135,7 @@
                         DisplayMode: =Parent.DisplayMode
                         FocusedBorderThickness: =4
                         Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
                         HoverBorderColor: =App.Theme.Colors.Darker40
                         HoverColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =App.Theme.Colors.Lighter70
@@ -194,8 +196,6 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                LayoutOverflowX: =LayoutOverflow.Scroll
-                LayoutOverflowY: =LayoutOverflow.Scroll
                 LayoutWrap: =true
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
