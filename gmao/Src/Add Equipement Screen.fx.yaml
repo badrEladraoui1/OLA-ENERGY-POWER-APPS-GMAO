@@ -397,6 +397,7 @@
                 LayoutMinWidth: =96
                 OnSelect: |-
                     =// Patch to Liste_Equipements
+                    /*
                     Patch(
                         Liste_Equipements,
                         Defaults(Liste_Equipements),
@@ -411,6 +412,7 @@
                     
                     // Display success notification
                     Notify("Spare part added successfully to all tables!", NotificationType.Success);
+                    */
                 Text: ="Go back"
                 Width: =96
                 X: =0
