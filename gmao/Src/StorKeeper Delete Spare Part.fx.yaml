@@ -58,6 +58,7 @@
             FillPortions: =0
             Height: =75
             LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutGap: =20
             LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -343,6 +344,18 @@
                 Y: =0
                 ZIndex: =1
 
+            ButtonCanvas1 As Button:
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Navigate('StorKeeper Activities Screen')
+                Text: ="Go Back"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
+
         MainContainer4 As groupContainer.verticalAutoLayoutContainer:
             DropShadow: =DropShadow.Light
             Fill: =RGBA(255, 255, 255, 1)
@@ -501,6 +514,7 @@
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
+            Width: =540
             ZIndex: =1
 
             "'cancel icon_14' As icon.CancelBadge":
@@ -531,7 +545,7 @@
                 LayoutMinHeight: =32
                 LayoutMinWidth: =90
                 Size: =20
-                Text: ="Are you sure you want to delete this ? ( This May Take Some Time )"
+                Text: ="Are you sure you want to delete ''" & 'Table Spare Parts'.Selected.'Piece de Rechange' & "'' ( This Will Take Some Time Please Wait ... )"
                 VerticalAlign: ='TextCanvas.VerticalAlign'.Middle
                 Weight: ='TextCanvas.Weight'.Bold
                 Width: =96

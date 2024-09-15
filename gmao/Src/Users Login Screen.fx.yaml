@@ -274,7 +274,7 @@
                         // Check if the user is 'Magasiner'
                         If(
                             CurrentUser.Fonction = "Magasinier",
-                            Navigate('Magasiner Activities Screen', ScreenTransition.Fade),
+                            Navigate('StorKeeper Activities Screen', ScreenTransition.Fade),
                             Navigate('User Activities Screen', ScreenTransition.Fade)
                         );
                         

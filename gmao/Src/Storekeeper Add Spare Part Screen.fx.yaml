@@ -507,7 +507,7 @@
                 Height: =32
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
-                OnSelect: =Navigate('Magasiner Activities Screen')
+                OnSelect: =Navigate('StorKeeper Activities Screen')
                 Text: ="Go back"
                 Width: =96
                 X: =0
