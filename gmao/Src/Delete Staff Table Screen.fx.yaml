@@ -212,7 +212,7 @@
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
-            Width: =520
+            Width: =540
             ZIndex: =1
 
             "'cancel icon_4' As icon.CancelBadge":
