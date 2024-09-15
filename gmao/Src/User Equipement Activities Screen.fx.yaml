@@ -49,10 +49,9 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
+                Height: =75
                 Size: =20
-                Text: |-
-                    ="Function management
-                    "
+                Text: ="Equipement Management"
                 Width: =300
                 ZIndex: =3
 
