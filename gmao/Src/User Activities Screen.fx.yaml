@@ -125,6 +125,7 @@
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
+                Visible: =false
                 ZIndex: =2
 
                 Image5_1 As image:
