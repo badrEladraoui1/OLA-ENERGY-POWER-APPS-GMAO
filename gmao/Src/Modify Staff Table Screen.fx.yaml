@@ -174,7 +174,8 @@
                     FieldName: ="Date Embauche"
                     FieldType: ="d"
                     FieldVariantName: ="textualColumn"
-                    Order: =1
+                    HeaderText: ="Date of hire"
+                    Order: =2
                     Width: =0
                     ZIndex: =8
 
@@ -183,7 +184,8 @@
                     FieldName: ="Fonction"
                     FieldType: ="s"
                     FieldVariantName: ="textualColumn"
-                    Order: =2
+                    HeaderText: ="Function"
+                    Order: =3
                     Width: =0
                     ZIndex: =9
 
@@ -192,7 +194,8 @@
                     FieldName: ="Nom complet"
                     FieldType: ="s"
                     FieldVariantName: ="textualColumn"
-                    Order: =3
+                    HeaderText: ="Full Name"
+                    Order: =1
                     Width: =0
                     ZIndex: =10
 
@@ -201,6 +204,7 @@
                     FieldName: ="Tarif horaire"
                     FieldType: ="s"
                     FieldVariantName: ="textualColumn"
+                    HeaderText: ="Hourly rate"
                     Order: =4
                     Width: =0
                     ZIndex: =11
@@ -262,7 +266,7 @@
                             Font: =App.Theme.Font
                             Height: =34
                             Size: =13
-                            Text: =Parent.DisplayName
+                            Text: ="Full Name"
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
@@ -358,7 +362,7 @@
                             Font: =App.Theme.Font
                             Height: =34
                             Size: =13
-                            Text: =Parent.DisplayName
+                            Text: ="Date of hire"
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
@@ -533,7 +537,7 @@
                             Font: =App.Theme.Font
                             Height: =34
                             Size: =13
-                            Text: =Parent.DisplayName
+                            Text: ="Function"
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
@@ -625,7 +629,7 @@
                             Font: =App.Theme.Font
                             Height: =34
                             Size: =13
-                            Text: =Parent.DisplayName
+                            Text: ="Hourly rate (Euro per Hour)"
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
