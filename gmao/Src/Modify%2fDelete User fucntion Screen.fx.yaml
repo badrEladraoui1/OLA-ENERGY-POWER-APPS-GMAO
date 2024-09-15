@@ -391,7 +391,7 @@
                 LayoutMinHeight: =32
                 LayoutMinWidth: =100
                 Size: =20
-                Text: ="Are you sure you want to delete the '' "&'Table staff funct'.Selected.'Personnel Fonctions'&" '' staff function ?"
+                Text: ="Are you sure you want to delete the '' "&'Table user funct'.Selected.'Users Fonctions'&" '' User function ?"
                 Weight: ='TextCanvas.Weight'.Bold
                 Width: =96
                 Wrap: =true
