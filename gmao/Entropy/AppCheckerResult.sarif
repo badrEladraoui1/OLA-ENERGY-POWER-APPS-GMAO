@@ -10034,6 +10034,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete Staff function Screen",
+                "type": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Modify/Delete Staff function Screen",
+                "type": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.ButtonCanvas6_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.ButtonCanvas6_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete Staff function Screen",
+                "type": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.ButtonCanvas6_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.selectedDésignation"
                 }
               ],
