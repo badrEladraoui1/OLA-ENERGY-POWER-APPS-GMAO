@@ -508,7 +508,7 @@
                 LayoutMinWidth: =96
                 OnSelect: |-
                     =// Patch to Liste_Equipements
-                    Patch(
+                    /*Patch(
                         Liste_Equipements,
                         Defaults(Liste_Equipements),
                         {
@@ -547,6 +547,7 @@
                     
                     // Display success notification
                     Notify("Spare part added successfully to all tables!", NotificationType.Success);
+                    */
                 Text: ="Go back"
                 Width: =96
                 X: =0
@@ -710,7 +711,18 @@
                                     Physical_Inventory_2031,
                                     Physical_Inventory_2032,
                                     Physical_Inventory_2033,
-                                    Physical_Inventory_2034
+                                    Physical_Inventory_2034,
+                                    Theoretical_Inventory_2024,
+                                    Theoretical_Inventory_2025,
+                                    Theoretical_Inventory_2026,
+                                    Theoretical_Inventory_2027,
+                                    Theoretical_Inventory_2028,
+                                    Theoretical_Inventory_2029,
+                                    Theoretical_Inventory_2030,
+                                    Theoretical_Inventory_2031,
+                                    Theoretical_Inventory_2032,
+                                    Theoretical_Inventory_2033,
+                                    Theoretical_Inventory_2034
                                 ],
                                 Patch(
                                     ThisRecord.Value,
