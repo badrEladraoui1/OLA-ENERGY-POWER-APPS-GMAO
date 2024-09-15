@@ -617,7 +617,8 @@
                         MaxLength: =DataSourceInfo([@Personnel_DB], DataSourceInfo.MaxLength, 'Tarif horaire')
                         Required: =true
                         Update: =DataCardValue5.Text
-                        Width: =519
+                        Width: =
+                        WidthFit: =true
                         X: =0
                         Y: =3
                         ZIndex: =1
@@ -640,7 +641,7 @@
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             BorderThickness: =2
                             Color: =RGBA(0, 0, 0, 1)
-                            Default: =Parent.Default
+                            Default: =
                             DelayOutput: =true
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
