@@ -396,7 +396,9 @@
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
                 OnSelect: |-
-                    =// Patch to Liste_Equipements
+                    =Navigate('User Equipement Activities Screen')
+                    
+                    // Patch to Liste_Equipements
                     /*
                     Patch(
                         Liste_Equipements,

@@ -196,7 +196,8 @@
                 Height: =32
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
-                OnSelect: =
+                OnSelect: |
+                    =Navigate('User Equipement Activities Screen')
                 Text: ="Go back"
                 Width: =96
                 X: =0
