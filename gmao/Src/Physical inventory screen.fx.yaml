@@ -2,238 +2,83 @@
     Fill: =RGBA(255, 103, 0, 1)
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
-    Header7 As Header:
-        BasePaletteColor: =RGBA(5, 102, 178, 1)
-        DisplayMode: =DisplayMode.Edit
-        Font: =Font.Arial
-        FontColor: =RGBA(255, 255, 255, 1)
-        Height: =115
-        IsLogoVisible: =true
-        IsProfilePictureVisible: =false
-        Logo: =OLA_LOGO
-        OnSelectLogo: =false
-        Title: =App.ActiveScreen.Name
-        UserEmail: =User().Email
-        UserImage: =User().Image
-        UserName: =User().FullName
-        Width: =Parent.Width
-        X: =0
-        Y: =0
-        ZIndex: =1
-
-    Container1 As groupContainer.horizontalAutoLayoutContainer:
+    "'Magasiner Activities Header Container_1' As groupContainer.verticalAutoLayoutContainer":
         DropShadow: =DropShadow.Light
-        Height: =653
+        Fill: =RGBA(0, 78, 152, 1)
+        Height: =119
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Width: =Parent.Width
-        Y: =115
-        ZIndex: =2
+        X: =(Parent.Width - Parent.Width) / 2
+        Y: =(Parent.Height - Parent.Height) / 2
+        ZIndex: =3
 
-        Container6 As groupContainer.horizontalAutoLayoutContainer:
-            DropShadow: =DropShadow.Light
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            RadiusBottomLeft: =4
-            RadiusBottomRight: =4
-            RadiusTopLeft: =4
-            RadiusTopRight: =4
+        waiving_hand_img_3 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Image: ='icons8-in-inventory-256'
             ZIndex: =1
 
-            Container6_2 As groupContainer.horizontalAutoLayoutContainer:
-                DropShadow: =DropShadow.Light
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutJustifyContent: =LayoutJustifyContent.Center
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                RadiusBottomLeft: =4
-                RadiusBottomRight: =4
-                RadiusTopLeft: =4
-                RadiusTopRight: =4
-                ZIndex: =1
+        welcome_admin_label_3 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =75
+            Size: =20
+            Text: |-
+                ="Spare parts Physical  Inventory 
+                "
+            Width: =300
+            ZIndex: =2
 
-                "'ButtonCanvas 2024' As Button":
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(5, 102, 178, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
-                    FontWeight: =FontWeight.Bold
-                    Height: =50
-                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="2024"
-                    Width: =200
-                    X: =0
-                    Y: =0
-                    ZIndex: =1
+    "'Magasiner Activities Body Container_4' As groupContainer.verticalAutoLayoutContainer":
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(255, 103, 0, 1)
+        Height: =Parent.Height * 0.85
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =40
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowX: =LayoutOverflow.Scroll
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        PaddingTop: =6
+        Width: =Parent.Width
+        X: =(Parent.Width - Parent.Width) / 2
+        Y: =119
+        ZIndex: =4
 
-            Container6_3 As groupContainer.horizontalAutoLayoutContainer:
-                DropShadow: =DropShadow.Light
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutJustifyContent: =LayoutJustifyContent.Center
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                RadiusBottomLeft: =4
-                RadiusBottomRight: =4
-                RadiusTopLeft: =4
-                RadiusTopRight: =4
-                ZIndex: =2
-
-                "'ButtonCanvas 2026' As Button":
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(5, 102, 178, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
-                    FontWeight: =FontWeight.Bold
-                    Height: =50
-                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="2026"
-                    Width: =200
-                    X: =0
-                    Y: =0
-                    ZIndex: =1
-
-            Container6_4 As groupContainer.horizontalAutoLayoutContainer:
-                DropShadow: =DropShadow.Light
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutJustifyContent: =LayoutJustifyContent.Center
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                RadiusBottomLeft: =4
-                RadiusBottomRight: =4
-                RadiusTopLeft: =4
-                RadiusTopRight: =4
-                ZIndex: =3
-
-                "'ButtonCanvas 2028' As Button":
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(5, 102, 178, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
-                    FontWeight: =FontWeight.Bold
-                    Height: =50
-                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="2028"
-                    Width: =200
-                    X: =0
-                    Y: =0
-                    ZIndex: =1
-
-            Container6_5 As groupContainer.horizontalAutoLayoutContainer:
-                DropShadow: =DropShadow.Light
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutJustifyContent: =LayoutJustifyContent.Center
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                RadiusBottomLeft: =4
-                RadiusBottomRight: =4
-                RadiusTopLeft: =4
-                RadiusTopRight: =4
-                ZIndex: =4
-
-                "'ButtonCanvas 2030' As Button":
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(5, 102, 178, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
-                    FontWeight: =FontWeight.Bold
-                    Height: =50
-                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="2030"
-                    Width: =200
-                    X: =0
-                    Y: =0
-                    ZIndex: =1
-
-            Container6_6 As groupContainer.horizontalAutoLayoutContainer:
-                DropShadow: =DropShadow.Light
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutJustifyContent: =LayoutJustifyContent.Center
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                RadiusBottomLeft: =4
-                RadiusBottomRight: =4
-                RadiusTopLeft: =4
-                RadiusTopRight: =4
-                ZIndex: =5
-
-                "'ButtonCanvas 2032' As Button":
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(5, 102, 178, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
-                    FontWeight: =FontWeight.Bold
-                    Height: =50
-                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="2032"
-                    Width: =200
-                    X: =0
-                    Y: =0
-                    ZIndex: =1
-
-            Container6_13 As groupContainer.horizontalAutoLayoutContainer:
-                DropShadow: =DropShadow.Light
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutJustifyContent: =LayoutJustifyContent.Center
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                RadiusBottomLeft: =4
-                RadiusBottomRight: =4
-                RadiusTopLeft: =4
-                RadiusTopRight: =4
-                ZIndex: =6
-
-                "'ButtonCanvas 2034_1' As Button":
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(249, 83, 109, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
-                    FontWeight: =FontWeight.Bold
-                    Height: =50
-                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="Go Back"
-                    Width: =200
-                    X: =0
-                    Y: =0
-                    ZIndex: =1
-
-        Container6_1 As groupContainer.horizontalAutoLayoutContainer:
+        "'Magasiner Activities Body Container_1' As groupContainer.verticalAutoLayoutContainer":
+            AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 103, 0, 1)
+            LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            RadiusBottomLeft: =4
-            RadiusBottomRight: =4
-            RadiusTopLeft: =4
-            RadiusTopRight: =4
-            ZIndex: =2
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            X: =424
+            Y: =132
+            ZIndex: =5
 
-            Container6_7 As groupContainer.horizontalAutoLayoutContainer:
+            "'Supply Spare Container_2' As groupContainer.horizontalAutoLayoutContainer":
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =Parent.Height * 0.2
                 LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -244,25 +89,59 @@
                 RadiusTopRight: =4
                 ZIndex: =1
 
-                "'ButtonCanvas 2025' As Button":
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(5, 102, 178, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
+                new_Spare_btn_3 As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
                     FontWeight: =FontWeight.Bold
-                    Height: =50
-                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="2025"
-                    Width: =200
-                    X: =0
-                    Y: =0
-                    ZIndex: =1
+                    Height: =Parent.Height * 0.5
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: |
+                        =Set(varSelectedYear, new_Spare_btn_3.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: ="2024"
+                    Width: |
+                        =Parent.Width * 0.3
+                    ZIndex: =2
 
-            Container6_8 As groupContainer.horizontalAutoLayoutContainer:
+                new_Spare_btn_4 As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.5
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: |
+                        =Set(varSelectedYear, new_Spare_btn_4.Text); Navigate( 'Storekeeper Monthly Physical Inventory')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: ="2025"
+                    Width: |
+                        =Parent.Width * 0.3
+                    ZIndex: =3
+
+            "'Supply Spare Container_1' As groupContainer.horizontalAutoLayoutContainer":
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =Parent.Height * 0.2
                 LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -273,25 +152,61 @@
                 RadiusTopRight: =4
                 ZIndex: =2
 
-                "'ButtonCanvas 2027' As Button":
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(5, 102, 178, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
+                new_Spare_btn_1 As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
                     FontWeight: =FontWeight.Bold
-                    Height: =50
-                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="2027"
-                    Width: =200
-                    X: =0
-                    Y: =0
-                    ZIndex: =1
+                    Height: =Parent.Height * 0.5
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: |
+                        =Set(varSelectedYear, new_Spare_btn_1.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: ="2026"
+                    Width: |
+                        =Parent.Width * 0.3
+                    ZIndex: =2
 
-            Container6_9 As groupContainer.horizontalAutoLayoutContainer:
+                new_Spare_btn_2 As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.5
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: |
+                        =Set(varSelectedYear, new_Spare_btn_2.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: |-
+                        ="2027
+                        "
+                    Width: |
+                        =Parent.Width * 0.3
+                    ZIndex: =3
+
+            "'Supply Spare Container_3' As groupContainer.horizontalAutoLayoutContainer":
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =Parent.Height * 0.2
                 LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -302,25 +217,63 @@
                 RadiusTopRight: =4
                 ZIndex: =3
 
-                "'ButtonCanvas 2029' As Button":
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(5, 102, 178, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
+                new_Spare_btn_5 As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
                     FontWeight: =FontWeight.Bold
-                    Height: =50
-                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="2029"
-                    Width: =200
-                    X: =0
-                    Y: =0
+                    Height: =Parent.Height * 0.5
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: |
+                        =Set(varSelectedYear, new_Spare_btn_5.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: |-
+                        ="2028
+                        "
+                    Width: |
+                        =Parent.Width * 0.3
                     ZIndex: =1
 
-            Container6_10 As groupContainer.horizontalAutoLayoutContainer:
+                new_Spare_btn_6 As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.5
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: |
+                        =Set(varSelectedYear, new_Spare_btn_6.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: |-
+                        ="2029
+                        "
+                    Width: |
+                        =Parent.Width * 0.3
+                    ZIndex: =2
+
+            "'Supply Spare Container_4' As groupContainer.horizontalAutoLayoutContainer":
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =Parent.Height * 0.2
                 LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -331,25 +284,63 @@
                 RadiusTopRight: =4
                 ZIndex: =4
 
-                "'ButtonCanvas 2031' As Button":
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(5, 102, 178, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
+                new_Spare_btn_7 As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
                     FontWeight: =FontWeight.Bold
-                    Height: =50
-                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="2031"
-                    Width: =200
-                    X: =0
-                    Y: =0
-                    ZIndex: =1
+                    Height: =Parent.Height * 0.5
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: |
+                        =Set(varSelectedYear, new_Spare_btn_7.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: |-
+                        ="2030
+                        "
+                    Width: |
+                        =Parent.Width * 0.3
+                    ZIndex: =2
 
-            Container6_11 As groupContainer.horizontalAutoLayoutContainer:
+                new_Spare_btn_8 As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.5
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: |
+                        =Set(varSelectedYear, new_Spare_btn_8.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: |-
+                        ="2031
+                        "
+                    Width: |
+                        =Parent.Width * 0.3
+                    ZIndex: =3
+
+            "'Supply Spare Container_5' As groupContainer.horizontalAutoLayoutContainer":
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
+                FillPortions: =0
+                Height: =Parent.Height * 0.2
                 LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -360,48 +351,70 @@
                 RadiusTopRight: =4
                 ZIndex: =5
 
-                "'ButtonCanvas 2033' As Button":
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(5, 102, 178, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
+                new_Spare_btn_9 As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
                     FontWeight: =FontWeight.Bold
-                    Height: =50
-                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="2033"
-                    Width: =200
-                    X: =0
-                    Y: =0
-                    ZIndex: =1
+                    Height: =Parent.Height * 0.5
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: |
+                        =Set(varSelectedYear, new_Spare_btn_9.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: |-
+                        ="2032
+                        "
+                    Width: |
+                        =Parent.Width * 0.3
+                    ZIndex: =2
 
-            Container6_12 As groupContainer.horizontalAutoLayoutContainer:
-                DropShadow: =DropShadow.Light
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutJustifyContent: =LayoutJustifyContent.Center
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                RadiusBottomLeft: =4
-                RadiusBottomRight: =4
-                RadiusTopLeft: =4
-                RadiusTopRight: =4
+                new_Spare_btn_10 As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height * 0.5
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: |
+                        =Set(varSelectedYear, new_Spare_btn_10.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: ="2032"
+                    Width: |
+                        =Parent.Width * 0.3
+                    ZIndex: =3
+
+            Image3_5 As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: ='icons8-logout-240 (1)'
+                OnSelect: |-
+                    =// Clear the current user information
+                    Set(CurrentUser, Blank());
+                    Set(UserName, Blank());
+                    Set(UserEmail, Blank());
+                    Set(UserFunction, Blank());
+                    
+                    // Optionally, navigate to the login screen after logout
+                    Navigate('Welcome Screen', ScreenTransition.Fade);
+                    
+                    // Notify the user that they've logged out
+                    Notify("You have successfully logged out", NotificationType.Success);
                 ZIndex: =6
-
-                "'ButtonCanvas 2034' As Button":
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(5, 102, 178, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =20
-                    FontWeight: =FontWeight.Bold
-                    Height: =50
-                    IconStyle: ='ButtonCanvas.IconStyle'.Filled
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="2034"
-                    Width: =200
-                    X: =0
-                    Y: =0
-                    ZIndex: =1
 
