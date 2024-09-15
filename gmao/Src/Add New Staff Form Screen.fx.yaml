@@ -110,7 +110,7 @@
                         FontWeight: =FontWeight.Bold
                         Height: =34
                         Size: =13
-                        Text: =Parent.DisplayName
+                        Text: ="Full Name"
                         Width: =Parent.Width - 60
                         Wrap: =false
                         X: =30
@@ -208,7 +208,7 @@
                         FontWeight: =FontWeight.Bold
                         Height: =34
                         Size: =13
-                        Text: =Parent.DisplayName
+                        Text: ="Date of hire"
                         Width: =Parent.Width - 60
                         Wrap: =false
                         X: =30
@@ -387,7 +387,7 @@
                         FontWeight: =FontWeight.Bold
                         Height: =34
                         Size: =13
-                        Text: =Parent.DisplayName
+                        Text: ="Function"
                         Width: =Parent.Width - 60
                         Wrap: =false
                         X: =30
@@ -481,7 +481,7 @@
                         FontWeight: =FontWeight.Bold
                         Height: =34
                         Size: =13
-                        Text: =Parent.DisplayName & " ( Euro Per Hour )"
+                        Text: ="Hourly rate (Euro per Hour)"
                         Width: =Parent.Width - 60
                         Wrap: =false
                         X: =30
