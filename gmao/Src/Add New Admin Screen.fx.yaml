@@ -312,6 +312,7 @@
                     Required: =false
                     Update: =DataCardValue27.Text
                     Width: =1334
+                    WidthFit: =true
                     X: =0
                     Y: =2
                     ZIndex: =1
