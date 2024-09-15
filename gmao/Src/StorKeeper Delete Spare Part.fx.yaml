@@ -588,6 +588,13 @@
                         'Table Spare Parts'.Selected
                     );
                     
+                    // Remove from Liste_Equipements if Désignation starts and ends with SelectedSparePart
+                    RemoveIf(
+                        Liste_Equipements,
+                        StartsWith(Désignation, SelectedSparePart) &&
+                        EndsWith(Désignation, SelectedSparePart)
+                    );
+                    
                     // Delete the spare part from Physical_Inventory_2025 based on 'Row Number', 'StartsWith', and 'EndsWith'
                     RemoveIf(
                         Physical_Inventory_2025,
@@ -668,11 +675,92 @@
                         EndsWith('Piece de Rechange', SelectedSparePart)
                     );
                     
-                    // Remove from Liste_Equipements if Désignation starts and ends with SelectedSparePart
+                    // Delete the spare part from Theoretical_Inventory_2024 based on 'Row Number', 'StartsWith', and 'EndsWith'
                     RemoveIf(
-                        Liste_Equipements,
-                        StartsWith(Désignation, SelectedSparePart) &&
-                        EndsWith(Désignation, SelectedSparePart)
+                        Theoretical_Inventory_2024,
+                        'Row Number' = SelectedRowNumber &&
+                        StartsWith('Piece de Rechange', SelectedSparePart) &&
+                        EndsWith('Piece de Rechange', SelectedSparePart)
+                    );
+                    
+                    // Delete the spare part from Theoretical_Inventory_2025 based on 'Row Number', 'StartsWith', and 'EndsWith'
+                    RemoveIf(
+                        Theoretical_Inventory_2025,
+                        'Row Number' = SelectedRowNumber &&
+                        StartsWith('Piece de Rechange', SelectedSparePart) &&
+                        EndsWith('Piece de Rechange', SelectedSparePart)
+                    );
+                    
+                    // Delete the spare part from Theoretical_Inventory_2026 based on 'Row Number', 'StartsWith', and 'EndsWith'
+                    RemoveIf(
+                        Theoretical_Inventory_2026,
+                        'Row Number' = SelectedRowNumber &&
+                        StartsWith('Piece de Rechange', SelectedSparePart) &&
+                        EndsWith('Piece de Rechange', SelectedSparePart)
+                    );
+                    
+                    // Delete the spare part from Theoretical_Inventory_2027 based on 'Row Number', 'StartsWith', and 'EndsWith'
+                    RemoveIf(
+                        Theoretical_Inventory_2027,
+                        'Row Number' = SelectedRowNumber &&
+                        StartsWith('Piece de Rechange', SelectedSparePart) &&
+                        EndsWith('Piece de Rechange', SelectedSparePart)
+                    );
+                    
+                    // Delete the spare part from Theoretical_Inventory_2028 based on 'Row Number', 'StartsWith', and 'EndsWith'
+                    RemoveIf(
+                        Theoretical_Inventory_2028,
+                        'Row Number' = SelectedRowNumber &&
+                        StartsWith('Piece de Rechange', SelectedSparePart) &&
+                        EndsWith('Piece de Rechange', SelectedSparePart)
+                    );
+                    
+                    // Delete the spare part from Theoretical_Inventory_2029 based on 'Row Number', 'StartsWith', and 'EndsWith'
+                    RemoveIf(
+                        Theoretical_Inventory_2029,
+                        'Row Number' = SelectedRowNumber &&
+                        StartsWith('Piece de Rechange', SelectedSparePart) &&
+                        EndsWith('Piece de Rechange', SelectedSparePart)
+                    );
+                    
+                    // Delete the spare part from Theoretical_Inventory_2030 based on 'Row Number', 'StartsWith', and 'EndsWith'
+                    RemoveIf(
+                        Theoretical_Inventory_2030,
+                        'Row Number' = SelectedRowNumber &&
+                        StartsWith('Piece de Rechange', SelectedSparePart) &&
+                        EndsWith('Piece de Rechange', SelectedSparePart)
+                    );
+                    
+                    // Delete the spare part from Theoretical_Inventory_2031 based on 'Row Number', 'StartsWith', and 'EndsWith'
+                    RemoveIf(
+                        Theoretical_Inventory_2031,
+                        'Row Number' = SelectedRowNumber &&
+                        StartsWith('Piece de Rechange', SelectedSparePart) &&
+                        EndsWith('Piece de Rechange', SelectedSparePart)
+                    );
+                    
+                    // Delete the spare part from Theoretical_Inventory_2032 based on 'Row Number', 'StartsWith', and 'EndsWith'
+                    RemoveIf(
+                        Theoretical_Inventory_2032,
+                        'Row Number' = SelectedRowNumber &&
+                        StartsWith('Piece de Rechange', SelectedSparePart) &&
+                        EndsWith('Piece de Rechange', SelectedSparePart)
+                    );
+                    
+                    // Delete the spare part from Theoretical_Inventory_2033 based on 'Row Number', 'StartsWith', and 'EndsWith'
+                    RemoveIf(
+                        Theoretical_Inventory_2033,
+                        'Row Number' = SelectedRowNumber &&
+                        StartsWith('Piece de Rechange', SelectedSparePart) &&
+                        EndsWith('Piece de Rechange', SelectedSparePart)
+                    );
+                    
+                    // Delete the spare part from Theoretical_Inventory_2034 based on 'Row Number', 'StartsWith', and 'EndsWith'
+                    RemoveIf(
+                        Theoretical_Inventory_2034,
+                        'Row Number' = SelectedRowNumber &&
+                        StartsWith('Piece de Rechange', SelectedSparePart) &&
+                        EndsWith('Piece de Rechange', SelectedSparePart)
                     );
                     
                     // Display success notification
