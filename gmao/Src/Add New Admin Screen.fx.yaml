@@ -469,6 +469,7 @@
                 Height: =50
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
+                OnSelect: =Navigate('Admin Activities Screen')
                 Text: ="Go Back"
                 Width: =96
                 X: =0
