@@ -35,7 +35,7 @@
             RadiusTopRight: =8
             ZIndex: =2
 
-            Header2 As Header:
+            "Header2 As 'En-tête'":
                 DisplayMode: =DisplayMode.Edit
                 Height: =75
                 IsProfilePictureVisible: =false
@@ -390,7 +390,7 @@
                     Width: =Parent.Width * 0.5
                     ZIndex: =6
 
-                "'add btn_2' As Button":
+                "'add btn_2' As Bouton":
                     BasePaletteColor: =
                     BorderColor: =
                     DisplayMode: |
@@ -490,7 +490,7 @@
             RadiusTopRight: =8
             ZIndex: =4
 
-            ButtonCanvas16 As Button:
+            ButtonCanvas16 As Bouton:
                 AlignInContainer: =AlignInContainer.Center
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
@@ -503,7 +503,7 @@
                 Y: =0
                 ZIndex: =1
 
-            ButtonCanvas15 As Button:
+            ButtonCanvas15 As Bouton:
                 AlignInContainer: =AlignInContainer.Stretch
                 DisplayMode: |
                     =If(
@@ -1993,7 +1993,7 @@
                 Width: =40
                 ZIndex: =1
 
-            message_new_validation_2 As Text:
+            message_new_validation_2 As Texte:
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =

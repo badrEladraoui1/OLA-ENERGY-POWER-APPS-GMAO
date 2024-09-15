@@ -35,7 +35,7 @@
             RadiusTopRight: =8
             ZIndex: =1
 
-            Header3 As Header:
+            "Header3 As 'En-tête'":
                 DisplayMode: =DisplayMode.Edit
                 Height: =75
                 IsProfilePictureVisible: =false
@@ -68,7 +68,7 @@
             RadiusTopRight: =8
             ZIndex: =2
 
-            ButtonCanvas14 As Button:
+            ButtonCanvas14 As Bouton:
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
                 LayoutMinHeight: =32
@@ -520,7 +520,7 @@
                         Size: =13
                         ZIndex: =5
 
-                    ButtonCanvas13 As Button:
+                    ButtonCanvas13 As Bouton:
                         DisplayMode: |
                             =If(
                                 !IsBlank('TextInput qte kPiece'.Text) && 
@@ -577,7 +577,7 @@
                     RadiusTopRight: =4
                     ZIndex: =5
 
-                    ButtonCanvas9 As Button:
+                    ButtonCanvas9 As Bouton:
                         DisplayMode: =DisplayMode.Edit
                         Height: =32
                         Icon: ="ArrowClockwise"
@@ -590,7 +590,7 @@
                         Y: =0
                         ZIndex: =1
 
-                    ButtonCanvas12 As Button:
+                    ButtonCanvas12 As Bouton:
                         DisplayMode: =If('Label is approved'.Text = "ALREADY APPROVED",DisplayMode.Disabled,DisplayMode.Edit)
                         FillPortions: =1
                         Height: =32
@@ -1088,7 +1088,7 @@
                 Width: =40
                 ZIndex: =1
 
-            message_new_validation_1 As Text:
+            message_new_validation_1 As Texte:
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =

@@ -68,7 +68,7 @@
                 Y: =(Parent.Height - Self.Height) / 1.3
                 ZIndex: =2
 
-            ButtonCanvas4_1 As Button:
+            ButtonCanvas4_1 As Bouton:
                 BasePaletteColor: =
                 BorderColor: =
                 DisplayMode: =DisplayMode.Edit

@@ -89,7 +89,7 @@
                 RadiusTopRight: =4
                 ZIndex: =1
 
-                new_Spare_btn_3 As button:
+                btn_2024 As button:
                     BorderColor: =App.Theme.Colors.Primary
                     DisabledBorderColor: =RGBA(244, 244, 244, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -102,7 +102,7 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =App.Theme.Colors.Darker10
                     OnSelect: |
-                        =Set(varSelectedYear, new_Spare_btn_3.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                        =Set(varSelectedYear, "2024"); Navigate('Storekeeper Monthly Physical Inventory')
                     PressedBorderColor: =App.Theme.Colors.Darker40
                     PressedColor: =Self.Color
                     PressedFill: =App.Theme.Colors.Darker40
@@ -112,7 +112,7 @@
                         =Parent.Width * 0.3
                     ZIndex: =2
 
-                new_Spare_btn_4 As button:
+                btn_2025 As button:
                     BorderColor: =App.Theme.Colors.Primary
                     DisabledBorderColor: =RGBA(244, 244, 244, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -125,7 +125,7 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =App.Theme.Colors.Darker10
                     OnSelect: |
-                        =Set(varSelectedYear, new_Spare_btn_4.Text); Navigate( 'Storekeeper Monthly Physical Inventory')
+                        =Set(varSelectedYear,"2025"); Navigate( 'Storekeeper Monthly Physical Inventory')
                     PressedBorderColor: =App.Theme.Colors.Darker40
                     PressedColor: =Self.Color
                     PressedFill: =App.Theme.Colors.Darker40
@@ -152,7 +152,7 @@
                 RadiusTopRight: =4
                 ZIndex: =2
 
-                new_Spare_btn_1 As button:
+                btn_2026 As button:
                     BorderColor: =App.Theme.Colors.Primary
                     DisabledBorderColor: =RGBA(244, 244, 244, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -165,7 +165,7 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =App.Theme.Colors.Darker10
                     OnSelect: |
-                        =Set(varSelectedYear, new_Spare_btn_1.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                        =Set(varSelectedYear, "2026"); Navigate('Storekeeper Monthly Physical Inventory')
                     PressedBorderColor: =App.Theme.Colors.Darker40
                     PressedColor: =Self.Color
                     PressedFill: =App.Theme.Colors.Darker40
@@ -175,7 +175,7 @@
                         =Parent.Width * 0.3
                     ZIndex: =2
 
-                new_Spare_btn_2 As button:
+                btn_2027 As button:
                     BorderColor: =App.Theme.Colors.Primary
                     DisabledBorderColor: =RGBA(244, 244, 244, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -188,7 +188,7 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =App.Theme.Colors.Darker10
                     OnSelect: |
-                        =Set(varSelectedYear, new_Spare_btn_2.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                        =Set(varSelectedYear, "2027"); Navigate('Storekeeper Monthly Physical Inventory')
                     PressedBorderColor: =App.Theme.Colors.Darker40
                     PressedColor: =Self.Color
                     PressedFill: =App.Theme.Colors.Darker40
@@ -217,7 +217,7 @@
                 RadiusTopRight: =4
                 ZIndex: =3
 
-                new_Spare_btn_5 As button:
+                btn_2028 As button:
                     BorderColor: =App.Theme.Colors.Primary
                     DisabledBorderColor: =RGBA(244, 244, 244, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -230,7 +230,7 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =App.Theme.Colors.Darker10
                     OnSelect: |
-                        =Set(varSelectedYear, new_Spare_btn_5.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                        =Set(varSelectedYear, "2028"); Navigate('Storekeeper Monthly Physical Inventory')
                     PressedBorderColor: =App.Theme.Colors.Darker40
                     PressedColor: =Self.Color
                     PressedFill: =App.Theme.Colors.Darker40
@@ -242,7 +242,7 @@
                         =Parent.Width * 0.3
                     ZIndex: =1
 
-                new_Spare_btn_6 As button:
+                btn_2029 As button:
                     BorderColor: =App.Theme.Colors.Primary
                     DisabledBorderColor: =RGBA(244, 244, 244, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -255,7 +255,7 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =App.Theme.Colors.Darker10
                     OnSelect: |
-                        =Set(varSelectedYear, new_Spare_btn_6.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                        =Set(varSelectedYear, "2029"); Navigate('Storekeeper Monthly Physical Inventory')
                     PressedBorderColor: =App.Theme.Colors.Darker40
                     PressedColor: =Self.Color
                     PressedFill: =App.Theme.Colors.Darker40
@@ -284,7 +284,7 @@
                 RadiusTopRight: =4
                 ZIndex: =4
 
-                new_Spare_btn_7 As button:
+                btn_2030 As button:
                     BorderColor: =App.Theme.Colors.Primary
                     DisabledBorderColor: =RGBA(244, 244, 244, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -297,7 +297,7 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =App.Theme.Colors.Darker10
                     OnSelect: |
-                        =Set(varSelectedYear, new_Spare_btn_7.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                        =Set(varSelectedYear, "2030"); Navigate('Storekeeper Monthly Physical Inventory')
                     PressedBorderColor: =App.Theme.Colors.Darker40
                     PressedColor: =Self.Color
                     PressedFill: =App.Theme.Colors.Darker40
@@ -309,7 +309,7 @@
                         =Parent.Width * 0.3
                     ZIndex: =2
 
-                new_Spare_btn_8 As button:
+                btn_2031 As button:
                     BorderColor: =App.Theme.Colors.Primary
                     DisabledBorderColor: =RGBA(244, 244, 244, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -322,7 +322,7 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =App.Theme.Colors.Darker10
                     OnSelect: |
-                        =Set(varSelectedYear, new_Spare_btn_8.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                        =Set(varSelectedYear, "2031"); Navigate('Storekeeper Monthly Physical Inventory')
                     PressedBorderColor: =App.Theme.Colors.Darker40
                     PressedColor: =Self.Color
                     PressedFill: =App.Theme.Colors.Darker40
@@ -351,7 +351,7 @@
                 RadiusTopRight: =4
                 ZIndex: =5
 
-                new_Spare_btn_9 As button:
+                btn_2032 As button:
                     BorderColor: =App.Theme.Colors.Primary
                     DisabledBorderColor: =RGBA(244, 244, 244, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -364,7 +364,7 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =App.Theme.Colors.Darker10
                     OnSelect: |
-                        =Set(varSelectedYear, new_Spare_btn_9.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                        =Set(varSelectedYear, "2032"); Navigate('Storekeeper Monthly Physical Inventory')
                     PressedBorderColor: =App.Theme.Colors.Darker40
                     PressedColor: =Self.Color
                     PressedFill: =App.Theme.Colors.Darker40
@@ -376,7 +376,7 @@
                         =Parent.Width * 0.3
                     ZIndex: =2
 
-                new_Spare_btn_10 As button:
+                btn_3033 As button:
                     BorderColor: =App.Theme.Colors.Primary
                     DisabledBorderColor: =RGBA(244, 244, 244, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -389,12 +389,12 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =App.Theme.Colors.Darker10
                     OnSelect: |
-                        =Set(varSelectedYear, new_Spare_btn_10.Text); Navigate('Storekeeper Monthly Physical Inventory')
+                        =Set(varSelectedYear, "2033"); Navigate('Storekeeper Monthly Physical Inventory')
                     PressedBorderColor: =App.Theme.Colors.Darker40
                     PressedColor: =Self.Color
                     PressedFill: =App.Theme.Colors.Darker40
                     Size: =15
-                    Text: ="2032"
+                    Text: ="2033"
                     Width: |
                         =Parent.Width * 0.3
                     ZIndex: =3

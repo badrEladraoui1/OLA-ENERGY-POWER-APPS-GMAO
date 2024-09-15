@@ -37,7 +37,7 @@
             RadiusTopRight: =8
             ZIndex: =1
 
-            Header2_2 As Header:
+            "Header2_2 As 'En-tête'":
                 AlignInContainer: =AlignInContainer.Center
                 DisplayMode: =DisplayMode.Edit
                 Height: =75
@@ -105,7 +105,7 @@
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    bntJan_1 As Button:
+                    bntJan_1 As Bouton:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: |-
                             =//DisplayMode.Edit
@@ -122,7 +122,7 @@
                         Y: =0
                         ZIndex: =2
 
-                    btnFeb_1 As Button:
+                    btnFeb_1 As Bouton:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Feb"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -137,7 +137,7 @@
                         Y: =0
                         ZIndex: =3
 
-                    btnMar_1 As Button:
+                    btnMar_1 As Bouton:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Mar"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -152,7 +152,7 @@
                         Y: =0
                         ZIndex: =4
 
-                    btnApr_1 As Button:
+                    btnApr_1 As Bouton:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Apr"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -167,7 +167,7 @@
                         Y: =0
                         ZIndex: =5
 
-                    btnMay_1 As Button:
+                    btnMay_1 As Bouton:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"May"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -183,7 +183,7 @@
                         Y: =0
                         ZIndex: =6
 
-                    btnJun_1 As Button:
+                    btnJun_1 As Bouton:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Jun"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -198,7 +198,7 @@
                         Y: =0
                         ZIndex: =7
 
-                    btnJul_1 As Button:
+                    btnJul_1 As Bouton:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Jul"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -213,7 +213,7 @@
                         Y: =0
                         ZIndex: =8
 
-                    btnAug_1 As Button:
+                    btnAug_1 As Bouton:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Aug"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -228,7 +228,7 @@
                         Y: =0
                         ZIndex: =9
 
-                    btnSep_1 As Button:
+                    btnSep_1 As Bouton:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Sep"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -243,7 +243,7 @@
                         Y: =0
                         ZIndex: =10
 
-                    btnOct_1 As Button:
+                    btnOct_1 As Bouton:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Oct"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -258,7 +258,7 @@
                         Y: =0
                         ZIndex: =11
 
-                    btnNov_1 As Button:
+                    btnNov_1 As Bouton:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Nov"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -273,7 +273,7 @@
                         Y: =0
                         ZIndex: =12
 
-                    btnDec_1 As Button:
+                    btnDec_1 As Bouton:
                         BasePaletteColor: =RGBA(5, 102, 178, 1)
                         DisplayMode: =If(StartsWith(selectedContainer,"Dec"),DisplayMode.Disabled,DisplayMode.Edit)
                         FontColor: =RGBA(255, 255, 255, 1)
@@ -321,7 +321,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_1 As 'Text input'":
+                    "TextInputCanvas2_1 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -332,7 +332,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique As 'Text input'":
+                    "TextInputQtePhysique As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -359,7 +359,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden As Button:
+                    btn_save_hidden As Bouton:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -457,7 +457,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25 As Button:
+                ButtonCanvas25 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -516,7 +516,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_1 As Button:
+                ButtonCanvas25_1 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -554,7 +554,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare As Text:
+                badge_spare As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -563,7 +563,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte As Text:
+                badge_qte As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -621,7 +621,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_2 As 'Text input'":
+                    "TextInputCanvas2_2 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -632,7 +632,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_1 As 'Text input'":
+                    "TextInputQtePhysique_1 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -659,7 +659,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_1 As Button:
+                    btn_save_hidden_1 As Bouton:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -682,72 +682,67 @@
                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jan-01-2025': TextInputQtePhysique.Value
+                                    'Jan-01-2025': TextInputQtePhysique_1.Value
                                 },
                                  'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Feb-01-2025': TextInputQtePhysique.Value
+                                    'Feb-01-2025': TextInputQtePhysique_1.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Mar-01-2025': TextInputQtePhysique.Value
+                                    'Mar-01-2025': TextInputQtePhysique_1.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Apr-01-2025': TextInputQtePhysique.Value
+                                    'Apr-01-2025': TextInputQtePhysique_1.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'May-01-2025': TextInputQtePhysique.Value
+                                    'May-01-2025': TextInputQtePhysique_1.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jun-01-2025': TextInputQtePhysique.Value
+                                    'Jun-01-2025': TextInputQtePhysique_1.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jul-01-2025': TextInputQtePhysique.Value
+                                    'Jul-01-2025': TextInputQtePhysique_1.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Aug-01-2025': TextInputQtePhysique.Value
+                                    'Aug-01-2025': TextInputQtePhysique_1.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Sep-01-2025': TextInputQtePhysique.Value
+                                    'Sep-01-2025': TextInputQtePhysique_1.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Oct-01-2025': TextInputQtePhysique.Value
+                                    'Oct-01-2025': TextInputQtePhysique_1.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Nov-01-2025': TextInputQtePhysique.Value
+                                    'Nov-01-2025': TextInputQtePhysique_1.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Dec-01-2025': TextInputQtePhysique.Value
+                                    'Dec-01-2025': TextInputQtePhysique_1.Value
                                 }
                             
                                 
                             );
-                            Notify(
-                                LookUp(
-                                    Physical_Inventory_2025,
-                                    'Piece de Rechange' = ThisRecord.'Piece de Rechange' && 'Row Number' = ThisRecord.'Row Number' 
-                                ).'Piece de Rechange'
-                            );
+                            
                             
                             
                             
@@ -757,7 +752,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_2 As Button:
+                ButtonCanvas25_2 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -816,7 +811,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_3 As Button:
+                ButtonCanvas25_3 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -854,7 +849,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_1 As Text:
+                badge_spare_1 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -863,7 +858,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_1 As Text:
+                badge_qte_1 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -921,7 +916,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_3 As 'Text input'":
+                    "TextInputCanvas2_3 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -932,7 +927,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_2 As 'Text input'":
+                    "TextInputQtePhysique_2 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -959,7 +954,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_2 As Button:
+                    btn_save_hidden_2 As Bouton:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -982,62 +977,62 @@
                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jan-01-2026': TextInputQtePhysique.Value
+                                    'Jan-01-2026': TextInputQtePhysique_2.Value
                                 },
                                  'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Feb-01-2026': TextInputQtePhysique.Value
+                                    'Feb-01-2026': TextInputQtePhysique_2.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Mar-01-2026': TextInputQtePhysique.Value
+                                    'Mar-01-2026': TextInputQtePhysique_2.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Apr-01-2026': TextInputQtePhysique.Value
+                                    'Apr-01-2026': TextInputQtePhysique_2.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'May-01-2026': TextInputQtePhysique.Value
+                                    'May-01-2026': TextInputQtePhysique_2.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jun-01-2026': TextInputQtePhysique.Value
+                                    'Jun-01-2026': TextInputQtePhysique_2.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jul-01-2026': TextInputQtePhysique.Value
+                                    'Jul-01-2026': TextInputQtePhysique_2.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Aug-01-2026': TextInputQtePhysique.Value
+                                    'Aug-01-2026': TextInputQtePhysique_2.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Sep-01-2026': TextInputQtePhysique.Value
+                                    'Sep-01-2026': TextInputQtePhysique_2.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Oct-01-2026': TextInputQtePhysique.Value
+                                    'Oct-01-2026': TextInputQtePhysique_2.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Nov-01-2026': TextInputQtePhysique.Value
+                                    'Nov-01-2026': TextInputQtePhysique_2.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Dec-01-2026': TextInputQtePhysique.Value
+                                    'Dec-01-2026': TextInputQtePhysique_2.Value
                                 }
                             
                                 
@@ -1057,7 +1052,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_4 As Button:
+                ButtonCanvas25_4 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -1116,7 +1111,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_5 As Button:
+                ButtonCanvas25_5 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -1154,7 +1149,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_2 As Text:
+                badge_spare_2 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -1163,7 +1158,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_2 As Text:
+                badge_qte_2 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -1221,7 +1216,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_4 As 'Text input'":
+                    "TextInputCanvas2_4 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -1232,7 +1227,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_3 As 'Text input'":
+                    "TextInputQtePhysique_3 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -1259,7 +1254,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_3 As Button:
+                    btn_save_hidden_3 As Bouton:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -1282,62 +1277,62 @@
                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jan-01-2027': TextInputQtePhysique.Value
+                                    'Jan-01-2027': TextInputQtePhysique_3.Value
                                 },
                                  'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Feb-01-2027': TextInputQtePhysique.Value
+                                    'Feb-01-2027': TextInputQtePhysique_3.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Mar-01-2027': TextInputQtePhysique.Value
+                                    'Mar-01-2027': TextInputQtePhysique_3.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Apr-01-2027': TextInputQtePhysique.Value
+                                    'Apr-01-2027': TextInputQtePhysique_3.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'May-01-2027': TextInputQtePhysique.Value
+                                    'May-01-2027': TextInputQtePhysique_3.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jun-01-2027': TextInputQtePhysique.Value
+                                    'Jun-01-2027': TextInputQtePhysique_3.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jul-01-2027': TextInputQtePhysique.Value
+                                    'Jul-01-2027': TextInputQtePhysique_3.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Aug-01-2027': TextInputQtePhysique.Value
+                                    'Aug-01-2027': TextInputQtePhysique_3.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Sep-01-2027': TextInputQtePhysique.Value
+                                    'Sep-01-2027': TextInputQtePhysique_3.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Oct-01-2027': TextInputQtePhysique.Value
+                                    'Oct-01-2027': TextInputQtePhysique_3.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Nov-01-2027': TextInputQtePhysique.Value
+                                    'Nov-01-2027': TextInputQtePhysique_3.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Dec-01-2027': TextInputQtePhysique.Value
+                                    'Dec-01-2027': TextInputQtePhysique_3.Value
                                 }
                             
                                 
@@ -1357,7 +1352,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_6 As Button:
+                ButtonCanvas25_6 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -1416,7 +1411,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_7 As Button:
+                ButtonCanvas25_7 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -1454,7 +1449,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_3 As Text:
+                badge_spare_3 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -1463,7 +1458,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_3 As Text:
+                badge_qte_3 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -1521,7 +1516,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_5 As 'Text input'":
+                    "TextInputCanvas2_5 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -1532,7 +1527,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_4 As 'Text input'":
+                    "TextInputQtePhysique_4 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -1559,7 +1554,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_4 As Button:
+                    btn_save_hidden_4 As Bouton:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -1582,62 +1577,62 @@
                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jan-01-2028': TextInputQtePhysique.Value
+                                    'Jan-01-2028': TextInputQtePhysique_4.Value
                                 },
                                  'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Feb-01-2028': TextInputQtePhysique.Value
+                                    'Feb-01-2028': TextInputQtePhysique_4.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Mar-01-2028': TextInputQtePhysique.Value
+                                    'Mar-01-2028': TextInputQtePhysique_4.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Apr-01-2028': TextInputQtePhysique.Value
+                                    'Apr-01-2028': TextInputQtePhysique_4.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'May-01-2028': TextInputQtePhysique.Value
+                                    'May-01-2028': TextInputQtePhysique_4.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jun-01-2028': TextInputQtePhysique.Value
+                                    'Jun-01-2028': TextInputQtePhysique_4.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jul-01-2028': TextInputQtePhysique.Value
+                                    'Jul-01-2028': TextInputQtePhysique_4.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Aug-01-2028': TextInputQtePhysique.Value
+                                    'Aug-01-2028': TextInputQtePhysique_4.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Sep-01-2028': TextInputQtePhysique.Value
+                                    'Sep-01-2028': TextInputQtePhysique_4.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Oct-01-2028': TextInputQtePhysique.Value
+                                    'Oct-01-2028': TextInputQtePhysique_4.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Nov-01-2028': TextInputQtePhysique.Value
+                                    'Nov-01-2028': TextInputQtePhysique_4.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Dec-01-2028': TextInputQtePhysique.Value
+                                    'Dec-01-2028': TextInputQtePhysique_4.Value
                                 }
                             
                                 
@@ -1657,7 +1652,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_8 As Button:
+                ButtonCanvas25_8 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -1716,7 +1711,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_9 As Button:
+                ButtonCanvas25_9 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -1754,7 +1749,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_4 As Text:
+                badge_spare_4 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -1763,7 +1758,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_4 As Text:
+                badge_qte_4 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -1821,7 +1816,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_6 As 'Text input'":
+                    "TextInputCanvas2_6 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -1832,7 +1827,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_5 As 'Text input'":
+                    "TextInputQtePhysique_5 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -1859,7 +1854,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_5 As Button:
+                    btn_save_hidden_5 As Bouton:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -1882,62 +1877,62 @@
                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jan-01-2029': TextInputQtePhysique.Value
+                                    'Jan-01-2029': TextInputQtePhysique_5.Value
                                 },
                                  'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Feb-01-2029': TextInputQtePhysique.Value
+                                    'Feb-01-2029': TextInputQtePhysique_5.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Mar-01-2029': TextInputQtePhysique.Value
+                                    'Mar-01-2029': TextInputQtePhysique_5.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Apr-01-2029': TextInputQtePhysique.Value
+                                    'Apr-01-2029': TextInputQtePhysique_5.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'May-01-2029': TextInputQtePhysique.Value
+                                    'May-01-2029': TextInputQtePhysique_5.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jun-01-2029': TextInputQtePhysique.Value
+                                    'Jun-01-2029': TextInputQtePhysique_5.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jul-01-2029': TextInputQtePhysique.Value
+                                    'Jul-01-2029': TextInputQtePhysique_5.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Aug-01-2029': TextInputQtePhysique.Value
+                                    'Aug-01-2029': TextInputQtePhysique_5.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Sep-01-2029': TextInputQtePhysique.Value
+                                    'Sep-01-2029': TextInputQtePhysique_5.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Oct-01-2029': TextInputQtePhysique.Value
+                                    'Oct-01-2029': TextInputQtePhysique_5.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Nov-01-2029': TextInputQtePhysique.Value
+                                    'Nov-01-2029': TextInputQtePhysique_5.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Dec-01-2029': TextInputQtePhysique.Value
+                                    'Dec-01-2029': TextInputQtePhysique_5.Value
                                 }
                             
                                 
@@ -1957,7 +1952,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_10 As Button:
+                ButtonCanvas25_10 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -2016,7 +2011,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_11 As Button:
+                ButtonCanvas25_11 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -2054,7 +2049,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_5 As Text:
+                badge_spare_5 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -2063,7 +2058,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_5 As Text:
+                badge_qte_5 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -2121,7 +2116,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_7 As 'Text input'":
+                    "TextInputCanvas2_7 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -2132,7 +2127,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_6 As 'Text input'":
+                    "TextInputQtePhysique_6 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -2159,7 +2154,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_6 As Button:
+                    btn_save_hidden_6 As Bouton:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -2182,62 +2177,62 @@
                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jan-01-2030': TextInputQtePhysique.Value
+                                    'Jan-01-2030': TextInputQtePhysique_6.Value
                                 },
                                  'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Feb-01-2030': TextInputQtePhysique.Value
+                                    'Feb-01-2030': TextInputQtePhysique_6.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Mar-01-2030': TextInputQtePhysique.Value
+                                    'Mar-01-2030': TextInputQtePhysique_6.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Apr-01-2030': TextInputQtePhysique.Value
+                                    'Apr-01-2030': TextInputQtePhysique_6.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'May-01-2030': TextInputQtePhysique.Value
+                                    'May-01-2030': TextInputQtePhysique_6.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jun-01-2030': TextInputQtePhysique.Value
+                                    'Jun-01-2030': TextInputQtePhysique_6.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jul-01-2030': TextInputQtePhysique.Value
+                                    'Jul-01-2030': TextInputQtePhysique_6.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Aug-01-2030': TextInputQtePhysique.Value
+                                    'Aug-01-2030': TextInputQtePhysique_6.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Sep-01-2030': TextInputQtePhysique.Value
+                                    'Sep-01-2030': TextInputQtePhysique_6.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Oct-01-2030': TextInputQtePhysique.Value
+                                    'Oct-01-2030': TextInputQtePhysique_6.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Nov-01-2030': TextInputQtePhysique.Value
+                                    'Nov-01-2030': TextInputQtePhysique_6.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Dec-01-2030': TextInputQtePhysique.Value
+                                    'Dec-01-2030': TextInputQtePhysique_6.Value
                                 }
                             
                                 
@@ -2257,7 +2252,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_12 As Button:
+                ButtonCanvas25_12 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -2316,7 +2311,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_13 As Button:
+                ButtonCanvas25_13 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -2354,7 +2349,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_6 As Text:
+                badge_spare_6 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -2363,7 +2358,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_6 As Text:
+                badge_qte_6 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -2421,7 +2416,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_8 As 'Text input'":
+                    "TextInputCanvas2_8 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -2432,7 +2427,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_7 As 'Text input'":
+                    "TextInputQtePhysique_7 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -2459,7 +2454,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_7 As Button:
+                    btn_save_hidden_7 As Bouton:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -2482,62 +2477,62 @@
                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jan-01-2031': TextInputQtePhysique.Value
+                                    'Jan-01-2031': TextInputQtePhysique_7.Value
                                 },
                                  'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Feb-01-2031': TextInputQtePhysique.Value
+                                    'Feb-01-2031': TextInputQtePhysique_7.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Mar-01-2031': TextInputQtePhysique.Value
+                                    'Mar-01-2031': TextInputQtePhysique_7.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Apr-01-2031': TextInputQtePhysique.Value
+                                    'Apr-01-2031': TextInputQtePhysique_7.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'May-01-2031': TextInputQtePhysique.Value
+                                    'May-01-2031': TextInputQtePhysique_7.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jun-01-2031': TextInputQtePhysique.Value
+                                    'Jun-01-2031': TextInputQtePhysique_7.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jul-01-2031': TextInputQtePhysique.Value
+                                    'Jul-01-2031': TextInputQtePhysique_7.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Aug-01-2031': TextInputQtePhysique.Value
+                                    'Aug-01-2031': TextInputQtePhysique_7.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Sep-01-2031': TextInputQtePhysique.Value
+                                    'Sep-01-2031': TextInputQtePhysique_7.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Oct-01-2031': TextInputQtePhysique.Value
+                                    'Oct-01-2031': TextInputQtePhysique_7.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Nov-01-2031': TextInputQtePhysique.Value
+                                    'Nov-01-2031': TextInputQtePhysique_7.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Dec-01-2031': TextInputQtePhysique.Value
+                                    'Dec-01-2031': TextInputQtePhysique_7.Value
                                 }
                             
                                 
@@ -2557,7 +2552,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_14 As Button:
+                ButtonCanvas25_14 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -2616,7 +2611,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_15 As Button:
+                ButtonCanvas25_15 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -2654,7 +2649,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_7 As Text:
+                badge_spare_7 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -2663,7 +2658,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_7 As Text:
+                badge_qte_7 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -2721,7 +2716,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_9 As 'Text input'":
+                    "TextInputCanvas2_9 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -2732,7 +2727,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_8 As 'Text input'":
+                    "TextInputQtePhysique_8 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -2759,7 +2754,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_8 As Button:
+                    btn_save_hidden_8 As Bouton:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -2782,62 +2777,62 @@
                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jan-01-2024': TextInputQtePhysique.Value
+                                    'Jan-01-2024': TextInputQtePhysique_8.Value
                                 },
                                  'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Feb-01-2024': TextInputQtePhysique.Value
+                                    'Feb-01-2024': TextInputQtePhysique_8.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Mar-01-2024': TextInputQtePhysique.Value
+                                    'Mar-01-2024': TextInputQtePhysique_8.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Apr-01-2024': TextInputQtePhysique.Value
+                                    'Apr-01-2024': TextInputQtePhysique_8.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'May-01-2024': TextInputQtePhysique.Value
+                                    'May-01-2024': TextInputQtePhysique_8.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jun-01-2024': TextInputQtePhysique.Value
+                                    'Jun-01-2024': TextInputQtePhysique_8.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jul-01-2024': TextInputQtePhysique.Value
+                                    'Jul-01-2024': TextInputQtePhysique_8.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Aug-01-2024': TextInputQtePhysique.Value
+                                    'Aug-01-2024': TextInputQtePhysique_8.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Sep-01-2024': TextInputQtePhysique.Value
+                                    'Sep-01-2024': TextInputQtePhysique_8.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Oct-01-2024': TextInputQtePhysique.Value
+                                    'Oct-01-2024': TextInputQtePhysique_8.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Nov-01-2024': TextInputQtePhysique.Value
+                                    'Nov-01-2024': TextInputQtePhysique_8.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Dec-01-2024': TextInputQtePhysique.Value
+                                    'Dec-01-2024': TextInputQtePhysique_8.Value
                                 }
                             
                                 
@@ -2857,7 +2852,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_16 As Button:
+                ButtonCanvas25_16 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -2916,7 +2911,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_17 As Button:
+                ButtonCanvas25_17 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -2954,7 +2949,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_8 As Text:
+                badge_spare_8 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -2963,7 +2958,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_8 As Text:
+                badge_qte_8 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -3021,7 +3016,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_10 As 'Text input'":
+                    "TextInputCanvas2_10 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -3032,7 +3027,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_9 As 'Text input'":
+                    "TextInputQtePhysique_9 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -3059,7 +3054,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_9 As Button:
+                    btn_save_hidden_9 As Bouton:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -3082,62 +3077,62 @@
                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jan-01-2033': TextInputQtePhysique.Value
+                                    'Jan-01-2033': TextInputQtePhysique_9.Value
                                 },
                                  'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Feb-01-2033': TextInputQtePhysique.Value
+                                    'Feb-01-2033': TextInputQtePhysique_9.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Mar-01-2033': TextInputQtePhysique.Value
+                                    'Mar-01-2033': TextInputQtePhysique_9.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Apr-01-2033': TextInputQtePhysique.Value
+                                    'Apr-01-2033': TextInputQtePhysique_9.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'May-01-2033': TextInputQtePhysique.Value
+                                    'May-01-2033': TextInputQtePhysique_9.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jun-01-2033': TextInputQtePhysique.Value
+                                    'Jun-01-2033': TextInputQtePhysique_9.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jul-01-2033': TextInputQtePhysique.Value
+                                    'Jul-01-2033': TextInputQtePhysique_9.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Aug-01-2033': TextInputQtePhysique.Value
+                                    'Aug-01-2033': TextInputQtePhysique_9.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Sep-01-2033': TextInputQtePhysique.Value
+                                    'Sep-01-2033': TextInputQtePhysique_9.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Oct-01-2033': TextInputQtePhysique.Value
+                                    'Oct-01-2033': TextInputQtePhysique_9.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Nov-01-2033': TextInputQtePhysique.Value
+                                    'Nov-01-2033': TextInputQtePhysique_9.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Dec-01-2033': TextInputQtePhysique.Value
+                                    'Dec-01-2033': TextInputQtePhysique_9.Value
                                 }
                             
                                 
@@ -3157,7 +3152,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_18 As Button:
+                ButtonCanvas25_18 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -3216,7 +3211,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_19 As Button:
+                ButtonCanvas25_19 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -3254,7 +3249,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_9 As Text:
+                badge_spare_9 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -3263,7 +3258,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_9 As Text:
+                badge_qte_9 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
@@ -3321,7 +3316,7 @@
                     Y: =36
                     ZIndex: =1
 
-                    "TextInputCanvas2_11 As 'Text input'":
+                    "TextInputCanvas2_11 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.FilledLighter
                         DisplayMode: =DisplayMode.View
                         Height: =32
@@ -3332,7 +3327,7 @@
                         Y: =8
                         ZIndex: =1
 
-                    "TextInputQtePhysique_10 As 'Text input'":
+                    "TextInputQtePhysique_10 As 'Saisie de texte'":
                         Appearance: ='TextInputCanvas.Appearance'.Outline
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
@@ -3359,7 +3354,7 @@
                         Y: =8
                         ZIndex: =2
 
-                    btn_save_hidden_10 As Button:
+                    btn_save_hidden_10 As Bouton:
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontWeight: =FontWeight.Normal
@@ -3382,62 +3377,62 @@
                                 'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jan"  ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jan-01-2034': TextInputQtePhysique.Value
+                                    'Jan-01-2034': TextInputQtePhysique_10.Value
                                 },
                                  'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Feb" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Feb-01-2034': TextInputQtePhysique.Value
+                                    'Feb-01-2034': TextInputQtePhysique_10.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Mar" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Mar-01-2034': TextInputQtePhysique.Value
+                                    'Mar-01-2034': TextInputQtePhysique_10.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Apr" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Apr-01-2034': TextInputQtePhysique.Value
+                                    'Apr-01-2034': TextInputQtePhysique_10.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="May" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'May-01-2034': TextInputQtePhysique.Value
+                                    'May-01-2034': TextInputQtePhysique_10.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jun" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jun-01-2034': TextInputQtePhysique.Value
+                                    'Jun-01-2034': TextInputQtePhysique_10.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Jul" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Jul-01-2034': TextInputQtePhysique.Value
+                                    'Jul-01-2034': TextInputQtePhysique_10.Value
                                 },
                                    'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Aug" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Aug-01-2034': TextInputQtePhysique.Value
+                                    'Aug-01-2034': TextInputQtePhysique_10.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Sep" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Sep-01-2034': TextInputQtePhysique.Value
+                                    'Sep-01-2034': TextInputQtePhysique_10.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Oct" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Oct-01-2034': TextInputQtePhysique.Value
+                                    'Oct-01-2034': TextInputQtePhysique_10.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Nov" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Nov-01-2034': TextInputQtePhysique.Value
+                                    'Nov-01-2034': TextInputQtePhysique_10.Value
                                 },
                                       'Row Number' = ThisItem.'Row Number' && 'Piece de Rechange' = ThisItem.'Piece de Rechange' && selectedContainer="Dec" ,
                                 {
                                     'Piece de Rechange': ThisItem.'Piece de Rechange',
-                                    'Dec-01-2034': TextInputQtePhysique.Value
+                                    'Dec-01-2034': TextInputQtePhysique_10.Value
                                 }
                             
                                 
@@ -3457,7 +3452,7 @@
                         Y: =8
                         ZIndex: =3
 
-                ButtonCanvas25_20 As Button:
+                ButtonCanvas25_20 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -3516,7 +3511,7 @@
                     Y: =185
                     ZIndex: =2
 
-                ButtonCanvas25_21 As Button:
+                ButtonCanvas25_21 As Bouton:
                     Appearance: ='ButtonCanvas.Appearance'.Primary
                     BasePaletteColor: =RGBA(5, 102, 178, 1)
                     DisplayMode: =DisplayMode.Edit
@@ -3554,7 +3549,7 @@
                     Y: =5
                     ZIndex: =5
 
-                badge_spare_10 As Text:
+                badge_spare_10 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: ="Spare Part  🛠️"
@@ -3563,7 +3558,7 @@
                     Y: =5
                     ZIndex: =6
 
-                badge_qte_10 As Text:
+                badge_qte_10 As Texte:
                     DisplayMode: =DisplayMode.Edit
                     Height: =32
                     Text: |
