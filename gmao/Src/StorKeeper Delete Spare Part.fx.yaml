@@ -432,6 +432,7 @@
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
+            Width: =540
             ZIndex: =1
 
             "'cancel icon_13' As icon.CancelBadge":
@@ -462,7 +463,7 @@
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
                 Size: =20
-                Text: ="Spare Part deleted successfully"
+                Text: ="Spare Part deleted successfully ( You may Still see it but it is deleted )"
                 Weight: ='TextCanvas.Weight'.Bold
                 Width: =96
                 X: =0
