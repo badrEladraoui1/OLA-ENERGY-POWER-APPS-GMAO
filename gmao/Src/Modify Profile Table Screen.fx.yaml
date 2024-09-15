@@ -674,7 +674,7 @@
                                     "^[a-zA-Z0-9._%+-]+@olaenergy\.com$"
                                 ) && IsMatch(
                                     DataCardValue23.Text,
-                                    "^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"
+                                    "^(?=.*[A-Z])(?=.*\d)[A-Za-z\d@#$%^&+=!]{8,}$"
                                 ),
                                 // If all validations pass
                                 SubmitForm(modify_profile_form);
