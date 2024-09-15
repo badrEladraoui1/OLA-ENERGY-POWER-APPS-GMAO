@@ -932,18 +932,6 @@
                                     Status = "Error: Quantity not found in either database"
                                 )
                             );
-                            Notify(
-                                "Inventory update complete. " & UpdatedCount & " items updated. " & If(
-                                    ErrorCount > 0,
-                                    ErrorCount & " items encountered errors.",
-                                    ""
-                                ) & " Check DebugLog for details.",
-                                If(
-                                    ErrorCount > 0,
-                                    NotificationType.Warning,
-                                    NotificationType.Success
-                                )
-                            );
                             // Clear temporary collections to free up resources
                             //Clear(TheoreticalDataCollection);
                             //Clear(PhysicalDataCollection);
