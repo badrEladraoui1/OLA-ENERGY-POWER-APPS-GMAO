@@ -434,7 +434,7 @@
                         Mode: =TextMode.Password
                         OnChange: |-
                             =UpdateContext(
-                                {isValidPassword: IsMatch(DataCardValue12.Text, "^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$")}
+                                {isValidPassword: IsMatch(DataCardValue12.Text, "^(?=.*[A-Z])(?=.*\d)[A-Za-z\d@#$%^&+=!]{8,}$")}
                             )
                         PaddingLeft: =5
                         RadiusBottomLeft: =10
