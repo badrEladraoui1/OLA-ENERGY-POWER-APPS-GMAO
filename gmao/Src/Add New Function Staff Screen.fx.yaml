@@ -322,7 +322,7 @@
                 Width: =40
                 ZIndex: =1
 
-            "'staff fct added sucs message' As Texte":
+            "'staff fct added sucs message' As Text":
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =

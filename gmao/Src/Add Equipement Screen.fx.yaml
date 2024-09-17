@@ -35,7 +35,7 @@
             RadiusTopRight: =8
             ZIndex: =1
 
-            "Header4_1 As 'En-tête'":
+            Header4_1 As Header:
                 DisplayMode: =DisplayMode.Edit
                 Height: =75
                 IsProfilePictureVisible: =false
@@ -346,7 +346,7 @@
             RadiusTopRight: =8
             ZIndex: =22
 
-            ButtonCanvas18_1 As Bouton:
+            ButtonCanvas18_1 As Button:
                 DisplayMode: |
                     =If(
                         IsBlank('TextInput cod spare_1'.Text) ||
@@ -390,7 +390,7 @@
                 Y: =0
                 ZIndex: =23
 
-            ButtonCanvas17_1 As Bouton:
+            ButtonCanvas17_1 As Button:
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
                 LayoutMinHeight: =32
@@ -453,7 +453,7 @@
                 Width: =40
                 ZIndex: =26
 
-            "'staff fct added sucs message_2' As Texte":
+            "'staff fct added sucs message_2' As Text":
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =

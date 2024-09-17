@@ -38,7 +38,7 @@
             RadiusTopRight: =8
             ZIndex: =1
 
-            "'Profile Table Header' As 'En-tête'":
+            "'Profile Table Header' As Header":
                 AlignInContainer: =AlignInContainer.Start
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
@@ -77,7 +77,7 @@
             RadiusTopRight: =8
             ZIndex: =2
 
-            tip_for_mofication As Texte:
+            tip_for_mofication As Text:
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 AutoHeight: =false
@@ -98,7 +98,7 @@
                 Y: =0
                 ZIndex: =3
 
-            go_bacl_btn2 As Bouton:
+            go_bacl_btn2 As Button:
                 Align: =Align.Center
                 Appearance: ='ButtonCanvas.Appearance'.Primary
                 BasePaletteColor: =
@@ -634,7 +634,7 @@
                     RadiusTopRight: =4
                     ZIndex: =2
 
-                    Modify_btn As Bouton:
+                    Modify_btn As Button:
                         BasePaletteColor: =
                         BorderColor: =
                         DisplayMode: |-
@@ -775,7 +775,7 @@
                 Width: =40
                 ZIndex: =1
 
-            "'user added sucs message_6' As Texte":
+            "'user added sucs message_6' As Text":
                 Align: ='TextCanvas.Align'.Center
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =

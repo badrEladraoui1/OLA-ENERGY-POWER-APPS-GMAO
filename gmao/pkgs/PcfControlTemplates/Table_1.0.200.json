@@ -255,48 +255,48 @@
   "DisplayNameKey": "PowerAppsOneGrid_Override_Name",
   "Events": [
     {
-      "Description": "Événement déclenché quand une valeur de cellule est modifiée",
-      "DisplayName": "Événement de modification d’une valeur de cellule",
+      "Description": "Event fired when a cell value is changed",
+      "DisplayName": "Cell value changed event",
       "Hidden": true,
       "IsPrimaryInput": false,
       "Name": "onCellValueChange",
       "PfxDefaultValue": null
     },
     {
-      "Description": "Événement déclenché quand un filtre est modifié",
-      "DisplayName": "Événement de modification d’un filtre",
+      "Description": "Event fired when a filter is changed",
+      "DisplayName": "Filter changed event",
       "Hidden": true,
       "IsPrimaryInput": false,
       "Name": "onFilter",
       "PfxDefaultValue": null
     },
     {
-      "Description": "Événement déclenché quand un lien de cellule est exécuté",
-      "DisplayName": "Événement de navigation dans une cellule",
+      "Description": "Event fired when a cell link is executed",
+      "DisplayName": "Cell navigation event",
       "Hidden": true,
       "IsPrimaryInput": false,
       "Name": "onNavigate",
       "PfxDefaultValue": null
     },
     {
-      "Description": "Événement déclenché quand l’état de sélection d’une ligne est modifié",
-      "DisplayName": "Événement de modification de la sélection d’une ligne",
+      "Description": "Event fired when a row selection state is changed",
+      "DisplayName": "Row select changed event",
       "Hidden": true,
       "IsPrimaryInput": false,
       "Name": "onRowSelect",
       "PfxDefaultValue": null
     },
     {
-      "Description": "Événement déclenché quand un enregistrement est terminé",
-      "DisplayName": "Événement d’enregistrement de grille",
+      "Description": "Event fired when a save finished",
+      "DisplayName": "Grid save event",
       "Hidden": true,
       "IsPrimaryInput": false,
       "Name": "onSave",
       "PfxDefaultValue": null
     },
     {
-      "Description": "Événement déclenché quand l’état de sélection d’une ligne est modifié",
-      "DisplayName": "Événement de modification de la sélection d’une ligne",
+      "Description": "Event fired when a row selection state is changed",
+      "DisplayName": "Row select changed event",
       "Hidden": false,
       "IsPrimaryInput": false,
       "Name": "OnSelect",
@@ -506,9 +506,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Étiquette lue par les lecteurs d’écran.",
+      "Description": "Label read out by screen readers.",
       "DescriptionResourceString": "PowerAppsOneGrid_AccessibleLabel_Desc_Key",
-      "DisplayName": "Étiquette d’accessibilité",
+      "DisplayName": "Accessible label",
       "DisplayNameResourceString": "PowerAppsOneGrid_AccessibleLabel_Display_Key",
       "EnumValues": [],
       "HelperUI": "",
@@ -534,21 +534,21 @@
     {
       "Category": "data",
       "DefaultValue": "no",
-      "Description": "Activer ou désactiver la modification de la grille",
+      "Description": "Enable or disable editing in the grid",
       "DescriptionResourceString": "PowerAppsOneGrid_EnableEditing_Desc",
-      "DisplayName": "Activer la modification",
+      "DisplayName": "Enable editing",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnableEditing_Name",
       "EnumValues": [
         {
-          "Description": "Activer la modification de la grille",
-          "DisplayName": "Oui",
+          "Description": "Enable editing in the grid",
+          "DisplayName": "Yes",
           "IsDefaultValue": false,
           "Name": "Yes",
           "Value": "yes"
         },
         {
-          "Description": "Désactiver la modification de la grille",
-          "DisplayName": "Non",
+          "Description": "Disable editing in the grid",
+          "DisplayName": "No",
           "IsDefaultValue": true,
           "Name": "No",
           "Value": "no"
@@ -577,21 +577,21 @@
     {
       "Category": "data",
       "DefaultValue": "no",
-      "Description": "Désactiver la modification de la grille des éléments enfants",
+      "Description": "Disable editing in the child items grid",
       "DescriptionResourceString": "PowerAppsOneGrid_DisableChildItemsEditing_Desc",
-      "DisplayName": "Désactiver la modification de la grille des éléments enfants",
+      "DisplayName": "Disable editing in child items grid",
       "DisplayNameResourceString": "PowerAppsOneGrid_DisableChildItemsEditing_Name",
       "EnumValues": [
         {
-          "Description": "Désactiver la modification de la grille des éléments enfants",
-          "DisplayName": "Oui",
+          "Description": "Disable editing in the child items grid",
+          "DisplayName": "Yes",
           "IsDefaultValue": false,
           "Name": "Yes",
           "Value": "yes"
         },
         {
-          "Description": "Autoriser la modification de la grille des éléments enfants",
-          "DisplayName": "Non",
+          "Description": "Allow editing in the child items grid",
+          "DisplayName": "No",
           "IsDefaultValue": true,
           "Name": "No",
           "Value": "no"
@@ -620,21 +620,21 @@
     {
       "Category": "data",
       "DefaultValue": "no",
-      "Description": "Activer ou désactiver le filtrage dans la grille",
+      "Description": "Enable or disable filtering in the grid",
       "DescriptionResourceString": "PowerAppsOneGrid_EnableFiltering_Desc",
-      "DisplayName": "Activer le filtrage",
+      "DisplayName": "Enable filtering",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnableFiltering_Name",
       "EnumValues": [
         {
-          "Description": "Activer le filtrage dans le contrôle de grille",
-          "DisplayName": "Oui",
+          "Description": "Enable filtering in grid control",
+          "DisplayName": "Yes",
           "IsDefaultValue": true,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Désactiver le filtrage dans la grille",
-          "DisplayName": "Non",
+          "Description": "Disable filtering in the grid",
+          "DisplayName": "No",
           "IsDefaultValue": false,
           "Name": "Disable",
           "Value": "no"
@@ -663,21 +663,21 @@
     {
       "Category": "data",
       "DefaultValue": "yes",
-      "Description": "Activer ou désactiver le tri dans la grille",
+      "Description": "Enable or disable sorting in the grid",
       "DescriptionResourceString": "PowerAppsOneGrid_EnableSorting_Desc",
-      "DisplayName": "Activer le tri",
+      "DisplayName": "Enable sorting",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnableSorting_Name",
       "EnumValues": [
         {
-          "Description": "Activer le tri dans le contrôle de grille",
-          "DisplayName": "Oui",
+          "Description": "Enable sorting in grid control",
+          "DisplayName": "Yes",
           "IsDefaultValue": true,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Désactiver le tri de la grille",
-          "DisplayName": "Non",
+          "Description": "Disable sorting in the grid",
+          "DisplayName": "No",
           "IsDefaultValue": false,
           "Name": "Disable",
           "Value": "no"
@@ -706,21 +706,21 @@
     {
       "Category": "data",
       "DefaultValue": "no",
-      "Description": "Activer ou désactiver le regroupement dans la grille",
+      "Description": "Enable or disable grouping in the grid",
       "DescriptionResourceString": "PowerAppsOneGrid_EnableGrouping_Desc",
-      "DisplayName": "Activer le regroupement",
+      "DisplayName": "Enable grouping",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnableGrouping_Name",
       "EnumValues": [
         {
-          "Description": "Activer le regroupement dans le contrôle de grille",
-          "DisplayName": "Oui",
+          "Description": "Enable grouping in grid control",
+          "DisplayName": "Yes",
           "IsDefaultValue": false,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Désactiver le regroupement dans la grille",
-          "DisplayName": "Non",
+          "Description": "Disable grouping in the grid",
+          "DisplayName": "No",
           "IsDefaultValue": true,
           "Name": "Disable",
           "Value": "no"
@@ -749,21 +749,21 @@
     {
       "Category": "data",
       "DefaultValue": "no",
-      "Description": "Activer ou désactiver l’agrégation dans la grille",
+      "Description": "Enable or disable aggregation in the grid",
       "DescriptionResourceString": "PowerAppsOneGrid_EnableAggregation_Desc",
-      "DisplayName": "Activer l’agrégation",
+      "DisplayName": "Enable aggregation",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnableAggregation_Name",
       "EnumValues": [
         {
-          "Description": "Activer l’agrégation dans le contrôle de grille",
-          "DisplayName": "Oui",
+          "Description": "Enable aggregation in grid control",
+          "DisplayName": "Yes",
           "IsDefaultValue": false,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Désactiver l’agrégation dans la grille",
-          "DisplayName": "Non",
+          "Description": "Disable aggregation in the grid",
+          "DisplayName": "No",
           "IsDefaultValue": true,
           "Name": "Disable",
           "Value": "no"
@@ -792,21 +792,21 @@
     {
       "Category": "data",
       "DefaultValue": "no",
-      "Description": "Autoriser la réorganisation des colonnes",
+      "Description": "Allow column reordering",
       "DescriptionResourceString": "PowerAppsOneGrid_EnableColumnMoving_Desc",
-      "DisplayName": "Autoriser la réorganisation des colonnes (version préliminaire)",
+      "DisplayName": "Allow column reordering (preview)",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnableColumnMoving_Name",
       "EnumValues": [
         {
-          "Description": "Les colonnes peuvent être réorganisées",
-          "DisplayName": "Oui",
+          "Description": "Columns can be reordered",
+          "DisplayName": "Yes",
           "IsDefaultValue": false,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Impossible de réorganiser les colonnes",
-          "DisplayName": "Non",
+          "Description": "Columns cannot be reordered",
+          "DisplayName": "No",
           "IsDefaultValue": true,
           "Name": "Disable",
           "Value": "no"
@@ -835,21 +835,21 @@
     {
       "Category": "data",
       "DefaultValue": "no",
-      "Description": "Détermine si les utilisateurs peuvent sélectionner plusieurs lignes",
+      "Description": "Determines whether users can select multiple rows",
       "DescriptionResourceString": "PowerAppsOneGrid_EnableMultipleSelection_Desc",
-      "DisplayName": "Activer la sélection multiple",
+      "DisplayName": "Enable multi-select",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnableMultipleSelection_Name",
       "EnumValues": [
         {
-          "Description": "Activer la sélection de plusieurs lignes dans la grille",
-          "DisplayName": "Oui",
+          "Description": "Enable multiple row selection in the grid",
+          "DisplayName": "Yes",
           "IsDefaultValue": true,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Désactiver la sélection de plusieurs lignes dans la grille",
-          "DisplayName": "Non",
+          "Description": "Disable multiple row selection in the grid",
+          "DisplayName": "No",
           "IsDefaultValue": false,
           "Name": "Disable",
           "Value": "no"
@@ -878,21 +878,21 @@
     {
       "Category": "data",
       "DefaultValue": "yes",
-      "Description": "Détermine si les utilisateurs peuvent sélectionner un sous-ensemble de la grille pour le copier dans le Presse-papiers",
+      "Description": "Determines whether users can select a subset of the grid to copy to the clipboard",
       "DescriptionResourceString": "PowerAppsOneGrid_EnableRangeSelection_Desc",
-      "DisplayName": "Autoriser la sélection de plage",
+      "DisplayName": "Allow range selection",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnableRangeSelection_Name",
       "EnumValues": [
         {
-          "Description": "Activer la sélection de plage dans la grille",
-          "DisplayName": "Oui",
+          "Description": "Enable range selection in the grid",
+          "DisplayName": "Yes",
           "IsDefaultValue": true,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Désactiver la sélection de plage dans la grille",
-          "DisplayName": "Non",
+          "Description": "Disable range selection in the grid",
+          "DisplayName": "No",
           "IsDefaultValue": false,
           "Name": "Disable",
           "Value": "no"
@@ -921,28 +921,28 @@
     {
       "Category": "data",
       "DefaultValue": "no",
-      "Description": "Activer ou désactiver le volet de pied de page de la barre de saut",
+      "Description": "Enable or disable the jump bar footer panel",
       "DescriptionResourceString": "PowerAppsOneGrid_EnableJumpBar_Desc",
-      "DisplayName": "Activer la barre de saut",
+      "DisplayName": "Enable jump bar",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnableJumpBar_Name",
       "EnumValues": [
         {
-          "Description": "Activez le volet de pied de page de la barre de saut pour le contrôle de grille.",
-          "DisplayName": "Oui",
+          "Description": "Enable the jump bar footer panel for the grid control.",
+          "DisplayName": "Yes",
           "IsDefaultValue": false,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Affichez ou masquez automatiquement la barre de saut pour le contrôle de grille.",
-          "DisplayName": "Automatique",
+          "Description": "Show or hide the jump bar automatically for the grid control.",
+          "DisplayName": "Auto",
           "IsDefaultValue": false,
           "Name": "Auto",
           "Value": "auto"
         },
         {
-          "Description": "Désactivez le volet de pied de page de la barre de saut pour le contrôle de grille.",
-          "DisplayName": "Non",
+          "Description": "Disable the jump bar footer panel for the grid control.",
+          "DisplayName": "No",
           "IsDefaultValue": true,
           "Name": "Disable",
           "Value": "no"
@@ -971,21 +971,21 @@
     {
       "Category": "data",
       "DefaultValue": "no",
-      "Description": "Activez ou désactivez la pagination de la grille. Cette action désactivera le défilement infini.",
+      "Description": "Enable or disable paging for grid. This will disable infinite scrolling.",
       "DescriptionResourceString": "PowerAppsOneGrid_EnablePagination_Desc",
-      "DisplayName": "Activer la pagination",
+      "DisplayName": "Enable pagination",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnablePagination_Name",
       "EnumValues": [
         {
-          "Description": "Activez la pagination du contrôle de grille. Cette action désactivera le défilement infini.",
-          "DisplayName": "Oui",
+          "Description": "Enable pagination for the grid control. This will disable infinite scrolling.",
+          "DisplayName": "Yes",
           "IsDefaultValue": false,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Désactivez la pagination du contrôle de grille. Cette action activera le défilement infini.",
-          "DisplayName": "Non",
+          "Description": "Disable pagination for the grid control. This will enable infinite scrolling.",
+          "DisplayName": "No",
           "IsDefaultValue": true,
           "Name": "Disable",
           "Value": "no"
@@ -1014,21 +1014,21 @@
     {
       "Category": "data",
       "DefaultValue": "no",
-      "Description": "Activez ou désactivez les couleurs personnalisées pour les cellules OptionSet du contrôle de grille.",
+      "Description": "Enable or disable custom colors for OptionSet cells of the grid control.",
       "DescriptionResourceString": "PowerAppsOneGrid_EnableDropdownColor_Desc",
-      "DisplayName": "Activer les couleurs pour OptionSet",
+      "DisplayName": "Enable OptionSet colors",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnableDropdownColor_Name",
       "EnumValues": [
         {
-          "Description": "Activez les couleurs personnalisées pour les cellules OptionSet du contrôle de grille.",
-          "DisplayName": "Oui",
+          "Description": "Enable custom colors for OptionSet cells within the grid control.",
+          "DisplayName": "Yes",
           "IsDefaultValue": false,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Désactivez les couleurs personnalisées pour les cellules OptionSet du contrôle de grille. Les couleurs par défaut fournies par la grille seront utilisées.",
-          "DisplayName": "Non",
+          "Description": "Disable custom colors for OptionSet cells within the grid control. It will use default colors provided by the grid.",
+          "DisplayName": "No",
           "IsDefaultValue": true,
           "Name": "Disable",
           "Value": "no"
@@ -1057,21 +1057,21 @@
     {
       "Category": "data",
       "DefaultValue": "no",
-      "Description": "Afficher ou masquer les icônes de statut pour les lignes",
+      "Description": "Show or hide status icons for the rows",
       "DescriptionResourceString": "PowerAppsOneGrid_EnableStatusIcons_Desc",
-      "DisplayName": "Afficher les icônes de statut de ligne",
+      "DisplayName": "Show row status icons",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnableStatusIcons_Name",
       "EnumValues": [
         {
-          "Description": "Afficher les icônes de statut de la ligne",
-          "DisplayName": "Oui",
+          "Description": "Show status icons for the row",
+          "DisplayName": "Yes",
           "IsDefaultValue": true,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Désactiver les icônes de statuts des lignes",
-          "DisplayName": "Non",
+          "Description": "Disable row status icons for the rows",
+          "DisplayName": "No",
           "IsDefaultValue": false,
           "Name": "Disable",
           "Value": "no"
@@ -1100,21 +1100,21 @@
     {
       "Category": "data",
       "DefaultValue": "no",
-      "Description": "Afficher ou masquer les icônes de type de données dans les en-têtes de colonne",
+      "Description": "Show or hide data type icons in the column headers",
       "DescriptionResourceString": "PowerAppsOneGrid_EnableTypeIcons_Desc",
-      "DisplayName": "Afficher les icônes de type de données",
+      "DisplayName": "Show data type icons",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnableTypeIcons_Name",
       "EnumValues": [
         {
-          "Description": "Afficher les icônes dans les en-têtes de colonne",
-          "DisplayName": "Oui",
+          "Description": "Show icons in the column headers",
+          "DisplayName": "Yes",
           "IsDefaultValue": false,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Désactiver les icônes de type de données d’en-tête dans la grille",
-          "DisplayName": "Non",
+          "Description": "Disable header data type icons in the grid",
+          "DisplayName": "No",
           "IsDefaultValue": true,
           "Name": "Disable",
           "Value": "no"
@@ -1143,28 +1143,28 @@
     {
       "Category": "data",
       "DefaultValue": "none",
-      "Description": "Configurer les types de navigation autorisés dans la grille",
+      "Description": "Configure what navigation types are allowed within the grid",
       "DescriptionResourceString": "PowerAppsOneGrid_NavigationTypesAllowed_Desc",
-      "DisplayName": "Types de navigation autorisés",
+      "DisplayName": "Navigation types allowed",
       "DisplayNameResourceString": "PowerAppsOneGrid_NavigationTypesAllowed_Name",
       "EnumValues": [
         {
-          "Description": "Autorise la navigation dans les colonnes principales et de recherche",
-          "DisplayName": "Tout",
+          "Description": "Allows navigation on primary and lookup columns",
+          "DisplayName": "All",
           "IsDefaultValue": true,
           "Name": "All",
           "Value": "all"
         },
         {
-          "Description": "Autorise uniquement la navigation dans la colonne principale de l’entité",
-          "DisplayName": "Principal uniquement",
+          "Description": "Only allows navigation on the primary column for the entity",
+          "DisplayName": "Primary only",
           "IsDefaultValue": false,
           "Name": "PrimaryOnly",
           "Value": "primaryOnly"
         },
         {
-          "Description": "N’autorise pas la navigation dans les enregistrements d’entité",
-          "DisplayName": "Aucun(e)",
+          "Description": "Does not allow any entity record navigation",
+          "DisplayName": "None",
           "IsDefaultValue": false,
           "Name": "None",
           "Value": "none"
@@ -1193,28 +1193,28 @@
     {
       "Category": "data",
       "DefaultValue": "Reflow",
-      "Description": "Définir la façon dont la grille sera redisposée (changera de mode d’affichage) en fonction de sa largeur",
+      "Description": "Define how the grid will reflow (switch display mode) based on its width",
       "DescriptionResourceString": "PowerAppsOneGrid_ReflowBehavior_Desc",
-      "DisplayName": "Comportement de redisposition",
+      "DisplayName": "Reflow behavior",
       "DisplayNameResourceString": "PowerAppsOneGrid_ReflowBehavior_Name",
       "EnumValues": [
         {
-          "Description": "Autoriser la grille à changer de mode d’affichage en fonction de sa largeur",
-          "DisplayName": "Redisposition",
+          "Description": "Allow grid to switch display mode based on its width",
+          "DisplayName": "Reflow",
           "IsDefaultValue": true,
           "Name": "Reflow",
           "Value": "Reflow"
         },
         {
-          "Description": "Toujours afficher en tant que grille",
-          "DisplayName": "Grille uniquement",
+          "Description": "Always display as a grid",
+          "DisplayName": "Grid only",
           "IsDefaultValue": false,
           "Name": "GridOnly",
           "Value": "GridOnly"
         },
         {
-          "Description": "Toujours afficher en tant que liste",
-          "DisplayName": "Liste uniquement",
+          "Description": "Always display as a list",
+          "DisplayName": "List only",
           "IsDefaultValue": false,
           "Name": "ListOnly",
           "Value": "ListOnly"
@@ -1243,21 +1243,21 @@
     {
       "Category": "data",
       "DefaultValue": "yes",
-      "Description": "Afficher ou masquer les avatars dans la table",
+      "Description": "Show or hide avatars in the table",
       "DescriptionResourceString": "PowerAppsOneGrid_ShowAvatar_Desc",
-      "DisplayName": "Afficher l’avatar",
+      "DisplayName": "Show avatar",
       "DisplayNameResourceString": "PowerAppsOneGrid_ShowAvatar_Name",
       "EnumValues": [
         {
-          "Description": "Afficher les avatars dans la table",
-          "DisplayName": "Oui",
+          "Description": "Show avatars in the table",
+          "DisplayName": "Yes",
           "IsDefaultValue": true,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Masquer les avatars dans la table",
-          "DisplayName": "Non",
+          "Description": "Hide avatars in the table",
+          "DisplayName": "No",
           "IsDefaultValue": false,
           "Name": "Disable",
           "Value": "no"
@@ -1286,21 +1286,21 @@
     {
       "Category": "data",
       "DefaultValue": "yes",
-      "Description": "Afficher ou masquer le pied de page dans la table",
+      "Description": "Show or hide footer in the table",
       "DescriptionResourceString": "PowerAppsOneGrid_ShowFooter_Desc",
-      "DisplayName": "Afficher le pied de page",
+      "DisplayName": "Show footer",
       "DisplayNameResourceString": "PowerAppsOneGrid_ShowFooter_Name",
       "EnumValues": [
         {
-          "Description": "Activer le pied de page dans la table",
-          "DisplayName": "Oui",
+          "Description": "Enable footer in the table",
+          "DisplayName": "Yes",
           "IsDefaultValue": true,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Désactiver le pied de page dans la table",
-          "DisplayName": "Non",
+          "Description": "Disable footer in the table",
+          "DisplayName": "No",
           "IsDefaultValue": false,
           "Name": "Disable",
           "Value": "no"
@@ -1329,21 +1329,21 @@
     {
       "Category": "data",
       "DefaultValue": "yes",
-      "Description": "Afficher ou masquer les en-têtes de colonne dans la table",
+      "Description": "Show or hide column headers in the table",
       "DescriptionResourceString": "PowerAppsOneGrid_ShowColumnHeaders_Desc",
-      "DisplayName": "Afficher les en-têtes de colonne",
+      "DisplayName": "Show column headers",
       "DisplayNameResourceString": "PowerAppsOneGrid_ShowColumnHeaders_Name",
       "EnumValues": [
         {
-          "Description": "Afficher les en-têtes de colonne dans la table",
-          "DisplayName": "Oui",
+          "Description": "Show column headers in the table",
+          "DisplayName": "Yes",
           "IsDefaultValue": true,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Masquer les en-têtes de colonne dans la table",
-          "DisplayName": "Non",
+          "Description": "Hide column headers in the table",
+          "DisplayName": "No",
           "IsDefaultValue": false,
           "Name": "Disable",
           "Value": "no"
@@ -1372,9 +1372,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Nom logique complet du contrôle (<PréfixeDePublication>_<EspaceDeNoms>_<NomDuContrôle>) qui fournit des rendus et/ou éditeurs de cellules personnalisées pour le contrôle de grille Power Apps",
+      "Description": "Full logical name of the control (<PublisherPrefix>_<NameSpace>_<ControlName>) that provides custom cell renders and/or editors for the Power Apps grid control",
       "DescriptionResourceString": "PowerAppsOneGrid_GridCustomizerControlFullName_Desc",
-      "DisplayName": "Contrôle de personnalisateur",
+      "DisplayName": "Customizer control",
       "DisplayNameResourceString": "PowerAppsOneGrid_GridCustomizerControlFullName_Name",
       "EnumValues": [],
       "HelperUI": "",
@@ -1400,9 +1400,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Actions de grille",
+      "Description": "Grid Actions",
       "DescriptionResourceString": "PowerAppsOneGrid_GridActions_Desc",
-      "DisplayName": "Actions de grille",
+      "DisplayName": "Grid Actions",
       "DisplayNameResourceString": "PowerAppsOneGrid_GridActions_Name",
       "EnumValues": [],
       "HelperUI": "",
@@ -1428,9 +1428,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Choisissez une palette de couleurs différente du thème.",
+      "Description": "Choose a color palette that's different from the theme.",
       "DescriptionResourceString": "Base_Palette_Color_description",
-      "DisplayName": "Palette de couleurs",
+      "DisplayName": "Color palette",
       "DisplayNameResourceString": "Base_Palette_Color",
       "EnumValues": [],
       "HelperUI": null,
@@ -1456,9 +1456,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Nom de la famille de la police pour le texte.",
+      "Description": "The name of the font family for the text.",
       "DescriptionResourceString": "Font_description",
-      "DisplayName": "Police",
+      "DisplayName": "Font",
       "DisplayNameResourceString": "Font",
       "EnumValues": [],
       "HelperUI": null,
@@ -1484,9 +1484,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "La couleur du texte.",
+      "Description": "The color of the text.",
       "DescriptionResourceString": "Font_Color_description",
-      "DisplayName": "Couleur de la police",
+      "DisplayName": "Font color",
       "DisplayNameResourceString": "Font_Color",
       "EnumValues": [],
       "HelperUI": "color",
@@ -1512,9 +1512,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "La taille de police par défaut pour tout le texte affiché",
+      "Description": "The default font size for all displayed text",
       "DescriptionResourceString": "Font_Size_description",
-      "DisplayName": "Taille de police",
+      "DisplayName": "Font size",
       "DisplayNameResourceString": "Font_Size",
       "EnumValues": [],
       "HelperUI": null,
@@ -1540,9 +1540,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "L’épaisseur du texte.",
+      "Description": "The weight of the text.",
       "DescriptionResourceString": "Font_Weight_description",
-      "DisplayName": "Épaisseur de la police",
+      "DisplayName": "Font weight",
       "DisplayNameResourceString": "Font_Weight",
       "EnumValues": [],
       "HelperUI": null,
@@ -1568,9 +1568,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Le nom de la famille de la police pour le texte de l’en-tête.",
+      "Description": "The name of the font family for the header text.",
       "DescriptionResourceString": "Header_Font_description",
-      "DisplayName": "Police de l’en-tête",
+      "DisplayName": "Header font",
       "DisplayNameResourceString": "Header_Font",
       "EnumValues": [],
       "HelperUI": null,
@@ -1596,9 +1596,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "La couleur du texte de l’en-tête de la colonne.",
+      "Description": "The color of the column header text.",
       "DescriptionResourceString": "Header_Font_Color_description",
-      "DisplayName": "Couleur de la police de l’en-tête",
+      "DisplayName": "Header font color",
       "DisplayNameResourceString": "Header_Font_Color",
       "EnumValues": [],
       "HelperUI": "color",
@@ -1624,9 +1624,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "La taille de police pour les en-têtes de colonnes",
+      "Description": "The font size for the column headers",
       "DescriptionResourceString": "Header_Font_Size_description",
-      "DisplayName": "Taille de police de l’en-tête",
+      "DisplayName": "Header font size",
       "DisplayNameResourceString": "Header_Font_Size",
       "EnumValues": [],
       "HelperUI": null,
@@ -1652,9 +1652,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "L’épaisseur du texte de l’en-tête de la colonne.",
+      "Description": "The weight of the column header text.",
       "DescriptionResourceString": "Header_Font_Weight_description",
-      "DisplayName": "Épaisseur de la police de l’en-tête",
+      "DisplayName": "Header font weight",
       "DisplayNameResourceString": "Header_Font_Weight",
       "EnumValues": [],
       "HelperUI": null,
@@ -1680,9 +1680,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Message que l’utilisateur reçoit lorsqu’il n’y a aucun enregistrement à afficher dans le contrôle Table.",
+      "Description": "The message that the user sees when there are no records to show in the Table control.",
       "DescriptionResourceString": "No_Data_Text_Desc",
-      "DisplayName": "Aucun texte",
+      "DisplayName": "No data text",
       "DisplayNameResourceString": "No_Data_Text",
       "EnumValues": [],
       "HelperUI": null,
@@ -1736,21 +1736,21 @@
     {
       "Category": "data",
       "DefaultValue": "yes",
-      "Description": "Détermine si l’utilisateur peut masquer la colonne de statut. Ceci est déconseillé, nous vous recommandons d’autoriser la propriété de sélections multiples à la place.",
+      "Description": "Determines whether user can hide status column. This is deprecated, please use the allow multiple selection property instead.",
       "DescriptionResourceString": "PowerAppsOneGrid_EnableStatusColumn_Desc",
-      "DisplayName": "(Déconseillé) Activer la colonne de statuts",
+      "DisplayName": "(Deprecated) Enable status column",
       "DisplayNameResourceString": "PowerAppsOneGrid_EnableStatusColumn_Name",
       "EnumValues": [
         {
-          "Description": "Activer la colonne de statut dans la grille",
-          "DisplayName": "Oui",
+          "Description": "Enable status column in the grid",
+          "DisplayName": "Yes",
           "IsDefaultValue": true,
           "Name": "Enable",
           "Value": "yes"
         },
         {
-          "Description": "Désactiver la colonne de statut dans la grille",
-          "DisplayName": "Non",
+          "Description": "Disable status column in the grid",
+          "DisplayName": "No",
           "IsDefaultValue": false,
           "Name": "Disable",
           "Value": "no"
@@ -1893,10 +1893,10 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Éléments à utiliser pour les données de la grille",
-      "DescriptionResourceString": "Éléments à utiliser pour les données de la grille",
-      "DisplayName": "Éléments(##PCFDatasetItems##)",
-      "DisplayNameResourceString": "Éléments",
+      "Description": "Items to use for the grid data",
+      "DescriptionResourceString": "Items to use for the grid data",
+      "DisplayName": "Items(##PCFDatasetItems##)",
+      "DisplayNameResourceString": "Items",
       "HelperUI": "",
       "Hidden": false,
       "IsDataSourceProperty": true,
@@ -1921,10 +1921,10 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Éléments à utiliser pour les données de la grille",
-      "DescriptionResourceString": "Éléments à utiliser pour les données de la grille",
-      "DisplayName": "Éléments(##PCFDatasetSelected##)",
-      "DisplayNameResourceString": "Éléments",
+      "Description": "Items to use for the grid data",
+      "DescriptionResourceString": "Items to use for the grid data",
+      "DisplayName": "Items(##PCFDatasetSelected##)",
+      "DisplayNameResourceString": "Items",
       "HelperUI": "",
       "Hidden": false,
       "IsDataSourceProperty": false,
@@ -1949,10 +1949,10 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Éléments à utiliser pour les données de la grille",
-      "DescriptionResourceString": "Éléments à utiliser pour les données de la grille",
-      "DisplayName": "Éléments(##PCFDatasetSelectedItems##)",
-      "DisplayNameResourceString": "Éléments",
+      "Description": "Items to use for the grid data",
+      "DescriptionResourceString": "Items to use for the grid data",
+      "DisplayName": "Items(##PCFDatasetSelectedItems##)",
+      "DisplayNameResourceString": "Items",
       "HelperUI": "",
       "Hidden": false,
       "IsDataSourceProperty": false,
@@ -1977,10 +1977,10 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Éléments à utiliser pour les données enfants de la grille",
-      "DescriptionResourceString": "Éléments à utiliser pour les données enfants de la grille",
-      "DisplayName": "Éléments enfants (version préliminaire)(##PCFDatasetItems##)",
-      "DisplayNameResourceString": "Éléments enfants (version préliminaire)",
+      "Description": "Items to use for the child grid data",
+      "DescriptionResourceString": "Items to use for the child grid data",
+      "DisplayName": "Child items (preview)(##PCFDatasetItems##)",
+      "DisplayNameResourceString": "Child items (preview)",
       "HelperUI": "",
       "Hidden": true,
       "IsDataSourceProperty": false,
@@ -2005,10 +2005,10 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Éléments à utiliser pour les données enfants de la grille",
-      "DescriptionResourceString": "Éléments à utiliser pour les données enfants de la grille",
-      "DisplayName": "Éléments enfants (version préliminaire)(##PCFDatasetSelected##)",
-      "DisplayNameResourceString": "Éléments enfants (version préliminaire)",
+      "Description": "Items to use for the child grid data",
+      "DescriptionResourceString": "Items to use for the child grid data",
+      "DisplayName": "Child items (preview)(##PCFDatasetSelected##)",
+      "DisplayNameResourceString": "Child items (preview)",
       "HelperUI": "",
       "Hidden": true,
       "IsDataSourceProperty": false,
@@ -2033,10 +2033,10 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Éléments à utiliser pour les données enfants de la grille",
-      "DescriptionResourceString": "Éléments à utiliser pour les données enfants de la grille",
-      "DisplayName": "Éléments enfants (version préliminaire)(##PCFDatasetSelectedItems##)",
-      "DisplayNameResourceString": "Éléments enfants (version préliminaire)",
+      "Description": "Items to use for the child grid data",
+      "DescriptionResourceString": "Items to use for the child grid data",
+      "DisplayName": "Child items (preview)(##PCFDatasetSelectedItems##)",
+      "DisplayNameResourceString": "Child items (preview)",
       "HelperUI": "",
       "Hidden": true,
       "IsDataSourceProperty": false,
@@ -2061,9 +2061,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "ID parent à utiliser pour les éléments enfants",
+      "Description": "Parent id to use for child items",
       "DescriptionResourceString": "ChildItems_ParentId_Desc",
-      "DisplayName": "ID parent des éléments enfants",
+      "DisplayName": "Child Items Parent Id",
       "DisplayNameResourceString": "ChildItems_ParentId_Name",
       "HelperUI": "",
       "Hidden": false,
@@ -2191,7 +2191,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 8,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"Microsoft.PowerApps.PowerAppsOneGrid\",\"CustomControlId\":\"Microsoft.PowerApps.PowerAppsOneGrid\",\"IsVirtual\":true,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/common/js/container.js\",\"LoadOrder\":5,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{\"Items\":{\"DisplayName\":\"Éléments\",\"Type\":\"Grid\",\"Columns\":{},\"Primary\":true,\"InitialDataSetFetch\":true,\"CDSDataSetOptions\":null},\"ChildItems\":{\"DisplayName\":\"Éléments enfants (version préliminaire)\",\"Type\":\"Grid\",\"Columns\":{\"0\":{\"Required\":false,\"Usage\":2,\"Name\":\"ParentId\",\"Type\":\"Lookup_Simple\"}},\"Primary\":false,\"InitialDataSetFetch\":true,\"CDSDataSetOptions\":null}},\"Properties\":{\"AccessibleLabel\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"EnableEditing\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"DisableChildItemsEditing\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableFiltering\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableSorting\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"yes\"},\"EnableGrouping\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableAggregation\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableColumnMoving\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableMultipleSelection\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableRangeSelection\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"yes\"},\"EnableJumpBar\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnablePagination\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableDropdownColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableStatusIcons\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableTypeIcons\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"NavigationTypesAllowed\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"none\"},\"ReflowBehavior\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Reflow\"},\"ShowAvatar\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"yes\"},\"ShowFooter\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"yes\"},\"ShowColumnHeaders\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"yes\"},\"GridCustomizerControlFullName\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"GridActions\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"BasePaletteColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Font\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontSize\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontWeight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"HeaderFont\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"HeaderFontColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"HeaderFontSize\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"HeaderFontWeight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"NoDataText\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"TabIndex\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"EnableStatusColumn\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"yes\"},\"DisableStatusColumn\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"DisableStatusColumnSavingIcons\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Items_FieldProperties\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"Items\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Selected\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"SelectedItems\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"ChildItems_Items\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"ChildItems_Selected\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"ChildItems_SelectedItems\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"ParentId\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"}},\"FeatureUsage\":[{\"IsRequired\":true,\"Name\":\"Utility\"},{\"IsRequired\":true,\"Name\":\"ExplicitCommonEvents\"},{\"IsRequired\":true,\"Name\":\"PreventDefaultSort\"}]},\"Events\":{\"onCellValueChange\":{\"EventName\":\"onCellValueChange\"},\"onFilter\":{\"EventName\":\"onFilter\"},\"onNavigate\":{\"EventName\":\"onNavigate\"},\"onRowSelect\":{\"EventName\":\"onRowSelect\"},\"onSave\":{\"EventName\":\"onSave\"},\"OnSelect\":{\"EventName\":\"OnSelect\"}},\"CommonEvents\":null,\"DesignMap\":null,\"PropertyDependencies\":[{\"Input\":\"Items\",\"Output\":\"Selected\",\"RequiredFor\":\"\"},{\"Input\":\"Items\",\"Output\":\"SelectedItems\",\"RequiredFor\":\"\"},{\"Input\":\"ChildItems_Items\",\"Output\":\"ChildItems_Selected\",\"RequiredFor\":\"\"},{\"Input\":\"ChildItems_Items\",\"Output\":\"ChildItems_SelectedItems\",\"RequiredFor\":\"\"}],\"Children\":null}}",
+      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"Microsoft.PowerApps.PowerAppsOneGrid\",\"CustomControlId\":\"Microsoft.PowerApps.PowerAppsOneGrid\",\"IsVirtual\":true,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/common/js/container.js\",\"LoadOrder\":5,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{\"Items\":{\"DisplayName\":\"Items\",\"Type\":\"Grid\",\"Columns\":{},\"Primary\":true,\"InitialDataSetFetch\":true,\"CDSDataSetOptions\":null},\"ChildItems\":{\"DisplayName\":\"Child items (preview)\",\"Type\":\"Grid\",\"Columns\":{\"0\":{\"Required\":false,\"Usage\":2,\"Name\":\"ParentId\",\"Type\":\"Lookup_Simple\"}},\"Primary\":false,\"InitialDataSetFetch\":true,\"CDSDataSetOptions\":null}},\"Properties\":{\"AccessibleLabel\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"EnableEditing\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"DisableChildItemsEditing\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableFiltering\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableSorting\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"yes\"},\"EnableGrouping\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableAggregation\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableColumnMoving\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableMultipleSelection\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableRangeSelection\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"yes\"},\"EnableJumpBar\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnablePagination\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableDropdownColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableStatusIcons\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"EnableTypeIcons\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"no\"},\"NavigationTypesAllowed\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"none\"},\"ReflowBehavior\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Reflow\"},\"ShowAvatar\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"yes\"},\"ShowFooter\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"yes\"},\"ShowColumnHeaders\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"yes\"},\"GridCustomizerControlFullName\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"GridActions\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"BasePaletteColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Font\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontSize\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontWeight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"HeaderFont\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"HeaderFontColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"HeaderFontSize\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"HeaderFontWeight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"NoDataText\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"TabIndex\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"EnableStatusColumn\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"yes\"},\"DisableStatusColumn\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"DisableStatusColumnSavingIcons\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Items_FieldProperties\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"Items\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Selected\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"SelectedItems\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"ChildItems_Items\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"ChildItems_Selected\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"ChildItems_SelectedItems\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"ParentId\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"}},\"FeatureUsage\":[{\"IsRequired\":true,\"Name\":\"Utility\"},{\"IsRequired\":true,\"Name\":\"ExplicitCommonEvents\"},{\"IsRequired\":true,\"Name\":\"PreventDefaultSort\"}]},\"Events\":{\"onCellValueChange\":{\"EventName\":\"onCellValueChange\"},\"onFilter\":{\"EventName\":\"onFilter\"},\"onNavigate\":{\"EventName\":\"onNavigate\"},\"onRowSelect\":{\"EventName\":\"onRowSelect\"},\"onSave\":{\"EventName\":\"onSave\"},\"OnSelect\":{\"EventName\":\"OnSelect\"}},\"CommonEvents\":null,\"DesignMap\":null,\"PropertyDependencies\":[{\"Input\":\"Items\",\"Output\":\"Selected\",\"RequiredFor\":\"\"},{\"Input\":\"Items\",\"Output\":\"SelectedItems\",\"RequiredFor\":\"\"},{\"Input\":\"ChildItems_Items\",\"Output\":\"ChildItems_Selected\",\"RequiredFor\":\"\"},{\"Input\":\"ChildItems_Items\",\"Output\":\"ChildItems_SelectedItems\",\"RequiredFor\":\"\"}],\"Children\":null}}",
       "Type": 3
     },
     {
@@ -2541,7 +2541,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"PowerAppsOneGrid_AccessibleLabel_Desc_Key\":\"Étiquette lue par les lecteurs d’écran.\",\"PowerAppsOneGrid_AccessibleLabel_Display_Key\":\"Étiquette d’accessibilité\",\"PowerAppsOneGrid_Name\":\"Contrôle de grille Power Apps\",\"PowerAppsOneGrid_Override_Name\":\"Table\",\"PowerAppsOneGrid_Desc\":\"Grille utilisée pour afficher une table d’éléments de données.\",\"PowerAppsOneGrid_Items_Name\":\"Éléments\",\"PowerAppsOneGrid_Items_Desc\":\"Éléments à utiliser pour les données de la grille\",\"PowerAppsOneGrid_ChildItems_Name\":\"Éléments enfants (version préliminaire)\",\"PowerAppsOneGrid_ChildItems_Desc\":\"Éléments à utiliser pour les données enfants de la grille\",\"ChildItems_ParentId_Name\":\"ID parent des éléments enfants\",\"ChildItems_ParentId_Desc\":\"ID parent à utiliser pour les éléments enfants\",\"PowerAppsOneGrid_No_Columns_Label\":\"Aucune colonne sélectionnée\",\"PowerAppsOneGrid_No_Columns_Sub_Label\":\"Pour afficher les données, choisissez les champs voulus dans le volet Propriétés.\",\"PowerAppsOneGrid_No_Data_Label\":\"Aucune donnée\",\"PowerAppsOneGrid_No_Data_Sub_Label\":\"Cette table n’est pas encore connectée à des données.\",\"PowerAppsOneGrid_Loading_Data_Label\":\"Chargement en cours...\",\"PowerAppsOneGrid_EnableEditing_Name\":\"Activer la modification\",\"PowerAppsOneGrid_EnableEditing_Desc\":\"Activer ou désactiver la modification de la grille\",\"PowerAppsOneGrid_EnableEditing_Yes_Name\":\"Oui\",\"PowerAppsOneGrid_EnableEditing_Yes_Desc\":\"Activer la modification de la grille\",\"PowerAppsOneGrid_ReadOnlyMode_No_Name\":\"Non\",\"PowerAppsOneGrid_ReadOnlyMode_No_Desc\":\"Désactiver la modification de la grille\",\"PowerAppsOneGrid_DisableChildItemsEditing_Name\":\"Désactiver la modification de la grille des éléments enfants\",\"PowerAppsOneGrid_DisableChildItemsEditing_Desc\":\"Désactiver la modification de la grille des éléments enfants\",\"PowerAppsOneGrid_DisableChildItemsEditing_Yes_Name\":\"Oui\",\"PowerAppsOneGrid_DisableChildItemsEditing_Yes_Desc\":\"Désactiver la modification de la grille des éléments enfants\",\"PowerAppsOneGrid_DisableChildItemsEditing_No_Name\":\"Non\",\"PowerAppsOneGrid_DisableChildItemsEditing_No_Desc\":\"Autoriser la modification de la grille des éléments enfants\",\"PowerAppsOneGrid_EnableFiltering_Name\":\"Activer le filtrage\",\"PowerAppsOneGrid_EnableFiltering_Desc\":\"Activer ou désactiver le filtrage dans la grille\",\"PowerAppsOneGrid_EnableFiltering_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_EnableFiltering_Enable_Desc\":\"Activer le filtrage dans le contrôle de grille\",\"PowerAppsOneGrid_EnableFiltering_Disable_Name\":\"Non\",\"PowerAppsOneGrid_EnableFiltering_Disable_Desc\":\"Désactiver le filtrage dans la grille\",\"PowerAppsOneGrid_EnableSorting_Name\":\"Activer le tri\",\"PowerAppsOneGrid_EnableSorting_Desc\":\"Activer ou désactiver le tri dans la grille\",\"PowerAppsOneGrid_EnableSorting_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_EnableSorting_Enable_Desc\":\"Activer le tri dans le contrôle de grille\",\"PowerAppsOneGrid_EnableSorting_Disable_Name\":\"Non\",\"PowerAppsOneGrid_EnableSorting_Disable_Desc\":\"Désactiver le tri de la grille\",\"PowerAppsOneGrid_ShowFooter_Name\":\"Afficher le pied de page\",\"PowerAppsOneGrid_ShowFooter_Desc\":\"Afficher ou masquer le pied de page dans la table\",\"PowerAppsOneGrid_ShowFooter_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_ShowFooter_Enable_Desc\":\"Activer le pied de page dans la table\",\"PowerAppsOneGrid_ShowFooter_Disable_Name\":\"Non\",\"PowerAppsOneGrid_ShowFooter_Disable_Desc\":\"Désactiver le pied de page dans la table\",\"PowerAppsOneGrid_EnableGrouping_Name\":\"Activer le regroupement\",\"PowerAppsOneGrid_EnableGrouping_Desc\":\"Activer ou désactiver le regroupement dans la grille\",\"PowerAppsOneGrid_EnableGrouping_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_EnableGrouping_Enable_Desc\":\"Activer le regroupement dans le contrôle de grille\",\"PowerAppsOneGrid_EnableGrouping_Disable_Name\":\"Non\",\"PowerAppsOneGrid_EnableGrouping_Disable_Desc\":\"Désactiver le regroupement dans la grille\",\"PowerAppsOneGrid_EnableAggregation_Name\":\"Activer l’agrégation\",\"PowerAppsOneGrid_EnableAggregation_Desc\":\"Activer ou désactiver l’agrégation dans la grille\",\"PowerAppsOneGrid_EnableAggregation_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_EnableAggregation_Enable_Desc\":\"Activer l’agrégation dans le contrôle de grille\",\"PowerAppsOneGrid_EnableAggregation_Disable_Name\":\"Non\",\"PowerAppsOneGrid_EnableAggregation_Disable_Desc\":\"Désactiver l’agrégation dans la grille\",\"PowerAppsOneGrid_EnableColumnMoving_Name\":\"Autoriser la réorganisation des colonnes (version préliminaire)\",\"PowerAppsOneGrid_EnableColumnMoving_Desc\":\"Autoriser la réorganisation des colonnes\",\"PowerAppsOneGrid_EnableColumnMoving_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_EnableColumnMoving_Enable_Desc\":\"Les colonnes peuvent être réorganisées\",\"PowerAppsOneGrid_EnableColumnMoving_Disable_Name\":\"Non\",\"PowerAppsOneGrid_EnableColumnMoving_Disable_Desc\":\"Impossible de réorganiser les colonnes\",\"PowerAppsOneGrid_ShowAvatar_Name\":\"Afficher l’avatar\",\"PowerAppsOneGrid_ShowAvatar_Desc\":\"Afficher ou masquer les avatars dans la table\",\"PowerAppsOneGrid_ShowAvatar_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_ShowAvatar_Enable_Desc\":\"Afficher les avatars dans la table\",\"PowerAppsOneGrid_ShowAvatar_Disable_Name\":\"Non\",\"PowerAppsOneGrid_ShowAvatar_Disable_Desc\":\"Masquer les avatars dans la table\",\"PowerAppsOneGrid_ShowColumnHeaders_Name\":\"Afficher les en-têtes de colonne\",\"PowerAppsOneGrid_ShowColumnHeaders_Desc\":\"Afficher ou masquer les en-têtes de colonne dans la table\",\"PowerAppsOneGrid_ShowColumnHeaders_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_ShowColumnHeaders_Enable_Desc\":\"Afficher les en-têtes de colonne dans la table\",\"PowerAppsOneGrid_ShowColumnHeaders_Disable_Name\":\"Non\",\"PowerAppsOneGrid_ShowColumnHeaders_Disable_Desc\":\"Masquer les en-têtes de colonne dans la table\",\"PowerAppsOneGrid_EnableRangeSelection_Name\":\"Autoriser la sélection de plage\",\"PowerAppsOneGrid_EnableRangeSelection_Desc\":\"Détermine si les utilisateurs peuvent sélectionner un sous-ensemble de la grille pour le copier dans le Presse-papiers\",\"PowerAppsOneGrid_EnableRangeSelection_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_EnableRangeSelection_Enable_Desc\":\"Activer la sélection de plage dans la grille\",\"PowerAppsOneGrid_EnableRangeSelection_Disable_Name\":\"Non\",\"PowerAppsOneGrid_EnableRangeSelection_Disable_Desc\":\"Désactiver la sélection de plage dans la grille\",\"PowerAppsOneGrid_EnableMultipleSelection_Name\":\"Activer la sélection multiple\",\"PowerAppsOneGrid_EnableMultipleSelection_Desc\":\"Détermine si les utilisateurs peuvent sélectionner plusieurs lignes\",\"PowerAppsOneGrid_EnableMultipleSelection_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_EnableMultipleSelection_Enable_Desc\":\"Activer la sélection de plusieurs lignes dans la grille\",\"PowerAppsOneGrid_EnableMultipleSelection_Disable_Name\":\"Non\",\"PowerAppsOneGrid_EnableMultipleSelection_Disable_Desc\":\"Désactiver la sélection de plusieurs lignes dans la grille\",\"PowerAppsOneGrid_SelectionDialog_Title\":\"Sélection de lignes en cours\",\"PowerAppsOneGrid_SelectionDialog_Subtext\":\"Nous travaillons à sélectionner d’autres lignes pour vous.\",\"PowerAppsOneGrid_SelectionDialog_Cancel_Label\":\"Annuler\",\"PowerAppsOneGrid_NoRowsOverlay_Label\":\"Nous n’avons trouvé aucun élément à afficher ici\",\"PowerAppsOneGrid_JumpBar_AriaLabel\":\"Barre de saut\",\"PowerAppsOneGrid_JumpBar_ABC_Label\":\"ABC\",\"PowerAppsOneGrid_JumpBar_All_AriaLabel\":\"Filtrer sur tous les enregistrements\",\"PowerAppsOneGrid_JumpBar_All_Label\":\"Tout\",\"PowerAppsOneGrid_JumpBar_Alphabet_AriaLabel\":\"Filtrer sur les enregistrements commençant par {0}\",\"PowerAppsOneGrid_JumpBar_Alphabet_Labels\":\"A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z\",\"PowerAppsOneGrid_JumpBar_number_AriaLabel\":\"Filtrer sur les enregistrements commençant par un nombre\",\"PowerAppsOneGrid_JumpBar_Number_Label\":\"#\",\"PowerAppsOneGrid_EnableJumpBar_Name\":\"Activer la barre de saut\",\"PowerAppsOneGrid_EnableJumpBar_Desc\":\"Activer ou désactiver le volet de pied de page de la barre de saut\",\"PowerAppsOneGrid_EnableJumpBar_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_EnableJumpBar_Enable_Desc\":\"Activez le volet de pied de page de la barre de saut pour le contrôle de grille.\",\"PowerAppsOneGrid_EnableJumpBar_Auto_Name\":\"Automatique\",\"PowerAppsOneGrid_EnableJumpBar_Auto_Desc\":\"Affichez ou masquez automatiquement la barre de saut pour le contrôle de grille.\",\"PowerAppsOneGrid_EnableJumpBar_Disable_Name\":\"Non\",\"PowerAppsOneGrid_EnableJumpBar_Disable_Desc\":\"Désactivez le volet de pied de page de la barre de saut pour le contrôle de grille.\",\"PowerAppsOneGrid_EnablePagination_Name\":\"Activer la pagination\",\"PowerAppsOneGrid_EnablePagination_Desc\":\"Activez ou désactivez la pagination de la grille. Cette action désactivera le défilement infini.\",\"PowerAppsOneGrid_EnablePagination_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_EnablePagination_Enable_Desc\":\"Activez la pagination du contrôle de grille. Cette action désactivera le défilement infini.\",\"PowerAppsOneGrid_EnablePagination_Disable_Name\":\"Non\",\"PowerAppsOneGrid_EnablePagination_Disable_Desc\":\"Désactivez la pagination du contrôle de grille. Cette action activera le défilement infini.\",\"PowerAppsOneGrid_EnableDropdownColor_Name\":\"Activer les couleurs pour OptionSet\",\"PowerAppsOneGrid_EnableDropdownColor_Desc\":\"Activez ou désactivez les couleurs personnalisées pour les cellules OptionSet du contrôle de grille.\",\"PowerAppsOneGrid_EnableDropdownColor_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_EnableDropdownColor_Enable_Desc\":\"Activez les couleurs personnalisées pour les cellules OptionSet du contrôle de grille.\",\"PowerAppsOneGrid_EnableDropdownColor_Disable_Name\":\"Non\",\"PowerAppsOneGrid_EnableDropdownColor_Disable_Desc\":\"Désactivez les couleurs personnalisées pour les cellules OptionSet du contrôle de grille. Les couleurs par défaut fournies par la grille seront utilisées.\",\"PowerAppsOneGrid_EnableStatusColumn_Name\":\"(Déconseillé) Activer la colonne de statuts\",\"PowerAppsOneGrid_EnableStatusColumn_Desc\":\"Détermine si l’utilisateur peut masquer la colonne de statut. Ceci est déconseillé, nous vous recommandons d’autoriser la propriété de sélections multiples à la place.\",\"PowerAppsOneGrid_EnableStatusColumn_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_EnableStatusColumn_Enable_Desc\":\"Activer la colonne de statut dans la grille\",\"PowerAppsOneGrid_EnableStatusColumn_Disable_Name\":\"Non\",\"PowerAppsOneGrid_EnableStatusColumn_Disable_Desc\":\"Désactiver la colonne de statut dans la grille\",\"PowerAppsOneGrid_NavigationTypesAllowed_Name\":\"Types de navigation autorisés\",\"PowerAppsOneGrid_NavigationTypesAllowed_Desc\":\"Configurer les types de navigation autorisés dans la grille\",\"PowerAppsOneGrid_NavigationTypesAllowed_All_Name\":\"Tout\",\"PowerAppsOneGrid_NavigationTypesAllowed_All_Desc\":\"Autorise la navigation dans les colonnes principales et de recherche\",\"PowerAppsOneGrid_NavigationTypesAllowed_PrimaryOnly_Name\":\"Principal uniquement\",\"PowerAppsOneGrid_NavigationTypesAllowed_PrimaryOnly_Desc\":\"Autorise uniquement la navigation dans la colonne principale de l’entité\",\"PowerAppsOneGrid_NavigationTypesAllowed_None_Name\":\"Aucun(e)\",\"PowerAppsOneGrid_NavigationTypesAllowed_None_Desc\":\"N’autorise pas la navigation dans les enregistrements d’entité\",\"PowerAppsOneGrid_ReflowBehavior_Name\":\"Comportement de redisposition\",\"PowerAppsOneGrid_ReflowBehavior_Desc\":\"Définir la façon dont la grille sera redisposée (changera de mode d’affichage) en fonction de sa largeur\",\"PowerAppsOneGrid_ReflowBehavior_Reflow_Name\":\"Redisposition\",\"PowerAppsOneGrid_ReflowBehavior_Reflow_Desc\":\"Autoriser la grille à changer de mode d’affichage en fonction de sa largeur\",\"PowerAppsOneGrid_ReflowBehavior_GridOnly_Name\":\"Grille uniquement\",\"PowerAppsOneGrid_ReflowBehavior_GridOnly_Desc\":\"Toujours afficher en tant que grille\",\"PowerAppsOneGrid_ReflowBehavior_ListOnly_Name\":\"Liste uniquement\",\"PowerAppsOneGrid_ReflowBehavior_ListOnly_Desc\":\"Toujours afficher en tant que liste\",\"PowerAppsOneGrid_GridActions_Name\":\"Actions de grille\",\"PowerAppsOneGrid_GridActions_Desc\":\"Actions de grille\",\"PowerAppsOneGrid_onCellValueChange_Name\":\"Événement de modification d’une valeur de cellule\",\"PowerAppsOneGrid_onCellValueChange_Desc\":\"Événement déclenché quand une valeur de cellule est modifiée\",\"PowerAppsOneGrid_onFilter_Name\":\"Événement de modification d’un filtre\",\"PowerAppsOneGrid_onFilter_Desc\":\"Événement déclenché quand un filtre est modifié\",\"PowerAppsOneGrid_onNavigate_Name\":\"Événement de navigation dans une cellule\",\"PowerAppsOneGrid_onNavigate_Desc\":\"Événement déclenché quand un lien de cellule est exécuté\",\"PowerAppsOneGrid_onRowSelect_Name\":\"Événement de modification de la sélection d’une ligne\",\"PowerAppsOneGrid_onRowSelect_Desc\":\"Événement déclenché quand l’état de sélection d’une ligne est modifié\",\"PowerAppsOneGrid_onSave_Name\":\"Événement d’enregistrement de grille\",\"PowerAppsOneGrid_onSave_Desc\":\"Événement déclenché quand un enregistrement est terminé\",\"PowerAppsOneGrid_OnSelect_Name\":\"Événement de modification de la sélection d’une ligne\",\"PowerAppsOneGrid_OnSelect_Desc\":\"Événement déclenché quand l’état de sélection d’une ligne est modifié\",\"PowerAppsOneGrid_GridCustomizerControlFullName_Name\":\"Contrôle de personnalisateur\",\"PowerAppsOneGrid_GridCustomizerControlFullName_Desc\":\"Nom logique complet du contrôle (<PréfixeDePublication>_<EspaceDeNoms>_<NomDuContrôle>) qui fournit des rendus et/ou éditeurs de cellules personnalisées pour le contrôle de grille Power Apps\",\"PowerAppsOneGrid_PlaceHolder_Text\":\"Entrer du texte\",\"PowerAppsOneGrid_PlaceHolder_Url\":\"https://\",\"PowerAppsOneGrid_PlaceHolder_DateTime\":\"Saisir ou sélectionner une date\",\"PowerAppsOneGrid_PlaceHolder_Number\":\"Entrer un nombre\",\"PowerAppsOneGrid_PlaceHolder_FloatingNumber\":\"0.00000\",\"PowerAppsOneGrid_PlaceHolder_Decimal\":\"Entrer un nombre décimal\",\"PowerAppsOneGrid_PlaceHolder_Lookup\":\"Sélectionner une recherche\",\"PowerAppsOneGrid_PlaceHolder_OptionSet\":\"Sélectionner une option\",\"PowerAppsOneGrid_PlaceHolder_File\":\"Aucun fichier joint\",\"PowerAppsOneGrid_PlaceHolder_Media\":\"Aucun média joint\",\"PowerAppsOneGrid_PlaceHolder_Email\":\"Entrer l’e-mail\",\"PowerAppsOneGrid_PlaceHolder_Phone\":\"Entrer le numéro de téléphone\",\"PowerAppsOneGrid_Error_PluralRowErrors\":\"(1){Cette ligne contient {0} erreur.};(0-inf){Cette ligne contient {0} erreurs.};\",\"PowerAppsOneGrid_Error_RowSaveError\":\"Une erreur s’est produite lors de l’enregistrement de cet enregistrement.\",\"PowerAppsOneGrid_Error_TotalErrorsPlural\":\"Nombre d’erreurs sur cette page\u00A0: {0}. Cliquez pour afficher.\",\"PowerAppsOneGrid_Error_FixText\":\"Corriger.\",\"PowerAppsOneGrid_Error_DismissText\":\"Ignorer\",\"PowerAppsOneGrid_Error_RowSelectionLimit\":\"Vous avez atteint la limite de {0}\u00A0lignes sélectionnées. Toute sélection de ligne au-delà de cette limite a été ignorée.\",\"PowerAppsOneGrid_Footer_PluralRows\":\"(1){{0} ligne};(0-4999){{0} lignes};(5000-inf){{0}+ lignes};\",\"PowerAppsOneGrid_Base_NowRowsSelected\":\"aucune ligne sélectionnée\",\"PowerAppsOneGrid_Base_RowSelectionAriaLabel\":\"sélectionner ou désélectionner la ligne\",\"PowerAppsOneGrid_Base_SelectedRowCountNotification\":\"Nombre total de lignes sélectionnées\u00A0: {0}\",\"PowerAppsOneGrid_Base_SelectAllRowsAriaLabel\":\"Activer/désactiver la sélection de toutes les lignes\",\"PowerAppsOneGrid_Base_StatusColumnName\":\"statut de la ligne\",\"PowerAppsOneGrid_Base_GroupHeader\":\"Grouper\",\"PowerAppsOneGrid_Aria_Description\":\"Appuyez sur Entrée pour modifier les cellules modifiables\",\"PowerAppsOneGrid_Base_GroupHeaderTooltip\":\"Regroupé par {0}\",\"PowerAppsOneGrid_CommonHeaderCustomization_FilterMenu\":\"Filtrer par\",\"PowerAppsOneGrid_CommonHeaderCustomization_ClearFilterMenu\":\"Effacer le filtre\",\"PowerAppsOneGrid_CommonHeaderCustomization_MoveLeftMenu\":\"Déplacer vers la gauche\",\"PowerAppsOneGrid_CommonHeaderCustomization_MoveRightMenu\":\"Déplacer vers la droite\",\"PowerAppsOneGrid_CommonHeaderCustomization_PinLeftMenu\":\"Épingler à gauche\",\"PowerAppsOneGrid_CommonHeaderCustomization_PinRightMenu\":\"Épingler à droite\",\"PowerAppsOneGrid_CommonHeaderCustomization_UnpinMenu\":\"Désépingler\",\"PowerAppsOneGrid_CommonHeaderCustomization_EditColumn\":\"Modifier la colonne\",\"PowerAppsOneGrid_CommonHeaderCustomization_HideColumn\":\"Masquer\",\"PowerAppsOneGrid_CommonHeaderCustomization_InsertColumn\":\"Insérer une colonne\",\"PowerAppsOneGrid_CommonHeaderCustomization_GroupByLabel\":\"Regrouper par\",\"PowerAppsOneGrid_CommonHeaderCustomization_GroupMenu\":\"Regrouper par\",\"PowerAppsOneGrid_CommonHeaderCustomization_UngroupMenu\":\"Dégrouper\",\"PowerAppsOneGrid_CommonHeaderCustomization_SortAscMenu\":\"Croissant\",\"PowerAppsOneGrid_CommonHeaderCustomization_SortDescMenu\":\"Décroissant\",\"PowerAppsOneGrid_CommonHeaderCustomization_TextInputIsIntegerValidatorErrorMessage\":\"La valeur doit être un nombre entier valide\",\"PowerAppsOneGrid_CommonHeaderCustomization_TextInputIsNumberValidatorErrorMessage\":\"La valeur doit être un nombre valide\",\"PowerAppsOneGrid_CommonHeaderCustomization_TextInputNumberGreaterThanMaxErrorMessage\":\"La valeur d’entrée est supérieure à la valeur maximale autorisée pour ce champ ({0})\",\"PowerAppsOneGrid_CommonHeaderCustomization_TextInputNumberLowerThanMinErrorMessage\":\"La valeur d’entrée est inférieure à la valeur minimale autorisée pour ce champ ({0})\",\"PowerAppsOneGrid_CommonHeaderCustomization_TextInputRequiredValidatorErrorMessage\":\"Veuillez entrer une valeur\",\"PowerAppsOneGrid_CommonHeaderCustomization_RequiredLabel\":\"{0} est obligatoire\",\"PowerAppsOneGrid_Sorting_Label_TwoOption_SortAsc\":\"Désactivé à activé\",\"PowerAppsOneGrid_Sorting_Label_TwoOption_SortDesc\":\"Activé à désactivé\",\"PowerAppsOneGrid_Sorting_Label_SortGeneric\":\"{0} vers {1}\",\"PowerAppsOneGrid_Sorting_Label_Text_SortAsc\":\"A à Z\",\"PowerAppsOneGrid_Sorting_Label_Text_SortDesc\":\"Z à A\",\"PowerAppsOneGrid_Sorting_Label_Date_SortAsc\":\"Du plus ancien au plus récent\",\"PowerAppsOneGrid_Sorting_Label_Date_SortDesc\":\"Du plus récent au plus ancien\",\"PowerAppsOneGrid_Sorting_Label_Number_SortAsc\":\"Du plus petit au plus grand\",\"PowerAppsOneGrid_Sorting_Label_Number_SortDesc\":\"Du plus grand au plus petit\",\"PowerAppsOneGrid_Filter_Expression_Editor_Title\":\"Filtrer par\",\"PowerAppsOneGrid_Filter_Expression_Editor_Close_Aria_Label\":\"Fermer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Close_Tooltip\":\"Fermer\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_No_Operator_Selected\":\"Sélectionner un opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Equals\":\"Est égal à\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Not_Equal\":\"Est différent de\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Contains\":\"Contient\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Not_Contain\":\"Ne contient pas\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Begins_With\":\"Commence par\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Not_Begins_With\":\"Ne commence pas par\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Ends_With\":\"Se termine par\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Not_Ends_With\":\"Ne se termine pas par\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Not_Contains_Data\":\"Ne contient pas de données\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Contains_Data\":\"Contient des données\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Missing_Value\":\"Entrez une valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Submit\":\"Appliquer\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Reset\":\"Effacer\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Filter_By_Value\":\"Filtrer par valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Filter_By_Operator\":\"Filtrer par opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_No_Operator_Selected\":\"Sélectionner un opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Equals\":\"Est égal à\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Not_Equal\":\"Est différent de\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Greater_Than\":\"Supérieur à\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Greater_Or_Equal_To\":\"Supérieur ou égal à\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Less_Than\":\"Inférieur à\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Less_Or_Equal_To\":\"Inférieur ou égal à\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Not_Contains_Data\":\"Ne contient pas de données\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Contains_Data\":\"Contient des données\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Is_Current_User_Language\":\"Est égal à la langue de l’utilisateur actuel\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Missing_Value\":\"Entrez une valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Value_Not_Number\":\"La valeur doit être un nombre valide\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Value_Not_Whole_Number\":\"La valeur doit être un nombre entier valide\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Value_Too_Large\":\"La valeur d’entrée est supérieure à la valeur maximale autorisée pour ce champ ({0})\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Value_Too_Small\":\"La valeur d’entrée est inférieure à la valeur minimale autorisée pour ce champ ({0})\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Submit\":\"Appliquer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Reset\":\"Effacer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Duration_Minutes\":\"minutes\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Filter_By_Value\":\"Filtrer par valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Filter_By_Operator\":\"Filtrer par opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_No_Operator_Selected\":\"Sélectionner un opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Value_Missing_Valid_Integer\":\"La valeur doit être un entier valide\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Value_Not_Valid_Integer\":\"La valeur doit être un entier valide\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_On\":\"Activé\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_On_Or_After\":\"Le ou après le\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_On_Or_Before\":\"Le ou avant le\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Today\":\"Aujourd’hui\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Yesterday\":\"Hier\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Tomorrow\":\"Demain\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_This_Week\":\"Cette semaine\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_This_Month\":\"Ce mois-ci\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_This_Year\":\"Cette année\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_This_Fiscal_Period\":\"Cette période fiscale\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_This_Fiscal_Year\":\"Cet exercice\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Week\":\"Semaine suivante\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Month\":\"Mois suivant\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Year\":\"Année suivante\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Fiscal_Period\":\"Prochaine période fiscale\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Fiscal_Year\":\"Prochain exercice\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Hours\":\"X prochaines heures\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Days\":\"X prochains jours\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Weeks\":\"X prochaines semaines\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Months\":\"X prochains mois\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Years\":\"X prochaines années\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Fiscal_Periods\":\"X prochaines périodes fiscales\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Fiscal_Years\":\"X prochains exercices\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Week\":\"Semaine précédente\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Month\":\"Mois précédent\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Year\":\"Année dernière\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Fiscal_Period\":\"Dernière période fiscale\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Fiscal_Year\":\"Dernier exercice\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Hours\":\"X dernières heures\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Days\":\"X derniers jours\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Weeks\":\"X dernières semaines\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Months\":\"X derniers mois\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Years\":\"X dernières années\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Fiscal_Periods\":\"X dernières périodes fiscales\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Fiscal_Years\":\"X derniers exercices\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Not_Contains_Data\":\"Ne contient pas de données\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Contains_Data\":\"Contient des données (période non définie)\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Missing_Value\":\"Entrez une valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Submit\":\"Appliquer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Reset\":\"Effacer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Filter_By_Value\":\"Filtrer par valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Filter_By_Operator\":\"Filtrer par opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_7_Days\":\"7\u00A0prochains jours\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_7_days\":\"7\u00A0derniers jours\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Older_Than_Minutes\":\"Antérieur à X minutes\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Older_Than_Hours\":\"Antérieur à X heures\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Older_Than_Days\":\"Antérieur à X jours\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Older_Than_Weeks\":\"Antérieur à X semaines\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Older_Than_Months\":\"Antérieur à X mois\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Older_Than_Years\":\"Antérieur à X années\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_In_Fiscal_Year\":\"Pendant l’exercice\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_In_Fiscal_Period\":\"Pendant la période fiscale\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_In_Fiscal_Period_Year\":\"Pendant la période fiscale et l’exercice\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_In_After_Fiscal_Period_Year\":\"Pendant ou après la période fiscale et l’exercice\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_In_Before_Fiscal_Period_Year\":\"Pendant ou avant la période fiscale et l’exercice\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Quarter\":\"Trimestre {0}\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Fy\":\"Ex{0}\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Today\":\"Aller à la date du jour\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Previous_Month\":\"Mois précédent\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Next_Month\":\"Mois suivant\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Previous_Year\":\"Année précédente\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Next_Year\":\"Année suivante\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Previous_Year_Range\":\"Plage d’années précédente\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Next_Year_Range\":\"Plage d’années suivante\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Close\":\"Fermer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_No_Operator_Selected\":\"Sélectionner un opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Equals\":\"Est égal à\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Not_Equal\":\"Est différent de\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Not_Contains_Data\":\"Ne contient pas de données\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Contains_Data\":\"Contient des données\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_No_Value\":\"Veuillez sélectionner une valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Contains\":\"Contient\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Not_Contains\":\"Ne contient pas\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Begins_With\":\"Commence par\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Not_Begins_With\":\"Ne commence pas par\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Ends_With\":\"Se termine par\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Not_Ends_With\":\"Ne se termine pas par\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Missing_Value\":\"Sélectionnez une valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Submit\":\"Appliquer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Reset\":\"Effacer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Filter_By_Value\":\"Filtrer par valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Filter_By_Operator\":\"Filtrer par opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_No_Operator_Selected\":\"Sélectionner un opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Equals\":\"Est égal à\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Not_Equal\":\"Est différent de\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Not_Contains_Data\":\"Ne contient pas de données\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Contains_Data\":\"Contient des données\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_No_Value\":\"Veuillez sélectionner une valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Contains\":\"Contient\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Not_Contains\":\"Ne contient pas\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Begins_With\":\"Commence par\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Not_Begins_With\":\"Ne commence pas par\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Ends_With\":\"Se termine par\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Not_Ends_With\":\"Ne se termine pas par\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Missing_Value\":\"Veuillez sélectionner une valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Submit\":\"Appliquer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Reset\":\"Effacer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Filter_By_Value\":\"Filtrer par valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Filter_By_Operator\":\"Filtrer par opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_No_Operator_Selected\":\"Sélectionner un opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Equals\":\"Est égal à\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Not_Equals\":\"Est différent de\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Contains_Values\":\"Contient des valeurs\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Not_Contains_Values\":\"Ne contient pas de valeurs\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Not_Contains_Data\":\"Ne contient pas de données\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Contains_Data\":\"Contient des données\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Missing_Value\":\"Veuillez sélectionner une valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Submit\":\"Appliquer\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Reset\":\"Effacer\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Filter_By_Value\":\"Filtrer par valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Filter_By_Operator\":\"Filtrer par opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_No_Operator_Selected\":\"Sélectionner un opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Equals\":\"Est égal à\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Equals\":\"Est différent de\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Contains_Data\":\"Ne contient pas de données\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Contains_Data\":\"Contient des données\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Contains\":\"Contient\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Contains\":\"Ne contient pas\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Begins_With\":\"Commence par\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Begins_With\":\"Ne commence pas par\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Ends_With\":\"Se termine par\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Ends_With\":\"Ne se termine pas par\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Equals_Current_User\":\"Est égal à l’utilisateur actuel\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Equals_Current_User\":\"Est différent de l’utilisateur actuel\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Equals_Current_Business_Unit\":\"Est égal à la division actuelle\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Equals_Current_Business_Unit\":\"Est différent de la division actuelle\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Equals_Current_User_Hierarchy\":\"Est égal à l’utilisateur actuel ou à la hiérarchie dont il dépend\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Current_User_Hierarchy_Teams\":\"Est égal à l’utilisateur actuel et à ses équipes ou à la hiérarchie dont il dépend et à ses équipes\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Equals_User_Teams\":\"Est égal aux équipes de l’utilisateur actuel\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Users_Teams\":\"Est égal à l’utilisateur actuel ou aux équipes de l’utilisateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_No_Value\":\"Veuillez sélectionner une valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Missing_Value\":\"Entrez une valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Loading\":\"Chargement en cours...\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Filter_By_Value\":\"Filtrer par valeur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Filter_By_Operator\":\"Filtrer par opérateur\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_No_Records\":\"Aucun enregistrement trouvé\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Submit\":\"Appliquer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Reset\":\"Effacer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Suggestions\":\"Suggestions\",\"PowerAppsOneGrid_DataTypeTooltip_Text\":\"Texte\",\"PowerAppsOneGrid_DataTypeTooltip_Email\":\"E-mail\",\"PowerAppsOneGrid_DataTypeTooltip_Phone\":\"Numéro de téléphone\",\"PowerAppsOneGrid_DataTypeTooltip_Ticker\":\"Symbole de l’action\",\"PowerAppsOneGrid_DataTypeTooltip_Date\":\"Date\",\"PowerAppsOneGrid_DataTypeTooltip_Boolean\":\"Booléen\",\"PowerAppsOneGrid_DataTypeTooltip_OptionSet\":\"Groupe d’options\",\"PowerAppsOneGrid_DataTypeTooltip_Lookup\":\"Rechercher\",\"PowerAppsOneGrid_DataTypeTooltip_Number\":\"Nombre\",\"PowerAppsOneGrid_DataTypeTooltip_Decimal\":\"Décimal\",\"PowerAppsOneGrid_DataTypeTooltip_AutoNumber\":\"Souche de numéros\",\"PowerAppsOneGrid_DataTypeTooltip_Url\":\"URL\",\"PowerAppsOneGrid_DataTypeTooltip_Icon\":\"Image\",\"PowerAppsOneGrid_DateEditor_OpenInstruction\":\"Utilisez Alt+Bas pour ouvrir le sélecteur de dates\",\"PowerAppsOneGrid_Grouping_GroupBlankValue\":\"vide\",\"PowerAppsOneGrid_Grouping_GroupWeekValue\":\"Semaine\",\"PowerAppsOneGrid_Grouping_GroupQuarterValue\":\"T\",\"PowerAppsOneGrid_Grouping_GroupFiscalYearValue\":\"Exercice fiscal\",\"PowerAppsOneGrid_LookupEditor_RemoveButtonAriaLabel\":\"Supprimer\",\"PowerAppsOneGrid_LookupEditor_NoResultsFound\":\"Aucun enregistrement trouvé\",\"PowerAppsOneGrid_LookupEditor_SuggestionsAriaLabel\":\"Valeurs possibles\",\"PowerAppsOneGrid_OptionSetEditor_NoneOption\":\"Aucun\",\"PowerAppsOneGrid_OptionSetEditor_SelectOption\":\"Sélectionner une option\",\"PowerAppsOneGrid_ImageRenderer_DefaultIcon\":\"Icône par défaut\",\"PowerAppsOneGrid_HierarchyIconRenderer_IconTooltip\":\"A une hiérarchie\",\"PowerAppsOneGrid_PlaceholderIconRenderer_IconTooltip\":\"Accéder à l’enregistrement\",\"PowerAppsOneGrid_IconRenderer_IconReadOnlyTooltip\":\"Cette cellule n’est pas modifiable\",\"PowerAppsOneGrid_PhoneRenderer_EmptyNumber\":\"Numéro de téléphone vide\",\"PowerAppsOneGrid_TwoOptionEditor_OnValue\":\"Oui\",\"PowerAppsOneGrid_TwoOptionEditor_OffValue\":\"Non\",\"PowerAppsOneGrid_TwoOptionEditor_NullValue\":\"Non défini\",\"PowerAppsOneGrid_TwoOptionRenderer_NullValue\":\"Non défini\",\"PowerAppsOneGrid_TwoOptionRenderer_OnValue\":\"Oui\",\"PowerAppsOneGrid_TwoOptionRenderer_OffValue\":\"Non\",\"PowerAppsOneGrid_FileRenderer_IconAriaLabel\":\"fichier\",\"PowerAppsOneGrid_FileRenderer_NoFileFound\":\"Aucun fichier joint\",\"PowerAppsOneGrid_No_Data\":\"Aucune donnée disponible\",\"PowerAppsOneGrid_List_SelectCommand_Label\":\"Sélectionner\",\"PowerAppsOneGrid_List_SelectAllCommand_Label\":\"Sélectionner tout\",\"PowerAppsOneGrid_List_MoreCommands_Label\":\"Autres commandes\",\"PowerAppsOneGrid_List_CancelSelection_Label\":\"Annuler la sélection\",\"PowerAppsOneGrid_Paging_First_Page_Label\":\"Charger la première page\",\"PowerAppsOneGrid_Paging_Next_Page_Label\":\"Page suivante\",\"PowerAppsOneGrid_Paging_Page_Label\":\"Page {0}\",\"PowerAppsOneGrid_Paging_Prev_Page_Label\":\"Page précédente\",\"PowerAppsOneGrid_Paging_Records_Label\":\"{0} - {1} sur {2}\",\"PowerAppsOneGrid_Paging_Records_Range_Label\":\"{0} - {1}\",\"PowerAppsOneGrid_Paging_Row_Count\":\"Nb de lignes\u00A0: {0}\",\"PowerAppsOneGrid_Paging_Selected_Label\":\"Sélectionnés\u00A0: {0}\",\"PowerAppsOneGrid_Paging_Total_Records_Label\":\"{0} sur {1}\",\"PowerAppsOneGrid_ErrorBoundaryFallback_ComponentStack_Header\":\"Pile de composants\",\"PowerAppsOneGrid_ErrorBoundaryFallback_Message_Header\":\"Message d’erreur\",\"PowerAppsOneGrid_ErrorBoundaryFallback_StackTrace_Header\":\"Rapport des appels de procédure\",\"PowerAppsOneGrid_ErrorBoundaryFallback_UnknownError_Message\":\"Une erreur inconnue s’est produite.\",\"PowerAppsOneGrid_NoAccessCell_Details\":\"Vous n’êtes pas autorisé à accéder à ce contenu. Contactez votre administrateur pour obtenir un accès.\",\"PowerAppsOneGrid_NoAccessCell_Label\":\"Accès refusé\",\"PowerAppsOneGrid_EnableStatusIcons_Name\":\"Afficher les icônes de statut de ligne\",\"PowerAppsOneGrid_EnableStatusIcons_Desc\":\"Afficher ou masquer les icônes de statut pour les lignes\",\"PowerAppsOneGrid_EnableStatusIcons_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_EnableStatusIcons_Enable_Desc\":\"Afficher les icônes de statut de la ligne\",\"PowerAppsOneGrid_EnableStatusIcons_Disable_Name\":\"Non\",\"PowerAppsOneGrid_EnableStatusIcons_Disable_Desc\":\"Désactiver les icônes de statuts des lignes\",\"PowerAppsOneGrid_EnableTypeIcons_Name\":\"Afficher les icônes de type de données\",\"PowerAppsOneGrid_EnableTypeIcons_Desc\":\"Afficher ou masquer les icônes de type de données dans les en-têtes de colonne\",\"PowerAppsOneGrid_EnableTypeIcons_Enable_Name\":\"Oui\",\"PowerAppsOneGrid_EnableTypeIcons_Enable_Desc\":\"Afficher les icônes dans les en-têtes de colonne\",\"PowerAppsOneGrid_EnableTypeIcons_Disable_Name\":\"Non\",\"PowerAppsOneGrid_EnableTypeIcons_Disable_Desc\":\"Désactiver les icônes de type de données d’en-tête dans la grille\",\"PowerAppsOneGrid_Header_Org_Icon_Tooltip\":\"Hiérarchie\",\"PowerAppsOneGrid_Header_Placeholder_Icon_Tooltip\":\"Naviguer\",\"PowerAppsOneGrid_HeaderMenu_Average\":\"Moyenne\",\"PowerAppsOneGrid_HeaderMenu_Count\":\"Nombre\",\"PowerAppsOneGrid_HeaderMenu_Maximum\":\"Maximum\",\"PowerAppsOneGrid_HeaderMenu_Minimum\":\"Minimum\",\"PowerAppsOneGrid_HeaderMenu_None\":\"Aucun\",\"PowerAppsOneGrid_HeaderMenu_Sum\":\"Somme\",\"PowerAppsOneGrid_HeaderMenu_ViewTotals\":\"Totaux\",\"PowerAppsOneGrid_HeaderMenu_Group_Day\":\"Jour\",\"PowerAppsOneGrid_HeaderMenu_Group_FiscalPeriod\":\"Période fiscale\",\"PowerAppsOneGrid_HeaderMenu_Group_FiscalYear\":\"Exercice\",\"PowerAppsOneGrid_HeaderMenu_Group_Month\":\"Mois\",\"PowerAppsOneGrid_HeaderMenu_Group_None\":\"Aucun\",\"PowerAppsOneGrid_HeaderMenu_Group_Quarter\":\"Trimestre\",\"PowerAppsOneGrid_HeaderMenu_Group_Week\":\"Semaine\",\"PowerAppsOneGrid_HeaderMenu_Group_Year\":\"Année\",\"PowerAppsOneGrid_Persona_Presence_Offline\":\"Hors connexion\",\"PowerAppsOneGrid_Persona_Presence_Available\":\"Disponible\",\"PowerAppsOneGrid_Persona_Presence_Away\":\"Absent\",\"PowerAppsOneGrid_Persona_Presence_DnD\":\"Ne pas déranger\",\"PowerAppsOneGrid_Persona_Presence_Blocked\":\"Bloqué\",\"PowerAppsOneGrid_Persona_Presence_Busy\":\"Occupé\",\"Base_Palette_Color\":\"Palette de couleurs\",\"Base_Palette_Color_description\":\"Choisissez une palette de couleurs différente du thème.\",\"No_Data_Text\":\"Aucun texte\",\"No_Data_Text_Desc\":\"Message que l’utilisateur reçoit lorsqu’il n’y a aucun enregistrement à afficher dans le contrôle Table.\",\"Font_Size\":\"Taille de police\",\"Font_Size_description\":\"La taille de police par défaut pour tout le texte affiché\",\"Header_Font_Size\":\"Taille de police de l’en-tête\",\"Header_Font_Size_description\":\"La taille de police pour les en-têtes de colonnes\",\"Font_Weight\":\"Épaisseur de la police\",\"Font_Weight_description\":\"L’épaisseur du texte.\",\"Header_Font_Weight\":\"Épaisseur de la police de l’en-tête\",\"Header_Font_Weight_description\":\"L’épaisseur du texte de l’en-tête de la colonne.\",\"Font\":\"Police\",\"Font_description\":\"Nom de la famille de la police pour le texte.\",\"Header_Font\":\"Police de l’en-tête\",\"Header_Font_description\":\"Le nom de la famille de la police pour le texte de l’en-tête.\",\"Font_Color\":\"Couleur de la police\",\"Font_Color_description\":\"La couleur du texte.\",\"Header_Font_Color\":\"Couleur de la police de l’en-tête\",\"Header_Font_Color_description\":\"La couleur du texte de l’en-tête de la colonne.\",\"PowerAppsOneGrid_List_Sort_Button\":\"Trier\",\"PowerAppsOneGrid_List_Sort_Menu_Sort_By\":\"Trier par\",\"PowerAppsOneGrid_List_Sort_Menu_Sort_Order\":\"Ordre de tri\",\"PowerAppsOneGrid_List_Sort_Menu_Apply_Button\":\"Appliquer\",\"PowerAppsOneGrid_List_Sort_Menu_Cancel_Button\":\"Annuler\",\"PowerAppsOneGrid_ColumnWidth_Name\":\"Largeur\",\"PowerAppsOneGrid_ColumnWidth_Desc\":\"La largeur de la colonne.\",\"PowerAppsOneGrid_ColumnVisibility_Name\":\"Visible\",\"PowerAppsOneGrid_ColumnVisibility_Desc\":\"Whether the column is shown.\",\"PowerAppsOneGrid_ColumnHeaderText_Name\":\"Header Text\",\"PowerAppsOneGrid_ColumnHeaderText_Desc\":\"Overrides the field display name for the column header when provided.\",\"PowerAppsOneGrid_ColumnGrow_Name\":\"Can grow\"}}}",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"PowerAppsOneGrid_AccessibleLabel_Desc_Key\":\"Label read out by screen readers.\",\"PowerAppsOneGrid_AccessibleLabel_Display_Key\":\"Accessible label\",\"PowerAppsOneGrid_Name\":\"Power Apps grid control\",\"PowerAppsOneGrid_Override_Name\":\"Table\",\"PowerAppsOneGrid_Desc\":\"Grid used for displaying a table of data items.\",\"PowerAppsOneGrid_Items_Name\":\"Items\",\"PowerAppsOneGrid_Items_Desc\":\"Items to use for the grid data\",\"PowerAppsOneGrid_ChildItems_Name\":\"Child items (preview)\",\"PowerAppsOneGrid_ChildItems_Desc\":\"Items to use for the child grid data\",\"ChildItems_ParentId_Name\":\"Child Items Parent Id\",\"ChildItems_ParentId_Desc\":\"Parent id to use for child items\",\"PowerAppsOneGrid_No_Columns_Label\":\"No columns selected\",\"PowerAppsOneGrid_No_Columns_Sub_Label\":\"To show data, choose the fields you want from the Properties pane.\",\"PowerAppsOneGrid_No_Data_Label\":\"No data\",\"PowerAppsOneGrid_No_Data_Sub_Label\":\"This table isn't connected to any data yet.\",\"PowerAppsOneGrid_Loading_Data_Label\":\"Loading...\",\"PowerAppsOneGrid_EnableEditing_Name\":\"Enable editing\",\"PowerAppsOneGrid_EnableEditing_Desc\":\"Enable or disable editing in the grid\",\"PowerAppsOneGrid_EnableEditing_Yes_Name\":\"Yes\",\"PowerAppsOneGrid_EnableEditing_Yes_Desc\":\"Enable editing in the grid\",\"PowerAppsOneGrid_ReadOnlyMode_No_Name\":\"No\",\"PowerAppsOneGrid_ReadOnlyMode_No_Desc\":\"Disable editing in the grid\",\"PowerAppsOneGrid_DisableChildItemsEditing_Name\":\"Disable editing in child items grid\",\"PowerAppsOneGrid_DisableChildItemsEditing_Desc\":\"Disable editing in the child items grid\",\"PowerAppsOneGrid_DisableChildItemsEditing_Yes_Name\":\"Yes\",\"PowerAppsOneGrid_DisableChildItemsEditing_Yes_Desc\":\"Disable editing in the child items grid\",\"PowerAppsOneGrid_DisableChildItemsEditing_No_Name\":\"No\",\"PowerAppsOneGrid_DisableChildItemsEditing_No_Desc\":\"Allow editing in the child items grid\",\"PowerAppsOneGrid_EnableFiltering_Name\":\"Enable filtering\",\"PowerAppsOneGrid_EnableFiltering_Desc\":\"Enable or disable filtering in the grid\",\"PowerAppsOneGrid_EnableFiltering_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_EnableFiltering_Enable_Desc\":\"Enable filtering in grid control\",\"PowerAppsOneGrid_EnableFiltering_Disable_Name\":\"No\",\"PowerAppsOneGrid_EnableFiltering_Disable_Desc\":\"Disable filtering in the grid\",\"PowerAppsOneGrid_EnableSorting_Name\":\"Enable sorting\",\"PowerAppsOneGrid_EnableSorting_Desc\":\"Enable or disable sorting in the grid\",\"PowerAppsOneGrid_EnableSorting_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_EnableSorting_Enable_Desc\":\"Enable sorting in grid control\",\"PowerAppsOneGrid_EnableSorting_Disable_Name\":\"No\",\"PowerAppsOneGrid_EnableSorting_Disable_Desc\":\"Disable sorting in the grid\",\"PowerAppsOneGrid_ShowFooter_Name\":\"Show footer\",\"PowerAppsOneGrid_ShowFooter_Desc\":\"Show or hide footer in the table\",\"PowerAppsOneGrid_ShowFooter_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_ShowFooter_Enable_Desc\":\"Enable footer in the table\",\"PowerAppsOneGrid_ShowFooter_Disable_Name\":\"No\",\"PowerAppsOneGrid_ShowFooter_Disable_Desc\":\"Disable footer in the table\",\"PowerAppsOneGrid_EnableGrouping_Name\":\"Enable grouping\",\"PowerAppsOneGrid_EnableGrouping_Desc\":\"Enable or disable grouping in the grid\",\"PowerAppsOneGrid_EnableGrouping_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_EnableGrouping_Enable_Desc\":\"Enable grouping in grid control\",\"PowerAppsOneGrid_EnableGrouping_Disable_Name\":\"No\",\"PowerAppsOneGrid_EnableGrouping_Disable_Desc\":\"Disable grouping in the grid\",\"PowerAppsOneGrid_EnableAggregation_Name\":\"Enable aggregation\",\"PowerAppsOneGrid_EnableAggregation_Desc\":\"Enable or disable aggregation in the grid\",\"PowerAppsOneGrid_EnableAggregation_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_EnableAggregation_Enable_Desc\":\"Enable aggregation in grid control\",\"PowerAppsOneGrid_EnableAggregation_Disable_Name\":\"No\",\"PowerAppsOneGrid_EnableAggregation_Disable_Desc\":\"Disable aggregation in the grid\",\"PowerAppsOneGrid_EnableColumnMoving_Name\":\"Allow column reordering (preview)\",\"PowerAppsOneGrid_EnableColumnMoving_Desc\":\"Allow column reordering\",\"PowerAppsOneGrid_EnableColumnMoving_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_EnableColumnMoving_Enable_Desc\":\"Columns can be reordered\",\"PowerAppsOneGrid_EnableColumnMoving_Disable_Name\":\"No\",\"PowerAppsOneGrid_EnableColumnMoving_Disable_Desc\":\"Columns cannot be reordered\",\"PowerAppsOneGrid_ShowAvatar_Name\":\"Show avatar\",\"PowerAppsOneGrid_ShowAvatar_Desc\":\"Show or hide avatars in the table\",\"PowerAppsOneGrid_ShowAvatar_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_ShowAvatar_Enable_Desc\":\"Show avatars in the table\",\"PowerAppsOneGrid_ShowAvatar_Disable_Name\":\"No\",\"PowerAppsOneGrid_ShowAvatar_Disable_Desc\":\"Hide avatars in the table\",\"PowerAppsOneGrid_ShowColumnHeaders_Name\":\"Show column headers\",\"PowerAppsOneGrid_ShowColumnHeaders_Desc\":\"Show or hide column headers in the table\",\"PowerAppsOneGrid_ShowColumnHeaders_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_ShowColumnHeaders_Enable_Desc\":\"Show column headers in the table\",\"PowerAppsOneGrid_ShowColumnHeaders_Disable_Name\":\"No\",\"PowerAppsOneGrid_ShowColumnHeaders_Disable_Desc\":\"Hide column headers in the table\",\"PowerAppsOneGrid_EnableRangeSelection_Name\":\"Allow range selection\",\"PowerAppsOneGrid_EnableRangeSelection_Desc\":\"Determines whether users can select a subset of the grid to copy to the clipboard\",\"PowerAppsOneGrid_EnableRangeSelection_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_EnableRangeSelection_Enable_Desc\":\"Enable range selection in the grid\",\"PowerAppsOneGrid_EnableRangeSelection_Disable_Name\":\"No\",\"PowerAppsOneGrid_EnableRangeSelection_Disable_Desc\":\"Disable range selection in the grid\",\"PowerAppsOneGrid_EnableMultipleSelection_Name\":\"Enable multi-select\",\"PowerAppsOneGrid_EnableMultipleSelection_Desc\":\"Determines whether users can select multiple rows\",\"PowerAppsOneGrid_EnableMultipleSelection_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_EnableMultipleSelection_Enable_Desc\":\"Enable multiple row selection in the grid\",\"PowerAppsOneGrid_EnableMultipleSelection_Disable_Name\":\"No\",\"PowerAppsOneGrid_EnableMultipleSelection_Disable_Desc\":\"Disable multiple row selection in the grid\",\"PowerAppsOneGrid_SelectionDialog_Title\":\"Selecting rows\",\"PowerAppsOneGrid_SelectionDialog_Subtext\":\"We're working on selecting more rows for you.\",\"PowerAppsOneGrid_SelectionDialog_Cancel_Label\":\"Cancel\",\"PowerAppsOneGrid_NoRowsOverlay_Label\":\"We didn't find anything to show here\",\"PowerAppsOneGrid_JumpBar_AriaLabel\":\"Jump bar\",\"PowerAppsOneGrid_JumpBar_ABC_Label\":\"ABC\",\"PowerAppsOneGrid_JumpBar_All_AriaLabel\":\"Filter to all records\",\"PowerAppsOneGrid_JumpBar_All_Label\":\"All\",\"PowerAppsOneGrid_JumpBar_Alphabet_AriaLabel\":\"Filter to records starting with {0}\",\"PowerAppsOneGrid_JumpBar_Alphabet_Labels\":\"A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z\",\"PowerAppsOneGrid_JumpBar_number_AriaLabel\":\"Filter to records starting with a number\",\"PowerAppsOneGrid_JumpBar_Number_Label\":\"#\",\"PowerAppsOneGrid_EnableJumpBar_Name\":\"Enable jump bar\",\"PowerAppsOneGrid_EnableJumpBar_Desc\":\"Enable or disable the jump bar footer panel\",\"PowerAppsOneGrid_EnableJumpBar_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_EnableJumpBar_Enable_Desc\":\"Enable the jump bar footer panel for the grid control.\",\"PowerAppsOneGrid_EnableJumpBar_Auto_Name\":\"Auto\",\"PowerAppsOneGrid_EnableJumpBar_Auto_Desc\":\"Show or hide the jump bar automatically for the grid control.\",\"PowerAppsOneGrid_EnableJumpBar_Disable_Name\":\"No\",\"PowerAppsOneGrid_EnableJumpBar_Disable_Desc\":\"Disable the jump bar footer panel for the grid control.\",\"PowerAppsOneGrid_EnablePagination_Name\":\"Enable pagination\",\"PowerAppsOneGrid_EnablePagination_Desc\":\"Enable or disable paging for grid. This will disable infinite scrolling.\",\"PowerAppsOneGrid_EnablePagination_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_EnablePagination_Enable_Desc\":\"Enable pagination for the grid control. This will disable infinite scrolling.\",\"PowerAppsOneGrid_EnablePagination_Disable_Name\":\"No\",\"PowerAppsOneGrid_EnablePagination_Disable_Desc\":\"Disable pagination for the grid control. This will enable infinite scrolling.\",\"PowerAppsOneGrid_EnableDropdownColor_Name\":\"Enable OptionSet colors\",\"PowerAppsOneGrid_EnableDropdownColor_Desc\":\"Enable or disable custom colors for OptionSet cells of the grid control.\",\"PowerAppsOneGrid_EnableDropdownColor_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_EnableDropdownColor_Enable_Desc\":\"Enable custom colors for OptionSet cells within the grid control.\",\"PowerAppsOneGrid_EnableDropdownColor_Disable_Name\":\"No\",\"PowerAppsOneGrid_EnableDropdownColor_Disable_Desc\":\"Disable custom colors for OptionSet cells within the grid control. It will use default colors provided by the grid.\",\"PowerAppsOneGrid_EnableStatusColumn_Name\":\"(Deprecated) Enable status column\",\"PowerAppsOneGrid_EnableStatusColumn_Desc\":\"Determines whether user can hide status column. This is deprecated, please use the allow multiple selection property instead.\",\"PowerAppsOneGrid_EnableStatusColumn_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_EnableStatusColumn_Enable_Desc\":\"Enable status column in the grid\",\"PowerAppsOneGrid_EnableStatusColumn_Disable_Name\":\"No\",\"PowerAppsOneGrid_EnableStatusColumn_Disable_Desc\":\"Disable status column in the grid\",\"PowerAppsOneGrid_NavigationTypesAllowed_Name\":\"Navigation types allowed\",\"PowerAppsOneGrid_NavigationTypesAllowed_Desc\":\"Configure what navigation types are allowed within the grid\",\"PowerAppsOneGrid_NavigationTypesAllowed_All_Name\":\"All\",\"PowerAppsOneGrid_NavigationTypesAllowed_All_Desc\":\"Allows navigation on primary and lookup columns\",\"PowerAppsOneGrid_NavigationTypesAllowed_PrimaryOnly_Name\":\"Primary only\",\"PowerAppsOneGrid_NavigationTypesAllowed_PrimaryOnly_Desc\":\"Only allows navigation on the primary column for the entity\",\"PowerAppsOneGrid_NavigationTypesAllowed_None_Name\":\"None\",\"PowerAppsOneGrid_NavigationTypesAllowed_None_Desc\":\"Does not allow any entity record navigation\",\"PowerAppsOneGrid_ReflowBehavior_Name\":\"Reflow behavior\",\"PowerAppsOneGrid_ReflowBehavior_Desc\":\"Define how the grid will reflow (switch display mode) based on its width\",\"PowerAppsOneGrid_ReflowBehavior_Reflow_Name\":\"Reflow\",\"PowerAppsOneGrid_ReflowBehavior_Reflow_Desc\":\"Allow grid to switch display mode based on its width\",\"PowerAppsOneGrid_ReflowBehavior_GridOnly_Name\":\"Grid only\",\"PowerAppsOneGrid_ReflowBehavior_GridOnly_Desc\":\"Always display as a grid\",\"PowerAppsOneGrid_ReflowBehavior_ListOnly_Name\":\"List only\",\"PowerAppsOneGrid_ReflowBehavior_ListOnly_Desc\":\"Always display as a list\",\"PowerAppsOneGrid_GridActions_Name\":\"Grid Actions\",\"PowerAppsOneGrid_GridActions_Desc\":\"Grid Actions\",\"PowerAppsOneGrid_onCellValueChange_Name\":\"Cell value changed event\",\"PowerAppsOneGrid_onCellValueChange_Desc\":\"Event fired when a cell value is changed\",\"PowerAppsOneGrid_onFilter_Name\":\"Filter changed event\",\"PowerAppsOneGrid_onFilter_Desc\":\"Event fired when a filter is changed\",\"PowerAppsOneGrid_onNavigate_Name\":\"Cell navigation event\",\"PowerAppsOneGrid_onNavigate_Desc\":\"Event fired when a cell link is executed\",\"PowerAppsOneGrid_onRowSelect_Name\":\"Row select changed event\",\"PowerAppsOneGrid_onRowSelect_Desc\":\"Event fired when a row selection state is changed\",\"PowerAppsOneGrid_onSave_Name\":\"Grid save event\",\"PowerAppsOneGrid_onSave_Desc\":\"Event fired when a save finished\",\"PowerAppsOneGrid_OnSelect_Name\":\"Row select changed event\",\"PowerAppsOneGrid_OnSelect_Desc\":\"Event fired when a row selection state is changed\",\"PowerAppsOneGrid_GridCustomizerControlFullName_Name\":\"Customizer control\",\"PowerAppsOneGrid_GridCustomizerControlFullName_Desc\":\"Full logical name of the control (<PublisherPrefix>_<NameSpace>_<ControlName>) that provides custom cell renders and/or editors for the Power Apps grid control\",\"PowerAppsOneGrid_PlaceHolder_Text\":\"Enter text\",\"PowerAppsOneGrid_PlaceHolder_Url\":\"https://\",\"PowerAppsOneGrid_PlaceHolder_DateTime\":\"Enter or pick date\",\"PowerAppsOneGrid_PlaceHolder_Number\":\"Enter number\",\"PowerAppsOneGrid_PlaceHolder_FloatingNumber\":\"0.00000\",\"PowerAppsOneGrid_PlaceHolder_Decimal\":\"Enter decimal\",\"PowerAppsOneGrid_PlaceHolder_Lookup\":\"Select lookup\",\"PowerAppsOneGrid_PlaceHolder_OptionSet\":\"Select option\",\"PowerAppsOneGrid_PlaceHolder_File\":\"No file attached\",\"PowerAppsOneGrid_PlaceHolder_Media\":\"No media attached\",\"PowerAppsOneGrid_PlaceHolder_Email\":\"Enter email\",\"PowerAppsOneGrid_PlaceHolder_Phone\":\"Enter phone\",\"PowerAppsOneGrid_Error_PluralRowErrors\":\"(1){There is {0} error in this row.};(0-inf){There are {0} errors in this row.};\",\"PowerAppsOneGrid_Error_RowSaveError\":\"There was an error in saving this record.\",\"PowerAppsOneGrid_Error_TotalErrorsPlural\":\"Number of errors on this page: {0}. Select to view.\",\"PowerAppsOneGrid_Error_FixText\":\"Fix.\",\"PowerAppsOneGrid_Error_DismissText\":\"Dismiss\",\"PowerAppsOneGrid_Error_RowSelectionLimit\":\"You've reached the limit of having {0} rows selected. Any row selection beyond that limit has been ignored.\",\"PowerAppsOneGrid_Footer_PluralRows\":\"(1){{0} row};(0-4999){{0} rows};(5000-inf){{0}+ rows};\",\"PowerAppsOneGrid_Base_NowRowsSelected\":\"no rows selected\",\"PowerAppsOneGrid_Base_RowSelectionAriaLabel\":\"select or deselect the row\",\"PowerAppsOneGrid_Base_SelectedRowCountNotification\":\"Total rows selected: {0}\",\"PowerAppsOneGrid_Base_SelectAllRowsAriaLabel\":\"Toggle selection of all rows\",\"PowerAppsOneGrid_Base_StatusColumnName\":\"row status\",\"PowerAppsOneGrid_Base_GroupHeader\":\"Group\",\"PowerAppsOneGrid_Aria_Description\":\"Press enter to modify editable cells\",\"PowerAppsOneGrid_Base_GroupHeaderTooltip\":\"Grouped by {0}\",\"PowerAppsOneGrid_CommonHeaderCustomization_FilterMenu\":\"Filter by\",\"PowerAppsOneGrid_CommonHeaderCustomization_ClearFilterMenu\":\"Clear filter\",\"PowerAppsOneGrid_CommonHeaderCustomization_MoveLeftMenu\":\"Move left\",\"PowerAppsOneGrid_CommonHeaderCustomization_MoveRightMenu\":\"Move right\",\"PowerAppsOneGrid_CommonHeaderCustomization_PinLeftMenu\":\"Pin left\",\"PowerAppsOneGrid_CommonHeaderCustomization_PinRightMenu\":\"Pin right\",\"PowerAppsOneGrid_CommonHeaderCustomization_UnpinMenu\":\"Unpin\",\"PowerAppsOneGrid_CommonHeaderCustomization_EditColumn\":\"Edit column\",\"PowerAppsOneGrid_CommonHeaderCustomization_HideColumn\":\"Hide\",\"PowerAppsOneGrid_CommonHeaderCustomization_InsertColumn\":\"Insert column\",\"PowerAppsOneGrid_CommonHeaderCustomization_GroupByLabel\":\"Group by\",\"PowerAppsOneGrid_CommonHeaderCustomization_GroupMenu\":\"Group by\",\"PowerAppsOneGrid_CommonHeaderCustomization_UngroupMenu\":\"Ungroup\",\"PowerAppsOneGrid_CommonHeaderCustomization_SortAscMenu\":\"Ascending\",\"PowerAppsOneGrid_CommonHeaderCustomization_SortDescMenu\":\"Descending\",\"PowerAppsOneGrid_CommonHeaderCustomization_TextInputIsIntegerValidatorErrorMessage\":\"Value must be a valid whole number\",\"PowerAppsOneGrid_CommonHeaderCustomization_TextInputIsNumberValidatorErrorMessage\":\"Value must be a valid number\",\"PowerAppsOneGrid_CommonHeaderCustomization_TextInputNumberGreaterThanMaxErrorMessage\":\"Input value is greater than the maximum value allowed for this field ({0})\",\"PowerAppsOneGrid_CommonHeaderCustomization_TextInputNumberLowerThanMinErrorMessage\":\"Input value is lower than the minimum value allowed for this field ({0})\",\"PowerAppsOneGrid_CommonHeaderCustomization_TextInputRequiredValidatorErrorMessage\":\"Please enter value\",\"PowerAppsOneGrid_CommonHeaderCustomization_RequiredLabel\":\"{0} is required\",\"PowerAppsOneGrid_Sorting_Label_TwoOption_SortAsc\":\"Off to on\",\"PowerAppsOneGrid_Sorting_Label_TwoOption_SortDesc\":\"On to off\",\"PowerAppsOneGrid_Sorting_Label_SortGeneric\":\"{0} to {1}\",\"PowerAppsOneGrid_Sorting_Label_Text_SortAsc\":\"A to Z\",\"PowerAppsOneGrid_Sorting_Label_Text_SortDesc\":\"Z to A\",\"PowerAppsOneGrid_Sorting_Label_Date_SortAsc\":\"Older to newer\",\"PowerAppsOneGrid_Sorting_Label_Date_SortDesc\":\"Newer to older\",\"PowerAppsOneGrid_Sorting_Label_Number_SortAsc\":\"Smaller to larger\",\"PowerAppsOneGrid_Sorting_Label_Number_SortDesc\":\"Larger to smaller\",\"PowerAppsOneGrid_Filter_Expression_Editor_Title\":\"Filter by\",\"PowerAppsOneGrid_Filter_Expression_Editor_Close_Aria_Label\":\"Close\",\"PowerAppsOneGrid_Filter_Expression_Editor_Close_Tooltip\":\"Close\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_No_Operator_Selected\":\"Select operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Equals\":\"Equals\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Not_Equal\":\"Does not equal\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Contains\":\"Contains\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Not_Contain\":\"Does not contain\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Begins_With\":\"Begins with\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Not_Begins_With\":\"Does not begin with\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Ends_With\":\"Ends with\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Not_Ends_With\":\"Does not end with\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Not_Contains_Data\":\"Does not contain data\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Contains_Data\":\"Contains data\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Missing_Value\":\"Please enter a value\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Submit\":\"Apply\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Reset\":\"Clear\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Filter_By_Value\":\"Filter by value\",\"PowerAppsOneGrid_Filter_Expression_Editor_String_Predicate_Filter_By_Operator\":\"Filter by operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_No_Operator_Selected\":\"Select operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Equals\":\"Equals\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Not_Equal\":\"Does not equal\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Greater_Than\":\"Greater than\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Greater_Or_Equal_To\":\"Greater than or equal to\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Less_Than\":\"Less than\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Less_Or_Equal_To\":\"Less than or equal to\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Not_Contains_Data\":\"Does not contain data\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Contains_Data\":\"Contains data\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Is_Current_User_Language\":\"Equals current user language\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Missing_Value\":\"Please enter a value\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Value_Not_Number\":\"Value must be a valid number\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Value_Not_Whole_Number\":\"Value must be a valid whole number\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Value_Too_Large\":\"Input value is greater than the maximum value allowed for this field ({0})\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Value_Too_Small\":\"Input value is lower than the minimum value allowed for this field ({0})\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Submit\":\"Apply\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Reset\":\"Clear\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Duration_Minutes\":\"minutes\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Filter_By_Value\":\"Filter by value\",\"PowerAppsOneGrid_Filter_Expression_Editor_Number_Predicate_Filter_By_Operator\":\"Filter by operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_No_Operator_Selected\":\"Select operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Value_Missing_Valid_Integer\":\"Value must be a valid integer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Value_Not_Valid_Integer\":\"Value must be a valid integer\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_On\":\"On\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_On_Or_After\":\"On or after\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_On_Or_Before\":\"On or before\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Today\":\"Today\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Yesterday\":\"Yesterday\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Tomorrow\":\"Tomorrow\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_This_Week\":\"This week\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_This_Month\":\"This month\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_This_Year\":\"This year\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_This_Fiscal_Period\":\"This fiscal period\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_This_Fiscal_Year\":\"This fiscal year\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Week\":\"Next week\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Month\":\"Next month\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Year\":\"Next year\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Fiscal_Period\":\"Next fiscal period\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Fiscal_Year\":\"Next fiscal year\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Hours\":\"Next X hours\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Days\":\"Next X days\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Weeks\":\"Next X weeks\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Months\":\"Next X months\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Years\":\"Next X years\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Fiscal_Periods\":\"Next X fiscal periods\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_Fiscal_Years\":\"Next X fiscal years\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Week\":\"Last week\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Month\":\"Last month\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Year\":\"Last year\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Fiscal_Period\":\"Last fiscal period\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Fiscal_Year\":\"Last fiscal year\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Hours\":\"Last X hours\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Days\":\"Last X days\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Weeks\":\"Last X weeks\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Months\":\"Last X months\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Years\":\"Last X years\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Fiscal_Periods\":\"Last X fiscal periods\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_Fiscal_Years\":\"Last X fiscal years\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Not_Contains_Data\":\"Does not contain data\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Contains_Data\":\"Contains data (any time)\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Missing_Value\":\"Please enter a value\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Submit\":\"Apply\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Reset\":\"Clear\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Filter_By_Value\":\"Filter by value\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Filter_By_Operator\":\"Filter by operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Next_7_Days\":\"Next 7 days\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Last_7_days\":\"Last 7 days\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Older_Than_Minutes\":\"Older than X minutes\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Older_Than_Hours\":\"Older than X hours\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Older_Than_Days\":\"Older than X days\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Older_Than_Weeks\":\"Older than X weeks\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Older_Than_Months\":\"Older than X months\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Older_Than_Years\":\"Older than X years\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_In_Fiscal_Year\":\"In fiscal year\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_In_Fiscal_Period\":\"In fiscal period\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_In_Fiscal_Period_Year\":\"In fiscal period and year\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_In_After_Fiscal_Period_Year\":\"In or after fiscal period and year\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_In_Before_Fiscal_Period_Year\":\"In or before fiscal period and year\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Quarter\":\"Quarter {0}\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Fy\":\"FY{0}\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Today\":\"Go to today\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Previous_Month\":\"Previous month\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Next_Month\":\"Next month\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Previous_Year\":\"Previous year\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Next_Year\":\"Next year\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Previous_Year_Range\":\"Previous year range\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Goto_Next_Year_Range\":\"Next year range\",\"PowerAppsOneGrid_Filter_Expression_Editor_Date_Predicate_Close\":\"Close\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_No_Operator_Selected\":\"Select operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Equals\":\"Equals\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Not_Equal\":\"Does not equal\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Not_Contains_Data\":\"Does not contain data\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Contains_Data\":\"Contains data\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_No_Value\":\"Please select a value\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Contains\":\"Contains\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Not_Contains\":\"Does not contain\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Begins_With\":\"Begins with\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Not_Begins_With\":\"Does not begin with\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Ends_With\":\"Ends with\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Not_Ends_With\":\"Does not end with\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Missing_Value\":\"Please select value\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Submit\":\"Apply\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Reset\":\"Clear\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Filter_By_Value\":\"Filter by value\",\"PowerAppsOneGrid_Filter_Expression_Editor_Enum_Predicate_Filter_By_Operator\":\"Filter by operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_No_Operator_Selected\":\"Select operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Equals\":\"Equals\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Not_Equal\":\"Does not equal\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Not_Contains_Data\":\"Does not contain data\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Contains_Data\":\"Contains data\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_No_Value\":\"Please select a value\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Contains\":\"Contains\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Not_Contains\":\"Does not contain\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Begins_With\":\"Begins with\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Not_Begins_With\":\"Does not begin with\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Ends_With\":\"Ends with\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Not_Ends_With\":\"Does not end with\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Missing_Value\":\"Please select a value\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Submit\":\"Apply\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Reset\":\"Clear\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Filter_By_Value\":\"Filter by value\",\"PowerAppsOneGrid_Filter_Expression_Editor_Boolean_Predicate_Filter_By_Operator\":\"Filter by operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_No_Operator_Selected\":\"Select operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Equals\":\"Equals\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Not_Equals\":\"Does not equal\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Contains_Values\":\"Contains values\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Not_Contains_Values\":\"Does not contain values\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Not_Contains_Data\":\"Does not contain data\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Contains_Data\":\"Contains data\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Missing_Value\":\"Please select a value\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Submit\":\"Apply\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Reset\":\"Clear\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Filter_By_Value\":\"Filter by value\",\"PowerAppsOneGrid_Filter_Expression_Editor_EnumSet_Predicate_Filter_By_Operator\":\"Filter by operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_No_Operator_Selected\":\"Select operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Equals\":\"Equals\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Equals\":\"Does not equal\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Contains_Data\":\"Does not contain data\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Contains_Data\":\"Contains data\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Contains\":\"Contains\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Contains\":\"Does not contain\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Begins_With\":\"Begins with\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Begins_With\":\"Does not begin with\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Ends_With\":\"Ends with\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Ends_With\":\"Does not end with\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Equals_Current_User\":\"Equals current user\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Equals_Current_User\":\"Does not equal current user\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Equals_Current_Business_Unit\":\"Equals current business unit\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Not_Equals_Current_Business_Unit\":\"Does not equal current business unit\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Equals_Current_User_Hierarchy\":\"Equals current user or their reporting hierarchy\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Current_User_Hierarchy_Teams\":\"Equals current user and their teams or their reporting hierarchy and their teams\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Equals_User_Teams\":\"Equals current user's teams\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Users_Teams\":\"Equals current user or user's teams\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_No_Value\":\"Please select a value\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Missing_Value\":\"Please enter a value\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Loading\":\"Loading...\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Filter_By_Value\":\"Filter by value\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Filter_By_Operator\":\"Filter by operator\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_No_Records\":\"No records found\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Submit\":\"Apply\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Reset\":\"Clear\",\"PowerAppsOneGrid_Filter_Expression_Editor_Object_Predicate_Suggestions\":\"Suggestions\",\"PowerAppsOneGrid_DataTypeTooltip_Text\":\"Text\",\"PowerAppsOneGrid_DataTypeTooltip_Email\":\"Email\",\"PowerAppsOneGrid_DataTypeTooltip_Phone\":\"Telephone number\",\"PowerAppsOneGrid_DataTypeTooltip_Ticker\":\"Ticker symbol\",\"PowerAppsOneGrid_DataTypeTooltip_Date\":\"Date\",\"PowerAppsOneGrid_DataTypeTooltip_Boolean\":\"Boolean\",\"PowerAppsOneGrid_DataTypeTooltip_OptionSet\":\"Option set\",\"PowerAppsOneGrid_DataTypeTooltip_Lookup\":\"Lookup\",\"PowerAppsOneGrid_DataTypeTooltip_Number\":\"Number\",\"PowerAppsOneGrid_DataTypeTooltip_Decimal\":\"Decimal\",\"PowerAppsOneGrid_DataTypeTooltip_AutoNumber\":\"Number sequence\",\"PowerAppsOneGrid_DataTypeTooltip_Url\":\"URL\",\"PowerAppsOneGrid_DataTypeTooltip_Icon\":\"Image\",\"PowerAppsOneGrid_DateEditor_OpenInstruction\":\"Use Alt+Down to open the date picker\",\"PowerAppsOneGrid_Grouping_GroupBlankValue\":\"blank\",\"PowerAppsOneGrid_Grouping_GroupWeekValue\":\"Week\",\"PowerAppsOneGrid_Grouping_GroupQuarterValue\":\"Q\",\"PowerAppsOneGrid_Grouping_GroupFiscalYearValue\":\"FY\",\"PowerAppsOneGrid_LookupEditor_RemoveButtonAriaLabel\":\"Remove\",\"PowerAppsOneGrid_LookupEditor_NoResultsFound\":\"No records found\",\"PowerAppsOneGrid_LookupEditor_SuggestionsAriaLabel\":\"Possible values\",\"PowerAppsOneGrid_OptionSetEditor_NoneOption\":\"None\",\"PowerAppsOneGrid_OptionSetEditor_SelectOption\":\"Select option\",\"PowerAppsOneGrid_ImageRenderer_DefaultIcon\":\"Default icon\",\"PowerAppsOneGrid_HierarchyIconRenderer_IconTooltip\":\"Has hierarchy\",\"PowerAppsOneGrid_PlaceholderIconRenderer_IconTooltip\":\"Go to record\",\"PowerAppsOneGrid_IconRenderer_IconReadOnlyTooltip\":\"This cell is not editable\",\"PowerAppsOneGrid_PhoneRenderer_EmptyNumber\":\"Empty phone number\",\"PowerAppsOneGrid_TwoOptionEditor_OnValue\":\"Yes\",\"PowerAppsOneGrid_TwoOptionEditor_OffValue\":\"No\",\"PowerAppsOneGrid_TwoOptionEditor_NullValue\":\"Unset\",\"PowerAppsOneGrid_TwoOptionRenderer_NullValue\":\"Unset\",\"PowerAppsOneGrid_TwoOptionRenderer_OnValue\":\"Yes\",\"PowerAppsOneGrid_TwoOptionRenderer_OffValue\":\"No\",\"PowerAppsOneGrid_FileRenderer_IconAriaLabel\":\"file\",\"PowerAppsOneGrid_FileRenderer_NoFileFound\":\"No file attached\",\"PowerAppsOneGrid_No_Data\":\"No data available\",\"PowerAppsOneGrid_List_SelectCommand_Label\":\"Select\",\"PowerAppsOneGrid_List_SelectAllCommand_Label\":\"Select all\",\"PowerAppsOneGrid_List_MoreCommands_Label\":\"More commands\",\"PowerAppsOneGrid_List_CancelSelection_Label\":\"Cancel selection\",\"PowerAppsOneGrid_Paging_First_Page_Label\":\"Load first page\",\"PowerAppsOneGrid_Paging_Next_Page_Label\":\"Next page\",\"PowerAppsOneGrid_Paging_Page_Label\":\"Page {0}\",\"PowerAppsOneGrid_Paging_Prev_Page_Label\":\"Previous page\",\"PowerAppsOneGrid_Paging_Records_Label\":\"{0} - {1} of {2}\",\"PowerAppsOneGrid_Paging_Records_Range_Label\":\"{0} - {1}\",\"PowerAppsOneGrid_Paging_Row_Count\":\"Rows: {0}\",\"PowerAppsOneGrid_Paging_Selected_Label\":\"Selected: {0}\",\"PowerAppsOneGrid_Paging_Total_Records_Label\":\"{0} of {1}\",\"PowerAppsOneGrid_ErrorBoundaryFallback_ComponentStack_Header\":\"Component Stack\",\"PowerAppsOneGrid_ErrorBoundaryFallback_Message_Header\":\"Error Message\",\"PowerAppsOneGrid_ErrorBoundaryFallback_StackTrace_Header\":\"Stack Trace\",\"PowerAppsOneGrid_ErrorBoundaryFallback_UnknownError_Message\":\"An unknown error has occurred.\",\"PowerAppsOneGrid_NoAccessCell_Details\":\"You do not have permission to access this content. Contact your administrator for access.\",\"PowerAppsOneGrid_NoAccessCell_Label\":\"Access denied\",\"PowerAppsOneGrid_EnableStatusIcons_Name\":\"Show row status icons\",\"PowerAppsOneGrid_EnableStatusIcons_Desc\":\"Show or hide status icons for the rows\",\"PowerAppsOneGrid_EnableStatusIcons_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_EnableStatusIcons_Enable_Desc\":\"Show status icons for the row\",\"PowerAppsOneGrid_EnableStatusIcons_Disable_Name\":\"No\",\"PowerAppsOneGrid_EnableStatusIcons_Disable_Desc\":\"Disable row status icons for the rows\",\"PowerAppsOneGrid_EnableTypeIcons_Name\":\"Show data type icons\",\"PowerAppsOneGrid_EnableTypeIcons_Desc\":\"Show or hide data type icons in the column headers\",\"PowerAppsOneGrid_EnableTypeIcons_Enable_Name\":\"Yes\",\"PowerAppsOneGrid_EnableTypeIcons_Enable_Desc\":\"Show icons in the column headers\",\"PowerAppsOneGrid_EnableTypeIcons_Disable_Name\":\"No\",\"PowerAppsOneGrid_EnableTypeIcons_Disable_Desc\":\"Disable header data type icons in the grid\",\"PowerAppsOneGrid_Header_Org_Icon_Tooltip\":\"Hierarchy\",\"PowerAppsOneGrid_Header_Placeholder_Icon_Tooltip\":\"Navigate\",\"PowerAppsOneGrid_HeaderMenu_Average\":\"Average\",\"PowerAppsOneGrid_HeaderMenu_Count\":\"Count\",\"PowerAppsOneGrid_HeaderMenu_Maximum\":\"Maximum\",\"PowerAppsOneGrid_HeaderMenu_Minimum\":\"Minimum\",\"PowerAppsOneGrid_HeaderMenu_None\":\"None\",\"PowerAppsOneGrid_HeaderMenu_Sum\":\"Sum\",\"PowerAppsOneGrid_HeaderMenu_ViewTotals\":\"Totals\",\"PowerAppsOneGrid_HeaderMenu_Group_Day\":\"Day\",\"PowerAppsOneGrid_HeaderMenu_Group_FiscalPeriod\":\"Fiscal period\",\"PowerAppsOneGrid_HeaderMenu_Group_FiscalYear\":\"Fiscal year\",\"PowerAppsOneGrid_HeaderMenu_Group_Month\":\"Month\",\"PowerAppsOneGrid_HeaderMenu_Group_None\":\"None\",\"PowerAppsOneGrid_HeaderMenu_Group_Quarter\":\"Quarter\",\"PowerAppsOneGrid_HeaderMenu_Group_Week\":\"Week\",\"PowerAppsOneGrid_HeaderMenu_Group_Year\":\"Year\",\"PowerAppsOneGrid_Persona_Presence_Offline\":\"Offline\",\"PowerAppsOneGrid_Persona_Presence_Available\":\"Available\",\"PowerAppsOneGrid_Persona_Presence_Away\":\"Away\",\"PowerAppsOneGrid_Persona_Presence_DnD\":\"Do Not Disturb\",\"PowerAppsOneGrid_Persona_Presence_Blocked\":\"Blocked\",\"PowerAppsOneGrid_Persona_Presence_Busy\":\"Busy\",\"Base_Palette_Color\":\"Color palette\",\"Base_Palette_Color_description\":\"Choose a color palette that's different from the theme.\",\"No_Data_Text\":\"No data text\",\"No_Data_Text_Desc\":\"The message that the user sees when there are no records to show in the Table control.\",\"Font_Size\":\"Font size\",\"Font_Size_description\":\"The default font size for all displayed text\",\"Header_Font_Size\":\"Header font size\",\"Header_Font_Size_description\":\"The font size for the column headers\",\"Font_Weight\":\"Font weight\",\"Font_Weight_description\":\"The weight of the text.\",\"Header_Font_Weight\":\"Header font weight\",\"Header_Font_Weight_description\":\"The weight of the column header text.\",\"Font\":\"Font\",\"Font_description\":\"The name of the font family for the text.\",\"Header_Font\":\"Header font\",\"Header_Font_description\":\"The name of the font family for the header text.\",\"Font_Color\":\"Font color\",\"Font_Color_description\":\"The color of the text.\",\"Header_Font_Color\":\"Header font color\",\"Header_Font_Color_description\":\"The color of the column header text.\",\"PowerAppsOneGrid_List_Sort_Button\":\"Sort\",\"PowerAppsOneGrid_List_Sort_Menu_Sort_By\":\"Sort by\",\"PowerAppsOneGrid_List_Sort_Menu_Sort_Order\":\"Sort order\",\"PowerAppsOneGrid_List_Sort_Menu_Apply_Button\":\"Apply\",\"PowerAppsOneGrid_List_Sort_Menu_Cancel_Button\":\"Cancel\",\"PowerAppsOneGrid_ColumnWidth_Name\":\"Width\",\"PowerAppsOneGrid_ColumnWidth_Desc\":\"The width of the column.\",\"PowerAppsOneGrid_ColumnVisibility_Name\":\"Visible\",\"PowerAppsOneGrid_ColumnVisibility_Desc\":\"Whether the column is shown.\",\"PowerAppsOneGrid_ColumnHeaderText_Name\":\"Header Text\",\"PowerAppsOneGrid_ColumnHeaderText_Desc\":\"Overrides the field display name for the column header when provided.\",\"PowerAppsOneGrid_ColumnGrow_Name\":\"Can grow\"}}}",
       "Type": 3
     },
     {
