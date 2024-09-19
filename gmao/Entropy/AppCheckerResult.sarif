@@ -134,6 +134,46 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 184,
+                  "snippet": {
+                    "text": "&&"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "And"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Storekeeper Monthly Physical Inventory'.ScreenContainer2_2.ContainerMain.Container_Physical_Inventory_2024.Gallery2_1.btn_save_hidden.OnSelect"
                 }
               ],
@@ -974,46 +1014,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 184,
-                  "snippet": {
-                    "text": "&&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Delete Equipement Screen",
-                "type": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "And"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'StorKeeper General Manual Movement'.ScreenContainer2.MainContainer2.'Pieces Container_2'.'Dropdown Equipement_1'.Items"
                 }
               ],
@@ -1408,6 +1408,1956 @@
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Admin Function User Screen'.'Admin Function User  Parent Container_2'.'Admin Function User  Body Container_2'.go_back_arrow_img_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Admin Function User Screen'.'Admin Function User  Parent Container_2'.'Admin Function User  Body Container_2'.go_back_arrow_img_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin Function User Screen",
+                "type": "'Admin Function User Screen'.'Admin Function User  Parent Container_2'.'Admin Function User  Body Container_2'.go_back_arrow_img_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Admin Function User Screen'.'Admin Function User  Parent Container_2'.'Admin Function User  Body Container_2'.go_back_arrow_img_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Admin Function User Screen'.'Admin Function User  Parent Container_2'.'Admin Function User  Body Container_2'.go_back_arrow_img_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin Function User Screen",
+                "type": "'Admin Function User Screen'.'Admin Function User  Parent Container_2'.'Admin Function User  Body Container_2'.go_back_arrow_img_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  Middle Container'.go_bacl_btn2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  Middle Container'.go_bacl_btn2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Profile Table Screen",
+                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  Middle Container'.go_bacl_btn2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.'Profile Table'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.'Profile Table'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Profile Table Screen",
+                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.'Profile Table'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Nom complet_DataCard7'.DataCardValue20.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Nom complet_DataCard7'.DataCardValue20.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Profile Table Screen",
+                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Nom complet_DataCard7'.DataCardValue20"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Adresse email_DataCard4'.DataCardValue21.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Adresse email_DataCard4'.DataCardValue21.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Profile Table Screen",
+                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Adresse email_DataCard4'.DataCardValue21"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.Fonction_DataCard9.DataCardValue24.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.Fonction_DataCard9.DataCardValue24.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Profile Table Screen",
+                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.Fonction_DataCard9.DataCardValue24"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Mot de Passe_DataCard4'.DataCardValue23.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Mot de Passe_DataCard4'.DataCardValue23.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Profile Table Screen",
+                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Mot de Passe_DataCard4'.DataCardValue23"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.'Btn Container'.Modify_btn.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.'Btn Container'.Modify_btn.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Profile Table Screen",
+                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.'Btn Container'.Modify_btn"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Dialog Container_2'.'Dialog Content_6'.'cancel icon_6'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Dialog Container_2'.'Dialog Content_6'.'cancel icon_6'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify Profile Table Screen",
+                "type": "'Modify Profile Table Screen'.'Dialog Container_2'.'Dialog Content_6'.'cancel icon_6'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Dialog Container_2'.'Dialog Content_6'.'cancel icon_6'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Dialog Container_2'.'Dialog Content_6'.'cancel icon_6'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Modify Profile Table Screen",
+                "type": "'Modify Profile Table Screen'.'Dialog Container_2'.'Dialog Content_6'.'cancel icon_6'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Profile Management Screen",
+                "type": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Profile Management Screen",
+                "type": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.FooterContainer1_1.ButtonCanvas8_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.FooterContainer1_1.ButtonCanvas8_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete User fucntion Screen",
+                "type": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.FooterContainer1_1.ButtonCanvas8_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.FooterContainer1_1.ButtonCanvas10_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.FooterContainer1_1.ButtonCanvas10_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete User fucntion Screen",
+                "type": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.FooterContainer1_1.ButtonCanvas10_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.MainContainer1_1.'Table user funct'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.MainContainer1_1.'Table user funct'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete User fucntion Screen",
+                "type": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.MainContainer1_1.'Table user funct'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.MainContainer1_1.'Container form_1'.ButtonCanvas11_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.MainContainer1_1.'Container form_1'.ButtonCanvas11_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete User fucntion Screen",
+                "type": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.MainContainer1_1.'Container form_1'.ButtonCanvas11_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.'cancel icon_21'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.'cancel icon_21'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete User fucntion Screen",
+                "type": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.'cancel icon_21'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.'cancel icon_21'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.'cancel icon_21'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Modify/Delete User fucntion Screen",
+                "type": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.'cancel icon_21'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.ButtonCanvas6_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.ButtonCanvas6_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete User fucntion Screen",
+                "type": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.ButtonCanvas6_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Admin Function Staff Screen'.'Admin Function Staff  Parent Container_2'.'Admin Function Staff  Body Container_2'.go_back_arrow_img_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Admin Function Staff Screen'.'Admin Function Staff  Parent Container_2'.'Admin Function Staff  Body Container_2'.go_back_arrow_img_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin Function Staff Screen",
+                "type": "'Admin Function Staff Screen'.'Admin Function Staff  Parent Container_2'.'Admin Function Staff  Body Container_2'.go_back_arrow_img_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Admin Function Staff Screen'.'Admin Function Staff  Parent Container_2'.'Admin Function Staff  Body Container_2'.go_back_arrow_img_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Admin Function Staff Screen'.'Admin Function Staff  Parent Container_2'.'Admin Function Staff  Body Container_2'.go_back_arrow_img_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin Function Staff Screen",
+                "type": "'Admin Function Staff Screen'.'Admin Function Staff  Parent Container_2'.'Admin Function Staff  Body Container_2'.go_back_arrow_img_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.FooterContainer1.ButtonCanvas8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.FooterContainer1.ButtonCanvas8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete Staff function Screen",
+                "type": "'Modify/Delete Staff function Screen'.ScreenContainer1.FooterContainer1.ButtonCanvas8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.FooterContainer1.ButtonCanvas10.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.FooterContainer1.ButtonCanvas10.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete Staff function Screen",
+                "type": "'Modify/Delete Staff function Screen'.ScreenContainer1.FooterContainer1.ButtonCanvas10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.MainContainer1.'Table staff funct'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.MainContainer1.'Table staff funct'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete Staff function Screen",
+                "type": "'Modify/Delete Staff function Screen'.ScreenContainer1.MainContainer1.'Table staff funct'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.MainContainer1.'Container form'.ButtonCanvas11.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.MainContainer1.'Container form'.ButtonCanvas11.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete Staff function Screen",
+                "type": "'Modify/Delete Staff function Screen'.ScreenContainer1.MainContainer1.'Container form'.ButtonCanvas11"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete Staff function Screen",
+                "type": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Modify/Delete Staff function Screen",
+                "type": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.ButtonCanvas6_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.ButtonCanvas6_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Modify/Delete Staff function Screen",
+                "type": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.ButtonCanvas6_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas18_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas18_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas18_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas17_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas17_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas17_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.ButtonCanvas6_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.ButtonCanvas6_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.ButtonCanvas6_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Delete Equipement Screen",
+                "type": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Admin Login Screen'.Circle_bg_orange_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Admin Login Screen'.Circle_bg_orange_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin Login Screen",
+                "type": "'Admin Login Screen'.Circle_bg_orange_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Admin Login Screen'.Circle_bg_orange_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Admin Login Screen'.Circle_bg_orange_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin Login Screen",
+                "type": "'Admin Login Screen'.Circle_bg_orange_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Header Container'.ButtonCanvas4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Header Container'.ButtonCanvas4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin Login Screen",
+                "type": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Header Container'.ButtonCanvas4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Body Container'.'Admin Login  UserName'.'username input'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Body Container'.'Admin Login  UserName'.'username input'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin Login Screen",
+                "type": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Body Container'.'Admin Login  UserName'.'username input'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Body Container'.'Admin Login Password'.'password input'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Body Container'.'Admin Login Password'.'password input'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin Login Screen",
+                "type": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Body Container'.'Admin Login Password'.'password input'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Admin Function Types Screen'.'Admin Function Parent Container_1'.'Admin Function Body Container_1'.go_back_arrow_img_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Admin Function Types Screen'.'Admin Function Parent Container_1'.'Admin Function Body Container_1'.go_back_arrow_img_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin Function Types Screen",
+                "type": "'Admin Function Types Screen'.'Admin Function Parent Container_1'.'Admin Function Body Container_1'.go_back_arrow_img_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Admin Function Types Screen'.'Admin Function Parent Container_1'.'Admin Function Body Container_1'.go_back_arrow_img_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Admin Function Types Screen'.'Admin Function Parent Container_1'.'Admin Function Body Container_1'.go_back_arrow_img_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin Function Types Screen",
+                "type": "'Admin Function Types Screen'.'Admin Function Parent Container_1'.'Admin Function Body Container_1'.go_back_arrow_img_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'StorKeeper Activities Screen'.'Magasiner Activities Body Container_3'.'Magasiner Activities Body Container'.Image3_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'StorKeeper Activities Screen'.'Magasiner Activities Body Container_3'.'Magasiner Activities Body Container'.Image3_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "StorKeeper Activities Screen",
+                "type": "'StorKeeper Activities Screen'.'Magasiner Activities Body Container_3'.'Magasiner Activities Body Container'.Image3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'StorKeeper Activities Screen'.'Magasiner Activities Body Container_3'.'Magasiner Activities Body Container'.Image3_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'StorKeeper Activities Screen'.'Magasiner Activities Body Container_3'.'Magasiner Activities Body Container'.Image3_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "StorKeeper Activities Screen",
+                "type": "'StorKeeper Activities Screen'.'Magasiner Activities Body Container_3'.'Magasiner Activities Body Container'.Image3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Physical inventory screen",
+                "type": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Physical inventory screen",
+                "type": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.ScreenContainer4.FooterContainer4.ButtonCanvas19.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.ScreenContainer4.FooterContainer4.ButtonCanvas19.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "StorKeeper Delete Spare Part",
+                "type": "'StorKeeper Delete Spare Part'.ScreenContainer4.FooterContainer4.ButtonCanvas19"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.ScreenContainer4.FooterContainer4.ButtonCanvas1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.ScreenContainer4.FooterContainer4.ButtonCanvas1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "StorKeeper Delete Spare Part",
+                "type": "'StorKeeper Delete Spare Part'.ScreenContainer4.FooterContainer4.ButtonCanvas1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.ScreenContainer4.MainContainer4.'Table Spare Parts'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.ScreenContainer4.MainContainer4.'Table Spare Parts'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "StorKeeper Delete Spare Part",
+                "type": "'StorKeeper Delete Spare Part'.ScreenContainer4.MainContainer4.'Table Spare Parts'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_3 Info_2'.'Dialog Content_13'.'cancel icon_13'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_3 Info_2'.'Dialog Content_13'.'cancel icon_13'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "StorKeeper Delete Spare Part",
+                "type": "'StorKeeper Delete Spare Part'.'Dialog Container_3 Info_2'.'Dialog Content_13'.'cancel icon_13'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_3 Info_2'.'Dialog Content_13'.'cancel icon_13'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_3 Info_2'.'Dialog Content_13'.'cancel icon_13'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "StorKeeper Delete Spare Part",
+                "type": "'StorKeeper Delete Spare Part'.'Dialog Container_3 Info_2'.'Dialog Content_13'.'cancel icon_13'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.'cancel icon_14'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.'cancel icon_14'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "StorKeeper Delete Spare Part",
+                "type": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.'cancel icon_14'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.'cancel icon_14'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.'cancel icon_14'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "StorKeeper Delete Spare Part",
+                "type": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.'cancel icon_14'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.ButtonCanvas6_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.ButtonCanvas6_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "StorKeeper Delete Spare Part",
+                "type": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.ButtonCanvas6_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_7.'TextInput spare name_1'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_7.'TextInput spare name_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_7.'TextInput spare name_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_8.'TextInput cod spare_1'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_8.'TextInput cod spare_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_8.'TextInput cod spare_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_9.'Dropdown family equipements'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_9.'Dropdown family equipements'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_9.'Dropdown family equipements'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_10.'TextInput type equip_1'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_10.'TextInput type equip_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_10.'TextInput type equip_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_11.'TextInput brand_1'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_11.'TextInput brand_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_11.'TextInput brand_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas18_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas18_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas18_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas17_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas17_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas17_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Add Equipement Screen",
+                "type": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4457,1956 +6407,6 @@
                 "member": "TabIndex",
                 "module": "Storekeeper Monthly Physical Inventory",
                 "type": "'Storekeeper Monthly Physical Inventory'.ScreenContainer2_2.FooterContainer3_2.Image3_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Admin Function User Screen'.'Admin Function User  Parent Container_2'.'Admin Function User  Body Container_2'.go_back_arrow_img_4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Admin Function User Screen'.'Admin Function User  Parent Container_2'.'Admin Function User  Body Container_2'.go_back_arrow_img_4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin Function User Screen",
-                "type": "'Admin Function User Screen'.'Admin Function User  Parent Container_2'.'Admin Function User  Body Container_2'.go_back_arrow_img_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Admin Function User Screen'.'Admin Function User  Parent Container_2'.'Admin Function User  Body Container_2'.go_back_arrow_img_4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Admin Function User Screen'.'Admin Function User  Parent Container_2'.'Admin Function User  Body Container_2'.go_back_arrow_img_4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Admin Function User Screen",
-                "type": "'Admin Function User Screen'.'Admin Function User  Parent Container_2'.'Admin Function User  Body Container_2'.go_back_arrow_img_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  Middle Container'.go_bacl_btn2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  Middle Container'.go_bacl_btn2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Profile Table Screen",
-                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  Middle Container'.go_bacl_btn2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.'Profile Table'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.'Profile Table'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Profile Table Screen",
-                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.'Profile Table'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Nom complet_DataCard7'.DataCardValue20.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Nom complet_DataCard7'.DataCardValue20.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Profile Table Screen",
-                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Nom complet_DataCard7'.DataCardValue20"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Adresse email_DataCard4'.DataCardValue21.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Adresse email_DataCard4'.DataCardValue21.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Profile Table Screen",
-                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Adresse email_DataCard4'.DataCardValue21"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.Fonction_DataCard9.DataCardValue24.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.Fonction_DataCard9.DataCardValue24.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Profile Table Screen",
-                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.Fonction_DataCard9.DataCardValue24"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Mot de Passe_DataCard4'.DataCardValue23.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Mot de Passe_DataCard4'.DataCardValue23.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Profile Table Screen",
-                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.modify_profile_form.'Mot de Passe_DataCard4'.DataCardValue23"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.'Btn Container'.Modify_btn.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.'Btn Container'.Modify_btn.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Profile Table Screen",
-                "type": "'Modify Profile Table Screen'.'Profile Table  ScreenContainer'.'Profile Table  MainContainer'.Profile_form_handling_container.'Btn Container'.Modify_btn"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Dialog Container_2'.'Dialog Content_6'.'cancel icon_6'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Dialog Container_2'.'Dialog Content_6'.'cancel icon_6'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify Profile Table Screen",
-                "type": "'Modify Profile Table Screen'.'Dialog Container_2'.'Dialog Content_6'.'cancel icon_6'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Dialog Container_2'.'Dialog Content_6'.'cancel icon_6'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify Profile Table Screen'.'Dialog Container_2'.'Dialog Content_6'.'cancel icon_6'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Modify Profile Table Screen",
-                "type": "'Modify Profile Table Screen'.'Dialog Container_2'.'Dialog Content_6'.'cancel icon_6'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Profile Management Screen",
-                "type": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Profile Management Screen",
-                "type": "'Profile Management Screen'.'Profile Management Parent Container'.'Profile Management Body Container'.go_back_arrow_img"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.FooterContainer1_1.ButtonCanvas8_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.FooterContainer1_1.ButtonCanvas8_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify/Delete User fucntion Screen",
-                "type": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.FooterContainer1_1.ButtonCanvas8_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.FooterContainer1_1.ButtonCanvas10_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.FooterContainer1_1.ButtonCanvas10_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify/Delete User fucntion Screen",
-                "type": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.FooterContainer1_1.ButtonCanvas10_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.MainContainer1_1.'Table user funct'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.MainContainer1_1.'Table user funct'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify/Delete User fucntion Screen",
-                "type": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.MainContainer1_1.'Table user funct'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.MainContainer1_1.'Container form_1'.ButtonCanvas11_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.MainContainer1_1.'Container form_1'.ButtonCanvas11_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify/Delete User fucntion Screen",
-                "type": "'Modify/Delete User fucntion Screen'.ScreenContainer1_1.MainContainer1_1.'Container form_1'.ButtonCanvas11_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.'cancel icon_21'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.'cancel icon_21'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify/Delete User fucntion Screen",
-                "type": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.'cancel icon_21'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.'cancel icon_21'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.'cancel icon_21'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Modify/Delete User fucntion Screen",
-                "type": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.'cancel icon_21'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.ButtonCanvas6_5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.ButtonCanvas6_5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify/Delete User fucntion Screen",
-                "type": "'Modify/Delete User fucntion Screen'.'Dialog Container_2 Delete_5'.'Dialog Content_22'.ButtonCanvas6_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Admin Function Staff Screen'.'Admin Function Staff  Parent Container_2'.'Admin Function Staff  Body Container_2'.go_back_arrow_img_5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Admin Function Staff Screen'.'Admin Function Staff  Parent Container_2'.'Admin Function Staff  Body Container_2'.go_back_arrow_img_5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin Function Staff Screen",
-                "type": "'Admin Function Staff Screen'.'Admin Function Staff  Parent Container_2'.'Admin Function Staff  Body Container_2'.go_back_arrow_img_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Admin Function Staff Screen'.'Admin Function Staff  Parent Container_2'.'Admin Function Staff  Body Container_2'.go_back_arrow_img_5.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Admin Function Staff Screen'.'Admin Function Staff  Parent Container_2'.'Admin Function Staff  Body Container_2'.go_back_arrow_img_5.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Admin Function Staff Screen",
-                "type": "'Admin Function Staff Screen'.'Admin Function Staff  Parent Container_2'.'Admin Function Staff  Body Container_2'.go_back_arrow_img_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.FooterContainer1.ButtonCanvas8.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.FooterContainer1.ButtonCanvas8.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify/Delete Staff function Screen",
-                "type": "'Modify/Delete Staff function Screen'.ScreenContainer1.FooterContainer1.ButtonCanvas8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.FooterContainer1.ButtonCanvas10.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.FooterContainer1.ButtonCanvas10.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify/Delete Staff function Screen",
-                "type": "'Modify/Delete Staff function Screen'.ScreenContainer1.FooterContainer1.ButtonCanvas10"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.MainContainer1.'Table staff funct'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.MainContainer1.'Table staff funct'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify/Delete Staff function Screen",
-                "type": "'Modify/Delete Staff function Screen'.ScreenContainer1.MainContainer1.'Table staff funct'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.MainContainer1.'Container form'.ButtonCanvas11.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.ScreenContainer1.MainContainer1.'Container form'.ButtonCanvas11.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify/Delete Staff function Screen",
-                "type": "'Modify/Delete Staff function Screen'.ScreenContainer1.MainContainer1.'Container form'.ButtonCanvas11"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify/Delete Staff function Screen",
-                "type": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Modify/Delete Staff function Screen",
-                "type": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.'cancel icon_17'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.ButtonCanvas6_4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.ButtonCanvas6_4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Modify/Delete Staff function Screen",
-                "type": "'Modify/Delete Staff function Screen'.'Dialog Container_2 Delete_4'.'Dialog Content_21'.ButtonCanvas6_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Delete Equipement Screen",
-                "type": "'Delete Equipement Screen'.ScreenContainer5_2.MainContainer5_2.Container2_6.'Dropdown equpment to delete'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas18_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas18_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Delete Equipement Screen",
-                "type": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas18_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas17_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas17_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Delete Equipement Screen",
-                "type": "'Delete Equipement Screen'.ScreenContainer5_2.FooterContainer5_2.ButtonCanvas17_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Delete Equipement Screen",
-                "type": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Delete Equipement Screen",
-                "type": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.'cancel icon_18'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.ButtonCanvas6_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.ButtonCanvas6_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Delete Equipement Screen",
-                "type": "'Delete Equipement Screen'.'Dialog Container_2 Delete_3'.'Dialog Content_18'.ButtonCanvas6_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Delete Equipement Screen",
-                "type": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Delete Equipement Screen",
-                "type": "'Delete Equipement Screen'.'Dialog Container_3 Info_3'.'Dialog Content_19'.'cancel icon_19'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Admin Login Screen'.Circle_bg_orange_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Admin Login Screen'.Circle_bg_orange_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin Login Screen",
-                "type": "'Admin Login Screen'.Circle_bg_orange_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Admin Login Screen'.Circle_bg_orange_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Admin Login Screen'.Circle_bg_orange_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Admin Login Screen",
-                "type": "'Admin Login Screen'.Circle_bg_orange_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Header Container'.ButtonCanvas4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Header Container'.ButtonCanvas4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin Login Screen",
-                "type": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Header Container'.ButtonCanvas4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Body Container'.'Admin Login  UserName'.'username input'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Body Container'.'Admin Login  UserName'.'username input'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin Login Screen",
-                "type": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Body Container'.'Admin Login  UserName'.'username input'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Body Container'.'Admin Login Password'.'password input'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Body Container'.'Admin Login Password'.'password input'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin Login Screen",
-                "type": "'Admin Login Screen'.'Admin Login Parent Container'.'Admin Login Body Container'.'Admin Login Password'.'password input'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Admin Function Types Screen'.'Admin Function Parent Container_1'.'Admin Function Body Container_1'.go_back_arrow_img_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Admin Function Types Screen'.'Admin Function Parent Container_1'.'Admin Function Body Container_1'.go_back_arrow_img_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin Function Types Screen",
-                "type": "'Admin Function Types Screen'.'Admin Function Parent Container_1'.'Admin Function Body Container_1'.go_back_arrow_img_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Admin Function Types Screen'.'Admin Function Parent Container_1'.'Admin Function Body Container_1'.go_back_arrow_img_3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Admin Function Types Screen'.'Admin Function Parent Container_1'.'Admin Function Body Container_1'.go_back_arrow_img_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Admin Function Types Screen",
-                "type": "'Admin Function Types Screen'.'Admin Function Parent Container_1'.'Admin Function Body Container_1'.go_back_arrow_img_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'StorKeeper Activities Screen'.'Magasiner Activities Body Container_3'.'Magasiner Activities Body Container'.Image3_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'StorKeeper Activities Screen'.'Magasiner Activities Body Container_3'.'Magasiner Activities Body Container'.Image3_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "StorKeeper Activities Screen",
-                "type": "'StorKeeper Activities Screen'.'Magasiner Activities Body Container_3'.'Magasiner Activities Body Container'.Image3_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'StorKeeper Activities Screen'.'Magasiner Activities Body Container_3'.'Magasiner Activities Body Container'.Image3_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'StorKeeper Activities Screen'.'Magasiner Activities Body Container_3'.'Magasiner Activities Body Container'.Image3_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "StorKeeper Activities Screen",
-                "type": "'StorKeeper Activities Screen'.'Magasiner Activities Body Container_3'.'Magasiner Activities Body Container'.Image3_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Physical inventory screen",
-                "type": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Physical inventory screen",
-                "type": "'Physical inventory screen'.'Magasiner Activities Body Container_4'.'Magasiner Activities Body Container_1'.Image3_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.ScreenContainer4.FooterContainer4.ButtonCanvas19.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.ScreenContainer4.FooterContainer4.ButtonCanvas19.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "StorKeeper Delete Spare Part",
-                "type": "'StorKeeper Delete Spare Part'.ScreenContainer4.FooterContainer4.ButtonCanvas19"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.ScreenContainer4.FooterContainer4.ButtonCanvas1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.ScreenContainer4.FooterContainer4.ButtonCanvas1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "StorKeeper Delete Spare Part",
-                "type": "'StorKeeper Delete Spare Part'.ScreenContainer4.FooterContainer4.ButtonCanvas1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.ScreenContainer4.MainContainer4.'Table Spare Parts'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.ScreenContainer4.MainContainer4.'Table Spare Parts'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "StorKeeper Delete Spare Part",
-                "type": "'StorKeeper Delete Spare Part'.ScreenContainer4.MainContainer4.'Table Spare Parts'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_3 Info_2'.'Dialog Content_13'.'cancel icon_13'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_3 Info_2'.'Dialog Content_13'.'cancel icon_13'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "StorKeeper Delete Spare Part",
-                "type": "'StorKeeper Delete Spare Part'.'Dialog Container_3 Info_2'.'Dialog Content_13'.'cancel icon_13'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_3 Info_2'.'Dialog Content_13'.'cancel icon_13'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_3 Info_2'.'Dialog Content_13'.'cancel icon_13'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "StorKeeper Delete Spare Part",
-                "type": "'StorKeeper Delete Spare Part'.'Dialog Container_3 Info_2'.'Dialog Content_13'.'cancel icon_13'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.'cancel icon_14'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.'cancel icon_14'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "StorKeeper Delete Spare Part",
-                "type": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.'cancel icon_14'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.'cancel icon_14'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.'cancel icon_14'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "StorKeeper Delete Spare Part",
-                "type": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.'cancel icon_14'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.ButtonCanvas6_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.ButtonCanvas6_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "StorKeeper Delete Spare Part",
-                "type": "'StorKeeper Delete Spare Part'.'Dialog Container_2 Delete_2'.'Dialog Content_14'.ButtonCanvas6_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_7.'TextInput spare name_1'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_7.'TextInput spare name_1'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Add Equipement Screen",
-                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_7.'TextInput spare name_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_8.'TextInput cod spare_1'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_8.'TextInput cod spare_1'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Add Equipement Screen",
-                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_8.'TextInput cod spare_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_9.'Dropdown family equipements'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_9.'Dropdown family equipements'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Add Equipement Screen",
-                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_9.'Dropdown family equipements'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_10.'TextInput type equip_1'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_10.'TextInput type equip_1'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Add Equipement Screen",
-                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_10.'TextInput type equip_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_11.'TextInput brand_1'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_11.'TextInput brand_1'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Add Equipement Screen",
-                "type": "'Add Equipement Screen'.ScreenContainer5_1.MainContainer5_1.Container2_11.'TextInput brand_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas18_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas18_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Add Equipement Screen",
-                "type": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas18_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas17_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas17_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Add Equipement Screen",
-                "type": "'Add Equipement Screen'.ScreenContainer5_1.FooterContainer5_1.ButtonCanvas17_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Add Equipement Screen",
-                "type": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Add Equipement Screen",
-                "type": "'Add Equipement Screen'.'Dialog Container_10'.'Dialog Content_16'.'cancel icon_16'"
               }
             }
           ],
@@ -10713,35 +10713,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Storekeeper Monthly Physical Inventory'"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Storekeeper Monthly Physical Inventory'",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "Storekeeper Monthly Physical Inventory",
-                "type": "'Storekeeper Monthly Physical Inventory'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Modify Profile Table Screen'.isValidEmail"
                 }
               ],
@@ -10856,6 +10827,35 @@
           },
           "ruleId": "app-UnusedVariables",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Storekeeper Monthly Physical Inventory'"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Storekeeper Monthly Physical Inventory'",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "Storekeeper Monthly Physical Inventory",
+                "type": "'Storekeeper Monthly Physical Inventory'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ScreenHasManyControls",
+          "ruleIndex": 9
         },
         {
           "locations": [

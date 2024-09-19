@@ -397,10 +397,25 @@
                         =If(
                             !IsBlank('TextInput qte piece_1'.Text) && 
                             Value('TextInput qte piece_1'.Text) > 0 && 
-                            !IsBlank('Dropdown Piece_1'.Selected),
+                            !IsBlank('Dropdown Piece_1'.Selected) &&
+                            IsEmpty(
+                                Filter(
+                                    PieceCollection3,
+                                    Piece = 'Dropdown Piece_1'.Selected.Value
+                                )
+                            ),
                             DisplayMode.Edit, 
                             DisplayMode.Disabled
                         )
+                        
+                        /*If(
+                            !IsBlank('TextInput qte piece'.Text) && 
+                            Value('TextInput qte piece'.Text) > 0 && 
+                            !IsBlank('Dropdown Piece'.Selected),
+                            DisplayMode.Edit, 
+                            DisplayMode.Disabled
+                        )
+                        */
                     FontColor: =
                     Height: =Parent.Height * 0.1
                     Icon: ="DocumentAdd"
