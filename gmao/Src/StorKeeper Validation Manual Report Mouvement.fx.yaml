@@ -785,7 +785,7 @@
                                 PiecesList,
                                 Concat(
                                     MaterielCollection,
-                                    ThisRecord.'Ressources Materielles Engagees' & ","
+                                    ThisRecord.'Ressources Materielles Engagees' & "," // "abv ,zzz ,sss"
                                 )
                             );
                             Set(
@@ -798,7 +798,7 @@
                                     ),
                                     PiecesList
                                 )
-                            );
+                            ); // "abv ,zzz ,sss"
                             Set(
                                 FinalString,
                                 Concatenate(
@@ -806,7 +806,8 @@
                                     CleanedPiecesString,
                                     """"
                                 )
-                            );
+                            ); // "abv,zzz,sss"
+                            
                             // Fetch theoretical and physical data
                             ClearCollect(
                                 TheoreticalDataCollection,
